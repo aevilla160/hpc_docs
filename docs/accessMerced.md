@@ -32,7 +32,7 @@ Once user login to MERCED,there are 2 folders (`data` and `scratch`) locate in `
 |--|--|
 |`/home/<UCMID>/data`|256G|
 |`/home/<UCMID>/scratch`|512G|
-|`/home/<UCMID>/`20G|
+|`/home/<UCMID>/`|20G|
 
 
 * Store in `data`, all that is research grade data that need to be backed-up and safe.
