@@ -69,5 +69,5 @@ This research [Part of this research] was conducted using Pinnacles
 (NSF MRI, # 2019144) at the Cyberinfrastructure and Research Technologies
 (CIRT) at University of California, Merced.
 ```
-From time to time the Committee on Research Computing (CoRC) may request a report of publications and presentations authored by Pinnacles users that have included results of calculations on Pinnacles. This information may be used by CoRC in advertising and report documents, future proposals, and/or other materials related to research computing at UC Merced. Failure to respond to CoRC report requests and/or failure to acknowledge Pinnacles usage in research dissemination may result in suspension or termination of one or more user accounts associated with the non-compliant PI’s group.
+From time to time the Committee on Research Computing (CoRC) may request a report of publications and presentations authored by Pinnacles users that have included results of calculations on Pinnacles. This information may be used by CoRC in advertising and report documents, future proposals, and/or other materials related to research computing at UC Merced. 
 

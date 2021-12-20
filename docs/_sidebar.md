@@ -1,3 +1,4 @@
+- HPC resources
 - On-campus cluster
 
     - [MERCED](MERCED.md)

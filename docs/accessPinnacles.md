@@ -21,6 +21,7 @@ For the data storage, each user has 256 GB storage space under `/home/<UCMID>/da
 |:----------|:------|
 | `/home/<UCMID>/scratch`  | 256GB |
 | `/home/<UCMID>/data`      | 256GB |
+|`/home/<UCMID>`|30GB|
 
 !>The `scratch` folder is deleted periodically when the overall system storage reaches 85% of capacity or higher. Usually two weeks notification will go out by list-serve and the MOTD (message of the day, message shows on the login page to Pinnacles) will detail upcoming scratch data deletions (purges).
 

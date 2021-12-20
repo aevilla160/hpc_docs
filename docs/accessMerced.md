@@ -26,7 +26,14 @@ to see the available content:
 $ ls
 data scratch
 ```
-Those are 2 folders (`data` and `scratch`) that you will start with.
+Once user login to MERCED,there are 2 folders (`data` and `scratch`) locate in `HOME` that user will start with.
+
+|Folder|space|
+|--|--|
+|`/home/<UCMID>/data`|256G|
+|`/home/<UCMID>/scratch`|512G|
+|`/home/<UCMID>/`20G|
+
 
 * Store in `data`, all that is research grade data that need to be backed-up and safe.
 * Put in `scratch`, everything that is temporary; all files older than

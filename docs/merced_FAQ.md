@@ -58,14 +58,29 @@ __where__: Zoom coordinates: On MERCED cluster login page
 __When__: Every Friday from 10:30 am to 12 noon
 
 
+!> Recharge center FAQs
 
 > __I have several users doing different projects, can I use different COA# for them?__
 
-Yes, please make sure keep the COA# information updated. Each user can also have different COA#, if the user is doing multiple projects.
+Yes, please make sure keep the COA# information updated. Each user can also have different COA#, if the user is doing multiple projects. If you have any questions, feel free to email cirt@ucmerced.edu.
 
 
 
+>__Are the costs the same regardless of whether we purchased our own nodes or not?__
 
+The costs and the charges are for general Slurm partitions (example: fast.q, long.q, std.q) and not for PI-owned partitions (example: amartini.q, dstrubbe.q, qsb.q, skhatri3.q). That is, if users/groups purchased nodes for MERCED and are submitting jobs on PI/Group owned queues, users will not be charged for core-hours.
+
+>__How do we get access to the Pinnacles cluster?__
+
+Committee on Research Computing is scheduled to meet on the Dec 10th, 2021. Once CoRC approves access policy for Pinnacles, CIRT can begin account creation process for you and your group. Your data and accounts would be the same as on MERCED and running your workflows on Pinnacles should be seamless.
+
+>__Can I purchase core-hours in advance?__
+
+Since recharge services are pay-per-use services, users cannot purchase core-hours in advance. However, you can purchase “condo-model” CPU/GPU compute node(s) for Pinnacles for seamless access to compute resources after Jan 1, 2022. Request for a Pinnacles condo-model purchase [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+>__Can faculty charge recharge services directly to a grant?__
+
+Grant funds have restrictions on how the funding can be spent, and every grant is unique. So, as long as recharge service is allowable expense under the grant, then faculty can charge recharge services directly to the grant. Each grant has a unique COA#. Please ensure that your COA information is accurate in the MERCED recharge spreadsheet by emailing cirt@ucmerced.edu.
 
 
 
