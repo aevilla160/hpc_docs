@@ -11,6 +11,7 @@
         - [Accessing Pinnacles](accessPinnacles.md)
         - [Environment](p_modules.md)
         - [Pinnacles FAQ](pinnacles_FAQ.md)
+    - [News](news.md)
 - Submit a job
     - [Running jobs ](running_jobs.md)
 - Off-Campus Cluster

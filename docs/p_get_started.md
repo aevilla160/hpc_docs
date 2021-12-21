@@ -25,19 +25,20 @@ GPU nodes: Pinnacles GPU nodes provide exceptional performance and scalability f
 |Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
 
 ## Requesting an account
-* Request an account for Pinnacles, users need to complete a [survey](https://ucmerced.az1.qualtrics.com/jfe/preview/SV_0TxxQuXnseJvQUu?Q_CHL=preview&Q_SurveyVersionID=current). In the survey, users need to provide information on their research project and also need to include a short abstract about their research. 
+
+Requesting access to Pinnacles is a 3-step process.
+* UC Merced Principal Investigators (PIs) request consultation to access Pinnacles cluster on [OIT ServiceHub here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0). 
 * CIRT schedules a computational need assessment consultation with faculty PIs and assist PIs complete Pinnacles access request form.
-* PI completes Pinnacles access request form and CoRC receives this form and approves/denies access requests.
+* PI completes Pinnacles access request form and UC Merced’s Committee on Research Computing (CoRC) receives this form and approves/denies access requests.
 
 ?> If you still have questions, we have put together a Pinnacles FAQ page that has the most common questions received and will be keeping it up to date
-
 
 Before apply an account, please read the following information
 carefully.
 
 >What do I need to get this service?
 
-An active faculty or student __with a faculty advisor__ can submit this
+An active PI or student __with a PI advisor__ can submit this
 request by completing this [request
 form](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
 

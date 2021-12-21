@@ -42,7 +42,7 @@ carefully.
 
 >What do I need to get this service?
 
-An active faculty or student __with a faculty advisor__ can submit this
+An active PI or student __with a PI advisor__ can submit this
 request by completing this [request
 form](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
 
@@ -76,16 +76,7 @@ This research [Part of this research] was conducted using [MERCED cluster (NSF- 
 ```
 From time to time the Committee on Research Computing (CoRC) may request a report of publications and presentations authored by MERCED users that have included results of calculations on MERCED. This information may be used by CoRC in advertising and report documents, future proposals, and/or other materials related to research computing at UC Merced. 
 
-## About MERCED
-A team of 17 UC Merced faculty prepared and submitted a Major Research Instrumentation (MRI) grant to the National Science Foundation (NSF) in early 2014. The NSF awarded this proposal in August 2014 (NSF Award ACI-1429783). Funding from the NSF-MRI grant and associated institutional cost sharing yields a total initial spending budget of $615,842. This MRI proposal requested support for acquisition of a high performance computing (HPC) system to support scientific computing research and training activities at UC Merced and in support of regional interactions with faculty and students at nearby institutions, including the University of the Pacific, California State University Fresno, and California State University Stanislaus. Individual research programs involving computing at UCM are especially diverse, ranging from quantum chemistry to the history of medieval China and from calculation-intensive femtosecond modeling of nanoscale friction to data-intensive statistical analysis of high-volume genomic data. As one might expect, the most advantageous computing environment for one these groups is often different than that for another. Recognizing this reality, and supporting experimentation with as-yet under-utilized hardware configurations for various applications, this funded NSF-MRI proposal supported the acquisition of the MERCED cluster. 
 
-In further support of the involved scientific research pillars, a key role of the MERCED cluster will be to bridge the gap between the modest sized resources that can reasonably be maintained by an individual faculty-led research group and extensive national supercomputer sites such as the XSEDE system (see www.xsede.org). More specifically, we anticipate MERCED offering a number of scientific and training opportunities. These include: 
-* the ability to rapidly reconfigure software and hardware as needed for specific projects; 
-* the option to run very long-time calculations that cannot be easily adapted to standard queues offered at most supercomputer environments; 
-* the ability to generate and analyze very large data sets locally, avoiding long communication delays; 
-* the capacity to train students on a full set of computational skills needed to be competitive for jobs as independent researchers. 
-
-We also note that demonstrated software integrity, stability, and scalability are often a required component of allocation requests at major supercomputer sites. The MERCED cluster will provide the necessary resources to carry out such validation studies locally at UC Merced. Finally, the MERCED cluster will provide outstanding support for training and education. As mentioned above, HPC related research plays an important role in the work carried out in the groups at UC Merced. In addition to our Ph.D. and postdoctoral training programs, UC Merced has an active record of undergraduate education and research. Many of the senior personnel of this proposal are also involved with REU and undergraduate research mentoring programs that focus on scientific computing. The MERCED cluster will provide an excellent resource for those programs. We also expect the MERCED cluster to be used by students taking courses related to scientific computing.
 
 
 
