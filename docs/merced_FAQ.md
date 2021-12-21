@@ -82,10 +82,13 @@ Since recharge services are pay-per-use services, users cannot purchase core-hou
 
 Grant funds have restrictions on how the funding can be spent, and every grant is unique. So, as long as recharge service is allowable expense under the grant, then faculty can charge recharge services directly to the grant. Each grant has a unique COA#. Please ensure that your COA information is accurate in the MERCED recharge spreadsheet by emailing cirt@ucmerced.edu.
 
+>__I do not want my research group to exceed free core-hour limit on MERCED__
 
+The initial recharge center implementation will provide bi-weekly usage reports of their groups to faculty PIs. If at any point, faculty would like for CIRT to stop MERCED cluster access to their group, please send an email to cirt@ucmerced.edu and CIRT can stop access. 
 
+>__I want access to free resources. How can I get access to them?__
 
-
+Remember, if you stay below or at your baseline allocation, you will not incur any fees. However, you can obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and XSEDE resources – and my team can provide consultation for how to access these resources. Schedule a consultation [here](https://arrangr.com/sarvani/rechargemeeting).
 
 
 
