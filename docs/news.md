@@ -1,4 +1,4 @@
-## MERCED CLUSTER RECHARGE SERVICES STARTING JAN 1, 2022
+MERCED CLUSTER RECHARGE SERVICES STARTING JAN 1, 2022
 
 With the new NSF-MRI Cluster Pinnacles coming online, we are transitioning the MERCED cluster to a recharge service (effective January 1, 2022). Users will receive a monthly baseline allocation of 100 cycles and Faculty PIs will be responsible for covering costs that exceed this baseline.
  
@@ -24,7 +24,7 @@ However, you can obtain access to other free compute resources such as our new N
 
 **CLICK [HERE](rechargeFAQs.md) FOR RECHARGE CENTER FAQ **
 
-## UNEXPECTED CRASHES ON MERCED CLUSTER (03/26/2021): FIX
+UNEXPECTED CRASHES ON MERCED CLUSTER (03/26/2021): FIX
 
 The MERCED cluster is back online. JupyterHub is accessible and users can submit jobs again. We apologize for the disruption and will continue to closely monitor the MERCED cluster this weekend.
 If you experience any issues, we encourage you to open a ticket to the CIRT team [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). 
@@ -32,11 +32,11 @@ If you experience any issues, we encourage you to open a ticket to the CIRT team
 ## UNEXPECTED CRASHES ON MERCED CLUSTER (03/25/2021): WORKAROUND
 CIRT is determining a workaround for the MERCED cluster users while we fully restore services on the head node. JupyterHub access is disabled during this time. We encourage you monitor [GitHub Docs News page](news.md) for updates and if you experience any issues, open a ticket to the CIRT team [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). 
 
-## UNEXPECTED CRASHES ON MERCED CLUSTER (03/25/2021)
+UNEXPECTED CRASHES ON MERCED CLUSTER (03/25/2021)
 
 CIRT is investigating unexpected crashes on MERCED cluster. Users will not be able to submit jobs until the root cause is diagnosed and resolved. We apologize for any inconvenience. We encourage you monitor [GitHub Docs News page](news.md) for updates and if you experience any issues, open a ticket to the CIRT team [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). 
 
-## MERCED CLUSTER UNEXPECTED REBOOT (03/25/2021)
+MERCED CLUSTER UNEXPECTED REBOOT (03/25/2021)
 
 The MERCED cluster head node rebooted unexpectedly last night. Jobs submitted to the cluster might have been impacted because of this reboot. At this time Cluster is stable and jobs can be submitted. OIT CIRT team is investigating the root cause of this reboot and impact. We apologize for any inconvenience this has caused in your work.
 
@@ -45,7 +45,7 @@ We encourage you monitor GitHub Docs News page for updates and if you experience
 -CIRT Team
 ***
 
-## MERCED Cluster maintenance 03/02/2021 - 03/04/2021
+MERCED Cluster maintenance 03/02/2021 - 03/04/2021
 Dear Campus Research Computing Community,
 
 Your Cyberinfrastructure and Research Technologies (CIRT) team wants you to be ready for the upcoming maintenance on the MERCED cluster in **3 Weeks**.
@@ -106,18 +106,18 @@ CIRT Team
 
 ***
 
-# MERCED LOGIN NODE REBOOTED. (09/30/2020)
+MERCED LOGIN NODE REBOOTED. (09/30/2020)
 MERCED login node back online (11:15 am PT).
 
 ***
 
-# MERCED LOGIN NODE REBOOTING. NO LOSS OF JOBS/DATA (09/30/2020)
+MERCED LOGIN NODE REBOOTING. NO LOSS OF JOBS/DATA (09/30/2020)
 
 MERCED login node is being rebooted in 15 minutes (current time 10:53 am PT). Please save your work and exit the terminal. MERCED cluster will function normally. Your submitted jobs and data will NOT be lost in the meantime. MERCED login node should be back in a couple of minutes. Apologies for the temporary interruption.
 
 ***
 
-# MERCED data update (9/29/2020)
+MERCED data update (9/29/2020)
 Dear MERCED Users,
 
 We write to provide you with the latest update on the status of the data and scratch space disk array, clusterstorage.
@@ -130,7 +130,7 @@ We appreciate your patience and will provide another update tomorrow evening.
 
 ***
 
-# MERCED data update (9/28/2020)
+MERCED data update (9/28/2020)
 Dear MERCED Users,
 
 We write to provide you with the latest update on the status of the data and scratch space disk array, clusterstorage.
@@ -145,7 +145,7 @@ We will provide another update tomorrow evening.
 
 ***
 
-#CLUSTER STORAGE UPDATE (09/24/2020)
+CLUSTER STORAGE UPDATE (09/24/2020)
 
 ALTHOUGH /data AND /scratch ARE NOT USER ACCESSIBLE, RESEARCH DATA IN THE FOLDERS IS SAFE. NO RESEARCH DATA IS LOST
 USERS SHOULD BE ABLE TO USE /home PARTITION FOR THEIR SIMULATIONS WHILE CIRT TEAM FINDS A WORKAROUND/FIX
@@ -157,7 +157,7 @@ OIT has confirmed that the clusterstorage connected to MERCED cluster is unstabl
 
 ***
 
-# Clusterstorage is back online (09/21/2020)
+Clusterstorage is back online (09/21/2020)
 /data and /scratch partitions should be available for jobs.
 CIRT Team is closely monitoring the status of clusterstorage
 
@@ -167,18 +167,18 @@ Users are encouraged to report any errors [here](https://ucmerced.service-now.co
 
 ***
 
-# *** CLUSTERSTORAGE CRASHED EARLIER TODAY (09/23/2020) ***
+*** CLUSTERSTORAGE CRASHED EARLIER TODAY (09/23/2020) ***
 *** CIRT TEAM IS ACTIVELY WORKING ON RESOLVING THIS ISSUE ***
 *** USERS WILL NOT BE ABLE TO ACCESS /data AND /scratch BECAUSE OF THE CRASH *** *** PLEASE MONITOR THIS SPACE AND MERCED LOGIN PAGE FOR UPDATES ***
 ***
 
-# Clusterstorage is back online (09/21/2020)
+Clusterstorage is back online (09/21/2020)
 /data and /scratch partitions should be available for jobs.
 CIRT team is investigating the root cause and working with vendors to diagnose the issue
 
 ***
 
-#*** CLUSTERSTORAGE CRASHED EARLIER TODAY (09/21/2020) ***
+*** CLUSTERSTORAGE CRASHED EARLIER TODAY (09/21/2020) ***
 
 *** CIRT TEAM IS ACTIVELY WORKING ON RESOLVING THIS ISSUE *** 
 *** USERS WILL NOT BE ABLE TO ACCESS /data AND /scratch BECAUSE OF THE CRASH *** 
@@ -187,7 +187,7 @@ CIRT team is investigating the root cause and working with vendors to diagnose t
 
 ***
 
-#*** CLUSTERSTORAGE IS BACK ONLINE AND FUNCTIONAL ***
+ *** CLUSTERSTORAGE IS BACK ONLINE AND FUNCTIONAL ***
 
 *** /DATA AND /SCRATCH SHOULD BE AVAILABLE FOR JOBS ***
 *** CIRT TEAM IS FURTHER INVESTIGATING THE ROOT CAUSE ***
@@ -195,7 +195,7 @@ CIRT team is investigating the root cause and working with vendors to diagnose t
 
 ***
 
-#*** CLUSTERSTORAGE CRASHED EARLIER TODAY (09/17/2020) ***
+*** CLUSTERSTORAGE CRASHED EARLIER TODAY (09/17/2020) ***
 
 *** CIRT TEAM IS ACTIVELY WORKING ON RESOLVING THIS ISSUE ***
 *** USERS WILL NOT BE ABLE TO ACCESS /data AND /scratch BECAUSE OF THE CRASH ***
@@ -211,8 +211,8 @@ Your user quotas on
 * /data + /scratch = 768G
 * /qsb (if your group has access to this storage unit) = 256G
 
-### On login, you should see your quota for HOME path.
-### IF you are over your quota limit, you will see an asterisk on login as shown -
+On login, you should see your quota for HOME path.
+IF you are over your quota limit, you will see an asterisk on login as shown -
 ```shell
 ==============================================================================$`
 `Disk quotas for user schadalapaka (uid 662):`
@@ -249,7 +249,7 @@ Please let us know if you have any questions/concerns.
 
 ***
 
-# EXTENDING MERCED CLUSTER MAINTENANCE TO SEP 10th 2020
+EXTENDING MERCED CLUSTER MAINTENANCE TO SEP 10th 2020
 
 Dear Research Computing Users,
 MERCED cluster will be back online and available to researchers sometime on  09/10/2020.
@@ -257,7 +257,7 @@ CIRT team is in the last leg of the upgrades - expanding capacity, implementing 
 We appreciate your patience.
 ***
 
-# EXTENDING MERCED CLUSTER MAINTENANCE TO SEP 8th 2020
+EXTENDING MERCED CLUSTER MAINTENANCE TO SEP 8th 2020
 Dear Research Computing Users -
 
 **The current MERCED Cluster maintenance window is extended to next Tuesday (September 8, 2020).**
@@ -271,7 +271,7 @@ We appreciate your patience.
 ***
 
 
-# UPCOMIMG MAINTENANCE FOR MERCED CLUSTER FROM 22nd August 2020 - 30th August 2020.
+UPCOMIMG MAINTENANCE FOR MERCED CLUSTER FROM 22nd August 2020 - 30th August 2020.
 
 MERCED cluster will be in MAINTENANCE mode from 6 am 22nd August to 10 pm 30th August. 
 
@@ -300,14 +300,14 @@ For any questions or concerns re. maintenance, you might reach out to schadalapa
 
 ***
 
-# August 10 2020
+ August 10 2020
 ### Fixed MERCED login access via `mrcdlogin` node
 
 All users çan now access MERCED via the login node `mrcdlogin`. The issue of hanging while attempting to log in is resolved. Users are also able to resume activity on MERCED's `JupyterHub`.
 
 ***
 
-# August 7 2020
+August 7 2020
 ### Catastrophic Crash and Data Loss on QSB Storage
 
 It appears to us that the QSB Storage Unit (`/qsb`) had fatal crashes (possibly hardware crashes) yesterday.
@@ -323,12 +323,12 @@ We apologize for the inconvenience.
 
 ***
 
-# August 7 2020
+August 7 2020
 **QSB Storage Unit had unexpected reboots on 08/06/2020. CIRT team is working on
 identifying and resolving the issues - please see this space for updates.****
 
-# June 3 2020 
-## do_IRQ messages on MERCED Cluster
+June 3 2020 
+do_IRQ messages on MERCED Cluster
 Hope you're doing well and are keeping safe.
 
 As some of you might have noticed, occasionally these messages are showing up on MERCED cluster command line -
@@ -340,11 +340,12 @@ Until we can reboot the head node during the next maintenance cycle, the "do_IRQ
 Sorry for the inconvenience and thank you for your cooperation.
 ***
 
-# May 29 2020 7 pm
-## MERCED Cluster Online 
+May 29 2020 7 pm
+MERCED Cluster Online 
 MERCED Cluster should be fully functional and operational now.
-# May 29 2020 4:30 pm
-## Update: MERCED Cluster not accessible
+
+May 29 2020 4:30 pm
+Update: MERCED Cluster not accessible
 Update:
 
 Facilities has addressed the water leak in SE2 and has restored power to the space. However, OIT power distribution equipment was damaged and is in the process of being replaced. 
@@ -355,8 +356,8 @@ Another update will be provided by 6pm.
 
 ***
 
-# May 29 2020
-## MERCED Cluster not accessible
+May 29 2020
+MERCED Cluster not accessible
 Dear Research Computing Users,
 
 Due to a water leak in Science and Engineering 2, Facilities has disconnected the power to the main network distribution facility, disrupting network service to the entire building. OIT is on site assessing the situation. 
@@ -378,7 +379,7 @@ Please stay safe, stay indoors during this time!
 
 ***
 
-# May 18 2020
+May 18 2020
 ## Change in zoom-in hours schedule for Summer 2020 
 
 Attend HPC  walk-in sessions: Every Monday and Thursday from 2 pm to 3 pm     
@@ -386,7 +387,7 @@ Zoom coordinates: On MERCED cluster login page        |
 
 
 
-# May 7 2020
+May 7 2020
 ## Change in zoom-in hours schedule for Spring 2020
 HPC ZOOM-IN HOURS SPRING 2020 !!
 
@@ -404,7 +405,7 @@ Happy Computing!
 
 ***
 
-# May 3, 2020
+May 3, 2020
 ## Update on node failure errors
 As some of you might have noticed, there was a brief outage on MERCED cluster earlier today. Research Computing staff has identified and resolved the issue along with completing the tasks associated with scheduled emergency maintenance for the cluster.
 At this point, we expect MERCED to operate normally but will continue to monitor the situation closely over the weekend.
@@ -412,7 +413,7 @@ What this means for you?
 You can login to the cluster and run your jobs on the cluster as usual. Please let us know if you see any issues in doing so.
 ***
 
-# April 28, 2020
+April 28, 2020
 ## Node failure errors
 As some of you have noticed and reported, we are having communication issues on the MERCED cluster between the compute nodes and the slurm scheduler, which allocates cluster resources. (The message in slurm error logs in these instances will indicate incorrectly that there is a "NODE FAILURE" see below for error message.)
 To fix this issue, we are having to upgrade MERCED cluster kernel and the process requires us to shutdown the cluster for a 2-day period in the next week. 
@@ -425,14 +426,14 @@ Error Message:
 
 ***
 
-# April 23, 2020
-## New login node for MERCED cluster
+April 23, 2020
+New login node for MERCED cluster
 MERCED has a new login node ! Want to help testing it ? Try            
 ssh YOURUSERNAME@mrcdlogin with MERCED password and report any issues 
 ***
 
-# April 17, 2020
-## QSB Storage is Back on MERCED
+April 17, 2020
+QSB Storage is Back on MERCED
 
 Dear QSB Storage Users,
 
@@ -450,14 +451,14 @@ Let us know if you have any questions.
 
 ***
 
-**#April 17, 2020**
+**April 17, 2020**
 Change in HPC walk-in hours for this week: 10:30 am - 11:30 am 
 Regular timings: 10:30 am - 12 noon
 
 ***
 
-# April 15,2020
-## Update on MERCED Cluster VPN Access
+April 15,2020
+Update on MERCED Cluster VPN Access
 
 Hi Research Computing Users,
 
@@ -467,8 +468,8 @@ This work should not be disruptive; If you are logged into MERCED cluster today 
 
 ***
 
-# April 06, 2020
-## Update on QSB Storage
+April 06, 2020
+Update on QSB Storage
 
 Dear Research Computing Users,                             
 
@@ -482,9 +483,9 @@ Take care and stay safe/healthy,
 
 ***
 
-# April 2, 2020
+April 2, 2020
 HPC Walk-In Schedule: Fridays 10:30 am - 12 noon PT. Zoom Coordinates on MERCED cluster login screen.
-# March 30, 2020
+March 30, 2020
 
 Cluster have been moved to the research container.
  - Original plan was week of week of March 16, 
@@ -495,8 +496,7 @@ Cluster have been moved to the research container.
  - Storage nodes (Medusozoa, Tibet, QSB, ....) arer nont currently guarantied to work
 
 
-
-# November 2019 Maintenance
+November 2019 Maintenance
 
 Merced cluster was under maintenance from Nov 4th to November 11th; The research IT team was a trying to solve a number of issues; mostly: 
  - Recurrent "Node Failures" seen by jobs, especially MPI Jobs. 
@@ -517,7 +517,7 @@ We are still monitoring the cluster, and unfortunately are still seeing the "Nod
 
 Os Updates were also necessary for the move the new research facility once we have taken possession of the new space and attach the more recent nodes to the cluster. 
 
-## Next steps
+Next steps
 
 There are still a couple of maintenance task that need to be done on a couple of machines; but do not need the cluster to be powered off. In particular all the storage nodes attached to Merced need to be patched and upgraded as well, as some have not seen updates in more than 2 years as well. 
 
