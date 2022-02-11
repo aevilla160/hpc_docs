@@ -68,7 +68,7 @@ The available queues are designed to balance use and accessibility to the cluste
 | std.q  | 24 hrs        | 400       | This queue is a general use queue                            |
 | fast.q | 4 hrs         | 400       | This queue is for fast jobs                                  |
 | long.q | 14 days       | 400       | This queue is for long-running jobs                          |
-| gpu.q  | 14 days       | unlimited | This queue is used to request nodes with available GPU cards |
+| gpu.q  | 7 days       | unlimited | This queue is used to request nodes with available GPU cards |
 
 
 
