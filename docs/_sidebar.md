@@ -12,8 +12,8 @@
         - [Environment](p_modules.md)
         - [Pinnacles FAQ](pinnacles_FAQ.md)
     - [News](news.md)
-- Submit a job
-    - [Running jobs ](running_jobs.md)
+- Running jobs
+    - [Submit a job ](running_jobs.md)
 - Off-Campus Cluster
     - [Wave](wave.md)
   

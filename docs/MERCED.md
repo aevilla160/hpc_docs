@@ -18,21 +18,21 @@ exceed this baseline. The costs and policies for recharge were
 developed with consultation with the Committee on Research Computing
 (CoRC) and approved by the campus Recharge Committee.
 
-Starting on 1/1/2022, each current MERCED cluster user will receive a baseline allocation of 100 core-hours<sup>(1)</sup> per month. If users stay below their baseline hours, no charge will occur. However, faculty PIs responsible for the user accounts will be charged monthly for core-hour usage over the baseline allocation.
+Starting on 1/1/2022, each current MERCED cluster user will receive a baseline allocation of **100 core-hours**<sup>(1)</sup> per month. If users stay below their baseline hours, no charge will occur. However, faculty PIs responsible for the user accounts will be charged monthly for core-hour usage over the baseline allocation.
 
-__Faculty PIs__: Please ensure that the user accounts listed in your
-[account](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23) are accurate
-before EOB __12/21/2021__. Email schadalapaka@ucmerced.edu for instructions.
+__Faculty PIs__: Please ensure that the user accounts listed in your [account](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23) are accurate before EOB __12/21/2021__. 
+Email schadalapaka@ucmerced.edu for instructions.
 
-What is the unit and of cost service? MERCED cluster cycles are charged by core-hours.
+What is the unit of cost service? MERCED cluster cycles are charged by **core-hours**.
 
-(1) A core-hour is a single compute core<sup>(2)</sup> used for one hour (a core-hour) and 2G of RAM. The total cost in core-hours for a complete computation is:
+-  A core-hour is a single compute core<sup>(2)</sup> used for one hour (a core-hour) and 2G of RAM. The total cost in core-hours for a complete computation is:
 ```text
-Total Cost ($) = # of core-hours x Duration (wall clock hours) x Cost per core-hour
+Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-hour)
 ```
-(2) A core is an individual processor: the part of a computer that executes programs. (Fun Fact: The MERCED cluster has about 3100 cores.)
+!> **For UC users, the cost per core-hour is $0.01, and the cost for non-UC external users is $0.02.**
 
-For UC users, the cost per core-hour is $0.01 and the cost for non-UC external users is $0.02.
+-  A core is an individual processor: the part of a computer that executes programs. (Fun Fact: The MERCED cluster has about 3100 cores.)
+
 
 > I don’t want to pay for MERCED what are my options?
 

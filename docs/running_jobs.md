@@ -1,6 +1,6 @@
 ## Running jobs on clusters
 
-The command `sbatch`, which is shown below, is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler include those shown in the table below.
+The command `sbatch`, is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler are shown in the table below.
 
 |Command|Description|
 |--|--|
@@ -11,29 +11,26 @@ The command `sbatch`, which is shown below, is used to submit jobs to the queue.
 
 !>The listed queue resource limitations are based on planned limitations. Queue resource limitations may vary for specific users and user groups according to node buy-in, project needs, current resource use, and/or administrative needs. Contact the system administration team for clarification or to request a variance from standard limitations.
 
-Typical use of the queue system begins by writing a submission script that will be handed to the queue and scheduling system. The submission script is comprised of two sections: (1) a list of SGE options and resource requirements to guide the scheduler’s assignment of the job to one or more production nodes; and (2) a standard shell script that carries out the user desired calculation. To submit a submission script call `my_job.sub` to the queue, one uses the following command:
+Typical use of the queue system begins by writing a submission script that will be handed to the queue and scheduling system. The submission script is comprised of two sections: (1) a list of SGE options and resource requirements to guide the scheduler’s assignment of the job to one or more production nodes; and (2) a standard shell script that carries out the user desired calculation. To submit a job script, for example submit `my_job.sub` to the queue, one uses the following command:
 ```bash
 sbatch my_job.sub
 ```
 The `my_job.sub` sample script for MERCED is provided below
 ```bash
 #!/bin/bash  
-#SBATCH --mail-user=UCMercedNetID@ucmerced.edu  
-#SBATCH --mail-type=ALL  
-#SBATCH --nodes=1  
-#SBATCH --ntasks=20
-#SBATCH --partition std.q  
-#SBATCH --mem=96G  
+#SBATCH --nodes=1  #asked for 1 node
+#SBATCH --ntasks=20 #asked for 20 cores
+#SBATCH --partition std.q  #this job will submit to std.q
+#SBATCH --mem=96G  #this job is asked for 96G of total memory
 #SBATCH --time=0-00:15:00 # 15 minutes  
-#SBATCH --output=test1.qlog  
-#SBATCH --job-name=test1  
+#SBATCH --output=test1.qlog  #the output information will put into test1.qlog file
+#SBATCH --job-name=test1  #the job name
 #SBATCH --export=ALL
 
 # This submission file will run a simple set of commands. All stdout will
 # be captured in test1.qlog (as specified in the Slurm command --output above).
 # This job file uses a shared-memory parallel environment and requests 20
-# cores (--ntasks option) on a single node(--nodes option). This job will also run a global #script called
-# run. For more info on this script, cat /usr/local/bin/merced_node_print.
+# cores (--ntasks option) on a single node(--nodes option). For more info on this script, cat /usr/local/bin/merced_node_print.
 #  
 
 whoami
@@ -41,8 +38,8 @@ whoami
 The `my_job.sub` sample script for Pinnacles is provided below, the job scripts for the two machines look quite similar, however, they have different partition names and time limits:
 ```bash
 #!/bin/bash
-#SBATCH --mail-user=UCMercedNetID@ucmerced.edu  
-#SBATCH --mail-type=ALL  
+##SBATCH --mail-user=UCMercedNetID@ucmerced.edu  
+##SBATCH --mail-type=ALL  #uncomment the first two lines if you want to receive the email notifications
 #SBATCH --nodes=1    # request only 1 node
 #SBATCH --partition test      # this job will be submitted to test queue
 #SBATCH --time=0-00:15:00 # 15 minute
