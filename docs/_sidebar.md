@@ -15,5 +15,6 @@
 - Running jobs
     - [Submit a job ](running_jobs.md)
 - Off-Campus Cluster
-    - [Wave](wave.md)
+    - [Additional resources](additional.md)
+    - [HPC@UC](hpc_uc.md)
   
