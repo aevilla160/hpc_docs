@@ -1,4 +1,4 @@
-- HPC resources
+- [HPC resources](README.md)
 - On-campus cluster
 
     - [MERCED](MERCED.md)
@@ -12,6 +12,7 @@
         - [Environment](p_modules.md)
         - [Pinnacles FAQ](pinnacles_FAQ.md)
     - [News](news.md)
+    - [Faculty communications](commun.md)
 - Running jobs
     - [Submit a job ](running_jobs.md)
 - Off-Campus Cluster
