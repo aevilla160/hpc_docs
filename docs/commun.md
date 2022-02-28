@@ -1,5 +1,7 @@
 ## 2/28/2022
 
+Subject: CIRT Recharge Center Hiatus - Waiving Recharge Costs
+
 Dear MERCED cluster PIs -
 
  
@@ -33,6 +35,9 @@ Once again, I am happy to discuss any questions you might have – you can sched
 
  
 ## 1/1/22-1/15/22
+
+Subject: MERCED cluster core-hour usage and cost report
+
 Dear MERCED cluster PIs –
 
 
