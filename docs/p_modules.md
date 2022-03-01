@@ -6,6 +6,20 @@ Additionally, users may build code locally in one’s account so long as such co
 
 | Modules   | Version | website                              |
 |:----------|:--------|:-------------------------------------|
+| gatk | 4.2.2 | [website](https://github.com/broadinstitute/gatk/releases) |
+| bcftools	 | 1.12 | [website](https://bioconda.github.io/recipes/bcftools/README.html) |
+| stacks	 | 2.53 | [website](https://catchenlab.life.illinois.edu/stacks/) |
+| multiqc	 | 1.7 | [website](https://bioconda.github.io/recipes/multiqc/README.html) |
+| bwa-mem2 | 2.2.1 | [website](https://bioconda.github.io/recipes/bwa-mem2/README.html) |
+| Trinity	 |2.12.0 | [website](https://github.com/trinityrnaseq/trinityrnaseq) |
+| ncbi-blast | 2.12.0 | [website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) |
+| minimap2 | 2.14 | [website](https://github.com/lh3/minimap2) |
+| BRAKER	 | 2.1.6 | [website](https://github.com/Gaius-Augustus/BRAKER) |
+| OrthoFinder	 | 2.5.2 | [website](https://github.com/davidemms/OrthoFinder) |
+| iqtree	 | 2.1.3 | [website](http://www.iqtree.org) |
+| interproscan	 | 5.54-87.0| [website](https://www.ebi.ac.uk/interpro/download/) |
+| TransDecoder		 | 5.5.0 | [website](https://github.com/TransDecoder/TransDecoder/releases) |
+| Phyluce		 | 1.6.7 | [website](https://phyluce.readthedocs.io/en/latest/installation.html) |
 | anaconda3 | 2021.05 | [website](https://www.anaconda.com/) |
 | opencarp | 8.1 | [website](https://opencarp.org/) |
 | awscli | 1.16.308 | [website](https://aws.amazon.com/cli/) |
