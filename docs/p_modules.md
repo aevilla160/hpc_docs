@@ -70,6 +70,7 @@ There are 6 types of queues on Pinnacles, and each type of queue has its own con
 | medium      | 1d                      | 6hr          | 4         | 6          |
 | long        | 3d                      | 1d           | 4         | 3          |
 
+
 !> test queue has access to all node types. In order to test jobs on specific node types, please use Slurm `constraints` flag. 
 
 
