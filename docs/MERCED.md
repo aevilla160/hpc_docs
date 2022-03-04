@@ -15,18 +15,19 @@ The Cyber Infrastructure and Research Technologies (CIRT) team is aware that our
 This is a fluid situation, but we anticipate that costs will be waived through at least April 2022, and possibly beyond. Once details have been finalized, we will reach out again to inform you, and we will also provide all users with at least one month’s notice before recharges begin again. 
 
 
-__Faculty PIs__: Please ensure that the user accounts are active and provided the COA# [here](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23) before EOB __12/21/2021__. 
+__Faculty PIs__: Please ensure that the user accounts are active and provide the COA# [here](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23) before EOB __12/21/2021__. 
 Email schadalapaka@ucmerced.edu for instructions.
 
-What is the unit of cost service? MERCED cluster cycles are charged by **core-hours**.
+What is the unit of cost service? MERCED cluster cycles will be charged by **core-hours<sup>(1)</sup>**.
 
--  A core-hour is a single compute core<sup>(2)</sup> used for one hour (a core-hour) and 2G of RAM. The total cost in core-hours for a complete computation is:
+(1)  A core-hour is a single compute core<sup>(2)</sup> used for one hour (a core-hour) and 2G of RAM. The total cost in core-hours for a complete computation is:
 ```text
 Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-hour)
 ```
 !> **For UC users, the cost per core-hour is $0.01, and the cost for non-UC external users is $0.02.**
 
--  A core is an individual processor: the part of a computer that executes programs. (Fun Fact: The MERCED cluster has about 3100 cores.)
+(2)  A core is an individual processor: the part of a computer that executes programs. (The MERCED cluster has about 3100 cores.)
+
 
 
 > I don’t want to pay for MERCED what are my options?

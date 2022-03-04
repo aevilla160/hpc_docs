@@ -15,6 +15,7 @@
     - [Faculty communications](commun.md)
 - Running jobs
     - [Submit a job ](running_jobs.md)
+    - [Running R-and-MPI](running_R_mpi.md)
 - Off-Campus Cluster
     - [Additional resources](additional.md)
     - [HPC@UC](hpc_uc.md)
