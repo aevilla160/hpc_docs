@@ -8,7 +8,7 @@ and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing s
 
 
 ## MERCED recharge service <!-- {docsify-ignore} -->
-!>__ OIT-CIRT is in an immediate recharge hiatus, retroactive to January 1, 2022.__
+!>__OIT-CIRT is in an immediate recharge hiatus, retroactive to January 1, 2022.__
 
 The Cyber Infrastructure and Research Technologies (CIRT) team is aware that our recent move to a recharge model has been a pain point for some research groups, and we are working with the Provost’s office to obtain bridge funding to offset CIRT recharge costs for faculty. We will continue to waive all costs for faculty using CIRT recharge services, including costs for using MERCED cluster core-hours, until further notice. 
 
