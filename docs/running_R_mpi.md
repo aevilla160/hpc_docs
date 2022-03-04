@@ -39,7 +39,7 @@ Rscript Some_R_script.R
 
 - Assuming that you name the above script `my_Rjob.sub` you would submit it to the queue by running `sbatch my_Rjob.sub`. You can check the status of your job using `squeue -u <yourusername>`.
   
-## Running R across multiple nodes
+## Running R across multiple nodes <!-- {docsify-ignore} -->
 - When running R over multiple nodes we recommend using doMPI instead of doParallel, and starting your R process with `mpirun -np <number of cored>` Rscript myrscript.R
 
 ```bash
