@@ -7,7 +7,7 @@ module avail
 # run one of the following to load matlab module into your session
 module load matlab/<version>    # replace <version> with the one you want to use
 ```
-### Running Matlab interactively
+### Running Matlab interactively<!-- {docsify-ignore} -->
 !> Note: Do not run computationally intensive Matlab session on login node.
 
 Users can start an interactive command line session of Matlab using
@@ -17,7 +17,7 @@ matlab -nodisplay -nosplash
 
 To exit an interactive Matlab session, enter `quit` or its equivalent `exit`, which will take users back to bash command prompt. (Check [terminate Matlab](https://www.mathworks.com/help/matlab/ref/quit.html) session)
 
-### Running interacive session on a compute node
+### Running interacive session on a compute node<!-- {docsify-ignore} -->
 
 User can also request compute node resource for running interactive jobs, the example command below is asking for 1 core from 1 node using `fast.q` partition for 15 mins. 
 ```
@@ -41,7 +41,7 @@ matlab -nodisplay -nosplash
 ```
 To exit the allocated node, type `exit` , and then it lead you back to the login node, type `exit` again, will exit the job.
 
-### Running Matlab jobs
+### Running Matlab jobs<!-- {docsify-ignore} -->
 
 Users can also run their Matlab script as a job on MERCED. Here is the `SLURM` submission file template for running various Matlab commands as jobs.
 
