@@ -38,3 +38,26 @@ Rscript Some_R_script.R
 **Line 9**: This line is actually running the R script. RScript is recommended over R CMD BATCH.
 
 - Assuming that you name the above script `my_Rjob.sub` you would submit it to the queue by running `sbatch my_Rjob.sub`. You can check the status of your job using `squeue -u <yourusername>`.
+  
+## Running R across multiple nodes
+- When running R over multiple nodes we recommend using doMPI instead of doParallel, and starting your R process with `mpirun -np <number of cored>` Rscript myrscript.R
+
+```bash
+#!/bin/bash
+##
+#SBATCH --partition=fast.q  ## queue based on wall-clock time limitation.
+#SBATCH --nodes=2 ## or "-N". Min noumber of nodes.
+#SBATCH --ntasks-per-node=24 ## Max. tasks per node (number of cores).
+##
+#SBATCH --job-name=myjob ## Name of Job in queue (Replace 'myjob')
+#SBATCH --mail-user=<myemail@example.com> ## (Replace <email address>)
+#SBATCH --mail-type=ALL
+module load openmpi-2.0/intel
+module load anaconda3
+source activate my-R
+
+## cores x nodes = 48 (update manually)
+## Repace 'my_example_code.R' file
+mpirun -np 48 --bind-to none Rscript my_example_code.R
+```
+
