@@ -55,7 +55,7 @@ either a PI Group or a user. Please review the following information
 prior to the consultation to help determine the best solution for your
 needs:
 * Faculty PIs __must__ complete and __sign__ an Export Control Attestation
-[form](https://it.ucmerced.edu/sites/it.ucmerced.edu/files/page/documents/principalinvestigator.exportcontrolattestation.v2017jan23.pdf)
+[form](https://ucmerced.box.com/s/e6pmv4cv59tz76aat5re1kzvg23c0s09)
 prior to being given access to managed systems
 * Users can install any licensed software packages in their __home__
   directories on MERCED, and where appropriate for other systems. If
