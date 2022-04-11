@@ -1,3 +1,25 @@
+## 3/30/2022
+
+**Subject: Research Computing Webinar Recording**
+
+Dear PIs –
+
+You may be aware that OIT hosted a webinar on our research computing offerings a few weeks back. 
+
+I know how busy you must be, so I wanted to pass along the recorded options for the webinar as a resource to share with your colleagues and students. 
+
+Here is the link to access the webinar: https://ucm.edu/EO_ResearchComputingWebinar
+
+The webinar discusses our on- and off-campus research computing resources, our service model, and the various trainings and consultations OIT and the library offer for grad students, postdocs, and faculty. 
+
+It also has a Q&A section at the end that covers some other topics in some detail.
+
+Please feel free to share the webinar recording with your colleagues and students who have questions about research computing on campus or are interested in learning more.
+
+Thank you, and I hope you’re well!
+
+
+
 ## 2/28/2022
 
 **Subject: CIRT Recharge Center Hiatus - Waiving Recharge Costs**
