@@ -5,7 +5,7 @@ Pinnacles cluster has RedHat Operating System.
 
 ## Facility statement <!-- {docsify-ignore} -->
 
-The NSF-MRI grant number # 2019144 funded Pinnacles cluster is available for all faculty projects at no cost. 
+The NSF-MRI grant number #2019144 funded Pinnacles cluster is available for all faculty projects at no cost. 
 
 Pinnacles cluster has the following compute node configurations: 
 * 40 regular Compute nodes with 2XIntel-28-Core Xeon Gold 6330 2.0GHz - 205W, each with 256GB RAM. 
