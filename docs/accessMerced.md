@@ -40,6 +40,6 @@ Once user login to MERCED,there are 2 folders (`data` and `scratch`) locate in `
 __30 days__ are removed from scratch. Use it as for jobs checkpoints or
 similar. Be sure to not leave any data that's of long-term importance to you under `scratch`.
 
-!>The `scratch` folder is purged periodically when the overall system storage reaches 85% of capacity or higher. Usually two weeks notification will go out by list-serve and the MOTD (message of the day, message shows on the login page to MERCED) will detail upcoming scratch data deletions (purges).
+!>The `scratch` folder is purged periodically when the overall system storage reaches 85% of capacity or higher. Please back-up your data to somewhere safe frequently.
 
 __Do not write files directly to `/tmp` on the head node__, as this may fill up disk space on the head node and cause trouble for everyone. Instead, use your own scratch directory for temporary files. Some codes may use `/tmp` by default and need to have the appropriate scratch directory configured.
