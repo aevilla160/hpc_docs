@@ -16,7 +16,7 @@ Once details have been finalized, we will reach out again to inform you, and we 
 Please note that during the recharge hiatus, CIRT will continue to monitor and record usage on the MERCED cluster toward our goal of operating as a recharge center. 
 However, faculty PIs will NOT be charged for core-hour usage on MERCED until recharge begins again.
 
-I am happy to discuss any questions you might have – you can schedule a one-on-one consultation with me here.
+I am happy to discuss any questions you might have – you can schedule a one-on-one consultation with me [here](https://arrangr.com/sarvani/rechargemeeting).
 
 
 ## 3/30/2022
