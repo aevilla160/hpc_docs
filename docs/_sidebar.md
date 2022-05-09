@@ -1,4 +1,5 @@
 - [HPC resources](README.md)
+  - [User policy](policy.md)
 - On-campus cluster
 
     - [MERCED](MERCED.md)
