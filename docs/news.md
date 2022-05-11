@@ -1,3 +1,5 @@
+<!-- {docsify-ignore-all} -->
+
 ## CIRT Recharge Center Hiatus Continues 4/25/2022
 
 OIT-CIRT recharge hiatus is still in effect.
