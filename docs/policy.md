@@ -18,3 +18,7 @@
 
 
 ## Software and services
+1. Software on clusters should directly support research/learning. Users are generally not restricted from downloading/compilling software in their own `home` directory for use in research or teaching. Users are responsible for the software they installed or compiled.
+2. Users choosing to self-install software have the responsibility to use them from trustworthy sources. These might include common community repositories such as CRAN, CPAN, PyPy, and Anaconda; community-acceptable applications; or known-to-the-user software packages. Users should avoid downloading pre-compiled binaries or containers from unknown sources.
+3. Requesting CIRT to install/compile software. Users may request CIRT to build/install software in system for community use. **CIRT does not have the people resources to accept all requests and must prioritize**. CIRT can also deny software installation request that is not suitable for the environment.
+4. No guarantee of long-term maintenance of specific software/services. System-wide software new installation, security concerns, and other new patches added to the system evolve over time and any of these changed may result in a specific a particular software/service to be unsupportable. Any such situation happen the corresponding software will be removed from the infrastructure.
