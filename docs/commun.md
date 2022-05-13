@@ -1,11 +1,11 @@
 ## 5/13/2022
 
-**Subject: Pinnacles maintenance (06/06/2022-06/07/2022)
+**Subject: Pinnacles maintenance (06/06/2022-06/07/2022)**
 
 Dear Research Computing Users –
 CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
 
-When?
+<ins>When?</ins>
 
 Monday, June 6, 2022 - Tuesday June 7, 2022.
 
