@@ -1,3 +1,39 @@
+## 5/13/2022
+
+**Subject: Pinnacles maintenance (06/06/2022-06/07/2022)
+
+Dear Research Computing Users –
+CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
+
+When?
+
+Monday, June 6, 2022 - Tuesday June 7, 2022.
+
+Pinnacles cluster will be operational starting June 8, 2022.
+
+Impact
+
+Pinnacles cluster will be offline starting June 6, 2022.
+
+Jobs
+
+Please plan your jobs ahead to avoid any disruptions. We encourage you to build in checkpoints for any work running during this period.
+
+Planning for this maintenance
+
+1. Build in checkpoints for any work running during this period, especially for jobs on Pinnacles PI-owned/ long.q
+
+2. If you see message “Req node not available” for your job, it is because CIRT has reserved resources for jobs to wind-down before maintenance period. If you need to run your jobs before the maintenance, reduce your wall-clock duration in submission script and re-submit.
+
+Next Steps
+
+CIRT will send an ALL CLEAR email after successful maintenance.
+
+
+For updates during the maintenance window, we encourage you to monitor CIRT News [here](news.md).
+
+
+
 ## 4/25/2022
 
 **Subject: CIRT Recharge Center Hiatus Continues**
