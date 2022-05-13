@@ -15,17 +15,17 @@ Impact
 
 Pinnacles cluster will be offline starting June 6, 2022.
 
-Jobs
+<ins>Jobs</ins>
 
 Please plan your jobs ahead to avoid any disruptions. We encourage you to build in checkpoints for any work running during this period.
 
-Planning for this maintenance
+<ins>Planning for this maintenance</ins>
 
 1. Build in checkpoints for any work running during this period, especially for jobs on Pinnacles PI-owned/ long.q
 
 2. If you see message “Req node not available” for your job, it is because CIRT has reserved resources for jobs to wind-down before maintenance period. If you need to run your jobs before the maintenance, reduce your wall-clock duration in submission script and re-submit.
 
-Next Steps
+<ins>Next Steps</ins>
 
 CIRT will send an ALL CLEAR email after successful maintenance.
 

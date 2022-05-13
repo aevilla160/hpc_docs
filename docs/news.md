@@ -3,7 +3,7 @@
 
 CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
 
-When?
+<ins>When?</ins>
 
 Monday, June 6, 2022 - Tuesday June 7, 2022.
 
