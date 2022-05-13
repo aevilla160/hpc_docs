@@ -1,6 +1,21 @@
 <!-- {docsify-ignore-all} -->
+## Pinnacles maintenance (06/06/2022-06/07/2022)<!-- {docsify-ignore-all} -->
 
-## CIRT Recharge Center Hiatus Continues 4/25/2022 <!-- {docsify-ignore-all} -->
+CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
+
+When?
+
+Monday, June 6, 2022 - Tuesday June 7, 2022.
+
+Pinnacles cluster will be operational starting June 8, 2022.
+
+Pinnacles cluster will be offline starting June 6, 2022.
+
+Please plan your jobs ahead to avoid any disruptions. We encourage you to build in checkpoints for any work running during this period.
+
+CIRT will send an ALL CLEAR email after successful maintenance.
+
+## CIRT Recharge Center Hiatus Continues 4/25/2022
 
 
 OIT-CIRT recharge hiatus is still in effect.
