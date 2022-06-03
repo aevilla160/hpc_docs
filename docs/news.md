@@ -1,3 +1,38 @@
+<!-- {docsify-ignore-all} -->
+## Pinnacles maintenance (06/06/2022-06/07/2022)<!-- {docsify-ignore-all} -->
+
+CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
+
+<ins>When?</ins>
+
+Monday, June 6, 2022 - Tuesday June 7, 2022.
+
+Pinnacles cluster will be operational starting June 8, 2022.
+
+Pinnacles cluster will be offline starting June 6, 2022.
+
+Please plan your jobs ahead to avoid any disruptions. We encourage you to build in checkpoints for any work running during this period.
+
+CIRT will send an ALL CLEAR email after successful maintenance.
+
+## CIRT Recharge Center Hiatus Continues 4/25/2022
+
+
+OIT-CIRT recharge hiatus is still in effect.
+
+We will continue to waive all costs for faculty using CIRT recharge services, including costs for using MERCED cluster core-hours, until further notice.
+
+As a reminder, this recharge hiatus is retroactive to January 2022.This continues to be a fluid situation, but we anticipate that costs will be waived through at least July 2022, and possibly beyond.
+
+
+Once details have been finalized, we will reach out again to inform you, and we will also provide all users with at least one month’s notice before recharges begin again.
+
+
+
+Please note that during the recharge hiatus, CIRT will continue to monitor and record usage on the MERCED cluster toward our goal of operating as a recharge center.
+
+However, faculty PIs will NOT be charged for core-hour usage on MERCED until recharge begins again.
+
 
 ## do_IRQ messages on MERCED Cluster 02/11/2021 <!-- {docsify-ignore-all} -->
 
