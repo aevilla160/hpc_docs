@@ -65,7 +65,7 @@ There are 6 types of queues on Pinnacles, and each type of queue has its own con
 |:------------|:------------------------|:-------------|:----------|:-----------|
 | test        | 1hr                     | 5min         | 2         | 1          |
 | bigmem      | 3d                      | 1hr          | 2         | 2          |
-| gpu         | 3d                      | 1hr          | 2         | 2          |
+| gpu         | 3d                      | 1hr          | 2         | 4          |
 | short       | 6hr                     | 1hr          | 4         | 12         |
 | medium      | 1d                      | 6hr          | 4         | 6          |
 | long        | 3d                      | 1d           | 4         | 3          |
