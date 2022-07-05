@@ -18,9 +18,6 @@ CoRC comprises faculty members from all UC Merced schools.
 
 You can start the step-1 access process, but in order to receive an account, you need approval from a UC Merced PI. Every account on Pinnacles is associated with that of a faculty PI.
 
-> __I created a Pinnacles access request form, when will I know if my request is approved/not?__
-
-Committee on Research Computing (CoRC) will meet monthly to review Pinnacles access requests. Please reach out to cirt ucmerced.edu for access request status questions.
 
 > __My access request for Pinnacles was denied – what are my next steps?__
 
