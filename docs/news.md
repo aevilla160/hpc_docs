@@ -1,4 +1,11 @@
 <!-- {docsify-ignore-all} -->
+## CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 <!-- {docsify-ignore-all} -->
+
+The CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 and our level of campus support during that time will be extremely limited.
+The best way to request support is always to open an appropriate ServiceHub request here. On these dates, we will only be available to address high impact issues impacting multiple research groups. Other requests will be addressed starting July 18.
+Please plan ahead for any support you might need from CIRT!
+
+
 ## Pinnacles maintenance (06/06/2022-06/07/2022)<!-- {docsify-ignore-all} -->
 
 CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
