@@ -3,4 +3,4 @@ Some researchers may have needs that exceed our campus computing capabilities. T
 
 Information about additional resources through XSEDE and HPC@UC Program can be found [here](hpc_uc.md). 
 
-Please not that XSEDE ends on August 31,2022 and will be transitioning to ACCESS. For more information, please read the XSEDE to ACCESS [website](https://www.xsede.org/advancetoaccess).
+Please note that XSEDE ends on August 31,2022 and will be transitioning to ACCESS. For more information, please read the XSEDE to ACCESS [website](https://www.xsede.org/advancetoaccess).
