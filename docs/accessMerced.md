@@ -38,7 +38,7 @@ Once user login to MERCED,there are 2 folders (`data` and `scratch`) locate in `
 * Store in `data`, all that is research grade data that need to be backed-up and safe.
 * Put in `scratch`, everything that is temporary; all files older than
 __30 days__ are removed from scratch. Use it as for jobs checkpoints or
-similar. Be sure to not leave any data that's of long-term importance to you under `scratch`.
+similar. Be sure to **not** leave any data that's of long-term importance to you under `scratch`.
 
 !>The `scratch` folder is purged periodically when the overall system storage reaches 85% of capacity or higher. Please back-up your data to somewhere safe frequently.
 
