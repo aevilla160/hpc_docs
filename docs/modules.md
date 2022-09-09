@@ -65,8 +65,8 @@ The available queues are designed to balance use and accessibility to the cluste
 
 | Queue  | Max wall time | Max cores | Description                                                  |
 |:-------|:--------------|:----------|:-------------------------------------------------------------|
-| std.q  | 24 hrs        | 400       | This queue is a general use queue                            |
-| fast.q | 4 hrs         | 400       | This queue is for fast jobs                                  |
+| test  | 1 hrs        | 40       | This queue is for testing, max job limit is 2                            |
+| compute | 5 days         | 400       | This queue is for fast jobs                                  |
 | long.q | 14 days       | 400       | This queue is for long-running jobs                          |
 | gpu.q  | 7 days       | unlimited | This queue is used to request nodes with available GPU cards |
 
