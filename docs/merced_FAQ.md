@@ -68,7 +68,7 @@ Yes, please make sure keep the COA# information updated. Each user can also have
 
 >__Are the costs the same regardless of whether we purchased our own nodes or not?__
 
-The costs and the charges are for general Slurm partitions (example: fast.q, long.q, std.q) and not for PI-owned partitions (example: amartini.q, dstrubbe.q, qsb.q, skhatri3.q). That is, if users/groups purchased nodes for MERCED and are submitting jobs on PI/Group owned queues, users will not be charged for core-hours.
+The costs and the charges are for general Slurm partitions and not for PI-owned partitions (example: amartini.q, dstrubbe.q, qsb.q, skhatri3.q). That is, if users/groups purchased nodes for MERCED and are submitting jobs on PI/Group owned queues, users will not be charged for core-hours.
 
 >__How do we get access to the Pinnacles cluster?__
 
