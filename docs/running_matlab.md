@@ -19,9 +19,9 @@ To exit an interactive Matlab session, enter `quit` or its equivalent `exit`, wh
 
 ### Running interacive session on a compute node<!-- {docsify-ignore} -->
 
-User can also request compute node resource for running interactive jobs, the example command below is asking for 1 core from 1 node using `fast.q` partition for 15 mins. 
+User can also request compute node resource for running interactive jobs, the example command below is asking for 1 core from 1 node using `test` partition for 15 mins. 
 ```
-salloc --partition=fast.q --nodes=1 --ntasks-per-node=1 --time=00:15:00
+salloc --partition=test --nodes=1 --ntasks-per-node=1 --time=00:15:00
 ```
 After running the above command, `SLURM` will allocate a suitable resource for you with a JobID. For example:
 ```
@@ -49,8 +49,8 @@ Users can also run their Matlab script as a job on MERCED. Here is the `SLURM` s
 #! /bin/bash
 
 ##SBATCH --nodes=1
-#SBATCH --ntasks=24    # users could ask a max of 20 / 24 cores per node depending on MERCED hardware configuration
-#SBATCH -p fast.q 
+#SBATCH --ntasks=10    # users could ask a max of 20 or 24 cores per node depending on MERCED hardware configuration
+#SBATCH -p test 
 #SBATCH --mem=0  #This will use entire node memory
 ##SBATCH --time=0-00:15:00     # 15 minutes
 #SBATCH --output=regular.stdout

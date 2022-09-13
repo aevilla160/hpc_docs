@@ -16,7 +16,7 @@ source activate my-R
 - Here is an example job script 
 ```bash
 #!/bin/bash -l
-#SBATCH --partition fast.q
+#SBATCH --partition test
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
@@ -47,9 +47,9 @@ When running R over multiple nodes we recommend using doMPI instead of doParalle
 ```bash
 #!/bin/bash
 ##
-#SBATCH --partition=fast.q  ## queue based on wall-clock time limitation.
+#SBATCH --partition=test  ## queue based on wall-clock time limitation.
 #SBATCH --nodes=2 ## or "-N". Min noumber of nodes.
-#SBATCH --ntasks-per-node=24 ## Max. tasks per node (number of cores).
+#SBATCH --ntasks-per-node=20 ## Max. tasks per node (number of cores).
 ##
 #SBATCH --job-name=myjob ## Name of Job in queue (Replace 'myjob')
 #SBATCH --mail-user=<myemail@example.com> ## (Replace <email address>)

@@ -15,9 +15,9 @@ The job script then sets the variable `nCores` to be the total number of cores e
 #!/usr/bin/env bash
 
 #SBATCH --job-name=QE_EXAMPLE
-#SBATCH --partition=fast.q
+#SBATCH --partition=test
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=24
+#SBATCH --ntasks-per-node=20
 #SBATCH --time=00:30:00
 #SBATCH --constraint=ib
 #SBATCH --exclusive
