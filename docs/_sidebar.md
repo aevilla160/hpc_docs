@@ -19,6 +19,7 @@
     - [Running R-and-MPI](running_R_mpi.md)
     - [Running Quantum ESPRESSO](running_qr.md)
     - [Running Matlab](running_matlab.md)
+    - [Interactive Jupyter Notebook](running_jupyter.md)
 - Off-Campus Cluster
     - [Additional resources](additional.md)
     - [HPC@UC](hpc_uc.md)
