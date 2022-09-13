@@ -12,7 +12,7 @@ and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing s
 
 The Cyber Infrastructure and Research Technologies (CIRT) team is aware that our recent move to a recharge model has been a pain point for some research groups, and we are working with the Provost’s office to obtain bridge funding to offset CIRT recharge costs for faculty. We will continue to waive all costs for faculty using CIRT recharge services, including costs for using MERCED cluster core-hours, until further notice. 
 
-This is a fluid situation, but we anticipate that costs will be waived through at least April 2022, and possibly beyond. Once details have been finalized, we will reach out again to inform you, and we will also provide all users with at least one month’s notice before recharges begin again. 
+This is a fluid situation, but we anticipate that costs will be waived until further notice. Once details have been finalized, we will reach out again to inform you, and we will also provide all users with at least one month’s notice before recharges begin again. 
 
 
 __Faculty PIs__: Please ensure that the user accounts are active and provide the COA# [here](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23) before EOB __12/21/2021__. 
