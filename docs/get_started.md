@@ -27,7 +27,7 @@ _Note: node14, 19, 25, and 28 are no longer active._
 
 The table below listed all GPU nodes information from MERCED cluster.
 
-| Nodes  | feature                 | RAM   | Total cores pre nodes | InifiBand (IB) |
+| Nodes  | feature                 | RAM   | Total cores pre nodes | Infiniband (IB)|
 |--------|-------------------------|-------|-----------------------|----------------|
 | g01-04 | K20m,E5-2650_v3,big_mem | 257GB | 20                    | yes            |
 | g05-06 | P100,E5-2620_v4         | 128GB | 16                    | no             |
