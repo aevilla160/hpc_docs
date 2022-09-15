@@ -53,7 +53,7 @@ Additionally, users may build code locally in one’s account so long as such co
 | opencarp | 8.1 | [website](https://www.anaconda.com/) |
 | orca | 5.0.1 | [website](https://orca.security/) |
 | protobuf | 3.18.0 | [website](https://github.com/protocolbuffers/protobuf) |
-| quantum-espresso | 6.7 | [website](http://www.quantum-espresso.org/) |
+| quantum-espresso | 6.7-intel-test, 7.1 | [website](http://www.quantum-espresso.org/) |
 | samtools | 1.13 | [website](http://www.htslib.org/) |
 | scalapack | 2.1.0 | [website](http://www.netlib.org/scalapack/) |
 | vmd | 1.9.3 | [website](https://www.ks.uiuc.edu/Research/vmd/) |
