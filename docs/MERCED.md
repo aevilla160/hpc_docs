@@ -42,7 +42,7 @@ Once again, if you have any questions or concerns regarding MERCED
 cluster policies. Feel free to reach schadalapaka@ucmerced.edu.
 
 
-## Facility statement
+## Facility statement <!-- {docsify-ignore} -->
 
 A team of 17 UC Merced faculty prepared and submitted a Major Research Instrumentation (MRI) grant to the National Science Foundation (NSF) in early 2014. The NSF awarded this proposal in August 2014 (NSF Award ACI-1429783). Funding from the NSF-MRI grant and associated institutional cost sharing yields a total initial spending budget of $615,842. This MRI proposal requested support for acquisition of a high performance computing (HPC) system to support scientific computing research and training activities at UC Merced and in support of regional interactions with faculty and students at nearby institutions, including the University of the Pacific, California State University Fresno, and California State University Stanislaus. Individual research programs involving computing at UCM are especially diverse, ranging from quantum chemistry to the history of medieval China and from calculation-intensive femtosecond modeling of nanoscale friction to data-intensive statistical analysis of high-volume genomic data. As one might expect, the most advantageous computing environment for one these groups is often different than that for another. Recognizing this reality, and supporting experimentation with as-yet under-utilized hardware configurations for various applications, this funded NSF-MRI proposal supported the acquisition of the MERCED cluster. 
 
