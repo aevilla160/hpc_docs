@@ -42,18 +42,3 @@ Once again, if you have any questions or concerns regarding MERCED
 cluster policies. Feel free to reach schadalapaka@ucmerced.edu.
 
 
-## Facility statement <!-- {docsify-ignore} -->
-
-A team of 17 UC Merced faculty prepared and submitted a Major Research Instrumentation (MRI) grant to the National Science Foundation (NSF) in early 2014. The NSF awarded this proposal in August 2014 (NSF Award ACI-1429783). The  MERCED Cluster (Multi-Environment Research Computer for Exploration and Discovery Cluster) is a Linux cluster from Advanced Clustering Technologies, funded by this NSF Major Research Instrumentation grant.  It has:
-  - 100+ nodes with between 20 and 42 cores, from 128G to 256G per machine for a total of 2000+ core an 18T of RAM.
-  - 6 GPU Nodes with 12 NVIDIA Tesla P100
-  - 5 storage nodes for a total of 350TB
-All above nodes are interconnected via infiniband w/ RDMA for fast (25Gbits/s) and for low latency (sub ms) data transfer.
-
-In further support of the involved scientific research pillars, a key role of the MERCED cluster will be to bridge the gap between the modest sized resources that can reasonably be maintained by an individual faculty-led research group and extensive national supercomputer sites such as the XSEDE system (see www.xsede.org). More specifically, we anticipate MERCED offering a number of scientific and training opportunities. These include: 
-* the ability to rapidly reconfigure software and hardware as needed for specific projects; 
-* the option to run very long-time calculations that cannot be easily adapted to standard queues offered at most supercomputer environments; 
-* the ability to generate and analyze very large data sets locally, avoiding long communication delays; 
-* the capacity to train students on a full set of computational skills needed to be competitive for jobs as independent researchers. 
-
-We also note that demonstrated software integrity, stability, and scalability are often a required component of allocation requests at major supercomputer sites. The MERCED cluster will provide the necessary resources to carry out such validation studies locally at UC Merced. Finally, the MERCED cluster will provide outstanding support for training and education. As mentioned above, HPC related research plays an important role in the work carried out in the groups at UC Merced. In addition to our Ph.D. and postdoctoral training programs, UC Merced has an active record of undergraduate education and research. Many of the senior personnel of this proposal are also involved with REU and undergraduate research mentoring programs that focus on scientific computing. The MERCED cluster will provide an excellent resource for those programs. We also expect the MERCED cluster to be used by students taking courses related to scientific computing.
