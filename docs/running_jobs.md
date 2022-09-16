@@ -20,8 +20,10 @@ The `my_job.sub` sample script for MERCED is provided below
 #!/bin/bash  
 #SBATCH --nodes=1  #asked for 1 node
 #SBATCH --ntasks=20 #asked for 20 cores
-#SBATCH --partition compute  #this job will submit to compute partition
+#SBATCH --partition test  #this job will submit to compute partition
 #SBATCH --mem=96G  #this job is asked for 96G of total memory
+# #SBATCH --constraint=ib # uncomment this line if you need access to nodes with IB connections
+# #SBATCH --gres=gpu:X # uncomment this line if you need GPU access, replace X with number of GPU you need
 #SBATCH --time=0-00:15:00 # 15 minutes  
 #SBATCH --output=test1.qlog  #the output information will put into test1.qlog file
 #SBATCH --job-name=test1  #the job name
