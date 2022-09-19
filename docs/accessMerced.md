@@ -17,7 +17,7 @@ ssh <username>@merced.ucmerced.edu
 ```
 Using `ssh` to connect to MERCED places a user on the login node. __Do not run computationally intensive processes on the login node__. File preparation/editing, compiling, simple analyses, and other low computational cost activities are appropriate on the login node, but, again, other types of work should be submitted to the cluster via the available queue system. Users may also connect to MERCED using an x-terminal to spawn graphics based programs such as gnuplot, gimp, _etc_. For more information using x-terminals for such uses, contact the MERCED system administration team.
 
-## File system
+## File systems
 In the following, we will assume you have some familiarity with linux; if you do not, feel free to book a consultation with the IT team, but a lot of resources are available on the internet.
 
 After login in on the merced cluster you can run `ls` command
@@ -42,4 +42,14 @@ similar. Be sure to **not** leave any data that's of long-term importance to you
 
 !>The `scratch` folder is purged periodically when the overall system storage reaches 85% of capacity or higher. Please back-up your data to somewhere safe frequently.
 
+There are also secondary file systems attached to MERCED that are associated with particular research groups or departments.
+
+|Folder|space|
+|--|--|
+|`/qsb/<UCMID>/`|256G|
+|`/home/<UCMID>/medusozoa`|Determined By PI|
+|`/home/<UCMID>/conness`|Determined By PI|
+|`/home/<UCMID>/branchinecta`|Determined By PI|
+
 __Do not write files directly to `/tmp` on the head node__, as this may fill up disk space on the head node and cause trouble for everyone. Instead, use your own scratch directory for temporary files. Some codes may use `/tmp` by default and need to have the appropriate scratch directory configured.
+
