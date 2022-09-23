@@ -53,3 +53,6 @@ There are also secondary file systems attached to MERCED that are associated wit
 
 __Do not write files directly to `/tmp` on the head node__, as this may fill up disk space on the head node and cause trouble for everyone. Instead, use your own scratch directory for temporary files. Some codes may use `/tmp` by default and need to have the appropriate scratch directory configured.
 
+## Borgstore (BeeGFS)
+Borgstore is only available on nodes with Infiniband, all of the partitions contain a mixture of nodes of InfiniBand and non-InfiniBand nodes. If users want to submit jobs while at the Borgstore folder, the slurm option of `#SBATCH --constraint=ib` should be added to the job script. Example job script can be found [here](running_jobs.md). 
+
