@@ -23,4 +23,5 @@
 - Off-Campus Cluster
     - [Additional resources](additional.md)
     - [HPC@UC](hpc_uc.md)
+- [Additional resources](add_resources.md)
 - [Suggestions?](contribute.md)
