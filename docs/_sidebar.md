@@ -21,7 +21,10 @@
     - [Running Matlab](running_matlab.md)
     - [Interactive Jupyter Notebook](running_jupyter.md)
 - Off-Campus Cluster
-    - [Additional resources](additional.md)
+    - [External Computation resources](additional.md)
     - [HPC@UC](hpc_uc.md)
-- [Additional resources](add_resources.md)
+
+- Additional resources
+  - [Workshops](software_carpentry.md)
+
 - [Suggestions?](contribute.md)

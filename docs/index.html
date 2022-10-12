@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>HPC documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="vendor/themes/buble.css">
@@ -12,12 +16,38 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-        loadSidebar:true,
-        subMaxLevel:4,
-      name: '',
-      repo: ''
+    repo: 'ucmerced/hpc_docs',
+    ga: 'G-M0GKBQ1W0J',
+    loadSidebar: true,
+    auto2top   : true,
+    maxLevel   : 4,
+    subMaxLevel:4,
+       // docsify-copy-code (defaults)
+    copyCode: {
+    buttonText : 'Copy to clipboard',
+    errorText  : 'Error',
+    successText: 'Copied'
+  },
+  
+    search: {
+                depth      : 4,
+                noData     : 'No results!',
+                placeholder: 'Search...'
+            }
+    
     }
   </script>
-  <script src="vendor/docsify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/class-change@1"></script>
+  <script>
+    // Initialize the default attribute listener
+    classChange.attrs();
+</script>
 </body>
 </html>
