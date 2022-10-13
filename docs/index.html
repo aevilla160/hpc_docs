@@ -42,11 +42,19 @@
                 depth      : 4,
                 noData     : 'No results!',
                 placeholder: 'Search...'
-            }
-    
+            },
+    plugins: [
+        function (hook, vm) {
+          // parse twemoji
+          hook.doneEach(function() {
+              twemoji.parse(document);
+          });
+        },
+      ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-ethicalads@1"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
