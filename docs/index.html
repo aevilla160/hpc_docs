@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel = "icon" href = 
+        "imgs/CIRT.png" 
+                type = "image/x-icon">
   <title>HPC documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta
@@ -49,7 +52,22 @@
               twemoji.parse(document);
           });
         },
-      ]
+      ],
+    plugins: [
+    function(hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+        '<span><a href="https://github.com/ucmerced/hpc_docs">hpc_docs</a> &copy;2022.</span>',
+        '<span>This website is created and maintained by Yue Yu',
+        '</footer>'
+      ].join('');
+
+      hook.afterEach(function(html) {
+        return html + footer;
+      });
+    }
+  ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>

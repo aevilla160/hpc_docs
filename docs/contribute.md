@@ -1,5 +1,5 @@
 ### We welcome all users feedback to make this website better ! <!-- {docsify-ignore} -->
-!> This website is built and maintained only by [Yue Yu](https://it.ucmerced.edu/Research-Computing-People), so there might be delays on updating the requested content 😀
+!> This website is maintained only by [Yue Yu](https://it.ucmerced.edu/Research-Computing-People), so there might be delays on updating the requested content 😀
 #### There are several ways to provide suggestions to me <!-- {docsify-ignore} -->
 > Submit a Github pull [request](https://github.com/ucmerced/hpc_docs)
 
