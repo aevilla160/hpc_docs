@@ -26,5 +26,6 @@
 
 - Additional resources
   - [Workshops](software_carpentry.md)
+  - [Library workshops](lib_workshop.md)
 
 - [💜 Suggestions?](contribute.md)
