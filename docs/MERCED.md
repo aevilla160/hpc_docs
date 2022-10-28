@@ -32,7 +32,7 @@ Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-
 
 > I don’t want to pay for MERCED what are my options?
 
-Remember, if you stay below or at your baseline allocation, you will not incur any fees. However, you can obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and XSEDE resources – and my team can provide consultation for how to access these resources. Schedule a consultation here.
+If you stay below or at your baseline allocation, you will not incur any fees. However, you can obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and XSEDE resources – and my team can provide consultation for how to access these resources. Schedule a consultation here.
 
 > I have other questions!
 
