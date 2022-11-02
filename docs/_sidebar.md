@@ -27,6 +27,6 @@
 - Additional resources
   - [Workshops](software_carpentry.md)
   - [Library workshops](lib_workshop.md)
-  - [Office hour questions](office_hour.md)
+  - [Office hour Q/A](office_hour.md)
 
 - [💜 Suggestions?](contribute.md)
