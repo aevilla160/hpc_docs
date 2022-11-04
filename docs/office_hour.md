@@ -1,1 +1,1 @@
-# This is place to find Q/A during the office hour
+# This is to find Q/A during the office hour
