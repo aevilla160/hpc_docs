@@ -7,3 +7,7 @@ A: [Login to compute node](running_matlab.md) try to figure out how to run the i
 > Q: How to use github. 
 >
 >A: Github desktop app is strongly recommended. 
+
+> Q: How to use python to do the parallel running?
+
+> A: There is a package called multiprocessing, please follow the tutorial of multiprocessing. 
