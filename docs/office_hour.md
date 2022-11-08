@@ -8,6 +8,8 @@ A: [Login to compute node](running_matlab.md) try to figure out how to run the i
 >
 >A: Github desktop app is strongly recommended. 
 
-> Q: How to use python to do the parallel running?
+>Q: Need help with parallel computing?
+>
+>CIRT does not have services that assist users with parrell computing. 
+>Best practice is look into parrell processing and/multiprocessing documentation for the programming language being utilized. 
 
-> A: There is a package called multiprocessing, please follow the tutorial of multiprocessing. 
