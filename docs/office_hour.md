@@ -11,7 +11,7 @@
 
 >Q: Need help with parallel computing?
 >
->A: CIRT does not have services that help user write code such as *"how to write the serial code to parallel?"*. 
+>A: CIRT does not have services that help user write code such as *"how to write python parallel program based on a serial nested loop?"*. 
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 ### 11/11/2022 (Cancelled)
