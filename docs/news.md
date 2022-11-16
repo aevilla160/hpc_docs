@@ -1,4 +1,39 @@
 <!-- {docsify-ignore-all} -->
+## Upcoming MERCED cluster maintenance and changes to CIRT services 11/15/2022
+MERCED Cluster Downtime
+
+<ins>When</ins>: November 30, 2022
+
+Cluster will be offline starting 6:30 am on **11/30/22** until the end of the day. (1-day downtime)
+
+<ins>Why</ins>: During this time, CIRT team will re-rack, re-cable MERCED cluster HOME storage unit and replace failed RAM modules on the login node.
+
+Notes:
+<ul>
+  <li>Any jobs still running at 6 am on 11/30/22 will be cancelled.</li>
+  <li>During this maintenance, users will not have login access to the cluster, or any attached storage units including Borgstore.</li>
+</ul>
+
+<ins>When</ins>: January 9, 2023 to Jan 31, 2023
+
+MERCED Cluster will be offline starting 6:30 am on 01/09/2023 until 5 pm on 01/30/2023 (3-weeks downtime).
+
+<ins>Why:</ins> During this period, CIRT will make a number of critical hardware, software, firmware updates to the cluster.
+
+Notes:
+<ul>
+<li>Any jobs still running at 6 am on  01/09/23 will be cancelled.</li>
+<li>During this maintenance window, the Pinnacles cluster and Borg store will be accessible to users.</li>
+ </ul>
+
+Other important changes starting **1 February 2023**
+<ul>
+<li>Borgstore will be accessible through both MERCED and Pinnacles cluster.</li>
+<li>CIRT recharge services, including MERCED cluster core-hours will be renewed. You can find costs for CIRT recharge services here.</li> 
+<li>In order to minimize disruptions to computational research on MERCED cluster, the Provost’s office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024.</li>
+</ul>
+
+<!-- {docsify-ignore-all} -->
 ## CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 <!-- {docsify-ignore-all} -->
 
 The CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 and our level of campus support during that time will be extremely limited.
