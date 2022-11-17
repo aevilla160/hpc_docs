@@ -30,10 +30,7 @@ The following detail consists of how to request Pinnacles cluster access. If you
 * Schedule a Pinnacles consultation [here](https://arrangr.com/sarvani/facultyconsult). 
 
 !> Who can request access for Pinnacles cluster?
-* UC Merced Faculty Principal Investigators (PIs) can request access to Pinnacles cluster. All user accounts on Pinnacles cluster are associated with that of a UC Merced PI.
-
-!> Who approves access requests to Pinnacles?
-* UC Merced’s Committee on Research Computing (CoRC) meets monthly and approves/denies access requests for Pinnacles.
+* UC Merced Faculty Principal Investigators (PIs) can request access to Pinnacles cluster. All student user accounts on Pinnacles cluster must associate with UC Merced PIs.
 
 !> How to request for Pinnacles cluster access?
 
