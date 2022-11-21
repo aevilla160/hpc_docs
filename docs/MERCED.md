@@ -38,4 +38,7 @@ We have put together a [FAQ page](merced_FAQ.md) that has the most commonly aske
 Once again, if you have any questions or concerns regarding MERCED
 cluster policies. Feel free to reach out to us via submitting a [general request ticket](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
+## Facility statement <!-- {docsify-ignore} -->
+
+MERCED is a general-purpose computing cluster located in the server facility (see computing facilities [section](README.md)). The cluster consists of a headnode, login node, 88 compute nodes, and 6 GPU nodes (four nodes have 2 nVidia K20 Kepler cards each and 2 nodes have a single nVidia P100 card). Each node has 20 or 24 cores. The cluster includes 71 TB of home disk space and a 164 TB storage array. There is also a 170 TB backup storage array.
 
