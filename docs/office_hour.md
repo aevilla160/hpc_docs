@@ -16,3 +16,7 @@
 
 ### 11/11/2022 (Cancelled)
 
+### 11/18/2022
+>No Office Hour Q/A 
+
+### 11/24/2022 (Cancelled)
