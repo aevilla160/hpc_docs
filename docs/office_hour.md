@@ -1,4 +1,4 @@
-## This is to find Q/A during the office hour <!-- {docsify-ignore} -->
+## Q/A during the office hour <!-- {docsify-ignore} -->
 ### 11/04/2022
 > Q: Cannot access borgstore on compute node
 >
