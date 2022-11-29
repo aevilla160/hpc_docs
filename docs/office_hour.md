@@ -20,3 +20,8 @@
 >No Office Hour Q/A 
 
 ### 11/24/2022 (Cancelled)
+
+### 12/9/2022 (Cancelled)
+
+### ***No Office Hours During Winter Break(Dec.23rd to Jan. 2nd) - Office hour will resume the week of January 2, 2023.***
+
