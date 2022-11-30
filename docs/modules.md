@@ -66,9 +66,8 @@ The available queues are designed to balance use and accessibility to the cluste
 | Queue  | Max wall time | Max cores | Description                                                  |
 |:-------|:--------------|:----------|:-------------------------------------------------------------|
 | test  | 1 hrs        | 40       | Maximum job limit is 2, and maximum nodes is 2                        |
-| compute | 5 days         | 350       | This queue is for fast jobs, maximum job limit is 20                    |
-| long.q | 14 days       | 350       | This queue is for long-running jobs, maximum job limit is 20         |
-| gpu.q  | 7 days       | 350 | This queue is used to request nodes with available GPU cards, maximum job limit is 20|
+| compute | 5 days       | 350       | This queue is for fast jobs, maximum job limit is 20                    |
+| gpu  | 5 days       | 350 | This queue is used to request nodes with available GPU cards, maximum job limit is 20|
 
 !> NOTE: MERCED cluster general queues maximum job submissions per user is set to 20 which means user can not submit more than 20 jobs at a time when submit to `compute`, `long.q`, and `gpu.q`.
 
