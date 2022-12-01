@@ -1,3 +1,18 @@
+## 11/30/2022
+
+Dear HPC users,
+  
+  MERCED cluster 1-day maintenance is completed. 
+  
+  <ins>**Post maintenance updates:**</ins>
+
+  1.	Login node RAM is replaced.  Users will not see error message such as `kernel:do_IRQ: 3.179 No irq handler for vector (irq -1)` while on login node 
+  2.	General partitions “long.q” and “gpu.q” are removed, the maximum wall clock time for users is now 5-day
+  3.	CPU nodes mrcd01-mrcd32 are retired 
+
+
+
+
 ## 11/15/2022
 
 **Subject: Upcoming MERCED cluster maintenance and changes to CIRT services**
