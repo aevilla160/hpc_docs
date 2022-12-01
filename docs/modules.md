@@ -69,7 +69,7 @@ The available queues are designed to balance use and accessibility to the cluste
 | compute | 5 days       | 350       | This queue is for fast jobs, maximum job limit is 20                    |
 | gpu  | 5 days       | 350 | This queue is used to request nodes with available GPU cards, maximum job limit is 20|
 
-!> NOTE: MERCED cluster general queues maximum job submissions per user is set to 20 which means user can not submit more than 20 jobs at a time when submit to `compute`, `long.q`, and `gpu.q`.
+!> NOTE: MERCED cluster general queues maximum job submissions per user is set to 20 which means user can not submit more than 20 jobs at a time when submit to `compute`, and `gpu` partitions.
 
 
 
