@@ -24,11 +24,11 @@
 ### 12/2/2022
 > Q: Can a user run a sequence of jobs from one script?
 >
->A: Yes, a user can run a sequence of jobs from one script and if the jobs are >dependent on eachother then it is possible to make them dependent on one another.
+>A: Yes, a user can run a sequence of jobs from one script and if the jobs are dependent on each other then it is possible to make them [dependency jobs](https://slurm.schedmd.com/sbatch.html).
 
 >Q: Not sure if the needed software or library is on one of the HPC clusters? 
 >
->A: Documentation website has a list of available software and libraries already downloaded onto the clusters with their specific version numbers here: [Merced's Module List](modules.md) and [Pinnacles' Module List](p_modules.md). If the software/library you are looking for is not added/available  then you may always request CIRT to add the specified software/library for community use. Users choosing to self-install software/libraries have the responsibility to use them from trustworthy sources. 
+>A: Documentation website has a list of available software and libraries already downloaded onto the clusters with their specific version numbers here: [Merced's Module List](modules.md) and [Pinnacles' Module List](p_modules.md). For more updated information, once you login to cluster you can check the available sofware by typing `module avail`. Users choosing to self-install software/libraries have the responsibility to use them from trustworthy sources. 
 
 >Q: Software/library requires a new or renewal of license?
 >
