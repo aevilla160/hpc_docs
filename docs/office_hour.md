@@ -21,6 +21,18 @@
 
 ### 11/24/2022 (Cancelled)
 
+### 12/2/2022
+> Q: Can a user run a sequence of jobs from one script?
+>
+>A: Yes, a user can run a sequence of jobs from one script and if the jobs are >dependent on eachother then it is possible to make them dependent on one another.
+
+>Q: Not sure if the needed software or library is on one of the HPC clusters? 
+>
+>A: Documentation website has a list of available software and libraries already downloaded onto the clusters with their specific version numbers here: [Merced's Module List](modules.md) and [Pinnacles' Module List](p_modules.md). If the software/library you are looking for is not added/available  then you may always request CIRT to add the specified software/library for community use. Users choosing to self-install software/libraries have the responsibility to use them from trustworthy sources. 
+
+>Q: Software/library requires a new or renewal of license?
+>
+>A: If the software/library is installed on the cluster and available for anyone to use, CIRT manages the licenses for these products. Contact CIRT if a community-open software/product does not have an active license that should have an active license. If a software is bought or licensed from a PI then PI manage the renewal of the software/library. 
 ### 12/9/2022 (Cancelled)
 
 ### ***No Office Hours During Winter Break(Dec.23rd to Jan. 2nd) - Office hour will resume the week of January 2, 2023.***
