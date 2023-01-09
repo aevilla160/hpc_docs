@@ -1,3 +1,25 @@
+## 01/09/2023
+Dear Research Computing users –
+ 
+Please be aware of the following important information on upcoming downtime for the MERCED cluster and changes to CIRT services starting in February 2023.
+ 
+If you have additional questions, please do not hesitate to reach out to me via CIRT [general request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) or [schedule](https://arrangr.com/sarvani) a consultation with me. 
+ 
+When: January 9, 2023 to Jan 31, 2023
+MERCED Cluster will be offline starting 6:30 am on 01/09/2023 until 5 pm on 01/30/2023 (3-weeks downtime).
+Why: During this period, CIRT will make a number of critical hardware, software, firmware updates to the cluster.
+Notes:
+<ul>
+<li>Any jobs still running at 6 am on  01/09/23 will be cancelled.</li>
+<li>During this maintenance window, the Pinnacles cluster will be accessible to users.</li>
+</ul>
+Other important changes starting 1 February 2023
+<ul>
+<li>Borgstore will be accessible through both MERCED and Pinnacles cluster.</li>
+<li>CIRT recharge services, including MERCED cluster core-hours will be renewed. You can find costs for CIRT recharge services here.</li> 
+<li>In order to minimize disruptions to computational research on MERCED cluster, the Provost's office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024.</li>
+</ul>
+
 ## 11/30/2022
 
 Dear HPC users,
