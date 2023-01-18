@@ -1,4 +1,4 @@
-## Our UC Merced pilot JupyterHub infrastructure is on-line now !
+## Our UC Merced pilot JupyterHub infrastructure is on-line now ! <!-- {docsify-ignore} -->
 > Please go to the website at  https://ucmerced.2i2c.cloud. 
 
 All active UC Merced students, staff and faculty should have access to the pilot hub.
