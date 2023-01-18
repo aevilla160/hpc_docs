@@ -28,5 +28,6 @@
   - [Workshops](software_carpentry.md)
   - [Library workshops](lib_workshop.md)
   - [Office hour Q/A](office_hour.md)
+  - [Pilot Jupyterhub](jupyterhub.md)
 
 - [💜 Suggestions?](contribute.md)
