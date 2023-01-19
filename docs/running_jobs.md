@@ -1,15 +1,15 @@
 ## Running jobs on clusters
 
-We have provided users a SLURM job generator, which can be found [here](http://mercedhead.ucmerced.edu/).
+We have provided users a SLURM job generator [here](http://mercedhead.ucmerced.edu/).
 
-The command `sbatch`, is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler are shown in the table below.
+The command `sbatch` is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler are shown in the table below.
 
 |Command|Description|
 |--|--|
 |squeue|reports the state of jobs or job steps.|
 |sinfo|reports the state of partitions and nodes managed by Slurm|
 |scancel|used to cancel a pending or running job or job step. It can also be used to send an arbitrary signal to all processes associated with a running job or job step.|
-|strigger|used to set, get or view event triggers.|
+
 
 !>The listed queue resource limitations are based on planned limitations. Queue resource limitations may vary for specific users and user groups according to node buy-in, project needs, current resource use, and/or administrative needs. Contact the system administration team for clarification or to request a variance from standard limitations.
 
@@ -23,9 +23,10 @@ The `my_job.sub` sample script for MERCED is provided below
 #SBATCH --nodes=1  #asked for 1 node
 #SBATCH --ntasks=20 #asked for 20 cores
 #SBATCH --partition test  #this job will submit to compute partition
-#SBATCH --mem=96G  #this job is asked for 96G of total memory
+#SBATCH --mem=96G  #this job is asked for 96G of total memory, use 0 if you want to use entire node memory
 # #SBATCH --constraint=ib # uncomment this line if you need access to nodes with IB connections
 # #SBATCH --gres=gpu:X # uncomment this line if you need GPU access, replace X with number of GPU you need
+# #SBATCH -w <selected_node> #uncomment this line if you want to select specific available node to run 
 #SBATCH --time=0-00:15:00 # 15 minutes  
 #SBATCH --output=test1.qlog  #the output information will put into test1.qlog file
 #SBATCH --job-name=test1  #the job name
@@ -60,3 +61,13 @@ The `my_job.sub` sample script for Pinnacles is provided below, the job scripts 
 
 # run your job
 ```
+
+Note that for both MERCED and Pinnacles CPUs hyper-threading are turned off.  
+
+> If you want to assess how busy the cluster is
+
+Use `sinfo` to see the nodes state and check how many nodes are being allocated (alloc) or how many nodes are available (idle)
+
+> If you want to estimate the job starting time 
+
+`sacct -X -j <JOBID> -o start,submit` provides information for job estimated starting time or submitted time
