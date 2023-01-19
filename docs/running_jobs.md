@@ -1,5 +1,7 @@
 ## Running jobs on clusters
 
+We have provided users a SLURM job generator, which can be found [here](http://mercedhead.ucmerced.edu/).
+
 The command `sbatch`, is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler are shown in the table below.
 
 |Command|Description|
