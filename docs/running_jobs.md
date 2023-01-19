@@ -1,7 +1,5 @@
 ## Running jobs on clusters
 
-We have provided users a SLURM job generator [here](http://mercedhead.ucmerced.edu/).
-
 The command `sbatch` is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler are shown in the table below.
 
 |Command|Description|
@@ -63,11 +61,3 @@ The `my_job.sub` sample script for Pinnacles is provided below, the job scripts 
 ```
 
 Note that for both MERCED and Pinnacles CPUs hyper-threading are turned off.  
-
-> If you want to assess how busy the cluster is, please use the following command
-
-Use `sinfo` to see the nodes state and check how many nodes are being allocated (alloc) or how many nodes are available (idle)
-
-> If you want to estimate the job starting time 
-
-`sacct -X -j <JOBID> -o start,submit` provides information for job estimated starting time or submitted time
