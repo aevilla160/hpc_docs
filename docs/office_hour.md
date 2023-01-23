@@ -1,3 +1,10 @@
+## First-time user log in to HPC tutorial <!-- {docsify-ignore} -->
+Below is a tutorial for first-time users on how to log in to HPC cluster. The tutorial used Pinnacles as an example. If users still cannot login after watching the tutorial, feel free to contact us [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+<p align='center'>
+<iframe width="560" height="500" src="https://www.youtube.com/embed/MNGVOCpARCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
 ## Q/A during the office hour <!-- {docsify-ignore} -->
 ### 11/04/2022
 > Q: Cannot access borgstore on compute node
