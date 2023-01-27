@@ -1,3 +1,15 @@
+## 01/26/2023
+Dear Research Computing users-
+
+Facilities had informed us that they will be performing essential power maintenance in the SE2 building from 5:30 am -6:30 am tomorrow Jan 27th, 2023 and will require a power shutdown for most of SE-2.
+
+While we do not expect that this will cause any significant impact to your colocated servers in SE-2 040, there is always some risk associated with power maintenance.
+Should there be any further impact following this change, we will communicate it at status.ucmerced.edu.
+Please open an OIT service ticket here if you have any additional questions.
+
+
+
+
 ## 01/09/2023
 Dear Research Computing users –
  
