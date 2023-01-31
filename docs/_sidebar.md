@@ -1,8 +1,7 @@
 - [HPC resources](README.md)
   - [User policy](policy.md)
 - On-campus cluster
-    - Centralized log in
-        - [How to connect](central_login.md)
+    - [How to connect](central_login.md)
     - [MERCED](MERCED.md)
         - [Getting started](get_started.md)
         - [MERCED FAQ](merced_FAQ.md)

@@ -12,7 +12,9 @@ following command, but replace `<username>` to your UCMID.
 ```bash
 ssh <username>@login.rc.ucmerced.edu
 ```
-Using `ssh` to connect to the centralized login node so that you will be able to submit jobs to either MERCED or Pinnacles. Currently, we have 3 login nodes, users are expecting to see they are placed to either `rclogin01`, `rclogin02`, or `rclogin03`. __Do not run computationally intensive processes on the login node__. File preparation/editing, compiling, simple analyses, and other low computational cost activities are appropriate on the login node, but, again, other types of work should be submitted to the cluster via the available queue system. Users may also connect to remote machine using an x-terminal (XQuarz or X11) to spawn graphics based programs such as gnuplot, gimp, _etc_. 
+!> Using `ssh` to connect to the centralized login node so that **you will be able to submit jobs to either MERCED or Pinnacles**. 
+
+Currently, we have 3 login nodes, users are expecting to see they are placed to either `rclogin01`, `rclogin02`, or `rclogin03`. __Do not run computationally intensive processes on the login node__. File preparation/editing, compiling, simple analyses, and other low computational cost activities are appropriate on the login node, but, again, other types of work should be submitted to the cluster via the available queue system. Users may also connect to remote machine using an x-terminal (XQuarz or X11) to spawn graphics based programs such as gnuplot, gimp, _etc_. 
 
 ## File systems
 In the following, we will assume you have some familiarity with linux; if you do not, feel free to book a consultation with the IT team, but a lot of resources are available on the internet.
