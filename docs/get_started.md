@@ -1,5 +1,5 @@
 ## System overview
-MERCED hosts 114 CPU compute nodes and 8 GPU nodes. Please be aware that
+MERCED hosts 41 CPU compute nodes and 25 high memory nodes. Please be aware that
 the nodes among MERCED cluster are multigenerational, meaning that the CPU
 processors from different nodes are having different features, the table shows below
 listed detailed node information. Users may experience relative big
@@ -10,10 +10,6 @@ processors generations.
 
 | Nodes        | feature                                                    | RAM   | Total cores pre nodes | InifiBand (IB) |
 |--------------|------------------------------------------------------------|-------|-----------------------|----------------|
-| 1-18         | Haswell,avx2,E5-2650_v3, no local scratch                  | 128GB | 20                    | no             |
-| 20-24        | Haswell,avx2,E5-2650_v3, no local scratch                  | 257GB | 20                    | no             |
-| 26-27        | Haswell,avx2,E5-2650_v3, local scratch 447GB               | 257GB | 20                    | yes            |
-| 29-32        | Haswell,avx2,E5-2650_v3, local scratch 932GB               | 128GB | 20                    | yes            |
 | 33-43        | Broadwell,avx2,E5-2650_v4,local scratch 932GB              | 128GB | 24                    | yes            |
 | 44           | Broadwell,avx2,E5-2650_v4,local scratch 932GB              | 112GB | 24                    | yes            |
 | 45-60        | Broadwell,avx2,E5-2650_v4,local scratch 932GB              | 257GB | 24                    | yes            |
@@ -23,22 +19,15 @@ processors generations.
 | 89-104       | Skylake,sse4.2,avx,avx2,avx512,Gold_6130, no local scratch | 191GB | 32                    | yes            |
 | 105-114       | cascadelake,sse4.2,avx,avx2,avx512,Gold_6230, no local scratch | 191GB | 40                    | yes            |
 
-_Note: node14, 19, 25, and 28 are no longer active._
+_Note: MERCED is no longer supporting Jupyterhub._
 
-The table below listed all GPU nodes information from MERCED cluster.
-
-| Nodes  | feature                 | RAM   | Total cores pre nodes | Infiniband (IB)|
-|--------|-------------------------|-------|-----------------------|----------------|
-| g01-04 | K20m,E5-2650_v3,big_mem | 257GB | 20                    | yes            |
-| g05-06 | P100,E5-2620_v4         | 128GB | 16                    | no             |
-| g07-08 | rtx6000,Gold_6226R      | 190GB | 32                    | yes            |
 
 
 ## Requesting an account
 Request an account via the UC Merced IT website Research Computing
 [website](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
 Before apply an account, please read the following information
-carefully.
+carefully. Note that MERCED is a recharge model, which means PI must provide COA information in the ticket before they can use MERCED. 
 
 >What do I need to get this service?
 

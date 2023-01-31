@@ -1,16 +1,13 @@
 - [HPC resources](README.md)
   - [User policy](policy.md)
 - On-campus cluster
-
+    - Centralized log in
+        - [How to connect](central_login.md)
     - [MERCED](MERCED.md)
         - [Getting started](get_started.md)
-        - [Accessing MERCED](accessMerced.md)
-        - [Environment](modules.md)
         - [MERCED FAQ](merced_FAQ.md)
     - [Pinnacles](Pinnacles.md)
         - [Getting started](p_get_started.md)
-        - [Accessing Pinnacles](accessPinnacles.md)
-        - [Environment](p_modules.md)
         - [Pinnacles FAQ](pinnacles_FAQ.md)
     - [News](news.md)
     - [Faculty communications](commun.md)

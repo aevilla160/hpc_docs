@@ -40,5 +40,5 @@ cluster policies. Feel free to reach out to us via submitting a [general request
 
 ## Facility statement <!-- {docsify-ignore} -->
 
-MERCED is a general-purpose computing cluster located in the server facility (see computing facilities [section](README.md)). The cluster consists of a headnode, login node, 88 compute nodes, and 6 GPU nodes (four nodes have 2 nVidia K20 Kepler cards each and 2 nodes have a single nVidia P100 card). Each node has 20 or 24 cores. The cluster includes 71 TB of home disk space and a 164 TB storage array. There is also a 170 TB backup storage array.
+MERCED is a general-purpose computing cluster located in the server facility (see computing facilities [section](README.md)). The cluster consists of a login node, 41 compute nodes (15 compute nodes have 2 Intel 12-core Xeon E5-2650 v4, 128 GB RAM, 16 nodes have 2 Intel 16-core Xeon Gold 6130, 190 GB RAM and 10 nodes have 2 Intel 20-core Xeon Gold 6230, 190 GB RAM), and 25 high memory nodes (2 Intel 12-core Xeon E5-2650 v4, 256 GB RAM). Total CPU counts is 1872.
 

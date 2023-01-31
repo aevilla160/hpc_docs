@@ -5,7 +5,7 @@ You can make a General Request/Consultation [here](https://ucmerced.service-now.
 
 >__How do I obtain an account on MERCED cluster?__
 
-You can request a new user account on MERCED cluster [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0). All user accounts on MERCED cluster are associated with that of a faculty PI. The faculty PI should approve that the export control attestation form, follow the procedure [here](get_started.md) on file is up-to-date and/or complete a new export control attestation form.
+You can request a new user account on MERCED cluster [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0). All user accounts on MERCED cluster are associated with that of a faculty PI (and PI must provide a COA # in the ticket for MERCED recharge service). The faculty PI should approve that the export control attestation form, follow the procedure [here](get_started.md) on file is up-to-date and/or complete a new export control attestation form.
 
 > __How do I install software on a CIRT Managed cluster?__
 

@@ -15,12 +15,14 @@ Typical use of the queue system begins by writing a submission script that will 
 ```bash
 sbatch my_job.sub
 ```
-The `my_job.sub` sample script for MERCED is provided below
+!> Starting 02/01/2023 we are using the centralized login, which means upon login user can submit jobs to either MERCED or Pinnacles. Here is the sample script for `my_job.sub` for submitting jobs to MERCED
+
 ```bash
 #!/bin/bash  
 #SBATCH --nodes=1  #asked for 1 node
 #SBATCH --ntasks=20 #asked for 20 cores
-#SBATCH --partition test  #this job will submit to compute partition
+#SBATCH --partition test  #this job will submit to test partition
+#SBATCH -M merced # add this flag if you want to submit jobs to MERCED cluster
 #SBATCH --mem=96G  #this job is asked for 96G of total memory, use 0 if you want to use entire node memory
 # #SBATCH --constraint=ib # uncomment this line if you need access to nodes with IB connections
 # #SBATCH --gres=gpu:X # uncomment this line if you need GPU access, replace X with number of GPU you need
@@ -38,6 +40,9 @@ The `my_job.sub` sample script for MERCED is provided below
 
 whoami
 ```
+
+!> Unlike MERCED, Pinnacles will be the default cluster you job can submit to, if you don't add any `#SBATCH -M merced` flag, your job will be submitted to Pinnacles automatically
+
 The `my_job.sub` sample script for Pinnacles is provided below, the job scripts for the two machines look quite similar, however, they have different partition names and time limits:
 ```bash
 #!/bin/bash
