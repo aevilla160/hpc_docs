@@ -1,4 +1,4 @@
-## Running Quantum ESPRESSO on MERCED<!-- {docsify-ignore} -->
+## Running Quantum ESPRESSO <!-- {docsify-ignore} -->
 [Quantum ESPRESSO](https://www.quantum-espresso.org/) is a group of codes that is used to compute the microscopic properties of materials and molecules at the atomic levels using density functional theory. The core codes of Quantum ESPRESSO are parallelizable and require large amounts of memory making them the perfect candidates for high performance computing. This article is written to understanding the nuances of using Quantum ESPRESSO on MERCED. To follow a tutorial on Quantum ESPRESSO, follow one of the links on this [page](https://www.quantum-espresso.org/tutorials/).
 
 Below is an example job script and `pw.x` input file for bilayer MoS2. For details on the input parameters of `pw.x`, see the Quantum ESPRESSO official documentation.
