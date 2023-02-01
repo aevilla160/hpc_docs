@@ -48,10 +48,10 @@ There are also secondary file systems attached to MERCED that are associated wit
 
 |Folder|space|
 |--|--|
-|`/qsb/<UCMID>/`|256G|
-|`/home/<UCMID>/medusozoa`|Determined by PI|
-|`/home/<UCMID>/conness`|Determined by PI|
-|`/home/<UCMID>/branchinecta`|Determined by PI|
+|`/mnt/qsb`|256G|
+|`/mnt/medusozoa`|Determined by PI|
+|`/mnt/conness`|Determined by PI|
+|`/mnt/branchinecta`|Determined by PI|
 
 __Do not write files directly to `/tmp` on the head node__, as this may fill up disk space on the head node and cause trouble for everyone. Instead, use your own scratch directory for temporary files. Some codes may use `/tmp` by default and need to have the appropriate scratch directory configured.
 
