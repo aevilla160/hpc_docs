@@ -1,4 +1,4 @@
-## Create a virtual environment and install R on MERCED<!-- {docsify-ignore} -->
+## Create a virtual environment and install R<!-- {docsify-ignore} -->
 ```R
 module load anaconda3
 conda create -n my-R -c r r-essentials   #creates a virtual environment named my-R and installs R with some common packages
@@ -6,11 +6,7 @@ source activate my-R                     #activates the previously created virtu
 R                                        #Start interactive R shell
 install.packages(“readr”)                #This is the command to use within the interactive R shell to install new packages
 ```
-- We have already built the environment for you, all you need to do is the following
-```bash
-module load anaconda3
-source activate my-R
-```
+
 - The binary version of R in anaconda is just an already compiled version for linux. It should be identical to the version you would compile from source.
 
 - Here is an example job script 
