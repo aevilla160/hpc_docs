@@ -62,7 +62,7 @@ __When__: Every Friday from 10:30 am to 12 noon
 
 > __I have several users doing different projects, can I use different COA# for them?__
 
-Yes, please make sure keep the COA# information updated. Each user can also have different COA#, if the user is doing multiple projects. If you have any questions, feel free to email cirt@ucmerced.edu.
+Yes, please make sure keep the COA# information updated. Each user can also have different COA#, if the user is doing multiple projects. If you have any questions, feel free to open a ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 
 
