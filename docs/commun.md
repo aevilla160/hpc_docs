@@ -1,3 +1,43 @@
+## 02/01/2023
+Dear Computational Researchers –
+ 
+CIRT has completed maintenance on MERCED cluster and MERCED cluster should be accessible for all users.
+ 
+MERCED cluster begins to operate as a recharge cluster starting Feb 1, 2023. More information on CIRT recharge services can be found [here](https://it.ucmerced.edu/Research-Computing-Services#MERCED).
+ 
+While most cluster operations remain same, a few things have been updated. More details about what has changed in the HPC documentation page here.
+ 
+If you have any additional questions, please feel free to schedule a research computing consultation here or attend one of the HPC office hours every Friday from 10:30 am – 12 noon in ACS-312 or on zoom.
+ 
+1.    Unified login: 
+Login to both MERCED and Pinnacles cluster using: `login.rc.ucmerced.edu`. Login through `merced.ucmerced.edu` is disabled and login through `login.pinnacles.ucmerced.edu` will be disabled on March 1, 2023.
+ 
+2.    Unified working space for MERCED and Pinnacles :
+`$HOME`, `$DATA` and `$SCRATCH` are now shared across MERCED and Pinnacles clusters over 10G network from Pinnacles to MERCED and connected over IB on Pinnacles cluster. 
+a.	MERCED cluster $HOME space files and folders can be found from Pinnacles in /home/$USER/merced_home_backup/ 
+b.	MERCED cluster $DATA files can be found from Pinnacles in /data/$USER/merced_data_backup/
+ 
+3.    Increased quotas:
+Quotas on unified $HOME, `$DATA` and `$SCRATCH` are increased. Updated quota information [here](central_login.md).
+ 
+4.    Accounts on MERCED Cluster:
+a.	All accounts on MERCED cluster need to provide a Common Chart of Accounts (CCOA) information to CIRT. If not, these accounts will be resource limited to test partition on MERCED.
+b.	New account requests for MERCED cluster will be automatically provided both MERCED account and a Pinnacles account. [Here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0) is how to request access to MERCED cluster.
+ 
+5.    Federated Slurm:
+By default, jobs run on Pinnacles compute nodes. However, use `-M` flag in your slurm commands to run your jobs on recharge MERCED cluster nodes. 
+More information on job submission process and partition limits [here](running_jobs.md).
+ 
+6.    Unified access to Borgstore:
+Borgstore storage unit is now accessible from both MERCED and Pinnacles over IB.
+ 
+7.    PI condo-storage: 
+More information on PI condo-storage [here](central_login.md)
+ 
+8.    Jupyterhub is no longer supported on MERCED or Pinnacles cluster. If you need access to Jupyterhub for instruction, please schedule a research computing consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+ 
+
+
 ## 01/26/2023
 Dear Research Computing users-
 
