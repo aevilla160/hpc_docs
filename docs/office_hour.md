@@ -9,10 +9,17 @@ Below is a tutorial for first-time users on how to log in to HPC cluster. The tu
 Got A Question? Feel Free to attend HPC Office Hours!
  
 
-### 1/22/23
-> No Office Hour Q/A 
+### 1/27/23
+> Q:How To Run Quantum Espresso utilizing GPU?
+>
+>A: Run it on under interactive session so you can see wheteher job is running with gpu with command "nvidia-smi" (Shows gpu usage).
+>Important: *Do Not run GPU job on CPU Node*
 
-<br/>
+>Q:Running Lammps with Kokkos on Cluster?
+>
+>A:Available Modules on cluster:   Module - "lammps/20210310+kokkos+cuda " - lammps with Kokkos with GPU enbled. 
+>Module - "lammps/20210310+user-omp+kokkos"  - Only for CPU, not openmp only serial. 
+
 
 ### 12/2/2022
 > Q: Can a user run a sequence of jobs from one script?
@@ -27,7 +34,6 @@ Got A Question? Feel Free to attend HPC Office Hours!
 >
 >A: If the software/library is installed on the cluster and available for anyone to use, CIRT manages the licenses for these products. Contact CIRT if a community-open software/product does not have an active license that should have an active license. If a software is bought or licensed from a PI then PI manage the renewal of the software/library.  
 
-<br/>
 
 ### 11/04/2022
 > Q: Cannot access borgstore on compute node
@@ -44,9 +50,8 @@ Got A Question? Feel Free to attend HPC Office Hours!
 >A: CIRT does not have services that help user write code such as *"how to write python parallel program based on a serial nested loop?"*. 
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
-<br/>
 
-### 11/14/22 - 11/18/2022; 12/09/22
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23
 >No Office Hour Q/A 
 
 
