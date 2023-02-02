@@ -18,7 +18,7 @@ Got A Question? Feel Free to attend HPC Office Hours!
 >Q:Running Lammps with Kokkos on Cluster?
 >
 >A:Available Modules on cluster:   Module - "lammps/20210310+kokkos+cuda " - lammps with Kokkos with GPU enbled. 
->Module - "lammps/20210310+user-omp+kokkos"  - Only for CPU, not openmp only serial. 
+>Module - "lammps/20210310+user-omp+kokkos"  - with kokkos and user-omp enabled. 
 
 
 ### 12/2/2022
