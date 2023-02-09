@@ -35,7 +35,7 @@ sbatch my_job.sub
 # This submission file will run a simple set of commands. All stdout will
 # be captured in test1.qlog (as specified in the Slurm command --output above).
 # This job file uses a shared-memory parallel environment and requests 20
-# cores (--ntasks option) on a single node(--nodes option). For more info on this script, cat /usr/local/bin/merced_node_print.
+# cores (--ntasks option) on a single node(--nodes option). 
 #  
 
 whoami
