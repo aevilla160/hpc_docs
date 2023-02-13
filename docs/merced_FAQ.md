@@ -80,7 +80,7 @@ Since recharge services are pay-per-use services, users cannot purchase core-hou
 
 >__Can faculty charge recharge services directly to a grant?__
 
-Grant funds have restrictions on how the funding can be spent, and every grant is unique. So, as long as recharge service is allowable expense under the grant, then faculty can charge recharge services directly to the grant. Each grant has a unique COA#. Please ensure that your COA information is accurate in the MERCED recharge spreadsheet by emailing cirt@ucmerced.edu.
+Grant funds have restrictions on how the funding can be spent, and every grant is unique. So, as long as recharge service is allowable expense under the grant, then faculty can charge recharge services directly to the grant. Each grant has a unique COA#. Please ensure that your COA information is accurate in the MERCED recharge spreadsheet that was sent to faculty to fill out in the year 2021.
 
 >__I do not want my research group to exceed free core-hour limit on MERCED__
 
