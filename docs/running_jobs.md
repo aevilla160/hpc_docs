@@ -41,7 +41,7 @@ sbatch my_job.sub
 whoami
 ```
 
-!> Unlike MERCED, Pinnacles will be the default cluster you job can submit to, if you don't add any `#SBATCH -M merced` flag, your job will be submitted to Pinnacles automatically. Similarly, `-M merced` flag must be used within `scontrol`, `sinfo`, `sbatch`, `squeue`, `srun` etc to run on merced.
+!> Unlike MERCED, Pinnacles will be the default cluster you job can submit to, if you don't add any `#SBATCH -M merced` flag, your job will be submitted to Pinnacles automatically. Similarly, `-M merced` flag must be used within `scontrol`, `sinfo`, `sbatch`, `squeue`, `srun` etc to run on merced. Note that if you are using `mpirun` and require the job to be run on MERCED, you need to add `export SLURM_CLUSTERS=merced` to your slurm script. 
 
 
 The `my_job.sub` sample script for Pinnacles is provided below, the job scripts for the two machines look quite similar, however, they have different partition names and time limits:
