@@ -13,7 +13,7 @@ The command `sbatch` is used to submit jobs to the queue. Additional commands to
 
 Typical use of the queue system begins by writing a submission script that will be handed to the queue and scheduling system. The submission script is comprised of two sections: (1) a list of SGE options and resource requirements to guide the scheduler’s assignment of the job to one or more production nodes; and (2) a standard shell script that carries out the user desired calculation. To submit a job script, for example submit `my_job.sub` to the queue, one uses the following command:
 ```bash
-sbatch my_job.sub
+sbatch my_job.sub #if you want to submit to merced please use sbatch -M merced my_job.sub
 ```
 !> Starting 02/01/2023 we are using the centralized login, which means upon login user can submit jobs to either MERCED or Pinnacles. Here is the sample script for `my_job.sub` for submitting jobs to MERCED
 
