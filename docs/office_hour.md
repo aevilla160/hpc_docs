@@ -6,8 +6,33 @@ Below is a tutorial for first-time users on how to log in to HPC cluster. The tu
 </p>
 
 ## HPC Office Hour Q/A <!-- {docsify-ignore} -->
-Got A Question? Feel Free to attend HPC Office Hours!
+Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
  
+### 2/24/23
+>Q: How to intialzie Conda Enviroment?
+>
+>A:Tutorial is listed under "Running jobs" - [Click Here](running_R_mpi.md)
+
+>Q:My GPU node request is not being granted or running?
+>
+>A: Pinnacles Machine only has 8 publicly available GPU Nodes; each node has two GPU cards. Therefore, if all GPU nodes are being used then user must wait and try again later to run GPU interactive Job. 
+The command "sinfo" to get information about the GPU nodes and their current usage. 
+
+
+>Q: Running Gromacs with GPU on Pinnacles?
+>
+>A: Pinnacles only has Gromacs for CPU usage installed.
+
+>Q:How can I monitor the state of the GPU node that is running my interactive job?
+>
+>A:Monitoring the state of the GPU node and seeing the usage during the interactive job can be done through the command "nvidia-smi"
+
+>Q: Is VMD available on Pinnacles
+>
+>A: Yes, Pinnacles has VMD version 1.9.3. However it is recommended that users use VMD on their own local machine to get better results.
+
+
+
 
 ### 1/27/23
 > Q:How To Run Quantum Espresso utilizing GPU?
@@ -51,7 +76,7 @@ Got A Question? Feel Free to attend HPC Office Hours!
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 
-### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23
 >No Office Hour Q/A 
 
 
