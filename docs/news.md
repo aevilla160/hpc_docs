@@ -1,4 +1,20 @@
 <!-- {docsify-ignore-all} -->
+## Jupyterhub workshop March 6th 9am - 11am PT
+  Join OIT’s Cyberinfrastructure and Research Technologies team as they dive into UC Merced’s pilot JupyterHub - an open source, browser based, computational environment that assists professors and students in developing coursework in computational/data-science.
+  
+  In this workshop event, the team will cover:
+  <ul>
+<li>how JupyterHub provides computational resources to further research and instruction 
+<li>tools to build a course using Jupyterhub environment
+<li>multi-disciplinary uses of data gathering and application within the platform
+<li>hands-on demonstrations of Jupyterhub (Join on your laptop or desktop)
+</ul>
+
+Sign up now - https://ucm.edu/JHWorkshop
+
+Add this event to your calendar: https://events.ucmerced.edu/event/jupyterhub_workshop
+
+
 ## Upcoming MERCED cluster maintenance and changes to CIRT services 11/15/2022
 MERCED Cluster Downtime
 
