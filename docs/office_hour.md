@@ -1,5 +1,20 @@
 ## First-time user log in to HPC tutorial <!-- {docsify-ignore} -->
-Below is a tutorial for first-time users on how to log in to HPC cluster. The tutorial used Pinnacles as an example. If users still cannot login after watching the tutorial, feel free to contact us [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+Below is a tutorial for first-time users on how to log in to HPC cluster. The tutorial used Pinnacles as an example. If users still cannot login after watching the tutorial, feel free to open a a general consultationt ticket - Follow the steps below. 
+
+Steps on requesting support with resetting password if users still having issues logging in after following tutorial video:
+1. Go to CyberInfrastrucre & Research Technologies Service Now page. [Click Here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+2. At the bottom of the page there will be a "Request Service" button, click the button. 
+
+3. Login with your UCM NetID and Password if prompted to do so. 
+
+4. You will be promted with a new page that will require you to put in information including a description of the assistance you are requesting. In this case it will be resetting of password, so in the description state that you are requesting help with resetting of Remote Cluster password. 
+
+5. When all the required fields are completed you can submit the ServiceNow Request to recieve assistance on resetting password!
+
+Request Services & Contact Us - [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+Reset Password & Login Video Below!
 
 <p align='center'>
 <iframe width="560" height="500" src="https://www.youtube.com/embed/kfHjL9_kgQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -76,7 +91,7 @@ The command "sinfo" to get information about the GPU nodes and their current usa
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 
-### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23
 >No Office Hour Q/A 
 
 
