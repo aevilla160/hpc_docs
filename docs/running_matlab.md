@@ -58,7 +58,7 @@ Users can also run their Matlab script as a job on MERCED. Here is the `SLURM` s
 #SBATCH --export=ALL
 
 
-module load matlab/matlab_2016b   # OR module load matlab/matlab_2018b
+module load matlab/r2021b  # OR module load matlab/matlab_2018b
 # example 1
 matlab -nodisplay -nodesktop -nosplash -r "ver; exit;"
 
