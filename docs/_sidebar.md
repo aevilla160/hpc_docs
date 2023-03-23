@@ -25,5 +25,6 @@
   - [Library workshops](lib_workshop.md)
   - [Office hour Q/A](office_hour.md)
   - [Pilot Jupyterhub](jupyterhub.md)
+  - [HPC training material](hpc_training.md)
 
 - [💜 Suggestions?](contribute.md)
