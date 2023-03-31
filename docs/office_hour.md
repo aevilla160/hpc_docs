@@ -22,6 +22,9 @@ Reset Password & Login Video Below!
 
 ## HPC Office Hour Q/A <!-- {docsify-ignore} -->
 Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
+
+### 3/31/23
+NO office hour on 03/31/2023
  
 ### 2/24/23
 >Q: How to intialzie Conda Enviroment?
