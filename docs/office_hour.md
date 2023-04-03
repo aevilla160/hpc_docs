@@ -25,7 +25,21 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 
 ### 3/31/23
 > NO office hour on 03/31/2023
- 
+
+### 3/11/23
+>Q: I am new to High-Performance Computing, where do I begin?
+>
+>A: It is highly recommended that all HPC users have knowledge of basic linux commands and understanding of how a command line interface works. If users need to brush up on basic linux commands then it is highly recommended that they view the Linux(Unix) carpentry workshops [Here!](software_carpentry.md)   
+>
+>Once user is comfortable with using linux commands then it is highly recommended to look over sample job scripts to understand what a job is and what does a job hold. Users can view a sample job script [Here!](running_jobs.md)
+
+>Q: Does Pinnacles have STATA?
+>
+>A: Yes, Pinnacles has STATA 17 installed.
+>1. Users can see all available software on pinnacles via the command "module avail"
+>2. To load a software into the enviroment "module load softare_name"
+>3. To unload a module from the enviroment it is "module unload softare_name". 
+
 ### 2/24/23
 >Q: How to intialzie Conda Enviroment?
 >
