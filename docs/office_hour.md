@@ -20,6 +20,12 @@ Reset Password & Login Video Below!
 <iframe width="560" height="500" src="https://www.youtube.com/embed/kfHjL9_kgQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
 
+## Remote transfer files using `scp` command <!-- {docsify-ignore} -->
+Watch the video below!
+<p align='center'>
+<iframe width="560" height="560" src="https://www.youtube.com/embed/vV54wHoAIjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
 ## HPC Office Hour Q/A <!-- {docsify-ignore} -->
 Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
 
