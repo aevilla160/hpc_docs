@@ -29,6 +29,12 @@ Watch the video below!
 ## HPC Office Hour Q/A <!-- {docsify-ignore} -->
 Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
 
+### 4/14/23
+>Office Hours Cancelled.
+### 4/7/23
+>Q: I can not login into the Central Login even though I had an account on Merced Cluster?
+>
+>A: Submit a password reset to gain access to the central login node. From there all data stored in the home and data folder of the Merced cluster will transfer over to Pinnacles cluster as Merced cluster is recharge model. User must also rebuild any enviroment they had built in Merced in Pinnacles. Pinnacles is the default cluster when users login to through central login. 
 ### 3/31/23
 > NO office hour on 03/31/2023
 
