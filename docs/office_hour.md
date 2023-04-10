@@ -23,7 +23,7 @@ Reset Password & Login Video Below!
 ## Remote transfer files using `scp` command <!-- {docsify-ignore} -->
 Watch the video below!
 <p align='center'>
-<iframe width="560" height="560" src="https://www.youtube.com/embed/vV54wHoAIjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="560" src="https://www.youtube.com/embed/G6DNWqHFC7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
 
 ## HPC Office Hour Q/A <!-- {docsify-ignore} -->
