@@ -24,7 +24,6 @@ sbatch my_job.sub #if you want to submit to merced please use sbatch -M merced m
 #SBATCH --partition test  #this job will submit to test partition
 #SBATCH -M merced # add this flag if you want to submit jobs to MERCED cluster
 #SBATCH --mem=96G  #this job is asked for 96G of total memory, use 0 if you want to use entire node memory
-# #SBATCH --constraint=ib # uncomment this line if you need access to nodes with IB connections
 # #SBATCH --gres=gpu:X # uncomment this line if you need GPU access, replace X with number of GPU you need
 # #SBATCH -w <selected_node> #uncomment this line if you want to select specific available node to run 
 #SBATCH --time=0-00:15:00 # 15 minutes  
