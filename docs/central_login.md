@@ -38,9 +38,8 @@ Once user log in,there are 2 folders (`data` and `scratch`) locate in `HOME` tha
 !> Users who submit jobs to MERCED and use the unified storage are expecting slower network communications. Home - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles. Data - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles. Scratch - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles
 
 * Store in `data`, all that is research grade data that need to be backed-up and safe.
-* Put in `scratch`, everything that is temporary; all files older than
-are removed from scratch when the total storage hits 85% full. Use it as for jobs checkpoints or
-similar. Be sure to **not** leave any data that's of long-term importance to you under `scratch`.
+* Put in `scratch`, everything that is temporary; files will be removed from scratch when the total storage hits 85% full. Use it as for jobs checkpoints or
+similar. Be sure to **not** leave any data that's of important to you under `scratch`.
 
 !>The `scratch` folder is purged periodically when the overall system storage reaches 85% of capacity or higher. Please back-up your data to somewhere safe frequently.
 
