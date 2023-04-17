@@ -39,20 +39,20 @@ squeue --me
 - `squeue --me` allows user to get jobID as well as other key information about the job script that user just submitted. 
 Also you can see by using `ls` to see when the stdout file is placed on the directory. This is a sign that the job finished, regardless of whether the job completed succesfully or failed. 
 > This completes the `serial` section of this workshop
->Lets start the parralel section of this workshop!
-- Go to `parralel` folder
+>Lets start the parallel section of this workshop!
+- Go to `parallel` folder
 ```
-cd paralel 
+cd parallel 
 ``` 
  
--Under the `parralel` folder there will be seven files. Open `python_parallel1.py` 
+-Under the `parallel` folder there will be seven files. Open `python_parallel1.py` 
     - Review `python_parallel1.py`
     -The script simply writes out a line to anther file
     -Close the script
     -`python_parallel2.py`  & `python_parallel3.py` are similar to  `python_parallel1.py`.  
 
-- Now look at the job submission script under the parralel folder. Open `test_2tasks.sh`.
-- Review the script and take note of the key differences *Remember* this is a parralel job script.
+- Now look at the job submission script under the parallel folder. Open `test_2tasks.sh`.
+- Review the script and take note of the key differences *Remember* this is a parallel job script.
 ```
 - We are asking for 1 node 
 - We are stating in the next line that we want to use 3 cores of the node. 
