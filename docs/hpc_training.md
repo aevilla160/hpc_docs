@@ -12,7 +12,7 @@ cp -r /home/yyu49/hpc_training/script/parallel .
 ```
 cd serial
 ls 
-# open the 'python_test1.py' file with text editor of your choice 
+# open the 'python_test1.py' file with text editor of your choice such as vim, nano, or Emacs.
 
 ```
 
