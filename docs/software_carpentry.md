@@ -1,3 +1,6 @@
+ ### [Introduction to High-performance Computing](https://carpentries-incubator.github.io/hpc-intro/)
+ > This workshop is an introduction to using high-performance computing systems effectively. We can’t cover every case or give an exhaustive course on parallel programming in just two days’ teaching time. Instead, this workshop is intended to give students a good introduction and overview of the tools available and how to use them effectively.
+ 
  ### [The unix shell](https://swcarpentry.github.io/shell-novice/)
 > The lesson guides you through the basics of file systems and the shell. If you have stored files on a computer at all and recognize the word “file” and either “directory” or “folder” (two common words for the same thing), you’re ready for this lesson.
 
