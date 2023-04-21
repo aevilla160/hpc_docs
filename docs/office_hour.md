@@ -28,6 +28,8 @@ Watch the video below!
 
 ## HPC Office Hour Q/A <!-- {docsify-ignore} -->
 Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
+HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
+Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
 ### 4/14/23
 >Office Hours Cancelled.
