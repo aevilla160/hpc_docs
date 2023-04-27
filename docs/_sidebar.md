@@ -22,8 +22,8 @@
 
 - Additional resources
   - [Workshops](software_carpentry.md)
-  - [Library workshops](lib_workshop.md)
   - [Office hour Q/A](office_hour.md)
+  - [Cloud resource](cloud.md)
   - [Pilot Jupyterhub](jupyterhub.md)
   - [HPC training material](hpc_training.md)
 
