@@ -31,6 +31,16 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
+### 4/28/23
+>Q: I am new to High-Performance Computing, where do I begin?
+>
+>A: It is highly recommended that all HPC users have knowledge of basic linux commands and understanding of how a command line interface works. If users need to brush up on basic linux commands then it is highly recommended that they view the Linux(Unix) carpentry workshops [Here!](software_carpentry.md)   
+>
+>Next step would be to check out the HPC Practice Session Material [Here!](hpc_training.md). Here you can look at the training material that is typically shown in the HPC workshop and even do a self-paced practice session!
+>
+>Finally it is highly recommended to look over sample job scripts to understand what a job is and what does a job hold. Users can view a sample job script [Here!](running_jobs.md)
+
+
 ### 4/14/23
 >Office Hours Cancelled.
 ### 4/7/23
@@ -122,7 +132,7 @@ The command "sinfo" to get information about the GPU nodes and their current usa
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 
-### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23
 >No Office Hour Q/A 
 
 
