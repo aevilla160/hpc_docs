@@ -12,7 +12,19 @@ We can help you use supercomputers to work faster, visualize the complexity of y
 
 
 ## Free trainings!
-We offer free training and mentoring; drop-in office hours; and consultation services that provide advice on scholarly workflows, equipment purchases, and assistance in using advanced cyberinfrastructure such as the Wide Area Visualization Environment (WAVE), the Science DMZ, or the MERCED Cluster. In partnership with the Library, we also offer a variety of workshops in Data Carpentry and Software Carpentry. We also offer customizable workshops in GitHub, Jupyterlab (aka Jupyter Notebooks), and targeted HPC training.
+- Training/workshop:
+    - [Intro to HPC](hpc_training.md)
+    - The training is requested by PI via submit a ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)
+    - The workshop needs to have at least 5 students sign-ups. 
+- Software Carpentries Workshop
+    - [Software Carpentries Workshops](software_carpentry.md) include a lot of good material such as python, R, Git, and HPC tutorials
+- HPC office hour
+    - Every Friday 10:30-12:00PM
+    - [Zoom](https://ucmerced.zoom.us/j/89487493900), password: 895006
+    - In-person ACS 312    
+
+In partnership with the Library, we also offer a variety of workshops in Data Carpentry and Software Carpentry. 
+- [Library workshops](https://libcal.ucmerced.edu/calendar/data_management?cid=10107&t=d&d=0000-00-00&cal=10107&inc=0)
 
 ## Website maintenance !
 This documentation website is created and maintained by CIRT Sr. Research Computing Facilitator Yue Yu, yyu49@ucmerced.edu. If you have any questions or want to contribute to the website, please contact me via the email shows above. 

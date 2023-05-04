@@ -4,11 +4,11 @@ If you want to test out something but do not want to write an submission script.
    ```bash
    salloc --partition=test --nodes=1 --ntasks-per-node=1 --time=00:15:00 
    ```
-> This command will ask for 1 node and 1 task on the node for 15min. You can adjust the parameters such as partition names, requested time, and number of tasks to for your situation but keep in mind that please follow the information on [MERCED Environment](modules.md) or [Pinnacles Environment](p_modules.md) for allowed parameters. 
+> This command will ask for 1 node and 1 task on the node for 15min. 
   
   You can also allocate GPU resources using the `salloc` command.
   ```bash
-  salloc --partition=gpu.q --nodes=1 --gres=gpu:1 --time=00:15:00 
+  salloc --partition=gpu --nodes=1 --gres=gpu:1 --time=00:15:00 
   ```
 > This command will help you allocate 1 GPU resources from the gpu.q partition where this partition has the GPU nodes accessibility. 
 2. After you allocate the desired resources and your allocated resources is available, you will be granted a number something similar below. Note, your allocated number is unique and is different than mine. 
