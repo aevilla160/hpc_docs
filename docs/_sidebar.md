@@ -16,6 +16,7 @@
     - [Running Quantum ESPRESSO](running_qr.md)
     - [Running Matlab](running_matlab.md)
     - [Interactive Jupyter Notebook](running_jupyter.md)
+    - [Install conda environment](conda_env.md)
 - Off-Campus Cluster
     - [External Computation resources](additional.md)
     - [HPC@UC](hpc_uc.md)
