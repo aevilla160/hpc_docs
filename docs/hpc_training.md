@@ -80,5 +80,50 @@ Continue to check by using `squeue --me` to see the status of the job submission
 Also you can see by using `ls` to see when the `.stdout` file is placed in the directory. This is a sign that the job finished, regardless of whether the job completed succesfully or failed. 
 >This concludes the Practice Session Workshop
 
+## Additional Practice for Users running Java on Pinnacles
+
+Below is the sample Java script that we will be running. This script is a simple program produces an outout of "Hellow World." 
+```
+public class App {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello, World!");
+    }
+}
+```
+>Remember to use `SCP Command` to transfer Java files to the remote cluster account. [Here](office_hour.md) is a tutorial on how to use SCP to transfer files/directories!
+
+**NOTE: As per usual, the File name of the script must match with the Class name. This sample file shown above is named `App.java`.**
+
+Review the sample job submission script below and take note of any comments. 
+``` 
+#!/bin/bash
+#SBATCH --nodes=1  
+#SBATCH --ntasks=1
+#SBATCH --partition test    #This partition can be changed from the user to best accomdate their compute needs
+#SBATCH --mem=1G   
+#SBATCH --time=0-00:15:00 # 15 minute
+#SBATCH --output=Appout.qlog    #Here it is important to name the output/qlog file something a little more specific as there will be other files produced when the code is finished
+#SBATCH --job-name=javatest     #Name of job
+#SBATCH --export=ALL    
+
+module load openjdk/17.0.5_8    #NOTE: This line is required otherwise the necessary modules to run Java will not be imported and the Job will fail. 
+# Also ensure that the most current version of openjdk that is installed on Pinnacles is being used. 
+javac App.java  #This line Compiles the code. Note: Replace 'App.java' with the file name of your Java script including the '.java'
+java App    #This line will execute the java program. Note: Replace 'App' with the name of your Java script excluding the '.java'
+```
+The name of the sample job script shown above is `javajob.bat`. This file is of Batch script file type. Users can also use `.sub` files to submit jobs.
+
+### Now we can submit the Java job!
+Now we can submit the Job using 'Sbatch [Name of Job submission file]'
+>Use 'squeue --me' to find key information about the job's state currently. If there is no information being presented then the job finished.
+
+Let's take a look at the results of the job. If the job was successful you will get two new files under your current directory. There will now be a `Filename.class` & `Filename.qlog`.
+> The `.class` file is created automatically when we run the job if there is no pre-existing class file being used to run the Java script. In the automatically created `.class` file there is only computer-readable information so we can leave this file alone. 
+The more important file is the `.qlog` file which will be holding the produced output of the Java script. For example, the `.qlog` file will be holding "Hello World!" which was being produced by our sample Java script. It is important to note that if the anticpated output is NOT produced the `.qlog` file will also hold the java errors, if any, that were produced.
+
+This conludes the Java Practice Section!
+
+
+
 
 
