@@ -1,5 +1,5 @@
 ## Accessing XSEDE and HPC@UC Computing Resources <!-- {docsify-ignore-all} -->
-We’re lucky to have the MERCED Cluster on campus that’s free and open to faculty and their graduate students, but what do you do if you need more computing power than the 1800+ cores we have on MERCED? There are other resources available to you than you might think. Two resources that are already available to us as part of the University of California: XSEDE and HPC@UC.
+We’re lucky to have the MERCED Cluster on campus that’s open to faculty and their graduate students, but what do you do if you need more computing power than the 1800+ cores we have on MERCED? There are other resources available to you than you might think. Two resources that are already available to us as part of the University of California: XSEDE and HPC@UC.
 
 ### XSEDE
 These are national-level computing resources. They are among the fastest supercomputers in the world. And you can access them for FREE!

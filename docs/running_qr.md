@@ -16,6 +16,7 @@ The job script then sets the variable `nCores` to be the total number of cores e
 
 #SBATCH --job-name=QE_EXAMPLE
 #SBATCH --partition=test
+#SBATCH -M merced
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=20
 #SBATCH --time=00:30:00

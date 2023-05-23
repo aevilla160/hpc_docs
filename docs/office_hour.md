@@ -67,7 +67,7 @@ Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006
 ### 2/24/23
 >Q: How to intialzie Conda Enviroment?
 >
->A:Tutorial is listed under "Running jobs" - [Click Here](running_R_mpi.md)
+>A:Tutorial is listed under "Running jobs" - [Click Here](conda_env.md)
 
 >Q:My GPU node request is not being granted or running?
 >
