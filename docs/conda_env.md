@@ -32,4 +32,12 @@ If you are using the default package path, you do not need to include path to ac
 conda activate ENV_NAME
 ```
 
-!> Note: user can also create a `YAML` file with all of the desired conda packages so that conda will find the correct configuration to solve the environment.
+!> Note: user can also create a `YAML` file with all of the desired conda packages so that conda will find the correct configuration to solve the environment. 
+The `YAML` file will contain a name, a list of Conda channels to look for the packages, and a list of all the desired packages.
+
+Here are some sample `YAML` files:
+* **[datascience.yml](_media/datascience.yml ':ignore')** - Contains many common data science programs
+* **[sklearn.yml](_media/sklearn.yml ':ignore')** - Machine learning with scikit-learn
+* **[biotools.yml](_media/biotools.yml ':ignore')** - Contains applications for a bioinformatics workflow
+ 
+
