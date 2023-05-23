@@ -27,7 +27,7 @@ To activate the environment, you can do:
 ```
 conda activate /data/$USER/packages/env_aaa
 ```
-If you are using the default package path, you do not need to include path to activate the environment, you can just do:
+?> If you are using the default package path, you do not need to include path to activate the environment, you can just do:
 ```
 conda activate ENV_NAME
 ```
