@@ -8,7 +8,7 @@ performance variations when running the same jobs on different nodes.
 The table below listed all MERCED cluster CPU compute nodes features, and their
 processors generations.
 
-| Nodes        | feature                                                    | RAM   | Total cores pre nodes | InifiBand (IB) |
+| Nodes        | feature                                                    | RAM   | Total cores per nodes | InfiniBand (IB) |
 |--------------|------------------------------------------------------------|-------|-----------------------|----------------|
 | 33-43        | Broadwell,avx2,E5-2650_v4,local scratch 932GB              | 128GB | 24                    | yes            |
 | 44           | Broadwell,avx2,E5-2650_v4,local scratch 932GB              | 112GB | 24                    | yes            |
@@ -48,7 +48,7 @@ needs:
 prior to being given access to managed systems
 * Users can install any licensed software packages in their __home__
   directories on MERCED, and where appropriate for other systems. If
-  you need assistance, submit a [Research Software Installation Request](https://ucmerced.service-now.com/servicehub?id=sh_form_service_page&formId=06da3f8edbfc08103c4d56f3ce9619f4)(Servers and Clusters), including on which system to install the software
+  you need assistance, submit a [Research Software Installation Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=b83ee9ff1b67a0543a003112cd4bcbde&form_id=0cb3dca04f7d4300b52ba1618110c7ff)(Servers and Clusters), including on which system to install the software
 * The MERCED cluster uses a queuing system for job submission.
   Priorities of jobs are assigned on a dynamic basis. Not all jobs
   submitted will begin immediately.

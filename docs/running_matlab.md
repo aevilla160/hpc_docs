@@ -51,6 +51,7 @@ Users can also run their Matlab script as a job on MERCED. Here is the `SLURM` s
 #SBATCH --nodes=1
 #SBATCH --ntasks=10    # users could ask a max of 20 or 24 cores per node depending on MERCED hardware configuration
 #SBATCH -p test 
+#SBATCH -M merced #This line is needed if running on Merced Cluster
 #SBATCH --mem=0  #This will use entire node memory
 #SBATCH --time=0-00:15:00     # 15 minutes
 #SBATCH --output=regular.stdout
