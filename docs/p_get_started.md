@@ -24,6 +24,37 @@ GPU nodes: Pinnacles GPU nodes provide exceptional performance and scalability f
 | Node-local storage|1TB M.2 NVMe Data Center Solid State Drive (110mm)|
 |Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
 
+## Pinnacles Queue Information:
+Pinnacles Cluster is the default cluster that is free and accessible to all users and has 6 public queues. 
+
+| Public Queues(Available to all users)| Max Wall Time | Default Time | Max Nodes per Job | Max # of jobs that can be submitted | 
+| -------------------------------------|---------------|--------------|-------------------|-------------------------------------|
+| test^ | 1 hour | 5 min. | 2 nodes | 1 |
+| bigmem | 3 days | 1 hrs | 2 nodes | 2 | 
+| gpu | 3 days | 1 hrs | 2 nodes | 4 | 
+| *short | 6 hours | 1 hrs | 4 nodes | 12 |
+| medium | 1 day | 6 hrs | 4 nodes | 6 |
+| long | 3 days | 1 day |  4 nodes | 3 | 
+| * `short` queue is the default queue for all jobs submitted without specifiying which queue job must run on |
+| ^ `test` queue has access to all node types use constraints to test on specific types. e.g. `#SBATCH --constraint=gpu,bigmem` |
+| Note: Access to GPUs also requires `#SBATCH --gres=gpu:X` |
+
+Pinnacles Private Queue Information: 
+| Private Queue| Max Wall Time |
+| -------------------------------------|---------------|
+| pi.larsson|  Infinite Time | 
+| pi.anierenberg | Infinite Time |
+| pi.dstrubbe | Infinite Time |
+| pi.apribram-jones | Infinite Time | 
+| pi.amartini | Infinite Time | 
+| pi.ckim103 | Infinite Time | 
+| pi.bdutagaci | Infinite Time |
+| grp.ccbm | 7 days |
+| dept.physics | Infinite Time |
+| dept.appliedmath | Infinite Time |
+| dept.cogsci | Infinite Time |
+
+
 ## Requesting an account
 
 The following detail consists of how to request Pinnacles cluster access. If you have questions or concerns, do not hesitate to:

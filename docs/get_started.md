@@ -22,6 +22,16 @@ processors generations.
 _Note: MERCED is no longer supporting Jupyterhub._
 
 
+## Merced Queue Information:
+| Public Queues(Available to all users)| Max Wall Time | Default Time | Max Nodes per Job | Max # of jobs that can be submitted | 
+| -------------------------------------|---------------|--------------|-------------------|-------------------------------------|
+| bigmem | 5 days | 1 hr | 2 nodes | 6 | 
+| test^ | 1 hour | 5 min. | 2 nodes | 1 |
+| *compute | 5 days | 1 hr | 2 nodes | 6 | 
+| NOTE: `#SBATCH -M merced ` must always be used to submit a job to MERCED cluster|
+| ^ `test` queue has access to all node types use constraints to test on specific types.  e.g. `#SBATCH --constraint=ib `|
+| * `compute` queue is the default queue for all jobs submitted  |
+
 
 ## Requesting an account
 Request an account via the UC Merced IT website Research Computing
