@@ -29,17 +29,19 @@ Pinnacles Cluster is the default cluster that is free and accessible to all user
 
 | Public Queues(Available to all users)| Max Wall Time | Default Time | Max Nodes per Job | Max # of jobs that can be submitted | 
 | -------------------------------------|---------------|--------------|-------------------|-------------------------------------|
-| test^ | 1 hour | 5 min. | 2 nodes | 1 |
+| ^test | 1 hour | 5 min. | 2 nodes | 1 |
 | bigmem | 3 days | 1 hrs | 2 nodes | 2 | 
 | gpu | 3 days | 1 hrs | 2 nodes | 4 | 
 | *short | 6 hours | 1 hrs | 4 nodes | 12 |
 | medium | 1 day | 6 hrs | 4 nodes | 6 |
 | long | 3 days | 1 day |  4 nodes | 3 | 
-| * `short` queue is the default queue for all jobs submitted without specifiying which queue job must run on |
-| ^ `test` queue has access to all node types use constraints to test on specific types. e.g. `#SBATCH --constraint=gpu,bigmem` |
-| Note: Access to GPUs also requires `#SBATCH --gres=gpu:X` |
+
+* <span style="color: red;">\*short queue is the default queue for all jobs submitted without specifiying which queue job must run on </span>
+* <span style="color: red;">^test queue has access to all node types use constraints to test on specific types. e.g. `#SBATCH --constraint=gpu,bigmem` </span>
+* <span style="color: red;"> Access to GPUs also requires `#SBATCH --gres=gpu:X` </span>
 
 Pinnacles Private Queue Information: 
+
 | Private Queue| Max Wall Time |
 | -------------------------------------|---------------|
 | pi.larsson|  Infinite Time | 

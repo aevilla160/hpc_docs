@@ -19,7 +19,7 @@ processors generations.
 | 89-104       | Skylake,sse4.2,avx,avx2,avx512,Gold_6130, no local scratch | 191GB | 32                    | yes            |
 | 105-114       | cascadelake,sse4.2,avx,avx2,avx512,Gold_6230, no local scratch | 191GB | 40                    | yes            |
 
-_Note: MERCED is no longer supporting Jupyterhub._
+?> **MERCED is no longer supporting Jupyterhub.**
 
 
 ## Merced Queue Information:
@@ -28,10 +28,10 @@ _Note: MERCED is no longer supporting Jupyterhub._
 | bigmem | 5 days | 1 hr | 2 nodes | 6 | 
 | test^ | 1 hour | 5 min. | 2 nodes | 1 |
 | *compute | 5 days | 1 hr | 2 nodes | 6 | 
-| NOTE: `#SBATCH -M merced ` must always be used to submit a job to MERCED cluster|
-| ^ `test` queue has access to all node types use constraints to test on specific types.  e.g. `#SBATCH --constraint=ib `|
-| * `compute` queue is the default queue for all jobs submitted  |
 
+* <span style="color: red;"> `#SBATCH -M merced ` must always be used to submit a job to MERCED cluster</span>
+* <span style="color: red;"> ^ `test` queue has access to all node types use constraints to test on specific types.  e.g. `#SBATCH --constraint=ib `</span>
+* <span style="color: red;"> \* `compute` queue is the default queue for all jobs submitted  </span>
 
 ## Requesting an account
 Request an account via the UC Merced IT website Research Computing
