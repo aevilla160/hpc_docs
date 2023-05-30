@@ -72,9 +72,21 @@ __Requesting access to Pinnacles is a 3-step process.__
 2. For new account group project applications, PIs please also make sure to complete the export control [form](https://ucmerced.app.box.com/file/827800760668?s=e6pmv4cv59tz76aat5re1kzvg23c0s09), if the PI has not done one before.
 3. Once the form is completed, please attach the form to the request ticket from step 1.
 
+What is included? 
+
+OIT will verify the eligibility and create the appropriate account for
+either a PI Group or a user.
+* Users can install any licensed software packages in their __home__
+  directories, and where appropriate for other systems. If
+  you need assistance, submit a [Research Software Installation Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=b83ee9ff1b67a0543a003112cd4bcbde&form_id=0cb3dca04f7d4300b52ba1618110c7ff)(Servers and Clusters), including on which system to install the software.
+* The Pinnacles cluster uses a queuing system for job submission.
+  Priorities of jobs are assigned on a dynamic basis. Not all jobs
+  submitted will begin immediately.
+
+
 ?> Questions?
 
-If you still have questions, we have put together a Pinnacles [FAQ page](pinnacles_FAQ.md) that has the most common questions received and will be keeping it up to date
+If you still have questions, we have put together a Pinnacles [FAQ page](pinnacles_FAQ.md) that has the most common questions received and will be keeping it up to date.
 
 
 ## How to cite

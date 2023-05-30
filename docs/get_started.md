@@ -34,34 +34,41 @@ processors generations.
 * <span style="color: red;"> \* `compute` queue is the default queue for all jobs submitted  </span>
 
 ## Requesting an account
-Request an account via the UC Merced IT website Research Computing
-[website](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
-Before apply an account, please read the following information
+
+The following detail consists of how to request Merced cluster access. If you have questions or concerns, do not hesitate to:
+* Schedule a MERCED consultation [here](https://arrangr.com/sarvani/facultyconsult). 
+
+!> Who can request access for MERCED cluster?
+* An active PI or student __with a PI advisor__ with associated COA information.
+
+
+Before applying for an account, please read the following information
 carefully. Note that MERCED is a recharge model, which means PI must provide COA information in the ticket before they can use MERCED. 
-
->What do I need to get this service?
-
-An active PI or student __with a PI advisor__ can submit this
-request by completing this [request
-form](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
 
 Each PI account has at least one user group and one queue project
 associate with it, which may be used by all group members. PI’s must notify the system administration staff when students, postdoctorals, and other group members depart the University and should no longer have access to MERCED. All data stored in a user accounts will be accessible at all times by the associated PI.
->What is included?
+
+!> How to request for MERCED cluster access?
+
+__Requesting access to MERCED is a 4-step process.__
+1. UC Merced Principal Investigators (PIs) or other researchers request MERCED account [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
+2. For new account group project applications, PIs please also make sure to complete the export control [form](https://ucmerced.app.box.com/file/827800760668?s=e6pmv4cv59tz76aat5re1kzvg23c0s09), if the PI has not done one before.
+3. Once the form is completed, please attach the form to the request ticket from step 1. 
+4. For PIs requesting access to MERCED cluster, please provide Chart of Account(COA) number associated with this project. Other group members, please reach out to your respective PI to obtain the COA number. Attach the COA number in the request ticket. Requests without COA numbers will be denied.   
+
+>What is included? 
 
 OIT will verify the eligibility and create the appropriate account for
-either a PI Group or a user. Please review the following information
-prior to the consultation to help determine the best solution for your
-needs:
-* Faculty PIs __must__ complete and __sign__ an Export Control Attestation
-[form](https://ucmerced.box.com/s/e6pmv4cv59tz76aat5re1kzvg23c0s09)
-prior to being given access to managed systems
+either a PI Group or a user.
 * Users can install any licensed software packages in their __home__
-  directories on MERCED, and where appropriate for other systems. If
-  you need assistance, submit a [Research Software Installation Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=b83ee9ff1b67a0543a003112cd4bcbde&form_id=0cb3dca04f7d4300b52ba1618110c7ff)(Servers and Clusters), including on which system to install the software
+  directories, and where appropriate for other systems. If
+  you need assistance, submit a [Research Software Installation Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=b83ee9ff1b67a0543a003112cd4bcbde&form_id=0cb3dca04f7d4300b52ba1618110c7ff)(Servers and Clusters), including on which system to install the software.
 * The MERCED cluster uses a queuing system for job submission.
   Priorities of jobs are assigned on a dynamic basis. Not all jobs
   submitted will begin immediately.
+
+?> Questions?
+If you still have questions, we have put together a MERCED [FAQ page](merced_FAQ.md) that has the most common questions received and will be keeping it up to date.
 
 ## How to cite
 All MERCED users must agree to acknowledge the MERCED Cluster and the
