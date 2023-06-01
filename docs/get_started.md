@@ -42,8 +42,8 @@ The following detail consists of how to request Merced cluster access. If you ha
 * An active PI or student __with a PI advisor__ with associated COA information.
 
 
-Before applying for an account, please read the following information
-carefully. Note that MERCED is a recharge model, which means PI must provide COA information in the ticket before they can use MERCED. 
+?> Before applying for an account, please read the following information
+carefully. Note that MERCED is a recharge model, which means PI must provide __COA__ information in the ticket before they can use MERCED. 
 
 Each PI account has at least one user group and one queue project
 associate with it, which may be used by all group members. PI’s must notify the system administration staff when students, postdoctorals, and other group members depart the University and should no longer have access to MERCED. All data stored in a user accounts will be accessible at all times by the associated PI.
