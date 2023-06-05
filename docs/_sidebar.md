@@ -2,6 +2,7 @@
   - [User policy](policy.md)
 - On-campus cluster
     - [How to connect](central_login.md)
+    - [Modules](p_modules.md)
     - [MERCED](MERCED.md)
         - [Getting started](get_started.md)
         - [MERCED FAQ](merced_FAQ.md)
