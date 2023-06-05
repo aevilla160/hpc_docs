@@ -35,7 +35,7 @@ Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006
 
 >Q: I'm having trouble downloading a folder or file onto the clusters and I keep getting permission denied.
 >
->A:  First check whether the original author of the folder or file has given proper read & write access to others or groups. Use the command `ls -l` to view all permissions in your current directory or `ls -l <filename>` to view only the permissions for that specified file. To download a folder or file user must ensure that they have __read__ access. If user __does__ have proper read and/or other permissions for the folder or file, but still continue to get error or fail messages about permission denied then try to go back a directory(folder) using the `cd ..` command. Then create a new directory using the `mkdir <foldername>` command and try reading(downloading) the orignal folder or file in the newly created directory.
+>A:  First check whether the original author of the folder or file has given proper read (r) & write (w) access to others or groups. Use the command `ls -la` to view all permissions in your current directory or `ls -la <filename>` to view only the permissions for that specified file. To download a folder or file user must ensure that they have __read__ and __write__ access. To create a new directory using the `mkdir <foldername>` command and try reading(downloading) the orignal folder or file in the newly created directory.
 
 >Q: Can I let this folder/file download in the background?
 >
