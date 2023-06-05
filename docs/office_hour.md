@@ -39,7 +39,7 @@ Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006
 
 >Q: Can I let this folder/file download in the background?
 >
->Yes users can run the download or transfer of data using `<command> & `. 
+>Yes users can run the download or transfer of data using `& ` at the end of their command. 
 
 
 ### 4/28/23
