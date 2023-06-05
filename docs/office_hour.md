@@ -31,6 +31,17 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
+### 6/2/23 
+
+>Q: I'm having trouble downloading a folder or file onto the clusters and I keep getting permission denied.
+>
+>A:  First check whether the original author of the folder or file has given proper read & write access to others or groups. Use the command `ls -l` to view all permissions in your current directory or `ls -l <filename>` to view only the permissions for that specified file. To download a folder or file user must ensure that they have __read__ access. If user __does__ have proper read and/or other permissions for the folder or file, but still continue to get error or fail messages about permission denied then try to go back a directory(folder) using the `cd ..` command. Then create a new directory using the `mkdir <foldername>` command and try reading(downloading) the orignal folder or file in the newly created directory.
+
+>Q: Can I let this folder/file download in the background?
+>
+>Yes users can run the download or transfer of data using `<command> & `. 
+
+
 ### 4/28/23
 >Q: I am new to High-Performance Computing, where do I begin?
 >
@@ -132,7 +143,7 @@ The command "sinfo" to get information about the GPU nodes and their current usa
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 
-### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23; 4/28/23;5/5/23; 5/12/23;5/19/23; 5/26/23
 >No Office Hour Q/A 
 
 
