@@ -113,8 +113,8 @@ java App    #This line will execute the java program. Note: Replace 'App' with t
 ```
 The name of the sample job script shown above is `javajob.bat`. This file is of Batch script file type. Users can also use `.sub` files to submit jobs.
 
-### Now we can submit the Java job!
-Now we can submit the Job using 'Sbatch [Name of Job submission file]'
+### submit a Java job
+you can submit the Job using 'Sbatch [Name of Job submission file]'
 >Use 'squeue --me' to find key information about the job's state currently. If there is no information being presented then the job finished.
 
 Let's take a look at the results of the job. If the job was successful you will get two new files under your current directory. There will now be a `Filename.class` & `Filename.qlog`.
