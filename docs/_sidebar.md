@@ -28,5 +28,6 @@
   - [Cloud resource](cloud.md)
   - [Pilot Jupyterhub](jupyterhub.md)
   - [HPC training material](hpc_training.md)
+  - [Important Links & Resources](important_links.md)
 
 - [💜 Suggestions?](contribute.md)
