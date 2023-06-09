@@ -31,6 +31,20 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
+### 6/9/23
+>Q: I am trying to download this folder from the cluster to my local computer but I am having issues with `rsync` - error `skipping local path`. 
+>
+>A: A quick bypass to this issue is to use the `scp` command to transfer files or folders from remote to local. A tutorial is posted at the top of this page. 
+
+>Q: How can I check my groups usage of our allocated storage on Borgstore?
+>
+>A: Users can not check a detailed-breakdown of a group's users and their respective useage of the Borgstore storage. Users can check thier Groups storage usage/total using the command `beegfs-ctl --getquota --gid ######`. Users can check their ID number and Group ID # via the command `id <username>`.
+
+>Q: I am having trouble accessing the Borgstore and the direcotries in the Command-Line Interface is blanking red?
+>
+>A: If the path displayed is flashing red and user is having issues directly accessing the Borgstore then the soft-links leading to the Borgstore are broken or outdated. It is best to open a ticket to get further assitance. Click [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to open a ticket. 
+
+
 ### 6/2/23 
 
 >Q: I'm having trouble downloading a folder or file onto the clusters and I keep getting permission denied.
@@ -143,7 +157,7 @@ The command "sinfo" to get information about the GPU nodes and their current usa
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 
-### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23; 4/28/23;5/5/23; 5/12/23;5/19/23; 5/26/23
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23; 4/28/23;5/5/23; 5/12/23;5/19/23; 5/26/23 <!-- {docsify-ignore} -->
 >No Office Hour Q/A 
 
 
