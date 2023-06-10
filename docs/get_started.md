@@ -30,7 +30,7 @@ processors generations.
 | *compute | 5 days | 1 hr | 2 nodes | 6 | 
 
 * <span style="color: red;"> `#SBATCH -M merced ` must always be used to submit a job to MERCED cluster</span>
-* <span style="color: red;"> ^ `test` queue has access to all node types use constraints to test on specific types.  e.g. `#SBATCH --constraint=ib `</span>
+* <span style="color: red;"> ^ `test` queue has access to all node types use constraints to test on specific types.</span>
 * <span style="color: red;"> \* `compute` queue is the default queue for all jobs submitted  </span>
 
 ## Requesting an account
