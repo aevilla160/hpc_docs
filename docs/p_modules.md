@@ -190,6 +190,6 @@ There are 3 types of queues on MERCED, and each type of queue has its own config
 
 !> NOTE: MERCED cluster general queues maximum job submissions per user is set to 20 which means user can not submit more than 20 jobs at a time.
 
-!> Production calculations must be run using the queueing and scheduling system. Computationally intensive calculations __should never be run on the head or login node__. MERCED & Pinnacles makes use of __Slurm__. Detailed information regarding Slurm is available from a number of online resources. 
+!> Production calculations must be run using the queueing and scheduling system. Computationally intensive calculations __should never be run on the head or login node__. MERCED & Pinnacles use __SLURM__ scheduling system. Detailed information regarding SLURM is available from a number of online resources. 
 
 
