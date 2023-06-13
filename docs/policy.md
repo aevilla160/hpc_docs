@@ -5,6 +5,22 @@
 ## University policies
 1. All PIs must fill and sign the export control [form](https://ucmerced.app.box.com/s/e6pmv4cv59tz76aat5re1kzvg23c0s09) before using clusters (MERCED and Pinnacles).
 2. All users are responsible for following University of California's "[Electronic Communication Policy](https://it.ucmerced.edu/sites/it.ucmerced.edu/files/wp-content/uploads/2017/11/acceptable-use-policy.pdf)" related to computing and electronics. These include but not limited to tolerance, civility, and respect for diversity of background, gender, ethnicity, race, religion, political beliefs, sexual orientation, and physical abilities. For more policies and guidelines, please visit [here](https://it.ucmerced.edu/oit-policies-guidelines).
+
+
+## User Policies 
+1. All Users and PIs requesting an account must have a filled out  export control [form](https://ucmerced.app.box.com/s/e6pmv4cv59tz76aat5re1kzvg23c0s09), as stated before, and follow the steps outlined [here](p_get_started.md). 
+2. Do not share accounts or passwords with others. 
+3. Computing resources cannot be used for commercial, monetary purposes or personal gain. 
+
+
+## Appropriate Use Policy 
+1. CIRT-managed resources and services should only be for __research purposes ONLY__. Any user that is found to be using computing resources for non-research related purposes, such as but not limited to __crypto-mining__, __blockchain__ or other illegal or illicit purposes will result in __immediate__ termination of all jobs, deactivation of account, PI notification and in accordance with all Univeristy Policies that apply.  
+2. It is important for all users to always be aware and knowledgeable about what data and information is being placed onto CIRT-managed clusters(i.e. MERCED & Pinnacles). P3/P4-level sensitive research data hosting is not supported on campus-wide clusters(i.e. MERCED & Pinnacles). 
+3. The use of the clusters to store, manipulate and/or remotely access classified or improperly obtained data and information is __prohibited__.
+4. Users are not permitted to try and bypass login or gain access to information or usage that is not granted to them. 
+5. Never infringe upon someone else's copyright or plagerize someone else's intellectual property.  
+
+
    
 
 ## Cluster jobs
