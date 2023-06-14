@@ -36,7 +36,14 @@ Create a repository on [GitHub](https://github.com/) and start putting your cont
 
 > Generate an nbgitpuller link
 
-Generate an [nbgitpuller link](https://nbgitpuller.readthedocs.io/en/latest/link.html). This generates a clickable link that contains within it the following pieces of information:
-* The URL to the hub. Upon clicking the link, users will be redirected to this hub, and content will be pulled into their home directory there. 
+Generate an [nbgitpuller link](https://nbgitpuller.readthedocs.io/en/latest/link.html). This uses a web-based generator (see the attached figure below) to generates a clickable link that contains within it the following pieces of information (alternatively, you can use the github `nbgitpuller` button to generate the link, see the figure above):
+![nbgitpuller web gen](imgs/nbgitpuller_web_edited.png "webgen with nbgitpuller")
 
+* The URL to the hub. Upon clicking the link, users will be redirected to this hub, and content will be pulled into their home directory there. 
+* The URL of the git repository where the content lives.
+* The branch in the git repository where the content lives. The default specified there is `master`, although newer GitHub repositories use `main` as the default. You can find yours on the Github page of your content repository
+* The default interface to open when users click this link. The default is the classic notebook, but many other apps are available
+* A file to open when the link is clicked. When left empty, a directory listing with the content of the repository will be shown
+
+!> Unfortunately, `RStudio` does not support opening a specific file, and will always show the home directory. Users will have to manually navigate to the appropriate file.
 
