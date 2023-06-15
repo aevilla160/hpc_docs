@@ -1,11 +1,11 @@
-## HPC Vocabulary & Terminology
+## HPC Vocabulary & Terminology <!-- {docsify-ignore-all} -->
 
 In this section users can find important and technical vocabulary or "jargon" related to High-Performance Computing. This page will contain the term and it's definition. 
 
 __Note:__ It is highly recommended that new HPC users familarize themselves with the terminology as it will be vital to their understanding and proper use of the computing resources. 
 
 
-### HPC Archetecture Terminology 
+### HPC Archetecture Terminology  <!-- {docsify-ignore-all} -->
 
 | Term | Definition| 
 |-------------------------|-------------------------------------------|
@@ -20,7 +20,7 @@ __Note:__ It is highly recommended that new HPC users familarize themselves with
 | Infiniband |  A channel-based fabric that facilitates high-speed communications between interconnected nodes. |
 
 
-### Job submission Terminology 
+### Job submission Terminology  <!-- {docsify-ignore-all} -->
 | Term | Definition | 
 |-------------------------|-------------------------------------------|
 | Partition | Partitions is a group of nodes that typically have common hardware specs and are designed to excel at a certain of my performance. Users specify which partition they want their computations to run. As eac partition hold differet purposes.  I.E. `gpu` partition has GPU processers for computations that requiere gpu access. Each Partition has it's own proper queue in the scheduler.  |

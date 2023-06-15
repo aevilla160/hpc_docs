@@ -23,12 +23,12 @@
     - [HPC@UC](hpc_uc.md)
 
 - Additional resources
+  - [HPC Vocabulary](hpc_vocab.md)
   - [Workshops](software_carpentry.md)
   - [Office hour Q/A](office_hour.md)
   - [Cloud resource](cloud.md)
   - [Pilot Jupyterhub](jupyterhub.md)
   - [HPC training material](hpc_training.md)
-  - [HPC Vocabulary](hpc_vocab.md)
   - [Important Links & Resources](important_links.md)
 
 - [💜 Suggestions?](contribute.md)
