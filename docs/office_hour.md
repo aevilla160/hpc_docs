@@ -31,6 +31,11 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
+### 6/16/23
+>Q: How to install R kernel to Jupyter Lab?
+>
+>A: First make sure install R to your computer, download R [here](https://cran.r-project.org/). Open JupyterLab, now you should be able to use R, under the terminal type R to get into the R environment. Once you are in the R session, type 1. `install.packages("devtools")` followed by 2. `devtools::install_github("IRkernel/IRkernel")` and finally 3. `IRkernel::installspec()`. Note: In order, the (1) install the devtools package which gets you the install_github() function, (2) install the IR Kernel from github, and (3) tell Jupyter where to find the IR Kernel. Now, when you close the JupyterLab and reopen it, you should be able to see the R kernel. 
+
 ### 6/9/23
 >Q: I am trying to download this folder from the cluster to my local computer but I am having issues with `rsync` - error `skipping local path`. 
 >
