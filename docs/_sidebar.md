@@ -30,5 +30,6 @@
   - [Pilot Jupyterhub](jupyterhub.md)
   - [HPC training material](hpc_training.md)
   - [Important Links & Resources](important_links.md)
+  - [Requesting Support](get_help.md)
 
 - [💜 Suggestions?](contribute.md)
