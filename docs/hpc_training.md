@@ -80,7 +80,7 @@ Continue to check by using `squeue --me` to see the status of the job submission
 Also you can see by using `ls` to see when the `.stdout` file is placed in the directory. This is a sign that the job finished, regardless of whether the job completed succesfully or failed. 
 >This concludes the Practice Session Workshop
 
-## Additional Practice for Users running Java on Pinnacles
+## Additional Practice for Users running Java on Pinnacles <!-- {docsify-ignore} -->
 
 Below is the sample Java script that we will be running. This script is a simple program produces an outout of "Hellow World." 
 ```
@@ -113,7 +113,7 @@ java App    #This line will execute the java program. Note: Replace 'App' with t
 ```
 The name of the sample job script shown above is `javajob.bat`. This file is of Batch script file type. Users can also use `.sub` files to submit jobs.
 
-### submit a Java job
+### submit a Java job <!-- {docsify-ignore} -->
 you can submit the Job using 'Sbatch [Name of Job submission file]'
 >Use 'squeue --me' to find key information about the job's state currently. If there is no information being presented then the job finished.
 
