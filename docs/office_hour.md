@@ -31,6 +31,40 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
+### 6/23/23
+>Q: My job is getting cancelled and I am trying to access the GPU. 
+>
+>A: Ensure that the GPU partition is being called correctly `gpu` and that `#SBATCH --gres=gpu:X ` is implemented. Replace the X with the number of GPUs needed. 
+
+>Q: Whats the difference between using more cores versus using more nodes?
+>
+>A: It is important to understand that Nodes and Cores are two different parts of an HPC cluster are on two different levels. A core holds the CPU component. Multiple cores make up a node. When increasing the number of cores, the cpu or processing power per node is being increased which can help speed up jobs. Increasing the number of nodes __does not__ necessarily correlate to increase processing power. Many jobs may not be optimized for running and scaling acrods multiple nodes. Users trying to run across multiple nodes must implement MPI into their job so the job is optimized best for running parralelling across nodes. Please refer to the [HPC Vocab Page](hpc_vocab.md) for more information and definitions for terminology. 
+
+>Q:How can I test whether my job is scalable for running across multiple nodes?
+>
+>A: It is recommended that users try using a benchmark to see if parrelization is suitable for their job. A benchmark is testing a much smaller version of their actual job or calcuations and see whether that sample job is or can scale properly. 
+
+>Q:Can I implement multiprocessing in my Python code. 
+>
+> Yes, it is recommended to read over the multiprocessing module documentation online, view it [here](https://docs.python.org/3/library/multiprocessing.html)!
+
+>Q: Does the CPUs on Pinnacles have hyperthreading turned on? 
+>
+>A: No, the CPUs on Pinnacles and MERCED currently do not support hyperthreading. 
+
+>Q: What is hyperthreading? 
+>
+>A: Hyperthreading is a method that allows the CPU to divide up the work among itself and complete it parallel among itself. 
+
+>Q: I am trying to run a job on the cluster. My data utilizes python dependcies to parse through it and is located on the box cloud. Can my job run sucessfully?
+>
+>A: All the files and folders that the cluster needs to access needs to be transfered and present on the cluster storage. The cluster can not access data stored on a internet or outside cloud storage. Furthermore, to utilize python packages or dependencies one must create a conda enviroment on the cluster. More information about creating an enviroment can be found [here](conda_env.md)
+
+>Q: How can I view the size of my data on the cluster?
+>
+>A: Users can use the command `du -h <filename>` to view the size of a given file or directory. 
+
+
 ### 6/16/23
 >Q: How to install R kernel to Jupyter Lab?
 >
