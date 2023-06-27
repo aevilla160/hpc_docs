@@ -5,7 +5,4 @@ We’re lucky to have the MERCED Cluster on campus that’s open to faculty and 
 These are national-level computing resources. They are among the fastest supercomputers in the world. And you can access them for FREE!
 
 
-From [ACCESS Website](https://www.access-ci.org/) You can request to use different computing resources among 13 different resource providers via ACCESS. Almost all U.S.-based university and non-profit researchers are eligible to request resource allocations, at no cost to you. Allocations are available if you are just getting started in computational science, visualization, or data analysis, if you are an experienced HPC user with large-scale needs or if you are deploying a science gateway. ACCESS also supports allocations for academic courses and training activities. ACCESS provides in depth support for all of these activities through its Extended Collaborative Support Service program.
-
-
-
+From [ACCESS Website](https://www.access-ci.org/) You can request to use different computing resources among 13 different resource providers via ACCESS. Almost all U.S.-based university and non-profit researchers are eligible to request resource allocations, at no cost to you. Allocations are available if you are just getting started in computational science, visualization, or data analysis, etc. ACCESS also supports allocations for academic courses and training activities. ACCESS provides in depth support for all of these activities through its Extended Collaborative Support Service program.

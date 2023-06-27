@@ -18,6 +18,8 @@ We invite the UC Merced community to use the Hub for teaching (both now and futu
 
 If you have any additional questions accessing hub, please open a general OIT research computing ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
+If you were not able to attend the workshop of JupyterHub, here is the recording [link](https://video.ucmerced.edu/media/JupyterHub+Workshop/1_ehe8hmux).
+
 ## Generate `nbgitpuller` link <!-- {docsify-ignore} -->
 > Ensure that the `nbgitpuller` is installed into your environment
 
