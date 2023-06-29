@@ -38,9 +38,10 @@ Below are flags that can be used to help declare the dependency of certain job(s
 
 |Command | USE |
 | --------| --------------- |
-| afterok  | Flag is satisfied after all tasks in the job array start. | 
+| after  | Flag is satisfied after all tasks in the job array start. | 
 | afterany | Flag is satisfied after all tasks in the job array complete.|
 | aftercorr | Satisfied after the corresponding task ID in the specified job has completed successfully | 
+| afterok  | Flag is satisfied after all tasks in the job array complete successfully | 
 | afternotok | Flag satisfied after all tasks in the job array complete with at least one tasks not completing successfully. | 
 
 ## Command Uses
