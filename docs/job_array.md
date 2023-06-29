@@ -1,24 +1,24 @@
 ## Running a Job Array
 Job arrays offer a mechanism for submitting and managing collections of similar jobs quickly and easily that utliizes only one job script. Submitting a job array can be useful in many of the following ways: 
 
-    1. Having a set of code or program that needs to run many different input variables or files. 
-    2. Running a single program repeatedly to analyzing a single data file.
-    3. Running the same program multiple times with varying arguements.
+1. Having a set of code or program that needs to run many different input variables or files. 
+2. Running a single program repeatedly to analyzing a single data file.
+3. Running the same program multiple times with varying arguements.
 
 Submitting a job array allows users to run jobs at the same time or have the results of the previous job output to be used as input for the next job. While the output capacity from a job array is immencse, the job configurations are the same for all jobs to be ran in the job array. 
 
-The max number of jobs that can run at the same time is determined by the number of jobs that can run on the selected partition and is different for each partition. More information about each partition on each cluster can be found here: [MERCED](p_get_started.md) and [Pinnacles](p_get_started.md)
+The max number of jobs that can run at the same time is determined by the maximum number of jobs that can run on the selected partition and is different for each partition. More information about each partition on each cluster can be found here: [MERCED](get_started.md) and [Pinnacles](p_get_started.md)
 
 
-### Writing a Job Array Script
-Job Arrays allow for multiple jobs to run using 1 job script. This is important because all jobs in the array will have same SBATCH variables by default. It is not best use of resources to submit a job array that has drastically different jobs that require drastically different requirements(i.e. job sizes, walltime, memory needed, etc). Job arrays are best used when submitting jobs that rely are dependent on one part or whole job array or running jobs with similar requirements(i.e. job sizes, walltime, memory needed, etc).
+## Writing a Job Array Script
+Job Arrays allow for multiple jobs to run using 1 job script. This is important because all jobs in the array will have same SBATCH variables by default. It is not best use of resources to submit a job array that has drastically different jobs that require drastically different requirements(i.e. job sizes, walltime, memory needed, etc). Job arrays are best used when submitting jobs with similar requirements(i.e. job sizes, walltime, memory needed, etc).
 
 Below are job submission script examples:
 
 
 
-### Files and Outputs
-Job Arrays have many jobs and with each job having its own proper output and error files. In the job array script there are two new variables,  `%A` and `%a`, which may be used to name the files that catch stdin, stderr and stdout. `%A` will be replaced by the value of SLURM_ARRAY_JOB_ID ( first job ID of the array) and `%a` will be replaced by the value of SLURM_ARRAY_TASK_ID (job array index value).
+## Files and Outputs
+Job Arrays have many jobs and with each job having its own proper output and error files. In the job array script there are two new variables,  `%A` and `%a`, which may be used to name the files that catch stdin, stderr and stdout. `%A` will be replaced by the value of `SLURM_ARRAY_JOB_ID` ( first job ID of the array) and `%a` will be replaced by the value of `SLURM_ARRAY_TASK_ID` (job array index value).
 
 
 ## How to Submit a Job Array 
@@ -35,12 +35,12 @@ The Task ID range specification arguments can also be configured to:
 Jobs that depend on outputs of previous jobs of a job array or on the ouput of a whole job array after it is completed must declare itself as dependent using `#SBATCH --depend=<Flag>:<jobid>[IndexRange] <jobscript.file>` after the independent job array has been submitted to the scheduler. 
 
 Below are flags that can be used to help declare the dependency of certain job(s) in the job array submission line after the first job array has been submitted to the scheduler. 
+
 |Command | USE |
 | --------| --------------- |
 | afterok  | Flag is satisfied after all tasks in the job array start. | 
 | afterany | Flag is satisfied after all tasks in the job array complete.|
 | aftercorr | Satisfied after the corresponding task ID in the specified job has completed successfully | 
-| afterok |Flag satisfied after all tasks in the job array complete successfully. |
 | afternotok | Flag satisfied after all tasks in the job array complete with at least one tasks not completing successfully. | 
 
 ## Command Uses
