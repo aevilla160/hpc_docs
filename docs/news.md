@@ -1,4 +1,18 @@
 <!-- {docsify-ignore-all} -->
+## Overleaf licenses to campus
+  
+  In an effort to reduce costs on research technology, the Cyberinfrastructure and Research Technologies (CIRT) team, in partnership with the Graduate Division, has brought Overleaf licenses to campus. These licenses are available to everyone at no cost, whether you have an existing Overleaf account or not.
+  
+  With a UC Merced Overleaf license, you’ll gain access to:
+  - Unlimited number of invited collaborators (& link sharing)
+  - Full project history view – to see all changes made for the life of the project, with the ability to revert to any past changes
+  - GitHub integration (2-way sync)
+  - Priority support (from Overleaf)
+  
+  Get Overleaf [here](https://www.overleaf.com/edu/ucmerced)
+  
+  Contact [CIRT](cirt@ucmerced.edu)
+
 ## Jupyterhub workshop March 6th 9am - 11am PT
   Join OIT’s Cyberinfrastructure and Research Technologies team as they dive into UC Merced’s pilot JupyterHub - an open source, browser based, computational environment that assists professors and students in developing coursework in computational/data-science.
   
