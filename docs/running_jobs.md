@@ -1,4 +1,4 @@
-## Running jobs on clusters
+## Running jobs on clusters  <!-- {docsify-ignore} -->
 
 The command `sbatch` is used to submit jobs to the queue. Additional commands to work with and monitor the queue/scheduler are shown in the table below.
 

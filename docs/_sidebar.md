@@ -14,6 +14,7 @@
     - [Faculty communications](commun.md)
 - Running jobs
     - [Submit a job ](running_jobs.md)
+    - [Submit a job array](job_array.md)
     - [Running R-and-MPI](running_R_mpi.md)
     - [Running Quantum ESPRESSO](running_qr.md)
     - [Running Matlab](running_matlab.md)
