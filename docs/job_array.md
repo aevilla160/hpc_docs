@@ -13,7 +13,28 @@ The max number of jobs that can run at the same time is determined by the maximu
 ## Writing a Job Array Script
 Job Arrays allow for multiple jobs to run using 1 job script. This is important because all jobs in the array will have same SBATCH variables by default. It is not best use of resources to submit a job array that has drastically different jobs that require drastically different requirements(i.e. job sizes, walltime, memory needed, etc). Job arrays are best used when submitting jobs with similar requirements(i.e. job sizes, walltime, memory needed, etc).
 
-Below are job submission script examples:
+Below is a job submission script example with an array size of 5:
+
+```bash
+#!/bin/bash
+#SBATCH --nodes=1  #asked for 1 node
+#SBATCH --ntasks=5  #asked for 5 cores
+#SBATCH --partition  short  #this job will submit to short partition. Job array job limit will be limited to 12 jobs on this partition.
+#SBATCH --mem=10G  #this job is asked for 10G of total memory, use 0 if you want to use entire node memory
+#SBATCH --job-name=test_job_array #Name the job array
+#SBATCH --array=1-5 #this job array will have an array size 1-5, 5 seperate jobs will run.
+#SBATCH --time=0-00:15:00 # 15 minutes  #There will be a max run time of 15 mins for this job array to run
+#SBATCH --output=array_%A-%a.qlog  #the output information of each job running will put into its respective qlog file listed as: array_JOB_ID-TASK_ID.qlog
+#SBATCH --export=ALL
+
+# # This set of instructions will ask for each job running to print the date and then it's task ID
+
+date
+printf "My SLURM_ARRAY_TASK_ID: %s\n" "$SLURM_ARRAY_TASK_ID"
+
+module load anaconda3
+```
+
 
 
 
