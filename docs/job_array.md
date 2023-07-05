@@ -76,8 +76,8 @@ Scancel Command:
 | scancel [jobID] | Cancels the whole job array |
 
 
-Squeue Command: 
-The squeue command, when used with job arrays will report all of the tasks associated with a single job record on one line and use a regular expression to indicate the "array_task_id" values. When states of individual jobs change, then those changes will also be reflected in the outpout of the `squeue` command.  Adding `--array` or `-r` to the squeue command will print one job array element per line allowing for clear states for each job in the job array.
+!> Squeue Command: 
+The `squeue` command, when used with job arrays will report all of the tasks associated with a single job record on one line and use a regular expression to indicate the "array_task_id" values. When states of individual jobs change, then those changes will also be reflected in the outpout of the `squeue` command.  Adding `--array` or `-r` to the squeue command will print one job array element per line allowing for clear states for each job in the job array.
 
 
 
