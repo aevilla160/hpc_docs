@@ -18,20 +18,28 @@ Below is a job submission script example with an array size of 5:
 ```bash
 #!/bin/bash
 #SBATCH --nodes=1  #asked for 1 node
-#SBATCH --ntasks=1  #asked for 1 core
-#SBATCH --partition  short  #this job will submit to short partition. Job array job limit will be limited to 12 jobs on this partition based on maximum job submit limits.
+#SBATCH --ntasks=1 #asked for 20 cores
+#SBATCH --partition medium  #this job will submit to medium partition
+#SBATCH --array=1-5
 #SBATCH --mem=1G  #this job is asked for 1G of total memory, use 0 if you want to use entire node memory
-#SBATCH --job-name=test_job_array #job name
-#SBATCH --array=1-5 #this job array will have an array size 1-5, 5 seperate jobs will run.
-#SBATCH --time=0-00:15:00 # 15 minutes  #There will be a max run time of 15 mins for this job array to run
-#SBATCH --output=array_%A-%a.qlog  #the output information of each job running will put into its respective qlog file listed as: array_JOB_ID-TASK_ID.qlog
+#SBATCH --time=0-00:15:00 # 15 minutes
+#SBATCH --output=test_%A_%a.qlog  #the output information will put into test_$SLURM_ARRAY_JOB_ID_$SLURM_ARRAY_TASK_ID.qlog file
+#SBATCH --job-name=test1  #the job name
 #SBATCH --export=ALL
 
-# # This set of instructions will ask for each job running to print the date and then it's task ID
+# This submission file will run a simple set of commands. All stdout will
+# be captured in test1.qlog (as specified in the Slurm command --output above).
+# This job file uses a shared-memory parallel environment and requests 20
+# cores (--ntasks option) on a single node(--nodes option).
+#
 
-date
-printf "My SLURM_ARRAY_TASK_ID: %s\n" "$SLURM_ARRAY_TASK_ID"
+whoami
+module load anaconda3
+# This job will use one python input but takes different argument each time per job array
+
+python3 python_test_array.py $SLURM_ARRAY_TASK_ID
 ```
+The example python script `python_test_array.py` can be downloaded [here](_media/python_test_array.py ':ignore')
 
 
 
