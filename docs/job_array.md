@@ -27,12 +27,6 @@ Below is a job submission script example with an array size of 5:
 #SBATCH --job-name=test1  #the job name
 #SBATCH --export=ALL
 
-# This submission file will run a simple set of commands. All stdout will
-# be captured in test1.qlog (as specified in the Slurm command --output above).
-# This job file uses a shared-memory parallel environment and requests 20
-# cores (--ntasks option) on a single node(--nodes option).
-#
-
 whoami
 module load anaconda3
 # This job will use one python input but takes different argument each time per job array
