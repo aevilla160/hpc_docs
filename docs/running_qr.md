@@ -130,7 +130,7 @@ Waiting for input...
 
 If the code shows only a dozen or so lines in the output but does not continue after the line `Waiting for input...` then this means that the code did not read a complete input file. It may be the case that the number of atoms input and the value `nat` do not match. This commonly occurs if the input file does not end with a new, blank line.
 
-### Problems iwth cholesky <!-- {docsify-ignore} -->
+### Problems with cholesky <!-- {docsify-ignore} -->
 
 A vague issue can appear with the message "problem with cholesky". This can be solved by changing the parallelization scheme. Specifically, this can show up if too many cores are used. Reduce the number of cores and rerun the computation.
 
