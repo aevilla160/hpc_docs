@@ -18,7 +18,7 @@ Below is a job submission script example with an array size of 5:
 ```bash
 #!/bin/bash
 #SBATCH --nodes=1  #asked for 1 node
-#SBATCH --ntasks=1 #asked for 20 cores
+#SBATCH --ntasks=1 #asked for 1 cores
 #SBATCH --partition medium  #this job will submit to medium partition
 #SBATCH --array=1-5
 #SBATCH --mem=1G  #this job is asked for 1G of total memory, use 0 if you want to use entire node memory
