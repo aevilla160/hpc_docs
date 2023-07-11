@@ -1,18 +1,19 @@
-### Job Management is a wide topic and here it is covered how to check jobs during and after complet
+# Job Management 
+Presented here are helpful tools and methods to manage  Slurm jobs, find detailed information of a job like memory usage, CPUs, and how to use job statistics/information to troubleshoot any job failure.
+
 
 ## Checking jobs after submission
 
-`squeue` is a useful command that can help check the state and workload of the overall cluster as well as more specific information. Below is a table of options that can be added to view certain information.
+`squeue` is a useful command that can help check the state and workload of the overall cluster as well as more specific information. Below is a table of options that can be added to view certain information. By default `squeue` will show all currently submitted and running jobs on Pinnacles.
 
 |Command_Option | Use | 
 | -------------| -----------------------|
-| `squeue ` | This will allow you to see all currently submitted jobs on Pinnacles |
 | `-M merced ` | Shows all currently submitted jobs on MERCED |
 |  `--me ` | Shows all currently jobs submitted by user |
 | `--r` or `-array ` | Shows job arrays sumitted onto cluster |
 
 
-It is also important to note: flags can be used together in the same line for example, `squeue -M merced --me`
+>Flags can be used together in the same line for example: `squeue -M merced --me`
 
 ## Job State
 Job states are the current state of the jobs that were submitted. Some important state codes that are useful are given below: 
@@ -45,8 +46,32 @@ NodeList(Reason) helps to find on which nodes the job is currently running on. A
 | QOSResourceLimit | The job's QOS has reached some resource limit | 
 
 ##  Sacct command
-The `sacct` displays accounting data for all jobs in the cluster queue or recent history. By default, the sacct command diplays JobId, JobName, Partition, Account, AllocCPUS, State and ExitCode. Below are useful options that can be added to get more specific information but all options for `sacct ` can be found through executing `sacct -e`.
+The `sacct` displays accounting data for all jobs in the cluster queue or recent history. By default, the sacct command diplays JobId, JobName, Partition, Account, AllocCPUS, State and ExitCode. Below are useful options that can be added to get more specific information but all options for `sacct ` can be found through executing `sacct -e` or `sacct -h`.
 
 | Option | Meaning | 
-| ---------- | ---------------| 
+| ---------------- | ---------------| 
 | --user=<uid_or_user_list> | Displays the list of jobs currently submitted and running on the cluster of the specified user. |
+| -j, --jobs=<JobID> | Displays information about the job ID inputted |
+| -C, --constraints=<constraint_list> | Comma separated list to filter jobs based on what constraints/features the job requested. Multiple options will be treated as 'and' not 'or', so the job would need all constraints specified to be returned not one or the other. | 
+| -h, --help | Displays all options and descriptions for `sacct` |
+| -X, --allocations | Only show statistics relevant to the job allocation itself |
+| -v, --verbose|  Primarily for debugging purposes, report the state of various variables during processing. |
+| --name=<jobname_list> | Display jobs that have any of these name(s).|
+| --state=<state_list> | Displays states depending on which state was asked to be displayed and thier associated exit code. |
+
+## Common Issues
+Below are common issues, that can arrise when running jobs on the clusters, and associated troubleshooting methods. 
+
+### Out of Memory Issues <!-- {docsify-ignore} -->
+Jobs can fail if the memory requested for the job exceeds the actual memory needed for the job to complete successfully.
+It is good practice to always check the job state and exit code with `sacct -j <JobID>`. It can be concluded that a job has had a **OUT_OF_MEMORY** error from reading the job state column. Furthermore, the output file produced by the failed job should also contain error messages that can be associated with the job running out of memory. 
+
+### Time-Out Issues <!-- {docsify-ignore} -->
+One common issue for jobs failing is if job does not complete in the allocated time. This leads to a **Time-Out** State and a `(TimeLimit)` nodelist reason. The best approach is to increase the time being allocated for the job to run, ensuring that the job does not exceed the partition's max walltime. If the job continues to fail with a **Time-Out** state then it is best to break the job down into smaller jobs,  make it into a job array or change the partition that the job is being placed onto to run and compute. 
+
+## Other Useful Commands
+
+|Command | Use | 
+| -------------| -----------------------|
+| scancel <jobid> or skill <jobid> | These commands will kill the specified job in it's current process and state. | 
+| seff <job-id> |  This command can be used to find the job efficiency report for the job(s) after it has completed and exited from the queue. Some information in the report are: State, CPU & Memory Utilized, CPU & Memory Efficiency. 
