@@ -1,8 +1,8 @@
-# Job Management 
+# Job Management  <!-- {docsify-ignore} -->
 Presented here are helpful tools and methods to manage  Slurm jobs, find detailed information of a job like memory usage, CPUs, and how to use job statistics/information to troubleshoot any job failure.
 
 
-## Checking jobs after submission
+## Checking jobs after submission  <!-- {docsify-ignore} -->
 
 `squeue` is a useful command that can help check the state and workload of the overall cluster as well as more specific information. Below is a table of options that can be added to view certain information. By default `squeue` will show all currently submitted and running jobs on Pinnacles.
 
@@ -13,9 +13,9 @@ Presented here are helpful tools and methods to manage  Slurm jobs, find detaile
 | `--r` or `-array ` | Shows job arrays sumitted onto cluster |
 
 
->Flags can be used together in the same line for example: `squeue -M merced --me`
+!> Flags can be used together in the same line for example: `squeue -M merced --me`
 
-## Job State
+## Job State  <!-- {docsify-ignore} -->
 Job states are the current state of the jobs that were submitted. Some important state codes that are useful are given below: 
 
 | State Codes | Meaning | 
@@ -32,9 +32,10 @@ Job states are the current state of the jobs that were submitted. Some important
 | TO | Job terminated upon reaching its time limit | 
 
 
-## Nodelist Reasons 
+## Nodelist Reasons  <!-- {docsify-ignore} -->
 
-NodeList(Reason) helps to find on which nodes the job is currently running on. Also, in the case of PD Job state, this field will give more information about the reason why the job is in pending state. Below is a table that shows common Nodelist(reasons) and their meaning. 
+NodeList(Reason) helps to find on which nodes the job is currently running on. Also, in the case of PD Job state, this field will give more information about the reason why the job is in pending state. Below is a table that shows common Nodelist(reasons) and their meanings. 
+
 | (Reason) | Meaning | 
 | ---------- | ---------------| 
 | (Resources) |  Job is waiting for resources to become available |
@@ -45,8 +46,8 @@ NodeList(Reason) helps to find on which nodes the job is currently running on. A
 | (QoSJobLimit) | The job's QOS has reached its maximum job count |
 | QOSResourceLimit | The job's QOS has reached some resource limit | 
 
-##  Sacct command
-The `sacct` displays accounting data for all jobs in the cluster queue or recent history. By default, the sacct command diplays JobId, JobName, Partition, Account, AllocCPUS, State and ExitCode. Below are useful options that can be added to get more specific information but all options for `sacct ` can be found through executing `sacct -e` or `sacct -h`.
+##  `sacct` command  <!-- {docsify-ignore} -->
+The `sacct` displays accounting data for all jobs in the cluster queue or recent history. By default, the `sacct` command diplays JobId, JobName, Partition, Account, AllocCPUS, State and ExitCode. Below are useful options that can be added to get more specific information but all options for `sacct ` can be found through executing `sacct -e` or `sacct -h`.
 
 | Option | Meaning | 
 | ---------------- | ---------------| 
@@ -59,7 +60,7 @@ The `sacct` displays accounting data for all jobs in the cluster queue or recent
 | --name=<jobname_list> | Display jobs that have any of these name(s).|
 | --state=<state_list> | Displays states depending on which state was asked to be displayed and thier associated exit code. |
 
-## Common Issues
+## Common Issues  <!-- {docsify-ignore} -->
 Below are common issues, that can arrise when running jobs on the clusters, and associated troubleshooting methods. 
 
 ### Out of Memory Issues <!-- {docsify-ignore} -->
@@ -69,7 +70,7 @@ It is good practice to always check the job state and exit code with `sacct -j <
 ### Time-Out Issues <!-- {docsify-ignore} -->
 One common issue for jobs failing is if job does not complete in the allocated time. This leads to a **Time-Out** State and a `(TimeLimit)` nodelist reason. The best approach is to increase the time being allocated for the job to run, ensuring that the job does not exceed the partition's max walltime. If the job continues to fail with a **Time-Out** state then it is best to break the job down into smaller jobs,  make it into a job array or change the partition that the job is being placed onto to run and compute. 
 
-## Other Useful Commands
+## Other Useful Commands  <!-- {docsify-ignore} -->
 
 |Command | Use | 
 | -------------| -----------------------|
