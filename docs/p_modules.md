@@ -180,7 +180,7 @@ There are 3 types of queues on MERCED, and each type of queue has its own config
 | Public Queues(Available to all users)| Max Wall Time | Default Time | Max Nodes per Job | Max # of jobs that can be submitted | 
 | -------------------------------------|---------------|--------------|-------------------|-------------------------------------|
 | bigmem | 5 days | 1 hr | 2 nodes | 6 | 
-| test^ | 1 hour | 5 min. | 2 nodes | 1 |
+| test^ | 1 hour | 5 min | 2 nodes | 1 |
 | *compute | 5 days | 1 hr | 2 nodes | 6 | 
 
 
@@ -188,7 +188,7 @@ There are 3 types of queues on MERCED, and each type of queue has its own config
 * <span style="color: red;"> ^ `test` queue has access to all node types use constraints to test on specific types. </span>
 * <span style="color: red;"> \* `compute` queue is the default queue for all jobs submitted  </span>
 
-!> NOTE: MERCED cluster general queues maximum job submissions per user is set to 20 which means user can not submit more than 20 jobs at a time.
+!> NOTE: MERCED cluster general queues maximum job submissions per user is set to 6 which means user can not submit more than 6 jobs at a time.
 
 !> Production calculations must be run using the queueing and scheduling system. Computationally intensive calculations __should never be run on the head or login node__. MERCED & Pinnacles use __SLURM__ scheduling system. Detailed information regarding SLURM is available from a number of online resources. 
 
