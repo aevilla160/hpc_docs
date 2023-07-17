@@ -1,3 +1,11 @@
+## 07/10/2023
+Dear HPC users,
+
+HPC office hours will be conducted remote-only starting this Friday, July 14th  until August 11th . In-person office hours will resume on the August 18th.
+
+We encourage users who have HPC-related questions to join our Friday office hour. It provides a valuable opportunity to receive assistance and guidance.
+
+
 ## 02/01/2023
 Dear Computational Researchers –
  
