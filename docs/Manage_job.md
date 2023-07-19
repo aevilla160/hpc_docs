@@ -110,121 +110,183 @@ Below are defintions of some important fields from the above list that are helpf
 | ExitCode | Exit code returned by the job. |
 
 
+Here is one use of `sacct` with the follwing syntax to retrieve useful information about the specified job:
+`sacct -j <jobid>`
+
+This will provide similar information with the same fields as shown below about the specified job: 
+
+    JobID           JobName  Partition    Account  AllocCPUS      State ExitCode
+    ------------ ---------- ---------- ---------- ---------- ---------- --------
+    569893         javatest       test project_u+          1 OUT_OF_ME+    0:125
+    569893.batch      batch            project_u+          1 OUT_OF_ME+    0:125
+    569893.exte+     extern            project_u+          1  COMPLETED      0:0
+
+By default, `sacct -j <jobid>` will display basic information with some fields, as seen above, jobid, jobname, partition, account, allocCPUs, state, exit code. The information given by default is useful when it comes to debugging as it allows us to see why or how the submitted job did not exit successfully. For instance in the above example we see a job called "javatest" was submitted to the `test` partition and was allocated 1 cpu but finished in a state of `OUT_OF_ME+`. The `+` is only there as the error message is to long for the complete message to be displayed. The job had an exit code of `0:125`, which means that the job ran out of memory. When debugging why this particular job failed it can be inferred that the job failed because it ran out of memory, which is supported through the finished state of the job(OOM) and the exit code that represents an out of memory error killed the job or made the job exit the partition. To view the complete sample job submission that produced this sample output refer to "Out of Memory Issues" section below. 
+
+For debugging that requires more in-depth analysis and information adding the option `--Format=<Field>` will show additional information that can be more useful for debugging bigger issues. Below is an example use and output with the use of `--Format=<Field`.
+
+Using the syntax: `sacct -j <jobid> --format=jobid,jobname,reqcpus,reqmem,averss,maxrss,elapsed,state,exitcode`
+
+    JobID           JobName  ReqCPUS     ReqMem     AveRSS     MaxRSS    Elapsed      State ExitCode
+    ------------ ---------- -------- ---------- ---------- ---------- ---------- ---------- --------
+    569893         javatest        1         1M                         00:00:01 OUT_OF_ME+    0:125
+    569893.batch      batch        1                 1304K      1304K   00:00:01 OUT_OF_ME+    0:125
+    569893.exte+     extern        1                  880K       880K   00:00:01  COMPLETED      0:0
+
+>Refer to the above table of fields to read more about each field and it's use.
+
+Using the `sacct` with addional fields there is far more analysis that can be done to see why, when, how a job failed or began to run unsuccesfully and killed. 
+>Using the table of fields and uses, there are many ways the option `--Flag=` can be used in the debugging process. 
+
+
 
 ## `scontrol` Command 
 `scontrol` is a helpful command that allows to  view or configure the submitted job and it's state. scontrol is used to view or modify Slurm configuration including: job, job step, node, partition, reservation, and overall system configuration. If no command is entered on the execute line, scontrol will operate in an interactive mode and prompt for input. It will continue prompting for input and executing commands until explicitly terminated.
 
-Use `scontrol` with the follwing syntax to retrieve useful information about the specified job
+Use `scontrol` with the follwing syntax to retrieve useful information about the specified job:
 
-Below is an example of using scontrol to get insight about the example job. The example job failed and has its reason shown below. It is shown as `JobState=PENDING Reason=Job's_account_not_permitted_to_use_this_partition_`
+`scontrol show job <jobid>`
 
-    JobId=568939 ArrayJobId=568939 ArrayTaskId=1-5 JobName=test_job_array
-   UserId=guest001(100232) GroupId=ucm_guests(100058) MCS_label=N/A
-   Priority=4294341946 Nice=0 Account=project_ucm_guests QOS=normal
-   JobState=PENDING Reason=Job's_account_not_permitted_to_use_this_partition_(short_denies_project_ucm_guests_including_project_ucm_guests) Dependency=(null)
-   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
-   RunTime=00:00:00 TimeLimit=00:15:00 TimeMin=N/A
-   SubmitTime=2023-07-14T15:13:48 EligibleTime=2023-07-14T15:13:49
-   AccrueTime=2023-07-14T15:13:49
-   StartTime=2023-07-14T15:14:18 EndTime=2023-07-14T15:29:18 Deadline=N/A
-   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-07-14T15:14:18 Scheduler=Main
-   Partition=short AllocNode:Sid=rclogin01:132802
-   ReqNodeList=(null) ExcNodeList=(null)
-   NodeList= SchedNodeList=node018
-   NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
-   TRES=cpu=1,mem=1G,node=1,billing=1
-   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
-   MinCPUsNode=1 MinMemoryNode=1G MinTmpDiskNode=0
-   Features=(null) DelayBoot=00:00:00
-   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
-   Command=/scratch/guest001/job_arraytest.sh
-   WorkDir=/scratch/guest001
-   StdErr=/scratch/guest001/array_568939-4294967294.qlog
-   StdIn=/dev/null
-   StdOut=/scratch/guest001/array_568939-4294967294.qlog
-   Power=
+Below is an example of using scontrol to get insight about an example job. An example job is running and has not yet terminated. It is shown as `JobState=RUNNING Reason=NONE` & `ExitCod=0:0`. 
 
 
+    UserId=guest001 GroupId=****** MCS_label=N/A
+    Priority=4294341021 Nice=0 Account=project_**** QOS=normal
+    JobState=RUNNING Reason=None Dependency=(null)
+    Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+    RunTime=00:02:33 TimeLimit=00:15:00 TimeMin=N/A
+    SubmitTime=2023-07-19T12:50:52 EligibleTime=2023-07-19T12:50:52
+    AccrueTime=2023-07-19T12:50:52
+    StartTime=2023-07-19T12:50:53 EndTime=2023-07-19T13:05:53 Deadline=N/A
+    SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-07-19T12:50:53 Scheduler=Main
+    Partition=test AllocNode:Sid=10.1.2.252:279163
+    ReqNodeList=(null) ExcNodeList=(null)
+    NodeList=hmnode003
+    BatchHost=hmnode003
+    NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+    TRES=cpu=1,mem=1M,node=1,billing=1
+    Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+    MinCPUsNode=1 MinMemoryNode=1M MinTmpDiskNode=0
+    Features=(null) DelayBoot=00:00:00
+    OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+    Command=/home/******/testoom/job.bat
+    WorkDir=/home/******/testoom
+    StdErr=/home/******/testoom/Appout.qlog
+    StdIn=/dev/null
+    StdOut=/home/******/testoom/Appout.qlog
+    Power=
+
+Note: Astericks are only in the above sample output to protect user information. 
 
 ## Common Issues  <!-- {docsify-ignore} -->
 Below are common issues, that can arrise when running jobs on the clusters, and associated troubleshooting methods. 
 
 ### Out of Memory Issues <!-- {docsify-ignore} -->
 Jobs can fail if the memory requested for the job exceeds the actual memory needed for the job to complete successfully.
-It is good practice to always check the job state and exit code with `sacct -j <JobID>`. It can be concluded that a job has had a **OUT_OF_MEMORY** error from reading the job state column. Furthermore, the output file produced by the failed job should also contain error messages that can be associated with the job running out of memory. 
+It is good practice to always check the job state and exit code with `sacct -j <JobID>`. It can be concluded that a job has had a **OUT_OF_MEMORY** error from reading the job state column and exit code. Furthermore, the output file produced by the failed job should also contain error messages that can be associated with the job running out of memory. 
 
-Below is a script that will result in an out of memory error. The script is running matlab but has only 1G allocated in memory toward the job. Thus results in a fail in this use case.
-    #! /bin/bash
+Below is a job script that will result in an out of memory error. The script is running java but has only 1M allocated in memory toward the job. Thus results in a fail in this use case as it is not enought memory to create the class file, compile  and run the program.
 
+    #!/bin/bash
     #SBATCH --nodes=1
-    #SBATCH --ntasks=3    # users could ask a max of 20 or 24 cores per node depending on MERCED hardware configuration
-    #SBATCH -p test
-    #SBATCH --mem=1G  #Here is the reason why the job fails
-    #SBATCH --time=0-00:15:00     # 15 minutes
-    #SBATCH --output=regular.stdout
-    #SBATCH --job-name=test
+    #SBATCH --ntasks=1
+    #SBATCH --partition test    
+    #SBATCH --mem=1M # This is where the issue arrises
+    #SBATCH --time=0-00:15:00 # 15 minute
+    #SBATCH --output=oomout.qlog    
+    #SBATCH --job-name=javatest
     #SBATCH --export=ALL
 
-    module load matlab/r2021b  # OR module load matlab/matlab_2018b
-    # example 1
-    matlab -nodisplay -nodesktop -nosplash -r "ver; exit;"
+    module load openjdk/17.0.5_8    
+    javac oom.java
+    java oom
 
-    # example 2
-    matlab -nodisplay -nodesktop -nosplash -r "license('test', 'optimization_toolbox'); exit;"
 
-    # example 3
-    matlab -nodisplay -nodesktop -nosplash -logfile /path/to/test_matlab.log < test_matlab.m
+Sample Java program that was used in the job sample script above is shown below: 
 
- We can check the states by using `sacct -j 568951 --format=jobid,jobname,reqcpus,reqmem,averss,maxrss,elapsed,state%20,exitcode --unit=M`. Replace the 568951 wuth the job ID that is being checked. 
+    public class oom {
+        public static void main(String[] args) throws Exception {
+            System.out.println("If you are seeing this it then memory size was suffient");
+        }
+    }
+ 
+ Check the status of the job using `sacct -j <jobid>` the follwing is produced: 
 
-    JobID           JobName  ReqCPUS     ReqMem     AveRSS     MaxRSS    Elapsed                State ExitCode
-    ------------ ---------- -------- ---------- ---------- ---------- ---------- -------------------- --------
-    568951             test        3      1024M                         00:00:40        OUT_OF_MEMORY    0:125
-    568951.batch      batch        3               101.62M    101.62M   00:00:40        OUT_OF_MEMORY    0:125
-    568951.exte+     extern        3                 0.89M      0.89M   00:00:40            COMPLETED      0:0
+    JobID           JobName  Partition    Account  AllocCPUS      State ExitCode
+    ------------ ---------- ---------- ---------- ---------- ---------- --------
+    569908         javatest       test project_u+          1 OUT_OF_ME+    0:125
+    569908.batch      batch            project_u+          1 OUT_OF_ME+    0:125
+    569908.exte+     extern            project_u+          1  COMPLETED      0:0
 
-Using the sacct command we see that the job resulted in OOM state which allows us to debug that the issue was an memory capacity issue. 
+Using the `sacct` command we see that the job failed because it ran out of memory. This is inferred through the state: `OUT_OF_ME+` and the exit code of `0:125` which correlates with an Out of Memory exit status or the reason why the job session was terminated. 
 
+  It is possible to use `scontrol show job <sampleid>` to debug the error(s) that occured in our job.  
+
+    JobId=569908 JobName=javatest
+    UserId=******** GroupId=******** MCS_label=N/A
+    Priority=4294341021 Nice=0 Account=project_****** QOS=normal
+    JobState=OUT_OF_MEMORY Reason=OutOfMemory Dependency=(null)
+    Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:125
+    RunTime=00:10:27 TimeLimit=00:15:00 TimeMin=N/A
+    SubmitTime=2023-07-19T12:50:52 EligibleTime=2023-07-19T12:50:52
+    AccrueTime=2023-07-19T12:50:52
+    StartTime=2023-07-19T12:50:53 EndTime=2023-07-19T13:01:20 Deadline=N/A
+    SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-07-19T12:50:53 Scheduler=Main
+    Partition=test AllocNode:Sid=10.1.2.252:279163
+    ReqNodeList=(null) ExcNodeList=(null)
+    NodeList=hmnode003
+    BatchHost=hmnode003
+    NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+    TRES=cpu=1,mem=1M,node=1,billing=1
+    Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+    MinCPUsNode=1 MinMemoryNode=1M MinTmpDiskNode=0
+    Features=(null) DelayBoot=00:00:00
+    OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+    Command=/home/******/testoom/job.bat
+    WorkDir=/home/******/testoom
+    StdErr=/home/******/testoom/Appout.qlog
+    StdIn=/dev/null
+    StdOut=/home/******/testoom/Appout.qlog
+    Power=
+
+
+Looking through the output of `scontrol` we can see the job state, the state the job was last recorded at before the session was terminated or ended, was `OUT_OF_MEMORY`, the node reason was listed at `OUTofMemory` and the exit code was recorded at, before the job session was terminated, `0:125`. All of these fields are useful and allow for the debugging process to conclude that the job did not succesfully run because of a memory capacity issue. 
 ### Time-Out Issues <!-- {docsify-ignore} -->
 One common issue for jobs failing is if job does not complete in the allocated time. This leads to a **Time-Out** State and a `(TimeLimit)` nodelist reason. The best approach is to increase the time being allocated for the job to run, ensuring that the job does not exceed the partition's max walltime. If the job continues to fail with a **Time-Out** state then it is best to break the job down into smaller jobs,  make it into a job array or change the partition that the job is being placed onto to run and compute. 
 
-Below is a script that will result in an out of memory error
-    #! /bin/bash
+Below is a script that will result in a time-out error.
 
+    #!/bin/bash
     #SBATCH --nodes=1
-    #SBATCH --ntasks=3    # users could ask a max of 20 or 24 cores per node depending on MERCED hardware configuration
+    #SBATCH --ntasks=1
     #SBATCH -p test
-    #SBATCH --mem=10G  
-    #SBATCH --time=0-00:1:00     # 1 minute, requested
+    #SBATCH --mem=1G  #Here is the reason why the job fails
+    #SBATCH --time=0-00:01:00     # 1 mins
     #SBATCH --output=regular.stdout
     #SBATCH --job-name=test
     #SBATCH --export=ALL
 
-    module load matlab/r2021b  # OR module load matlab/matlab_2018b
-    # example 1
-    matlab -nodisplay -nodesktop -nosplash -r "ver; exit;"
 
-    # example 2
-    matlab -nodisplay -nodesktop -nosplash -r "license('test', 'optimization_toolbox'); exit;"
+    echo "Starting Process"
+    sleep 180
+    echo "Ending Process"
 
-    # example 3
-    matlab -nodisplay -nodesktop -nosplash -logfile /path/to/test_matlab.log < test_matlab.m
 
-After submitting this script using `sbatch TOjob.sh` we see that it runs and is successfully running up until it hits its max wall time of 1 minute. This job failed because the mininimum time needed was 180 seconds as that is the time the job sleeps after running. 
+This simple job script is printing out "Starting Process" and then sleeps or waits 180 seconds before again executing the following line of printing out "Ending Process".  After submitting this script using `sbatch` it gets placed on the requested partition and then it begins to run until it hits its max wall time of 1 minute. This job will because the mininimum time needed was 180 seconds as that is the time the job sleeps after running and is the time required at minimum for the job to fully execute. 
 
-Using `sacct -j <jobID> --format=jobid,jobname,reqcpus,reqmem,averss,maxrss,elapsed,state%20,exitcode --unit=M`. We get a result table that shows that the first part timed out and thus resulted in a failed, timedout and cancelled state. 
+Using `sacct -j <jobID> --format=jobid,jobname,reqcpus,reqmem,elapsed,state,exitcode`. We get a result table that shows that the first part timed out and thus resulted in a failed, timedout and cancelled state. 
 
-    JobID           JobName  ReqCPUS     ReqMem     AveRSS     MaxRSS    Elapsed                State ExitCode
-    ------------ ---------- -------- ---------- ---------- ---------- ---------- -------------------- --------
-    568963             test        3      1024M                         00:01:10              TIMEOUT      0:0
-    568963.batch      batch        3                12.01M     12.01M   00:01:11            CANCELLED     0:15
-    568963.exte+     extern        3                 0.90M      0.90M   00:01:10            COMPLETED      0:0
-    568963.0           echo        3                 3.30M      3.30M   00:00:00            COMPLETED      0:0
-    568963.1          sleep        3                 3.27M      3.27M   00:01:12            CANCELLED     0:15
+    JobID           JobName  ReqCPUS     ReqMem    Elapsed      State ExitCode
+    ------------ ---------- -------- ---------- ---------- ---------- --------
+    569330             test        1         1G   00:01:02    TIMEOUT      0:0
+    569330.batch      batch        1              00:01:03  CANCELLED     0:15
+    569330.exte+     extern        1              00:01:02  COMPLETED      0:0
+    569330.0           echo        1              00:00:00  COMPLETED      0:0
+    569330.1          sleep        1              00:01:02  CANCELLED     0:15
 
-Using the sacct command we see that the job resulted in `TIMEOUT` state which allows us to debug that the issue was an walltime issue issue. 
+Using the sacct command we see that the job resulted in `TIMEOUT` state which allows us to debug that the issue was an walltime issue issue. This can further be seen as `569330.0` or `echo` on the fourth line shows that echo was completed it was able to execute in the begginging when it printed "Starting Process" but echo was never called again as the job timed-out so the second echo which prints out "Ending Process" was never reached as the job stoped one line before it.  
 
-However it always important to note that sometimes a job failing not the result of one issue or error, but a combination of many errors and issues. Furthermore it is best to keep track of jobs before, during and after completion. 
+ It always important to note that sometimes a job failing not the result of one issue or error, but a combination of many errors and issues. Furthermore it is best to keep track of jobs before, during and after completion. 
 
 
 ## Useful proccess to follow to ensure sucessful completion of jobs <!-- {docsify-ignore} -->
@@ -243,7 +305,7 @@ However it always important to note that sometimes a job failing not the result 
 > To exit the live status of the watch squeue command, press Ctrl + C
 
 3. After the job exits from the queue, run the below sacct command to check the status of the job. 
-`sacct -j <JobID> --format=jobid,jobname,elapsed,state,exitcode`
+`sacct -j <JobID> ` or `scontrol show job <jobid>`
 
 Sacct Command SampleOutput:
 
