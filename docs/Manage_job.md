@@ -121,21 +121,24 @@ This will provide similar information with the same fields as shown below about 
     569893.batch      batch            project_u+          1 OUT_OF_ME+    0:125
     569893.exte+     extern            project_u+          1  COMPLETED      0:0
 
-By default, `sacct -j <jobid>` will display basic information with some fields, as seen above, jobid, jobname, partition, account, allocCPUs, state, exit code. The information given by default is useful when it comes to debugging as it allows us to see why or how the submitted job did not exit successfully. For instance in the above example we see a job called "javatest" was submitted to the `test` partition and was allocated 1 cpu but finished in a state of `OUT_OF_ME+`. The `+` is only there as the error message is to long for the complete message to be displayed. The job had an exit code of `0:125`, which means that the job ran out of memory. When debugging why this particular job failed it can be inferred that the job failed because it ran out of memory, which is supported through the finished state of the job(OOM) and the exit code that represents an out of memory error killed the job or made the job exit the partition. To view the complete sample job submission that produced this sample output refer to "Out of Memory Issues" section below. 
+By default, `sacct -j <jobid>` will display basic information with some fields, as seen above, jobid, jobname, partition, account, allocCPUs, state, exit code. The information given by default is useful when it comes to debugging as it allows us to see why or how the submitted job did not exit successfully. For instance in the above example we see a job called "javatest" was submitted to the `test` partition and was allocated 1 cpu but finished in a state of `OUT_OF_ME+`. The `+` is only there as the error message is too long for the complete message to be displayed. The job had an exit code of `0:125`, which means that the job ran out of memory.  
 
-For debugging that requires more in-depth analysis and information adding the option `--Format=<Field>` will show additional information that can be more useful for debugging bigger issues. Below is an example use and output with the use of `--Format=<Field`.
+For debugging that requires more in-depth analysis and information adding the option `--format=<Field>` will show additional information that can be more useful for debugging bigger issues. Below is an example with the use of `--format=<Field`.
 
 Using the syntax: `sacct -j <jobid> --format=jobid,jobname,reqcpus,reqmem,averss,maxrss,elapsed,state,exitcode`
 
-    JobID           JobName  ReqCPUS     ReqMem     AveRSS     MaxRSS    Elapsed      State ExitCode
-    ------------ ---------- -------- ---------- ---------- ---------- ---------- ---------- --------
-    569893         javatest        1         1M                         00:00:01 OUT_OF_ME+    0:125
-    569893.batch      batch        1                 1304K      1304K   00:00:01 OUT_OF_ME+    0:125
-    569893.exte+     extern        1                  880K       880K   00:00:01  COMPLETED      0:0
+```
+JobID           JobName  ReqCPUS     ReqMem     AveRSS     MaxRSS    Elapsed                State ExitCode
+------------ ---------- -------- ---------- ---------- ---------- ---------- -------------------- --------
+569966          testjob        1         1M                         00:00:06        OUT_OF_MEMORY    0:125
+569966.batch      batch        1                 1312K      1312K   00:00:06        OUT_OF_MEMORY    0:125
+569966.exte+     extern        1                  916K       916K   00:00:06            COMPLETED      0:0
+```
 
 >Refer to the above table of fields to read more about each field and it's use.
 
-Using the `sacct` with addional fields there is far more analysis that can be done to see why, when, how a job failed or began to run unsuccesfully and killed. 
+Using the `sacct` with addional fields; there is far more analysis that can be done to see why, when, how a job failed or began to run unsuccesfully and killed. 
+
 >Using the table of fields and uses, there are many ways the option `--Flag=` can be used in the debugging process. 
 
 
@@ -185,72 +188,79 @@ Below are common issues, that can arrise when running jobs on the clusters, and 
 Jobs can fail if the memory requested for the job exceeds the actual memory needed for the job to complete successfully.
 It is good practice to always check the job state and exit code with `sacct -j <JobID>`. It can be concluded that a job has had a **OUT_OF_MEMORY** error from reading the job state column and exit code. Furthermore, the output file produced by the failed job should also contain error messages that can be associated with the job running out of memory. 
 
-Below is a job script that will result in an out of memory error. The script is running java but has only 1M allocated in memory toward the job. Thus results in a fail in this use case as it is not enought memory to create the class file, compile  and run the program.
+Below is a job script that will result in an out of memory error. 
 
-    #!/bin/bash
-    #SBATCH --nodes=1
-    #SBATCH --ntasks=1
-    #SBATCH --partition test    
-    #SBATCH --mem=1M # This is where the issue arrises
-    #SBATCH --time=0-00:15:00 # 15 minute
-    #SBATCH --output=oomout.qlog    
-    #SBATCH --job-name=javatest
-    #SBATCH --export=ALL
+```
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --partition test
+#SBATCH --mem=1M # This is where the issue arrises
+#SBATCH --time=0-00:15:00 # 15 minute
+#SBATCH --output=oomout.qlog
+#SBATCH --job-name=testjob
+#SBATCH --export=ALL
 
-    module load openjdk/17.0.5_8    
-    javac oom.java
-    java oom
+sleep 5
+module load anaconda3
+python oom.py
+```
 
+Sample python program that was used in the job sample script above is shown below: 
 
-Sample Java program that was used in the job sample script above is shown below: 
+```
+import sys
+import os
 
-    public class oom {
-        public static void main(String[] args) throws Exception {
-            System.out.println("If you are seeing this it then memory size was suffient");
-        }
-    }
- 
+my_list = [i for i in range(1000000)]
+
+print(my_list)
+```
+
  Check the status of the job using `sacct -j <jobid>` the follwing is produced: 
+```
+JobID           JobName  ReqCPUS     ReqMem     AveRSS     MaxRSS    Elapsed                State ExitCode
+------------ ---------- -------- ---------- ---------- ---------- ---------- -------------------- --------
+569966          testjob        1         1M                         00:00:06        OUT_OF_MEMORY    0:125
+569966.batch      batch        1                 1312K      1312K   00:00:06        OUT_OF_MEMORY    0:125
+569966.exte+     extern        1                  916K       916K   00:00:06            COMPLETED      0:0
+```
 
-    JobID           JobName  Partition    Account  AllocCPUS      State ExitCode
-    ------------ ---------- ---------- ---------- ---------- ---------- --------
-    569908         javatest       test project_u+          1 OUT_OF_ME+    0:125
-    569908.batch      batch            project_u+          1 OUT_OF_ME+    0:125
-    569908.exte+     extern            project_u+          1  COMPLETED      0:0
-
-Using the `sacct` command we see that the job failed because it ran out of memory. This is inferred through the state: `OUT_OF_ME+` and the exit code of `0:125` which correlates with an Out of Memory exit status or the reason why the job session was terminated. 
+Using the `sacct` command we see that the job failed because it ran out of memory. This is inferred through the state: `OUT_OF_MEMORY` and the exit code of `0:125` which correlates with an Out of Memory exit status or the reason why the job session was terminated. 
 
   It is possible to use `scontrol show job <sampleid>` to debug the error(s) that occured in our job.  
 
-    JobId=569908 JobName=javatest
-    UserId=******** GroupId=******** MCS_label=N/A
-    Priority=4294341021 Nice=0 Account=project_****** QOS=normal
-    JobState=OUT_OF_MEMORY Reason=OutOfMemory Dependency=(null)
-    Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:125
-    RunTime=00:10:27 TimeLimit=00:15:00 TimeMin=N/A
-    SubmitTime=2023-07-19T12:50:52 EligibleTime=2023-07-19T12:50:52
-    AccrueTime=2023-07-19T12:50:52
-    StartTime=2023-07-19T12:50:53 EndTime=2023-07-19T13:01:20 Deadline=N/A
-    SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-07-19T12:50:53 Scheduler=Main
-    Partition=test AllocNode:Sid=10.1.2.252:279163
-    ReqNodeList=(null) ExcNodeList=(null)
-    NodeList=hmnode003
-    BatchHost=hmnode003
-    NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
-    TRES=cpu=1,mem=1M,node=1,billing=1
-    Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
-    MinCPUsNode=1 MinMemoryNode=1M MinTmpDiskNode=0
-    Features=(null) DelayBoot=00:00:00
-    OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
-    Command=/home/******/testoom/job.bat
-    WorkDir=/home/******/testoom
-    StdErr=/home/******/testoom/Appout.qlog
-    StdIn=/dev/null
-    StdOut=/home/******/testoom/Appout.qlog
-    Power=
-
+```
+   JobId=569966 JobName=testjob
+   UserId=**** GroupId=**** MCS_label=N/A
+   Priority=4294340955 Nice=0 Account=**** QOS=normal
+   JobState=OUT_OF_MEMORY Reason=OutOfMemory Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:125
+   RunTime=00:00:05 TimeLimit=00:15:00 TimeMin=N/A
+   SubmitTime=2023-07-19T15:54:36 EligibleTime=2023-07-19T15:54:36
+   AccrueTime=2023-07-19T15:54:36
+   StartTime=2023-07-19T15:54:37 EndTime=2023-07-19T15:54:42 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-07-19T15:54:37 Scheduler=Main
+   Partition=test AllocNode:Sid=rclogin01:692486
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=gnode009
+   BatchHost=gnode009
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=1,mem=1M,node=1,billing=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=1M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/scratch/****/python_OOO/job.sub
+   WorkDir=/scratch/****/python_OOO
+   StdErr=/scratch/****/python_OOO/oomout.qlog
+   StdIn=/dev/null
+   StdOut=/scratch/****/python_OOO/oomout.qlog
+   Power=
+```
 
 Looking through the output of `scontrol` we can see the job state, the state the job was last recorded at before the session was terminated or ended, was `OUT_OF_MEMORY`, the node reason was listed at `OUTofMemory` and the exit code was recorded at, before the job session was terminated, `0:125`. All of these fields are useful and allow for the debugging process to conclude that the job did not succesfully run because of a memory capacity issue. 
+
 ### Time-Out Issues <!-- {docsify-ignore} -->
 One common issue for jobs failing is if job does not complete in the allocated time. This leads to a **Time-Out** State and a `(TimeLimit)` nodelist reason. The best approach is to increase the time being allocated for the job to run, ensuring that the job does not exceed the partition's max walltime. If the job continues to fail with a **Time-Out** state then it is best to break the job down into smaller jobs,  make it into a job array or change the partition that the job is being placed onto to run and compute. 
 
@@ -322,4 +332,4 @@ Sacct Command SampleOutput:
 |Command | Use | 
 | -------------| -----------------------|
 | scancel <jobid> or skill <jobid> | These commands will kill the specified job in it's current process and state. | 
-| seff <job-id> |  This command can be used to find the job efficiency report for the job(s) after it has completed and exited from the queue. Some information in the report are: State, CPU & Memory Utilized, CPU & Memory Efficiency. If the command us ysed while the job is still in the R(Running) state, this might report incorrect information.
+| seff <job-id> |  This command can be used to find the job efficiency report for the job(s) after it has completed and exited from the queue. Some information in the report are: State, CPU & Memory Utilized, CPU & Memory Efficiency. If the command ussed while the job is still in the R(Running) state, this might report incorrect information.
