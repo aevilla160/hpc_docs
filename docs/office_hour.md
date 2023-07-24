@@ -31,6 +31,16 @@ Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Pe
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
+
+### 7/21/23
+>Q: My job is failing when I place it on a private partition but it runs successfully when it runs on a public partition, what could be the issue?
+>
+>A: Ensure that the the partition that the job is placed on has suffienent max walltime for the job to prevent a TIMEOUT job state. Private Job Partitions have unlimited wall time, so if the issue, where the job runs normally on the public partition but not on the private partition, then submit a ticket with as much information as possible so we can investigate. 
+
+>Q: I need to jobs with data that exceeds the standard storage given in `data` & `scratch` folders, what are the options?
+>
+>A: Reach out to your PI and see if the PI has purchased more storage for authorized users to use and access. If PI has purchased more storage and wants to add user(s) then open a ticket to add users to the storage user group. If there is interest into obtaining more storage open a consultation ticket with CIRT to discuss purchasing into using Borgstore to access more storage. Alternatively, users can also try to breakdown their massive data into smaller pieces. This will allow smaller jobs to be ran and smaller outputs  to be produced so not all the data is needed to be stored  under the `scratch` or `data` folder at once, reducing the chance that the storage limit is reached. 
+
 ### 6/23/23
 >Q: My job is getting cancelled and I am trying to access the GPU. 
 >
