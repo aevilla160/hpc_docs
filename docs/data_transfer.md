@@ -38,7 +38,7 @@ The following syntax can be used to transfer a file from the remote machine to a
 </p>
 
 ## RSYNC Command 
-The `rsync` command copies files locally or over a network. However, it employs a special transfer algorithm and a few optimizations tools to make the operation a lot faster.  If the `rync` command is given the `-a` option it will copy the exact same access privledges, this is called mirroring. Usage of the `rsync` command is great when transferring larger files and directories. There are cases where the use of `rysnc` over `scp` can result in quicker transfer times as `rsync`uses an algorithm to minimize the amount of data transferred by only transferring the portions of files that have been modified.
+The `rsync` command is similar to `scp` as it also copies files or directories locally or over a network. However, it employs a special transfer algorithm and a few optimizations tools to make the operation a lot faster. If the `rync` command is given the `-a` option it will copy the exact same access privledges, this is called mirroring. Usage of the `rsync` command is great when transferring larger files and directories. There are cases where the use of `rysnc` over `scp` can result in quicker transfer times as `rsync`uses an algorithm to minimize the amount of data transferred by only transferring the portions of files that have been modified.
 
 List of options that can be used with `rsync`:
 
