@@ -19,6 +19,11 @@ CoRC comprises faculty members from all UC Merced schools.
 You can start the step-1 access process, but in order to receive an account, you need approval from a UC Merced PI. Every account on Pinnacles is associated with that of a faculty PI.
 
 
+> __I am a student who changed PIs do I need to update my PI information?__
+
+Yes, submit a [ticket](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to update your PI and to change user groups. 
+
+
 > __My access request for Pinnacles was denied – what are my next steps?__
 
 CIRT can schedule a consultation with the faculty to specifically address the comments from Committee on Research Computing (CoRC).
