@@ -71,6 +71,9 @@ cd parallel
 - Export all, allows the job run on all of the user's loaded environment(if user does load one, otherwise will just run job on clean working enviroment)
 Toward the bottom of the shell script we now begin the for-loop to run through the files. This is the code that is desired to be executed for this job submission.
 ```
+
+?> Remove **#SBATCH --reservation=......** line, when running sample script outside of workshops. 
+
 >Now submit this job script.
 ``` 
 sbatch test_2tasks.sh
