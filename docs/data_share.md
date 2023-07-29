@@ -11,6 +11,7 @@ Every file and directory has read, write and execute permissions associated with
 | execute (x) | File can be run like a program | Directory can be entered (i.e., the cd command works) |
 
 There are also numerical counterparts to the abover permissions and the numbers are added together to achieve the same effect as using the letters. 
+
 | Permission | Meaning | Meaning for directories | 
 | -------------------- | ---------------- | ----------------- |
 | 4 | Contents of file can be viewed and displayed | Contents of directory can be listed and viewed|
@@ -54,8 +55,7 @@ The output should look similar to this:
     drwx------ 2 <user> <group> 10 Jul 28 14:47 permissions/ 
 From this we can see that the first `rwx` correlate to the user and the empty dashes represents that the group and everyone else has lost access to the directory. 
 
-## The `setfacl` Command
-The `setfacl` command is used to change access of files or directories to individual users, multiple user groups or everyone on the cluster. 
+
 
 
 **Note: Add `-R` to edit the permissions of a directory**
