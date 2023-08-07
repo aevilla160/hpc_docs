@@ -32,6 +32,9 @@ conda activate /data/$USER/packages/env_aaa
 conda activate ENV_NAME
 ```
 
+
+?> If 
+
 !> Note: user can also create a `YAML` file with all of the desired conda packages so that conda will find the correct configuration to solve the environment. 
 The `YAML` file will contain a name, a list of Conda channels to look for the packages, and a list of all the desired packages.
 
@@ -39,5 +42,30 @@ Here are some sample `YAML` files:
 * **[datascience.yml](_media/datascience.yml ':ignore')** - Contains many common data science programs
 * **[sklearn.yml](_media/sklearn.yml ':ignore')** - Machine learning with scikit-learn
 * **[biotools.yml](_media/biotools.yml ':ignore')** - Contains applications for a bioinformatics workflow
- 
+
+
+### Using Anaconda in SLURM job scripts
+Without running `conda init` the commands `conda activate` and `conda deactivate` will present the following warning.
+
+```
+[tester001@rclogin01 ~]$ conda activate
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+- bash
+- fish
+- tcsh
+- xonsh
+- zsh
+- powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+```
+Since `conda init` injects some logic into your .bashrc file it must be sourced. For interactive job sessions `conda init` does not need to be called as the source is already known. However this is not the case for SLURM jobs,  therefore it is important to add `source .bashrc` to the submission script to allow subsequent conda activate or conda deactivate commands to work. 
 

@@ -206,7 +206,7 @@ The command "sinfo" to get information about the GPU nodes and their current usa
 >Best practice is look into parallel packages such as `multiprocessing` in python, and look into the [documentation](https://docs.python.org/3/library/multiprocessing.html) for more information. 
 
 
-### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23; 4/28/23;5/5/23; 5/12/23;5/19/23; 5/26/23; 6/30/23-7/14/23 <!-- {docsify-ignore} -->
+### 11/14/22 - 11/18/2022; 12/09/2; 1/22/23 - 2/17/23; 3/3/23; 4/21/23; 4/28/23;5/5/23; 5/12/23;5/19/23; 5/26/23; 6/30/23-7/14/23; 7/28/23 - 8/4/23 <!-- {docsify-ignore} -->
 >No Office Hour Q/A 
 
 
