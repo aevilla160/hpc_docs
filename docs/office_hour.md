@@ -34,7 +34,7 @@ Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006
 ### 8/11/23
 >Q: How can I edit my file permissions so my group can access the file and its subfolders?
 >
->A: You can 
+>A: You can use the `chmod` command to assign read/write access to your group and view more information and help here on our [data sharing page](data_share.md)!
 
 ### 7/21/23
 >Q: My job is failing when I place it on a private partition but it runs successfully when it runs on a public partition, what could be the issue?
