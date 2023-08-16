@@ -17,6 +17,67 @@ There are also octal or numerical counterparts to the above permissions. The num
 | 2 | File can be modified or deleted | Files can be created in or deleted from directory | 
 | 1 | File can be run like a program | Directory can be entered (i.e., the cd command works) |
 
+
+
+## Unix Special Permissions
+Special permissions make up the fourth access level in addition to user, group, and other. Special permissions allow for additional privileges over the standard permissions. There are special permissions option for **user**,**group** and **other** options. 
+
+
+### Set owner User ID(SUID) <!-- {docsify-ignore} -->
+The special permission for the user access level has a single function: A file with SUID always executes as the user who owns the file, regardless of the user passing the command.
+
+To locate the state of this special permission, look for an ‘s’ instead of an ‘x’ in the executable bit of the file permissions.
+
+### Set Group User ID(SGID) <!-- {docsify-ignore} -->
+This special permission has a couple of functions to change how directories and/or files are accessed from a group level. 
+1. If set on a file, it allows the file to be executed as the group that owns the file.
+
+2. If set on a directory, any files created in the directory will have their group ownership set to that of the directory owner
+
+The use of special permissions at the group level are immensely helpful for groups who are constantly collaborating and sharing directoires and files with eachother. The use of this level of special permissions also ensures that all following-created files and sub-directories are shared with the group as well without having to redo and edit sharing permissions. 
+
+
+To locate the setgid bit, look for an ‘s’ in the group section of the file permissions, as shown in the example below.
+
+    -rwxrwsr-x 1427 August 14 2023 sample_file
+
+To set the setgid bit, use the following command:
+
+    chmod g+s 
+
+To remove the setgid bit, use the following command.
+
+    chmod g-s
+
+### Sticky Bit <!-- {docsify-ignore} -->
+Sticky Bit does not affect individual files. However, at the directory level, it restricts file deletion. Only the owner (and root) of a file can remove the file within that directory. If the sticky bit is being edited in symbolic mode then simply add `+t` preceding to the permissions.
+
+
+
+## Setting Special Permissions
+To set special permissions on a file or directory we will use one of the two methods shared below(octal or numerical) with use of the `chmod` command. 
+
+Using the numerical method, we pass a fourth, preceding digit in our chmod command. The digit used is calculated similarly to the standard permission digits:
+
+    Start at 0
+    SUID = 4
+    SGID = 2
+    Sticky = 1
+
+Example Below
+
+1. Navigate to the directory that will have special permissions. 
+2.  Next execute the following command to edit group permissions `chmod 2### directory/` or for a file `chmod 2### file.txt`
+
+Where `2` is representing that special permissions are being set for the group
+
+Example Template: `chmod -R $### directory/`. 
+
+`$` - Represents the numerical number that sets the special permission. `#` - Represents the permission being inputted(r,w,x). `-R` is used here as we want to apply the changes recursivly, meaning that the changes should impact the sub-directories and files inside the directory.
+
+
+
+
 ## The `chmod` Command
 The `chmod` command allows user to change the access mode of a file or directory.
 The syntax follows 
