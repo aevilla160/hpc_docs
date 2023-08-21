@@ -1,4 +1,15 @@
 <!-- {docsify-ignore-all} -->
+
+## Upcoming research computing workshops at the Library
+
+  The Library offers regular workshops on research computing (a.k.a. "Software Carpentry") and data management for graduate students and early-career researchers. I'd like to briefly tell you about our upcoming workshops so that you can share them with people in your graduate group who might be interested.
+
+  
+
+  We will be teaching a "Fundamentals of R" workshop next Thursday and Friday for incoming (or current) graduate students who need to know R for their Fall statistics classes. You can register for the workshop here: https://libcal.ucmerced.edu/event/10978329
+  The UC libraries will jointly offer a Software Carpentry workshop series on September 11-21. This will include introductions to Python, R, Unix Shell, Version Control with Git, and SQL. The workshops are open to all members of the UC system. You can register for the workshops here: https://ti.to/ucsd-carpentries/uc-carpentries-fall-workshop-2023
+  We hold in-person workshops on a variety of research computing topics. You can always find the current workshop schedule here: https://libcal.ucmerced.edu/calendar/data_management
+
 ## Overleaf licenses to campus
   
   In an effort to reduce costs on research technology, the Cyberinfrastructure and Research Technologies (CIRT) team, in partnership with the Graduate Division, has brought Overleaf licenses to campus. These licenses are available to everyone at no cost, whether you have an existing Overleaf account or not.
