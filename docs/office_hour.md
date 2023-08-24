@@ -20,6 +20,8 @@ Reset Password & Login Video Below!
 <iframe width="560" height="500" src="https://www.youtube.com/embed/kfHjL9_kgQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
 
+
+
 ## Remote transfer files using `scp` command <!-- {docsify-ignore} -->
 Watch the video below!
 <p align='center'>
@@ -30,6 +32,45 @@ Watch the video below!
 Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
 HPC office hours - Every Friday, 10:30 am - 12 pm, ACS Room 312  
 Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
+
+
+## Commonly Asked Questions: 
+>Q: I am new to High-Performance Computing, where do I begin?
+>
+>A: It is highly recommended that all HPC users have knowledge of basic linux commands and understanding of how a command line interface works. If users need to brush up on basic linux commands then it is highly recommended that they view the Linux(Unix) carpentry workshops [Here!](software_carpentry.md)   
+>
+>Next step would be to check out the HPC Practice Session Material [Here!](hpc_training.md). Here you can look at the training material that is typically shown in the HPC workshop and even do a self-paced practice session!
+>
+>Finally it is highly recommended to look over sample job scripts to understand what a job is and what does a job hold. Users can view a sample job script [Here!](running_jobs.md)
+
+>Q: How can I view the size of my data on the cluster?
+>
+>A: Users can use the command `du -h <filename>` to view the size of a given file or directory. 
+
+>Q: How to intialzie Conda Enviroment?
+>
+>A:Tutorial is listed under "Running jobs" - [Click Here](conda_env.md)
+
+>Q:My GPU node request is not being granted or running?
+>
+>A: Pinnacles Machine only has 8 publicly available GPU Nodes; each node has two GPU cards. Therefore, if all GPU nodes are being used then user must wait and try again later to run GPU interactive Job. 
+The command "sinfo" to get information about the GPU nodes and their current usage. 
+
+
+### 8/18/23
+>Q: What is the max storage limit of the Data Folder?
+>
+>A: The max storage in the data folder is 500 GB. More information about all folders and their max storage sizes can be found [here](central_login.md)!
+
+>Q:What is the cost of purchasing into Borgstore?
+>
+>A: The cost of purchasing into Borgstore is $0.05/GB/year (startup funds) and $0.06/GB/year (non-startup funds).
+
+>Q: I am having issues running R through parallelization on the cluster. 
+>
+>A: First test that you are able to run R via a serial job fine. Once you are able to submit a serial R job then scale it up to a parallel computing job. Many times it is the case that `source activate [R-enviroment]` and `Rscript [script]`. For further support check our R documentation found [here](running_R_mpi.md).
+
+
 
 ### 8/11/23
 >Q: How can I edit my file permissions so my group can access the file and its subfolders?
