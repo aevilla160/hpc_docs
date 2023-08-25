@@ -1,3 +1,15 @@
+## 08/25/23
+Dear Research Computing users - 
+
+Starting **September 1st**, HPC office hours will be conducted every Friday from: 
+
+**11:30am - 1pm in ACS 365** and via
+
+zoom: https://ucmerced.zoom.us/j/89487493900; password:895006
+
+All students, postdocs, staff, and faculty are welcome to attend and bring research computing questions to CIRT team.
+
+
 ## 07/10/2023
 Dear HPC users,
 

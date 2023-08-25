@@ -34,7 +34,7 @@ If your jobs are still failing, then please attend the HPC office hours (Zoom li
 > __My jobs are running unusually slow__
 
 * Jobs could run slower than usual for a variety of reasons. But preliminary diagnoses should include ensuring that the job is requesting for enough memory and CPU resources on the cluster
-* If your jobs are still slow, then please attend the HPC office hours (Zoom link: On MERCED cluster login page; Time: Every Friday from 10:30 am to 12 noon PST) and/or submit a general research request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+* If your jobs are still slow, then please attend the HPC office hours (Zoom link: On MERCED cluster login page; Time: Every Friday from 11:30 am to 1pm PST) and/or submit a general research request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 > __My job is not running how I intended it to. How do I cancel the job?__
 
@@ -42,7 +42,7 @@ Use `scancel < JobID>` where `< JobID>` is the job allocation number.
 
 > __How do I schedule a consultation?__
 
-We are happy to help you with any questions/computational needs for you and your research group. You are welcome to attend one of our HPC office hours (Zoom link: On MERCED cluster login page; Time: Every Friday from 10:30 am to 12 noon PST) and/or submit a general research request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+We are happy to help you with any questions/computational needs for you and your research group. You are welcome to attend one of our HPC office hours (Zoom link: On MERCED cluster login page; Time: Every Friday from 11:30 am to 1pm PST) and/or submit a general research request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 > __How do I move Big Data?__
 
@@ -53,9 +53,9 @@ We are happy to help you with any questions/computational needs for you and your
 
 Bring your laptop, your code and your questions to the clinic and get expert help, right on the spot. Experienced graduate students are encouraged to come help your peers by mentoring them in HPC tips and tricks. Faculty are also welcome to join. Among others, Yue Yu (Sr. Research Computing Facilitator) will be available to meet with and help members of the campus research computing community at these sessions.
 
-__where__: Zoom coordinates: On MERCED cluster login page
+__where__: Zoom coordinates: On Remote Clusters login page
 
-__When__: Every Friday from 10:30 am to 12 noon
+__When__: Every Friday from 11:30 am to 1pm.
 
 
 !> Recharge center FAQs

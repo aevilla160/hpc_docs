@@ -18,6 +18,8 @@ The table below shows some most commonly used `module` commands.
 Additionally, users may build code locally in one’s account so long as such codes and usage are consistent with applicable Federal law, State law, and University policies. Note that code and data placed on Pinnacles by a user can be shared with all members of the relevant PI user group by setting the desired read, write, and or executable permissions. For example, if a user in UC Merced Prof. Suzanne Sindi’s group has built an executable program named `our_program` that others in the group wish to use, the command `ls -l` can be used to check on the user group assignment and permissions. If the program is not assigned to the `ucm_ssindi` user group and/or the user group does not have executable permission, the owner can use the following commands from within the directory of our_program `chgrp ucm_ssindi our_program` and `chmod g+x our_program`.
 
 
+!> Production calculations must be run using the queueing and scheduling system. Computationally intensive calculations __should never be run on the head or login node__. MERCED & Pinnacles use __SLURM__ scheduling system. Detailed information regarding SLURM is available from a number of online resources. 
+
 ## Software and libraries
 Pinnacles offers a number of software packages and libraries for all users. A catalog of software and libraries available on Pinnacles is provided below. The command `module avail` can be used to see a full list of available Modules, Environments & packages when user login to Pinnacles, which provides a near complete list of shared packages. 
 
@@ -134,7 +136,7 @@ To access a list of software packages and libraries for MERCED, use the commmand
 | wannier90 | 3.1.0 | [website](http://www.wannier.org/) |
 | XCrySDen|1.5.60, 1.6.2|[website](http://www.xcrysden.org/)|
 
-## MERCED Module list
+## MERCED ONLY Module list
 
 | Name                  | Version| Website                                                |
 |:-------------------------|:----------------------------------------------------------------|:------------|
@@ -190,6 +192,6 @@ There are 3 types of queues on MERCED, and each type of queue has its own config
 
 !> NOTE: MERCED cluster general queues maximum job submissions per user is set to 6 which means user can not submit more than 6 jobs at a time.
 
-!> Production calculations must be run using the queueing and scheduling system. Computationally intensive calculations __should never be run on the head or login node__. MERCED & Pinnacles use __SLURM__ scheduling system. Detailed information regarding SLURM is available from a number of online resources. 
+
 
 
