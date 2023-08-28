@@ -21,7 +21,7 @@ We can help you use supercomputers to work faster, visualize the complexity of y
 - HPC office hour
     - Every Friday 11:30-1:00PM
     - [Zoom](https://ucmerced.zoom.us/j/89487493900), password: 895006
-    - In-person ACS 365s    
+    - In-person ACS 365    
 
 In partnership with the Library, we also offer a variety of workshops in Data Carpentry and Software Carpentry. 
 - [Library workshops](https://libcal.ucmerced.edu/calendar/data_management?cid=10107&t=d&d=0000-00-00&cal=10107&inc=0)
