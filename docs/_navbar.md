@@ -1,0 +1,2 @@
+- [CIRT Page](cirt.ucmerced.edu)
+- [Submit a Ticket](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=b83ee9ff1b67a0543a003112cd4bcbde&form_id=0cb3dca04f7d4300b52ba1618110c7ff)
