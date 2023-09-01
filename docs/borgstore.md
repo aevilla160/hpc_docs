@@ -12,7 +12,7 @@ Borgstore is a purchasable service that can be requested [here](https://ucmerced
 
 #### Accessing Data from Borgstore for a job
 
-To access data that is located in Borgstore the user must be in the Borgstore folder/directory and must the submit job to the scheduler from this location.  If users want to submit jobs while at the Borgstore folder, the slurm option of `#SBATCH --constraint=ib` should be added to the job script. A sample job that uses this slurm option can be found [here](https://ucmerced.github.io/hpc_docs/#/running_jobs).
+To access data that is located in Borgstore the user must be in the Borgstore folder/directory and must the submit job to the scheduler from this location.  If users want to submit jobs while at the Borgstore folder, the slurm option of `#SBATCH --constraint=ib` should be added to the job script. A sample job that uses this slurm option can be found [here](running_jobs.md).
 
 To run an interactive job, the job must also be ran from the borgstore directory. 
 
