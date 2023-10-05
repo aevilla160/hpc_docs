@@ -1,5 +1,9 @@
 # Data Transfering <!-- {docsify-ignore} -->
-There are many ways to transfer data between the cluster and local workspaces. Below are instructions and descriptions of two common methods of data transfer to and from the HPC cluster.
+There are many ways to transfer data between the cluster and local workspaces. Below are instructions and descriptions of two common methods of data transfer to and from the HPC cluster. 
+
+Most casual and regular amounts of data transferring can be done through the `rc` login node, by pointing your transfer tool to `login.rc.ucmerced.edu` and can be done via one of the methods shown below. 
+
+However, for transferring large amounts of data, FIONAs with dedicated bandwidths can be used for scheduled, unattended data transfers. If you are looking to complete a Big Data transfer, please submit a general research request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 ## `scp` Command
 The `scp` command is useful as it is an easy and versatile command that allows for two-way transferinig of data. It does not require any setup to use and is great for constantly transfering different and seperate files or directories. `scp` is a linear and basic copy and transfer of data; therefore, it does not have any failsafes to prevent data loss or data corruption. `scp` is great for simple files/directories and small, compressed files.
@@ -34,7 +38,7 @@ The following syntax can be used to transfer a file from the remote machine to a
 ### Video tutorial of SCP Command <!-- {docsify-ignore} -->
 
 <p align='center'>
-<iframe width="560" height="500" src="https://www.youtube.com/embed/kfHjL9_kgQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="500" src="https://youtu.be/G6DNWqHFC7A?si=SvQS6Zgm9sHPlBPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
 
 ## `rsync` Command 
