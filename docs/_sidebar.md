@@ -10,6 +10,7 @@
     - [Pinnacles](Pinnacles.md)
         - [Getting started](p_get_started.md)
         - [Pinnacles FAQ](pinnacles_FAQ.md)
+    - [Borgstore](borgstore.md)
     - [News](news.md)
     - [Faculty communications](commun.md)
 - Running jobs
