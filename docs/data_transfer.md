@@ -38,7 +38,7 @@ The following syntax can be used to transfer a file from the remote machine to a
 ### Video tutorial of SCP Command <!-- {docsify-ignore} -->
 
 <p align='center'>
-<iframe width="560" height="500" src="https://youtu.be/G6DNWqHFC7A?si=SvQS6Zgm9sHPlBPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="500" src="https://www.youtube.com/watch?v=G6DNWqHFC7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
 
 ## `rsync` Command 
