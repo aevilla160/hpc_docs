@@ -1,7 +1,7 @@
 <!-- {docsify-ignore-all} -->
 ## The training material for "Introduction to HPC" workshop can be found below  <!-- {docsify-ignore} -->
 ```pdf
-training_material/Fall23HPCSlides.pdf
+training_material/10_9HPCSlides_Self.pdf
 ```
 ## Practice session details   <!-- {docsify-ignore} -->
 - Copy two folders to your desired directory once you log into our remote machine (Pinnacles)

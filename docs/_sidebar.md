@@ -4,7 +4,7 @@
 - On-campus cluster
     - [How to connect](central_login.md)
     - [Modules](p_modules.md)
-    - [HPC Clusters](clusters_about.md)
+    - [HPC Clusters](rc_clusters.md)
         - [MERCED Getting Started](get_started.md)
         - [Pinnacles Getting Started](p_get_started.md)
         - [HPC FAQ](hpc_FAQ.md)
