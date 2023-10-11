@@ -35,11 +35,11 @@ The following syntax can be used to transfer a file from the remote machine to a
 `scp [options] user@login.rc.ucmerced.edu:/remote/file.txt /local/directory`
 
 
-### Video tutorial of SCP Command <!-- {docsify-ignore} -->
-
+## Remote transfer files using `scp` command <!-- {docsify-ignore} -->
 <p align='center'>
-<iframe width="560" height="500" src="https://www.youtube.com/watch?v=G6DNWqHFC7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="560" src="https://www.youtube.com/embed/G6DNWqHFC7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
+
 
 ## `rsync` Command 
 The `rsync` command is similar to `scp` as it also copies files or directories locally or over a network. However, it employs a special transfer algorithm and a few optimizations tools to make the operation a lot faster. If the `rync` command is given the `-a` option it will copy the exact same access privledges, this is called mirroring. Usage of the `rsync` command is great when transferring larger files and directories. There are cases where the use of `rysnc` over `scp` can result in quicker transfer times as `rsync`uses an algorithm to minimize the amount of data transferred by only transferring the portions of files that have been modified.
