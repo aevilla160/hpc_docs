@@ -1,5 +1,38 @@
 <!-- {docsify-ignore-all} -->
 
+## Introduction to Overleaf Webinar
+Dear Research Computing Users –
+
+Sign up for Introduction to Overleaf training here: https://ucm.edu/Intro_to_Overleaf
+
+ 
+Whether you're new to working with LaTeX, Overleaf or both; or just want an insight into the best way to work with your projects in Overleaf, join us for this 60 minute webinar, where we'll cover:
+
+- Overleaf and LaTeX Basics
+
+- Creating a new project
+
+- Using the Visual Editor
+
+- Editing your project
+
+- Sharing your project
+
+- Adding Images and Tables
+
+- Uploading a bibliography
+
+- Fixing errors
+
+- Submitting your project to a journal
+
+- Questions & Answers
+
+Event Details: Nov 2, 2023, 11:00 AM PT, Zoom Meeting
+
+Register here: https://ucm.edu/Intro_to_Overleaf
+
+
 ## Upcoming research computing workshops at the Library
 
   The Library offers regular workshops on research computing (a.k.a. "Software Carpentry") and data management for graduate students and early-career researchers. I'd like to briefly tell you about our upcoming workshops so that you can share them with people in your graduate group who might be interested.
