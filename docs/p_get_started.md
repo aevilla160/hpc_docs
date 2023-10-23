@@ -57,7 +57,7 @@ Pinnacles Private Queue Information:
 | dept.cogsci | Infinite Time |
 
 
-## Requesting an account
+## Requesting an account  <!-- {docsify-ignore} -->
 
 The following detail consists of how to request Pinnacles cluster access. If you have questions or concerns, do not hesitate to:
 * Schedule a Pinnacles consultation [here](https://arrangr.com/sarvani/facultyconsult). 
@@ -89,7 +89,7 @@ either a PI Group or a user.
 If you still have questions, we have put together a Pinnacles [FAQ page](pinnacles_FAQ.md) that has the most common questions received and will be keeping it up to date.
 
 
-## How to cite
+## How to cite  <!-- {docsify-ignore} -->
 All Pinnacles users must agree to acknowledge the Pinnacles Cluster and the
 supporting NSF grant (NSF MRI, # 2019144) in talks, posters, manuscripts, and
 other forms of dissemination relying on results obtained from time on
