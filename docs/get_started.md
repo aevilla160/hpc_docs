@@ -33,7 +33,7 @@ processors generations.
 * <span style="color: red;"> ^ `test` queue has access to all node types use constraints to test on specific types.</span>
 * <span style="color: red;"> \* `compute` queue is the default queue for all jobs submitted  </span>
 
-## Requesting an account
+## Requesting an account  <!-- {docsify-ignore} -->
 
 The following detail consists of how to request Merced cluster access. If you have questions or concerns, do not hesitate to:
 * Schedule a MERCED consultation [here](https://arrangr.com/sarvani/facultyconsult). 
@@ -70,7 +70,7 @@ either a PI Group or a user.
 ?> Questions?
 If you still have questions, we have put together a MERCED [FAQ page](merced_FAQ.md) that has the most common questions received and will be keeping it up to date.
 
-## How to cite
+## How to cite  <!-- {docsify-ignore} -->
 All MERCED users must agree to acknowledge the MERCED Cluster and the
 supporting NSF grant (ACI-1429783) in talks, posters, manuscripts, and
 other forms of dissemination relying on results obtained from time on

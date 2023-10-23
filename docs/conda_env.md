@@ -1,3 +1,8 @@
+# Introduction <!-- {docsify-ignore} -->
+Conda is a package management enviroment and package manager that is primarily used for open-source software packages. Conda is associatated with Python and R programmnig languages but also supports C++ and Fortran. 
+
+Below is documentation on installing and maintaining a Conda enviroment on the HPC clusters. 
+
 ## Build your own conda environment <!-- {docsify-ignore} -->
 ### Load and initializing conda <!-- {docsify-ignore} -->
 If you have not put the `conda init` into your `.bashrc` file, then it is necessary to initialize the conda environment before using. Once users log into the HPC system, you need to type the following command
@@ -44,7 +49,15 @@ Here are some sample `YAML` files:
 * **[biotools.yml](_media/biotools.yml ':ignore')** - Contains applications for a bioinformatics workflow
 
 
-### Using Anaconda in SLURM job scripts
+###  Using Anaconda in SLURM job scripts <!-- {docsify-ignore} -->
+
+Conda does not know the source when it is called in a SLURM job script. To ensure conda knows the source of the enviroment that it will be activating during the execution of the SLURM job script,`source activate <env name>`. This will ensure SLURM to look for the called enviroment in the correct PATH. 
+
+An example job script utilizing a conda enviroment can be found [here!](running_R_mpi.md)
+
+!> Note using `conda activate <env name>` may result in error as `conda activate `makes the assumption that the enviroment is being called in the same PATH it exists, which is not the case for SLURM jobs. 
+
+### Common Issues with Conda<!-- {docsify-ignore} -->
 Without running `conda init` the commands `conda activate` and `conda deactivate` will present the following warning.
 
 ```
@@ -68,4 +81,7 @@ IMPORTANT: You may need to close and restart your shell after running 'conda ini
 
 ```
 Since `conda init` injects some logic into your .bashrc file it must be sourced. For interactive job sessions `conda init` does not need to be called as the source is already known. However this is not the case for SLURM jobs,  therefore it is important to add `source .bashrc` to the submission script to allow subsequent conda activate or conda deactivate commands to work. 
+
+
+
 

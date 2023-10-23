@@ -34,7 +34,7 @@ If you want to test out something but do not want to write an submission script.
 
 5. Now you need to start a new terminal window and setup the tunnel as follow:
   ```bash
-  ssh -N -f -L 8889:mrcdg01:8889 UCMID@login.rc.ucmerced.edu  
+  ssh -N -f -L 8889:mrcdg01.cluster:8889 UCMID@login.rc.ucmerced.edu  
   ```
   !> Note: you need to replace the mrcdg01 and UCMID to whichever node you are assigned to from step 2 and your own UCMID
 
