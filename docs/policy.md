@@ -3,7 +3,7 @@
 **Created by Yue Yu, May 2022**
 
 ## University policies
-1. All PIs must fill and sign the export control [form](https://ucmerced.app.box.com/s/e6pmv4cv59tz76aat5re1kzvg23c0s09) before using clusters (MERCED and Pinnacles).
+1. All PIs must fill and sign the export control [form](https://ucmerced.box.com/s/zvptfc8adbdzt4xs8kcj73lyretyn692) before using clusters (MERCED and Pinnacles).
 2. All users are responsible for following University of California's "[Electronic Communication Policy](https://it.ucmerced.edu/sites/it.ucmerced.edu/files/wp-content/uploads/2017/11/acceptable-use-policy.pdf)" related to computing and electronics. These include but not limited to tolerance, civility, and respect for diversity of background, gender, ethnicity, race, religion, political beliefs, sexual orientation, and physical abilities. For more policies and guidelines, please visit [here](https://it.ucmerced.edu/oit-policies-guidelines).
 
 
