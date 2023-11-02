@@ -1,6 +1,13 @@
 # Job Management  <!-- {docsify-ignore} -->
 Presented here are helpful tools and methods to manage  Slurm jobs, find detailed information of a job like memory usage, CPUs, and how to use job statistics/information to troubleshoot any job failure.
 
+## Checking the use of a mixed-state node. <!-- {docsify-ignore} -->
+A mixed state node is a node that is not being fully utilized, i.e. their resources are not fully allocated. 
+Execute the following script on the login node to get detailed information about memory and cpu core availabilty on every currently, mixed-state node on Pinnacles.
+
+Execute the script via the command: 
+`node_resource_status.sh`
+
 
 ## Checking jobs after submission  <!-- {docsify-ignore} -->
 
