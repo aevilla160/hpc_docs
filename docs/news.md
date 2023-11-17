@@ -1,5 +1,21 @@
 <!-- {docsify-ignore-all} -->
 
+## Annual HPC cluster maintenance
+Please be aware of the following important information on upcoming downtime for MERCED and Pinnacles HPC clusters.
+
+When: January 8, 2024 to Jan 16, 2024.
+
+MERCED Cluster will be offline starting 6:30 am on 01/08/2024 until 5 pm on 01/16/2024 (1-week downtime).
+
+Why: During this period, CIRT will make a number of critical hardware, network, software, firmware updates to the cluster.
+
+Notes:
+Any jobs still running at 6 am on 01/08/23 will be cancelled.
+During this maintenance window, Pinnacles and MERCED cluster and Borg store will not be accessible to users.
+During this maintenance window, CIRT might be slow to respond to service tickets.
+If you have additional questions, please do not hesitate to reach out to us via CIRT general request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+
 ## Introduction to Overleaf Webinar
 Dear Research Computing Users –
 
