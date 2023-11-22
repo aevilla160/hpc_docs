@@ -1,16 +1,17 @@
 ## 11/21/23
-Annual CIRT maintenance:
+### Anual maintenance
 
 Maintenance Notice: 6:30 am January 8, 2024, to 5 pm January 16, 2024
 
 More details here: <https://ucmerced.github.io/hpc_docs/#/news>
 
-Firewall migration:
+### Firewall Migration
+
 Migration to new firewalls planned for Dec 29, 8:00 AM– 12:00 PM.
 
 Impact: No Internet access and No VPN during this time
 
-CIRT Winter break availability:
+### CIRT Winter break availability
 
 UC Merced campus closes for winter break from December 23 - January 2. Please be aware that CIRT staff will not be available during that period for cluster support or research computing issues. Our services and support will resume as normal when the campus reopens on January 3, 2024. During the closure, you can find current information about outages and service disruptions at status.ucmerced.edu.  If you have an emergency related to OIT services at UC Merced, you can call 228-HELP (4357).
 The CIRT staff would like to take this opportunity to wish our campus partners the happiest of holiday seasons.
