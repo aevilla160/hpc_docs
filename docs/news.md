@@ -9,12 +9,17 @@ We look forward to working with you in 2024.
 
 Happy Computing.
 
-## Firewall Migration 
-Firewall migration:
+## Network Maintenance Alert 
 
-1. Migration to new firewalls planned for Dec 29, 8:00 AM– 12:00 PM.
+**Downtime Planned for Campus 12/29**
 
-2. Impact: No Internet access and No VPN during this time
+OIT is planning major network maintenance for Friday, **December 29 from 8:00 am to 12:00 pm**.
+
+If you are on campus during this period: please be aware that the entire campus wired and wireless network will be unavailable for the maintenance window.
+
+If you are not on campus during this period: please be aware that access to UC Merced services that require Single Sign-On (SSO) and/or UC Merced VPN will be unavailable during the maintenance window.
+
+Please spread the word to make sure any faculty, students or staff in your areas are aware of this maintenance window! If you have questions or concerns about this planned effort, feel free to reach out to Christy Snyder at csnyder4@ucmerced.edu.
 
 ## Annual HPC cluster maintenance
 Please be aware of the following important information on upcoming downtime for MERCED and Pinnacles HPC clusters.
