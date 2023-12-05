@@ -24,7 +24,7 @@ All students and instructors use the same computing environment.
 
 Work stored in the cloud and can be accessed from any computer.
 
-All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use library computers without being at a disadvantage in the course.****
+All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use publicly shared computers(i.e. library computers) without being at a disadvantage in the course.
 
 ### Local Jupyter versus JupyterHub
 

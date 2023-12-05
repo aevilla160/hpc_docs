@@ -15,7 +15,6 @@
     - [Submit a job ](running_jobs.md)
     - [Submit a job array](job_array.md)
     - [Job Management](Manage_job.md)
-    - [Serial vs. Parallel Job](svsp.md)
     - [Data transfer](data_transfer.md)
     - [Data sharing](data_share.md)
     - [Running R-and-MPI](running_R_mpi.md)
