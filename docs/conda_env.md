@@ -38,7 +38,7 @@ conda activate ENV_NAME
 ```
 
 
-?> If 
+
 
 !> Note: user can also create a `YAML` file with all of the desired conda packages so that conda will find the correct configuration to solve the environment. 
 The `YAML` file will contain a name, a list of Conda channels to look for the packages, and a list of all the desired packages.
