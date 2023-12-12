@@ -1,3 +1,10 @@
+ ## The Overleaf webinar <!-- {docsify-ignore} -->
+> On Nov 2nd, 2023, CIRT invited Overleaf team to hold a 1-hour long introductory webinar to the Overleaf editor and Latex.
+
+<p align='center'>
+<iframe width="560" height="500" src="https://www.youtube.com/embed/Bz8RWhgy2RM?si=m2EYxJmiw6pCcup4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
  ## Software Carpentry workshops<!-- {docsify-ignore} -->
  ### [Introduction to High-performance Computing](https://carpentries-incubator.github.io/hpc-intro/) <!-- {docsify-ignore} -->
  > This workshop is an introduction to using high-performance computing systems effectively. We can’t cover every case or give an exhaustive course on parallel programming in just two days’ teaching time. Instead, this workshop is intended to give students a good introduction and overview of the tools available and how to use them effectively.
