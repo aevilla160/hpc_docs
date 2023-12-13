@@ -52,7 +52,7 @@ associate with it, which may be used by all group members. PI’s must notify th
 
 __Requesting access to MERCED is a 4-step process.__
 1. UC Merced Principal Investigators (PIs) or other researchers request MERCED account [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=643ea9ff1b67a0543a003112cd4bcba3&form_id=280d8bb04f72f6006137d0af0310c7b0).
-2. For new account group project applications, PIs please also make sure to complete the export control [form](https://ucmerced.app.box.com/file/827800760668?s=e6pmv4cv59tz76aat5re1kzvg23c0s09), if the PI has not done one before.
+2. For new account group project applications, PIs please also make sure to complete the export control [form](https://ucmerced.app.box.com/s/zvptfc8adbdzt4xs8kcj73lyretyn692), if the PI has not done one before.
 3. Once the form is completed, please attach the form to the request ticket from step 1. 
 4. For PIs requesting access to MERCED cluster, please provide Chart of Account(COA) number associated with this project. Other group members, please reach out to your respective PI to obtain the COA number. Attach the COA number in the request ticket. Requests without COA numbers will be denied.   
 
