@@ -3,11 +3,22 @@
 
 All active UC Merced students, staff and faculty should have access to the pilot hub.
 
-> What is JupyterHub?
+### What is JupyterHub
 
 JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python code in a web browser, without having to install software on their local machine.
 
-We invite the UC Merced community to use the Hub for teaching (both now and future course planning) and exploring for research.
+
+Working on JupyterHub provides a number of benefits, especially in an introductory course:
+
+Students never have to do any setup or installation. JupyterHub removes the burden of setting up and maintaining a development environment.
+
+All students and instructors use the same computing environment.
+
+Work stored in the cloud and can be accessed from any computer.
+
+All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use publicly shared computers(i.e. library computers) without being at a disadvantage in the course.
+
+We invite the UC Merced community to use the Hub for teaching (both now and future course planning) and exploring for research!
 
 !> This pilot hub will be online for 11 months and feedback and usage information will be used to plan for our permanent JupyterHub.
 
@@ -19,6 +30,9 @@ We invite the UC Merced community to use the Hub for teaching (both now and futu
 If you have any additional questions accessing hub, please open a general OIT research computing ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 If you were not able to attend the workshop of JupyterHub, here is the recording [link](https://video.ucmerced.edu/media/JupyterHub+Workshop/1_ehe8hmux).
+
+
+
 
 ## Generate `nbgitpuller` link <!-- {docsify-ignore} -->
 > Ensure that the `nbgitpuller` is installed into your environment
@@ -49,3 +63,12 @@ Generate an [nbgitpuller link](https://nbgitpuller.readthedocs.io/en/latest/link
 
 !> Unfortunately, `RStudio` does not support opening a specific file, and will always show the home directory. Users will have to manually navigate to the appropriate file.
 
+### Local Jupyter versus JupyterHub
+
+| JupyterHub | Local Jupyter Install |
+|--------------| --------------------|
+| Needs an internet connection | Does not need internet connection |
+| Limited resources (disk and RAM) | Resources are only limited by individual computer |
+| System-wide installation done by admins| You can install anything you want |
+| You can only access files in your account | You can maybe access all files (if you are an admin) |
+| If things break, CIRT can assist in helping fix the item | CIRT can not assist in fixing issues on local install |
