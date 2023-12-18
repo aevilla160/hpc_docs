@@ -27,6 +27,8 @@ We invite the UC Merced community to use the Hub for teaching (both now and futu
 2. You can use the default jupyterhub image or you can change the image using the [configurator](https://github.com/2i2c-org/2i2c-hubs-image). You can also create your custom user image. There is a guide about this [here](https://docs.2i2c.org/en/latest/admin/howto/environment/index.html).
 3. General information about the user environment [here](https://docs.2i2c.org/en/latest/admin/howto/environment/index.html).
 
+If you have admin access, please note that the shared folders have the same shared path. One is configured for read-write, and the other is configured for read-only. For admins, they can see both folders but can only write to the one that is write-enabled. Standard users only see a single shared directory as read-only. From a content management standpoint, admins have full access to all content and act as a single user when interacting with content.
+
 If you have any additional questions accessing hub, please open a general OIT research computing ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 If you were not able to attend the workshop of JupyterHub, here is the recording [link](https://video.ucmerced.edu/media/JupyterHub+Workshop/1_ehe8hmux).
