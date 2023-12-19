@@ -11,6 +11,7 @@ Every file and directory has read, write and execute permissions associated with
 | execute (x) | File can be run like a program | Directory can be entered (i.e., the cd command works) |
 
 There are also octal or numerical counterparts to the above permissions. The numbers are added together to achieve the same effect as using any cobination of the letters. 
+
 | Permission | Meaning | Meaning for directories | 
 | -------------------- | ---------------- | ----------------- |
 | 4 | Contents of file can be viewed and displayed | Contents of directory can be listed and viewed|
