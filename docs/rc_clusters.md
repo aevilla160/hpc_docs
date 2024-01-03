@@ -64,3 +64,7 @@ Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-
 
 All work that was stored on MERCED can be accessed and be used on Pinnacles cluster for **Free**.
 User's can always obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and [ACCESS](https://access-ci.org/) resources. CIRT can provide consultation for how to access these resources. Schedule a consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+>Q: How to include CIRT managed charged services into budget statement? 
+
+The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section.
