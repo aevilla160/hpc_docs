@@ -21,6 +21,10 @@ Pinnacles also has ~92TB NFS Fast Scratch Storage space for accessing large data
 
 All above nodes are interconnected via HDR InfiniBand w/ RDMA for fast (100Gbits/s) and low latency (sub ms) data transfer.
 
+Relative proximity and extent of availability: The Pinnacles cluster is managed by the Office of Information Technology at UC Merced and technical support and training opportunities are available. It is available for
+all faculty projects at no cost. 
+
+
 ## MERCED cluster 
 
 MERCED (Multi-Environment Research Computer for Exploration and
