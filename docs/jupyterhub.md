@@ -45,8 +45,9 @@ To install the `nbgitpull`, please follow the instruction [here](https://github.
 
 > If you are using the Chrome or Firefox web browser you can directly download the browser extension to generate nbgitpuller [here](https://github.com/yuvipanda/nbgitpuller-link-generator-webextension)
 
-Once the browser extenstion is installed, your github should directly have the `nbgitpuller` button.
-![nbgitpuller github](imgs/nbgitpuller_github_pic.png "github with nbgitpuller")
+Once the browser extenstion is installed, your browser should have a nbgitpuller button on top, below is an example of the chrome browser with nbgitpuller extension installed.
+
+![nbgitpuller github](imgs/nbgitpuller_browser.png "github with nbgitpuller")
 
 > Put your content in a public GitHub repository
 
