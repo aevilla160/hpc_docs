@@ -51,14 +51,15 @@ Once the browser extenstion is installed, your browser should have a nbgitpuller
 
 > Put your content in a public GitHub repository
 
-Create a repository on [GitHub](https://github.com/) and start putting your content there. This is the source of the content that will be distributed to your users. You can update it as often as you wish. While instructors will need to know how github works, your users will never have to interact with git directly.
+Create a repository on [GitHub](https://github.com/) and begin uploading your content. This repository serves as the source for the content distributed to your users. Feel free to update it as frequently as needed. While instructors should be familiar with how GitHub works, your users will never have to interact with Git directly.
 
 > Generate an nbgitpuller link
 
-Generate an [nbgitpuller link](https://nbgitpuller.readthedocs.io/en/latest/link.html). This uses a web-based generator (see the attached figure below) to generates a clickable link that contains within it the following pieces of information (alternatively, you can use the github `nbgitpuller` button to generate the link, see the figure above):
-![nbgitpuller web gen](imgs/nbgitpuller_web_edited.png "webgen with nbgitpuller")
+Generate an nbgitpuller link using the browser extension when you are in the GitHub repository that you intend to share. Please refer to the figure below for guidance on how to generate the link:
 
-* The URL to the hub. Upon clicking the link, users will be redirected to this hub, and content will be pulled into their home directory there. 
+![nbgitpuller web gen](imgs/nbgitpuller_gen.png "webgen with nbgitpuller")
+
+* The URL to the hub. Upon clicking the link, users will be redirected to the hub, and content will be pulled into their home directory there. 
 * The URL of the git repository where the content lives.
 * The branch in the git repository where the content lives. The default specified there is `master`, although newer GitHub repositories use `main` as the default. You can find yours on the Github page of your content repository
 * The default interface to open when users click this link. The default is the classic notebook, but many other apps are available
