@@ -60,7 +60,6 @@ Generate an nbgitpuller link using the browser extension when you are in the Git
 ![nbgitpuller web gen](imgs/nbgitpuller_gen.png "webgen with nbgitpuller")
 
 * The URL to the hub. Upon clicking the link, users will be redirected to the hub, and content will be pulled into their home directory there. 
-* The URL of the git repository where the content lives.
 * The branch in the git repository where the content lives. The default specified there is `master`, although newer GitHub repositories use `main` as the default. You can find yours on the Github page of your content repository
 * The default interface to open when users click this link. The default is the classic notebook, but many other apps are available
 * A file to open when the link is clicked. When left empty, a directory listing with the content of the repository will be shown
