@@ -14,7 +14,7 @@ Users can open a ticket to request to have a specific software installed [here](
 
 >Looking for the Export Control Attestation Form for PI to sign?
 
-The Export Control Attestation Form can be found [here](https://ucmerced.app.box.com/s/e6pmv4cv59tz76aat5re1kzvg23c0s09).
+The Export Control Attestation Form can be found [here](https://ucmerced.app.box.com/file/1348824134383?s=zvptfc8adbdzt4xs8kcj73lyretyn692).
 
 >Looking for more information and updates about CIRT(Cyber-Infrastructure & Research)?
 
