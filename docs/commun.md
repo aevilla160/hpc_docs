@@ -1,5 +1,11 @@
+## 1/24/23
+### COMPLETED: HPC cluster maintenance 1/16/24
+The MERCED and Pinnacles clusters are back online. The CIRT team has completed several updates, including security advisories, bug fixes, and product enhancements. Upgrades encompassed storage server firmware, storage chassis firmware, IB and Data network expansion, and nodes' BIO and BMC firmware. Currently, the default CUDA version for GPU nodes (gnode) is 12.3.
+
+  Please feel free to resume submitting your jobs to the cluster.
+
 ## 11/21/23
-### Anual maintenance
+### Annual maintenance
 
 Maintenance Notice: 6:30 am January 8, 2024, to 5 pm January 16, 2024
 
@@ -22,6 +28,8 @@ Happy Computing.
 
 
 
+
+
 ## 08/25/23
 Dear Research Computing users - 
 
@@ -33,6 +41,7 @@ zoom: https://ucmerced.zoom.us/j/89487493900; password:895006
 
 All students, postdocs, staff, and faculty are welcome to attend and bring research computing questions to CIRT team.
 
+<!-- {docsify-ignore-all} -->
 
 ## 07/10/2023
 Dear HPC users,

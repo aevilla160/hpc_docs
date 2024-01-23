@@ -18,9 +18,10 @@ Execute the script via the command:
 | `-M merced ` | Shows all currently submitted jobs on MERCED |
 |  `--me ` | Shows all currently jobs submitted by user |
 | `--r` or `-array ` | Shows job arrays sumitted onto cluster |
+| `--start` | Shows rough estimate of when jobs for specified user will begin, based off real-time state of the scheduler and jobs queued. Not always accurate estimates. |
 
 
-!> Flags can be used together in the same line for example: `squeue -M merced --me`
+!> Flags can be used together in the same line for example: `squeue -M merced --me --start`
 
 ## Job State  <!-- {docsify-ignore} -->
 Job states are the current state of the jobs that were submitted. Some important state codes that are useful are given below: 
