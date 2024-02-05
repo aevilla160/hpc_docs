@@ -98,3 +98,27 @@ Filezilla is a computer application with a GUI interface that allows for easy tr
 
 
 
+### Using VSCode
+
+For users who use VSCode to edit and manipulate files, there is a helpful extension that can be downloaded from the VSCode store: ```Remote - SSH```. [Link](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) that can be accessed via web
+
+####  Walkthrough on connecting to ```rc.login.ucmerced.edu``` via VSCode
+
+Once downloaded the extension mentioned above, you will see a new icon on the left sidebar of VSCode. 
+
+
+ ![Image of VSCode Sidebar](imgs/VSCodeSidebarIcon.png "Sidebar")
+
+
+
+
+Next, click on ```+``` to add a new SSH connection
+
+A new prompt will come up to enter the the complete ssh login. An example of a proper ssh login for VSCode is ```ssh exampleUser@login.rc.ucmerced.edu```. Where ```exampleUser``` will be replaced by a proper username. 
+
+ ![Image of VSCode Signin Prompt](imgs/VSCode%20Remote%20SigninPrompt.png "Sign in Prompt")
+Once the credential is typed in, there will be a prompt to where to store the host information, select the second option. 
+
+Now there will be a prompt to enter password, this is the password used to sign into the cluster. 
+
+Finally, you will have access to open and manipulate any folder and file on the cluster via VSCode. There is also a built in terminal which allows for submission of jobs and other manipulations to be done in the VSCode application. 
