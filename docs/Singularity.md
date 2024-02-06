@@ -57,4 +57,4 @@ From: redhat:8.6
 
 !> Remember to start an interactive job before running or launching a Singularity Shell
 
-singularity shell example.sif
+```singularity shell example.sif```
