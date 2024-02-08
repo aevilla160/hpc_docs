@@ -35,6 +35,46 @@ Once user log in,there are 2 folders (`data` and `scratch`) locate in `HOME` tha
 |`/home/<UCMID>/scratch`|500G|512G|
 |`/home/<UCMID>/`|70G|75G|
 
+### Checking Disk Quota and Usage  <!-- {docsify-ignore} -->
+
+To look at your current usage amounts of `/home`, `/data` or `/scratch` use the following command 
+
+    quota -vs 
+
+This will output, in sections, the filesystem, space currently used, quoata, hard limit and some other pieces of information in  a more readable format. 
+
+**Note:** To convert the outputted megabytes to gigabytes = space(MB) divided by 1024
+
+!> To check quota limits on Borgstore, click [here](borgstore.md).
+
+### Checking the Size of Directories and Contents <!-- {docsify-ignore} -->
+
+To chek the size of the current directory or any directories in it use the `du` command. 
+
+**Note:** `du` command alone will output all directories, hidden as well, in real time so it will take a few momments to finish. It is recommended to execute the command with some form of the following options to make the process more clear and consice. 
+
+|Option| Use |
+|---------------------------|----------------------|
+| -h | Will display the storage values in only two values in kb,mb,gb|
+|-s | summarizes the size of the whole, current directory |
+| -sh <Directory> | Shows the size of the specfied sub-directory |
+|  --max-depth=N | Only show the sub-directories up to N depth, where N is a number representing the max sub-directory to display | 
+|--all | write counts for all files, not just directories |
+| --help | Display all other options for the `du` command | 
+
+Example demonstrating use of `du` command 
+
+    du -h -s .conda/ 
+
+Outputs the follwing 
+
+    35G     .conda/
+
+For debugging purposes, place the output in a txt file using the following:
+
+     du <options here> 2>&1 | output.txt
+
+
 !> Users who submit jobs to MERCED and use the unified storage are expecting slower network communications. Home - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles. Data - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles. Scratch - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles
 
 * Store in `data`, all that is research grade data that need to be backed-up and safe.
