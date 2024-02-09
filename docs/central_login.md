@@ -35,7 +35,7 @@ Once user log in,there are 2 folders (`data` and `scratch`) locate in `HOME` tha
 |`/home/<UCMID>/scratch`|500G|512G|
 |`/home/<UCMID>/`|70G|75G|
 
-### Checking Disk Quota and Usage  <!-- {docsify-ignore} -->
+### Checking Disk Quota and Usage  
 
 To look at your current usage amounts of `/home`, `/data` or `/scratch` use the following command 
 
@@ -64,15 +64,11 @@ To chek the size of the current directory or any directories in it use the `du` 
 
 Example demonstrating use of `du` command 
 
-    du -h -s .conda/ 
+    du -h -s <directory name>
 
 Outputs the follwing 
 
-    35G     .conda/
-
-For debugging purposes, place the output in a txt file using the following:
-
-     du <options here> 2>&1 | output.txt
+    35G     <directory name>
 
 
 !> Users who submit jobs to MERCED and use the unified storage are expecting slower network communications. Home - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles. Data - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles. Scratch - Shared over 10G network from Pinnacles to Merced. connected over IB on pinnacles
