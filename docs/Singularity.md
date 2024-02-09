@@ -1,15 +1,17 @@
-# Singularity on Pinnacles & MERCED Clusters
+# Singularity on Pinnacles & MERCED Clusters  <!-- {docsify-ignore} -->
 
-Singularity serves as a software that allows to run containers seamlessly. Containers are useful as they allow for all necessary softwares and depencies to be stored in one convienent image format. This allows for convience in sharing and having portability in the container as the softwares are ready to be ran "out of the box". 
+Singularity functions as software that facilitates the seamless execution of containers. Containers prove advantageous by consolidating all required software and dependencies into a convenient image format. This enhances convenience in sharing and ensures portability, enabling the immediate execution of software "out of the box" within the container. 
 
-!> NOTE: Singularity and Containers must be ran on a compute node, as they can be resource intensive.
+!> NOTE: Singularity and Containers need to run on a compute node, as they can consume significant resources..
 
 ## Singularity vs Docker on High Performance Computing
-Singularity is an open source container platform designed to be simple, fast, and secure. Unlike Docker containers which requires root privileges to run containers, Singularity is designed for ease-of-use on shared multiuser systems and in high performance computing (HPC) environments. Singularity is compatible with all Docker images and it can be used with GPUs and MPI applications.
+Singularity is an open-source container platform created for simplicity, speed, and security. In contrast to Docker, which necessitates root privileges for container execution, Singularity is tailored for user-friendly operation in shared multiuser systems and high-performance computing (HPC) environments. It seamlessly supports all Docker images and is compatible with GPUs and MPI applications.
 
 
 ## Creating an image using Singularity
-1. `module load singularity`
+Load the module using the following command
+
+ ```module load singularity```
 
 
 

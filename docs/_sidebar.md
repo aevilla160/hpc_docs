@@ -35,5 +35,5 @@
   - [Cloud resource](cloud.md)
   - [Pilot Jupyterhub](jupyterhub.md)
   - [Important Links & Resources](important_links.md)
-
+  - [Singularity](Singularity.md)
 - [💜 Suggestions?](contribute.md)
