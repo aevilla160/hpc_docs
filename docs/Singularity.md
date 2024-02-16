@@ -1,62 +1,94 @@
-# Singularity on Pinnacles & MERCED Clusters  <!-- {docsify-ignore} -->
+# Using Singularity with the Clusters
 
-Singularity functions as software that facilitates the seamless execution of containers. Containers prove advantageous by consolidating all required software and dependencies into a convenient image format. This enhances convenience in sharing and ensures portability, enabling the immediate execution of software "out of the box" within the container. 
+Singularity can be a useful software when you need to have multiple software packages and configurations made and distributed for other users to use and collaborate on. 
 
-!> NOTE: Singularity and Containers need to run on a compute node, as they can consume significant resources..
+Singularity acts as a software that puts all the specs(softwares, enviroment configuration, etc.) into a `container` that reduces the need for configuration and other distribution issues. This enhances convenience in sharing and ensures portability, enabling the immediate execution of software "out of the box" within the container.
 
-## Singularity vs Docker on High Performance Computing
-Singularity is an open-source container platform created for simplicity, speed, and security. In contrast to Docker, which necessitates root privileges for container execution, Singularity is tailored for user-friendly operation in shared multiuser systems and high-performance computing (HPC) environments. It seamlessly supports all Docker images and is compatible with GPUs and MPI applications.
+## Building a Container for use on the Clusters
 
+Prerequisite: Create an account with [Sylabs Cloud](cloud.sylabs.io). This will allow to create singularity images remotely. Furthermore users can also build defintion files of images for other collaborators to access via the cloud.  
 
-## Creating an image using Singularity
-Load the module using the following command
+1. Create a definition file that contains the instructions to build a configure with the proper packages, softwares and other specs. This `.def` file ending denotes a definition file that singularity interprets as a instruction file. 
 
- ```module load singularity```
-
-
-
-### Creating a ```.sigularity``` image file
-
-Below is an example .singularity image file that will be stored in the local directory. It uses Docker as the base Furthermore it asks to pip install numpy, scipy, matplotlib, 
+Below is an example defintion script that builds a container with python and some other python packages
 
 ``` shell 
-Bootstrap: docker
-From: redhat:8.6
+Bootstrap: docker # Specifies the base for the container; it will use Docker to bootstrap (create) the container. 
+From: python:3.8-slim # The base image is 'python:3.8-slim', a slimmed-down version of a Python 3.8 Docker image, ideal for Python applications with minimal external dependencies.
 
 %post
-    # Commands to run in the container
-    apt-get update && apt-get install -y python3 python3-pip
-    pip3 install numpy scipy matplotlib
+    apt-get update && apt-get install -y \
+        build-essential \ # Installs a package that includes an informational list of packages which are considered essential for building Debian packages      
+        
+        libffi-dev \ # Developer files for libffi, a library that provides a portable, high level programming interface 
+
+    pip install --upgrade pip #Upgrades pip to the latest version
+    pip install numpy pandas matplotlib scipy #pip installs the followed packages
 
 %environment
-    export PATH=/usr/local/bin:$PATH
-    export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+    export PATH=/usr/local/bin:$PATH #Ensuring commands in this directory can be executed without specifying the full path.
+
 
 %runscript
-    # Script to run when the container is executed
-    exec python3 "$@"
-    # This will exectue python3 and any arguements passed in command line. 
-    #The %runscript portion here defines the default action of the container when it is executed directly (e.g., via singularity run mycontainer.sif; more on this command later)
+    exec python "$@" #This line here allows for arguements to be passed in and be ran with Python
+``` 
+
+2. Start an interactive session and log into the allocated compute node. For more information on running a interactive session view [here](running_jupyter.d)
+
+!> All of the following commands must be ran on a compute node as they are resource-intensive
+
+Because users of Pinnacles and MERCED do not have sudo access, user must create their containers on Singularity's cloud base for all public containers. Refer to prerequisite material to ensure creation and access to [Sylab Cloud](https://cloud.sylabs.io/dashboard). 
+
+3. Run the command ``singularity remote login ``. 
+
+4. Now you will be prompted on entering a autorization token from Sylabs. Follow the below guide on generating a token. 
+
+        
+        a. Click on Access tokens from the Sylab Cloud [homepage](https://cloud.sylabs.io/dashboard). 
+
+        b. Enter a simple alias to remember the purpose of creating the token
+
+        c. Generate the token
+
+        d. The generated token will be displayed here. 
+
+    ![Sylab Homepage image](imgs/sylab2image.png "Sylab Homepage Image")
+
+5. Return to the cluster and enter the following ```singularity remote login```
+        
+    Enter in the token displayed. 
+
+    If successful, a message of approval should display
+
+6. Build the singularity container from the definition file using the following comamnd: `singularity build --remote container_name.sif definition_filee.def`
+
+It will now begin the process of building the container and it may take a few minutes depedning on the size and configurations stated in the definition file. All singularity image files will be of type `.sif`
+
+7. The container should now be listed in the current direcotry.
 
 
-```
+## Interacting with Singularity Container
+
+!> All of these commands should still be ran on a compute node!
+
+### Running a container
+
+Use the following command: `singularity run <container.sif>
+
+Running the container, launches an instance of the container appllication or enviroment as configured in the build file. What application/enviroment that will launch from the container will vary. 
+
+For an example, referring the example build file, the container that was created from that file allows for an interactive python session if the container is being ran. 
+
+### Shell Into the container
+
+Use the following command: `singularity shell <container.sif>
+
+Running a shell in places the user in a interactive command-line interface within the container. Once inside the shell users can run applications and scripts with the softwares installed in the container, test and debug scripts and access files in the container. 
 
 
-## Building Singularity Image 
+### Execute a command inside container
 
-``` singularity build my_image.sif MyDefinitionFile.def ```
+Use the following command: `singularity exec <container.sif> <command(s)>`
 
-## Running Singularity Image 
+This allows to execute commands in a singularity container without having to enter the container. 
 
-``` singularity exec example.sif python3 example.py ```
-**Note:** Here you can pass in the scripts that you want to execute during the running of the Singularity Image.
-
-## Executing Commands Inside a Container
-
-``` singularity exec example.sef "Hello World" ```
-
-## To launch interactive mode inside a Singularity Shell
-
-!> Remember to start an interactive job before running or launching a Singularity Shell
-
-```singularity shell example.sif```
