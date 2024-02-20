@@ -35,7 +35,7 @@ From: python:3.8-slim # The base image is 'python:3.8-slim', a slimmed-down vers
 
 2. Start an interactive session and log into the allocated compute node. For more information on running a interactive session view [here](running_jupyter.d)
 
-!> All of the following commands must be ran on a compute node as they are resource-intensive
+!> All of the following commands must be run on a compute node as they are resource-intensive
 
 Because users of Pinnacles and MERCED do not have sudo access, user must create their containers on Singularity's cloud base for all public containers. Refer to prerequisite material to ensure creation and access to [Sylab Cloud](https://cloud.sylabs.io/dashboard). 
 
@@ -44,7 +44,7 @@ Because users of Pinnacles and MERCED do not have sudo access, user must create 
 4. Now you will be prompted on entering a autorization token from Sylabs. Follow the below guide on generating a token. 
 
         
-        a. Click on Access tokens from the Sylab Cloud [homepage](https://cloud.sylabs.io/dashboard). 
+        a. Click on Access tokens from the Sylab Cloud https://cloud.sylabs.io/dashboard.
 
         b. Enter a simple alias to remember the purpose of creating the token
 
