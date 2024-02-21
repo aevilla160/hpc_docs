@@ -71,7 +71,7 @@ It will now begin the process of building the container and it may take a few mi
 
 !> All of these commands should still be ran on a compute node!
 
-### Running a container
+### Running a container <!-- {docsify-ignore} -->
 
 Use the following command: `singularity run <container.sif>
 
@@ -79,14 +79,14 @@ Running the container, launches an instance of the container appllication or env
 
 For an example, referring the example build file, the container that was created from that file allows for an interactive python session if the container is being ran. 
 
-### Shell Into the container
+### Shell Into the container <!-- {docsify-ignore} -->
 
 Use the following command: `singularity shell <container.sif>
 
 Running a shell in places the user in a interactive command-line interface within the container. Once inside the shell users can run applications and scripts with the softwares installed in the container, test and debug scripts and access files in the container. 
 
 
-### Execute a command inside container
+### Execute a command inside container <!-- {docsify-ignore} -->
 
 Use the following command: `singularity exec <container.sif> <command(s)>`
 

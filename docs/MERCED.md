@@ -6,14 +6,13 @@ cluster. The MERCED cluster runs with the [CentOS](https://www.centos.org/) oper
 and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs. a standard flavor of Linux, and employs the Slurm job scheduler and queueing system to manage job runs.
 
 
-## MERCED recharge service (starting Feb. 2023) <!-- {docsify-ignore} -->
+## MERCED recharge service (starting Feb. 2023)
 !>__OIT-CIRT recharge services, including MERCED cluster core-hours will be renewed starting Feb. 2023.__
 
 In order to minimize disruptions to computational research on MERCED cluster, the Provost’s office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024
 
 
-__Faculty PIs__: Please ensure that the user accounts are active and provide the COA# [here](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23) before EOB __12/21/2021__. 
-Email schadalapaka@ucmerced.edu for instructions.
+__Faculty PIs__: Please ensure that the user accounts are active and provide the COA# [here](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23). Email cirt@ucmerced.edu for more assistance.
 
 What is the unit of cost service? MERCED cluster cycles will be charged by **core-hours<sup>(1)</sup>**.
 
