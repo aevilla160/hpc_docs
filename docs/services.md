@@ -11,7 +11,7 @@ Visit [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sy
 
 ## High Performance Computing Office Hours  <!-- {docsify-ignore} -->
 
-CIRT hosted office hours allow users to bring their laptop, code, and questions to get expert help on the spot. We welcome experienced graduate students to attend the office hours to assist their fellow peers in HPC. Faculty and students are welcome to join. Among others, Yue Yu will be available to meet with and help campus research computing community members at these sessions.
+CIRT's office hours provide an opportunity for users to bring their laptops, code, and questions, receiving expert assistance on the spot. We encourage experienced graduate students to attend and help their peers in High-Performance Computing (HPC). Faculty and students are welcome to join these sessions. Yue Yu, our Senior Research Computing Facilitator, will be present to meet and assist members of the campus research computing community during these sessions.
 
 Online and In-person information can be found [here](office_hours.md)
 
