@@ -1,5 +1,5 @@
 ## System overview
-MERCED hosts 41 CPU compute nodes and 25 high memory nodes. Please be aware that
+MERCED hosts 82 CPU compute nodes including 28 high memory nodes. Please be aware that
 the nodes among MERCED cluster are multigenerational, meaning that the CPU
 processors from different nodes are having different features, the table shows below
 listed detailed node information. Users may experience relative big
