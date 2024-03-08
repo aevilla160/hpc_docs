@@ -144,3 +144,8 @@ A vague issue can appear with the message "problem with cholesky". This can be s
 ```
 
 The pseudopotential may not be read if the name of the pseudopotential is misspelled in either the job script or the input file. The job script may not be linking to the pseudopotential correctly. The option `pseudo_dir` may not be pointing to a location where the pseudopotential is. Note: using ${HOME} or ~ in the pathname within the ESPRESSO input may not point to the correct location.
+
+### How To Run Quantum Espresso utilizing GPU <!-- {docsify-ignore} -->
+
+Run it on under interactive session so you can see wheteher job is running with gpu with command "nvidia-smi" (Shows gpu usage).
+!>  *Do Not run GPU job on CPU Node*
