@@ -23,6 +23,7 @@
     - [Interactive Jupyter Notebook](running_jupyter.md)
     - [Install conda environment](conda_env.md)
     - [Running Singularity](Singularity.md)
+    - [Running Interactive Jobs](interact_job.md)
 - Off-Campus Cluster
     - [External Computation resources](additional.md)
     - [HPC@UC](hpc_uc.md)
