@@ -1,8 +1,8 @@
 ## MERCED cluster <!-- {docsify-ignore} -->
 
 MERCED (Multi-Environment Research Computer for Exploration and
-Discovery) Cluster is a 2096 core Linux based high performance computing
-cluster. The MERCED cluster runs with the [CentOS](https://www.centos.org/) operating system,
+Discovery) Cluster is a 1,872 core Linux based high performance computing
+cluster. The MERCED cluster runs with the [RedHat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) operating system,
 and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs. a standard flavor of Linux, and employs the Slurm job scheduler and queueing system to manage job runs.
 
 
@@ -25,6 +25,16 @@ Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-
 (2)  A core is an individual processor: the part of a computer that executes programs. (The MERCED cluster has about 3100 cores.)
 
 
+## MERCED Questions: 
+
+>Q:I have a lot of work on MERCED, but do not want to pay the Recharge rate, what are my options?
+
+All work that was stored on MERCED can be accessed and be used on Pinnacles cluster for **Free**.
+User's can always obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and [ACCESS](https://access-ci.org/) resources. CIRT can provide consultation for how to access these resources. Schedule a consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+>Q: How to include CIRT managed charged services into budget statement? 
+
+The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section.
 
 > I don’t want to pay for MERCED what are my options?
 
@@ -32,7 +42,9 @@ Remember, you can always obtain access to other free compute resources such as o
 
 > I have other questions!
 
-We have put together a [FAQ page](merced_FAQ.md) that has the most commonly asked questions and will be keeping it up to date.
+We have put together a [FAQ page](rechargeFAQs.md) that has more commonly asked questions about MERCED. 
+
+There is also a page about more general FAQs relating to [HPC](hpc_FAQ.md)
 
 Once again, if you have any questions or concerns regarding MERCED
 cluster policies. Feel free to reach out to us via submitting a [general request ticket](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
