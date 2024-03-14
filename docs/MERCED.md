@@ -6,7 +6,7 @@ cluster. The MERCED cluster runs with the [RedHat](https://www.redhat.com/en/tec
 and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs. a standard flavor of Linux, and employs the Slurm job scheduler and queueing system to manage job runs.
 
 
-## MERCED recharge service (starting Feb. 2023)
+## MERCED recharge service (starting Feb. 2023) <!-- {docsify-ignore} -->
 !>__OIT-CIRT recharge services, including MERCED cluster core-hours will be renewed starting Feb. 2023.__
 
 In order to minimize disruptions to computational research on MERCED cluster, the Provost’s office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024
@@ -25,7 +25,7 @@ Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-
 (2)  A core is an individual processor: the part of a computer that executes programs. (The MERCED cluster has about 3100 cores.)
 
 
-## MERCED Questions: 
+## MERCED Questions: <!-- {docsify-ignore} -->
 
 >Q:I have a lot of work on MERCED, but do not want to pay the Recharge rate, what are my options?
 
