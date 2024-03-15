@@ -46,8 +46,6 @@ whoami
 The `my_job.sub` sample script for Pinnacles is provided below, the job scripts for the two machines look quite similar, however, they have different partition names and time limits:
 ```bash
 #!/bin/bash
-##SBATCH --mail-user=UCMercedNetID@ucmerced.edu  
-##SBATCH --mail-type=ALL  #uncomment the first two lines if you want to receive the email notifications
 #SBATCH --nodes=1    # request only 1 node
 #SBATCH --partition test      # this job will be submitted to test queue
 #SBATCH --mem=96G #this job is asked for 96G of total memory, use 0 if you want to use entire node memory
@@ -58,6 +56,8 @@ The `my_job.sub` sample script for Pinnacles is provided below, the job scripts 
 # #SBATCH --constraint=gpu #uncomment this line if you need the access to GPU
 # #SBATCH --gres=gpu:2   #uncomment this line if you need GPU access (2 GPUs)
 #SBATCH --job-name=my_job    # this is your job’s name
+##SBATCH --mail-user=UCMercedNetID@ucmerced.edu  
+##SBATCH --mail-type=ALL  #uncomment the first two lines if you want to receive the email notifications
 #SBATCH --export=ALL
 
 #  type 'man sbatch' for more information and options
