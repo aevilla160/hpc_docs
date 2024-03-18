@@ -5,7 +5,7 @@
 - On 04/20/2023 CIRT invited AWS to UC Merced campus to give a full-day AWS training
     - The workshop was recorded and the presentation can be found below
     <p align='center'>
-    <iframe width="560" height="560" src="https://www.youtube.com/embed/WGsIEZOAtmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="560" src="https://www.youtube.com/embed/WGsIEZOAtmM?si=Kc3frOhNrGqfGFp1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </p>
     - The training covers:
         - AWS for research, the slide can be found below
