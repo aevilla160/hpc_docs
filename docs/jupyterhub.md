@@ -3,6 +3,8 @@
 
 All active UC Merced students, staff and faculty should have access to the pilot hub.
 
+If you have any questions, please free feel to contact [Sai Chandhar Annapragada](sannapragada@ucmerced.edu).
+
 ### What is JupyterHub
 
 JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python code in a web browser, without having to install software on their local machine.
