@@ -3,7 +3,7 @@
 
 All active UC Merced students, staff and faculty should have access to the pilot hub.
 
-If you have any questions, please free feel to contact [Sai Chandhar Annapragada](sannapragada@ucmerced.edu).
+If you have any questions, please free feel to contact Sai Chandhar Annapragada (sannapragada@ucmerced.edu).
 
 ### What is JupyterHub <!-- {docsify-ignore} -->
 
