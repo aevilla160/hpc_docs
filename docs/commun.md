@@ -1,23 +1,40 @@
+# Communications
+
+## 4/2/24
+
+Dear HPC users,
+
+The San Diego Supercomputer Center (SDSC) is organizing two exceptional summer programs. One is centered on efficiently executing machine learning programs on high-performance computing (HPC) systems, and the other focuses on data science, particularly in domains not traditionally associated with supercomputing.
+
+If you're interested in any of the programs, please keep in mind that the deadline is approaching.
+
+  
+[Cyberinfrastructure-Enabled Machine Learning Summer Institute](https://na.eventscloud.com/website/70695/) – **Friday, April 12**
+
+[HPC and Data Science Summer Institute](https://na.eventscloud.com/website/70797/home/) – **Friday, April 26**
+
+If you have any questions, please reach out to **events@sdsc.edu**
+
 ## 1/24/23
 ### COMPLETED: HPC cluster maintenance 1/16/24
 The MERCED and Pinnacles clusters are back online. The CIRT team has completed several updates, including security advisories, bug fixes, and product enhancements. Upgrades encompassed storage server firmware, storage chassis firmware, IB and Data network expansion, and nodes' BIO and BMC firmware. Currently, the default CUDA version for GPU nodes (gnode) is 12.3.
 
   Please feel free to resume submitting your jobs to the cluster.
 
-## 11/21/23
-### Annual maintenance
+## 11/21/23 <!-- {docsify-ignore} -->
+### Annual maintenance <!-- {docsify-ignore} -->
 
 Maintenance Notice: 6:30 am January 8, 2024, to 5 pm January 16, 2024
 
 More details here: <https://ucmerced.github.io/hpc_docs/#/news>
 
-### Firewall Migration
+### Firewall Migration <!-- {docsify-ignore} -->
 
 Migration to new firewalls planned for Dec 29, 8:00 AM– 12:00 PM.
 
 Impact: No Internet access and No VPN during this time
 
-### CIRT Winter break availability
+### CIRT Winter break availability <!-- {docsify-ignore} -->
 
 UC Merced campus closes for winter break from December 23 - January 2. Please be aware that CIRT staff will not be available during that period for cluster support or research computing issues. Our services and support will resume as normal when the campus reopens on January 3, 2024. During the closure, you can find current information about outages and service disruptions at status.ucmerced.edu.  If you have an emergency related to OIT services at UC Merced, you can call 228-HELP (4357).
 The CIRT staff would like to take this opportunity to wish our campus partners the happiest of holiday seasons.
@@ -30,7 +47,7 @@ Happy Computing.
 
 
 
-## 08/25/23
+## 08/25/23 <!-- {docsify-ignore} -->
 Dear Research Computing users - 
 
 Starting **September 1st**, HPC office hours will be conducted every Friday from: 
@@ -43,7 +60,7 @@ All students, postdocs, staff, and faculty are welcome to attend and bring resea
 
 <!-- {docsify-ignore-all} -->
 
-## 07/10/2023
+## 07/10/2023 <!-- {docsify-ignore} -->
 Dear HPC users,
 
 HPC office hours will be conducted remote-only starting this Friday, July 14th  until August 11th . In-person office hours will resume on the August 18th.
@@ -51,7 +68,7 @@ HPC office hours will be conducted remote-only starting this Friday, July 14th  
 We encourage users who have HPC-related questions to join our Friday office hour. It provides a valuable opportunity to receive assistance and guidance.
 
 
-## 02/01/2023
+## 02/01/2023 <!-- {docsify-ignore} -->
 Dear Computational Researchers –
  
 CIRT has completed maintenance on MERCED cluster and MERCED cluster should be accessible for all users.
@@ -91,7 +108,7 @@ More information on PI condo-storage [here](central_login.md)
  
 
 
-## 01/26/2023
+## 01/26/2023 <!-- {docsify-ignore} -->
 Dear Research Computing users-
 
 Facilities had informed us that they will be performing essential power maintenance in the SE2 building from 5:30 am -6:30 am tomorrow Jan 27th, 2023 and will require a power shutdown for most of SE-2.
@@ -103,7 +120,7 @@ Please open an OIT service ticket [here](https://ucmerced.service-now.com/servic
 
 
 
-## 01/09/2023
+## 01/09/2023 <!-- {docsify-ignore} -->
 Dear Research Computing users –
  
 Please be aware of the following important information on upcoming downtime for the MERCED cluster and changes to CIRT services starting in February 2023.
@@ -125,7 +142,7 @@ Other important changes starting 1 February 2023
 <li>In order to minimize disruptions to computational research on MERCED cluster, the Provost's office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024.</li>
 </ul>
 
-## 11/30/2022
+## 11/30/2022 <!-- {docsify-ignore} -->
 
 Dear HPC users,
   
@@ -140,7 +157,7 @@ Dear HPC users,
 
 
 
-## 11/15/2022
+## 11/15/2022 <!-- {docsify-ignore} -->
 
 **Subject: Upcoming MERCED cluster maintenance and changes to CIRT services**
 
@@ -187,7 +204,7 @@ Other important changes starting **1 February 2023**
 
 
 
-## 5/13/2022
+## 5/13/2022 <!-- {docsify-ignore} -->
 
 **Subject: Pinnacles maintenance (06/06/2022-06/07/2022)**
 
@@ -224,7 +241,7 @@ For updates during the maintenance window, we encourage you to monitor CIRT News
 
 
 
-## 4/25/2022
+## 4/25/2022 <!-- {docsify-ignore} -->
 
 **Subject: CIRT Recharge Center Hiatus Continues**
 
@@ -245,7 +262,7 @@ However, faculty PIs will NOT be charged for core-hour usage on MERCED until rec
 I am happy to discuss any questions you might have – you can schedule a one-on-one consultation with me [here](https://arrangr.com/sarvani/rechargemeeting).
 
 
-## 3/30/2022
+## 3/30/2022 <!-- {docsify-ignore} -->
 
 **Subject: Research Computing Webinar Recording**
 
@@ -267,7 +284,7 @@ Thank you, and I hope you’re well!
 
 
 
-## 2/28/2022
+## 2/28/2022 <!-- {docsify-ignore} -->
 
 **Subject: CIRT Recharge Center Hiatus - Waiving Recharge Costs**
 
@@ -303,7 +320,7 @@ All MERCED cluster communications and updates will be posted on the CIRT documen
 Once again, I am happy to discuss any questions you might have – you can schedule a one-on-one consultation with me [here](https://arrangr.com/sarvani/rechargemeeting).
 
  
-## 1/1/22-1/15/22
+## 1/1/22-1/15/22 <!-- {docsify-ignore} -->
 
 **Subject: MERCED cluster core-hour usage and cost report**
 
