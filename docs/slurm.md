@@ -10,7 +10,7 @@ Slurm serves the purpose of being the scheduler of jobs and the manager of the r
 
 
 
-## Slurm Commands
+## Slurm Commands <!-- {docsify-ignore} -->
 
 Basic Slurm Commands to interact via the command line interface with the queueing and resource scheduler/ 
 The table below shows the list and descriptions of the mostly used Slurm commands.
@@ -27,7 +27,7 @@ The table below shows the list and descriptions of the mostly used Slurm command
 
 ### `sbatch` Command <!-- {docsify-ignore} -->
 
-The `sbatch` command is used to sumbit job scripts to the SLURM scheduler to be placed on the respective queue and to then begin with the resources are available. 
+The `sbatch` command is used to sumbit job scripts to the Slurm scheduler to be placed on the respective queue and to then begin with the resources are available. 
 
 #### Key Features of the `sbatch` command <!-- {docsify-ignore} -->
 
@@ -44,7 +44,7 @@ The `sbatch` command is used to sumbit job scripts to the SLURM scheduler to be 
 
 
 
-## Slurm Script Main Parts 
+## Slurm Script Main Parts <!-- {docsify-ignore} -->
 
 In creating a Slurm script, there are 4 main parts that are mandatory in order for your job to be successfully processed. 
 
@@ -67,19 +67,19 @@ Example:
     #SBATCH --job-name=EXAMPLEJOB
     #SBATCH --nodes=2
 
+#### Common Options <!-- {docsify-ignore} -->
 
-Common Options
+| Option | Description | 
+| ------------ | ------------- | 
+|--job-name=NAME|Specifies the name of the job.|
+| --partition=PARTITION | Submits the job to a specific partition. |
+|--nodes=N | Requests N nodes for the job. |
+| --ntasks-per-node=N | Specifies the number of tasks to launch per node.|
+|--mem=MB | Requests a specific amount of memory (in megabytes). |
+|--time=DAYS:HOURS:MINUTES:SECONDS | Sets a limit on the total run time of the job. |
+|--output=FILE_NAME | Designates a file to capture the standard output. |
+|--error=FILE_NAME| Specifies a file to capture the standard error output.|
 
-    --job-name=NAME: Specifies the name of the job.
-    --partition=PARTITION: Submits the job to a specific partition.
-    --nodes=N: Requests N nodes for the job.
-    --ntasks-per-node=N: Specifies the number of tasks to launch per node.
-    --mem=MB: Requests a specific amount of memory (in megabytes).
-    --time=MINUTES: Sets a limit on the total run time of the job.
-    --output=FILE_NAME: Designates a file to capture the standard output.
-    --error=FILE_NAME: Specifies a file to capture the standard error output.
-    --mail-type=TYPE: Configures when SLURM sends email notifications about the job.
-    --mail-user=USER_EMAIL: Specifies the email address to receive job notification
 
 
 
@@ -116,7 +116,7 @@ Job Examples can be found [here](running_jobs.md)
 
 When a job scheduled by Slurm starts, it needs to know some information about its execution environment. For example, It needs to know the working directory, and what nodes allocated to it. Slurm passes this information to the running job via what so-called environment variables. The following is the most common-used environment variable.
 
-| SLURM Environment Variable | Description                                       |
+| Slurm Environment Variable | Description                                       |
 |----------------------------|---------------------------------------------------|
 | `SLURM_CLUSTER_NAME`       | Name of the cluster on which the job is executing.|
 | `SLURM_CPUS_ON_NODE`       | Number of CPUs on the allocated node.             |
@@ -145,12 +145,12 @@ When a job scheduled by Slurm starts, it needs to know some information about it
 | `SLURM_SUBMIT_HOST`        | The Hostname of the computer from which SBATCH was invoked. |
 | `SLURM_TASK_PID`           | The process ID of the corresponding task. |
 
-## Slurm - Job Management 
+## Slurm - Job Management <!-- {docsify-ignore} -->
 
 Job management is critical before running or scaling jobs and computations within a HPC enviroment. We have created a manual page that can be found [here](Manage_job.md). The documentation goes over common Slurm commands that help debug job errors and overall performance using `sacct` and `scontrol`. 
 
 
-## Job Arrays 
+## Job Arrays <!-- {docsify-ignore} -->
 
 Job arrays offer a mechanism for submitting and managing collections of similar jobs quickly and easily that utliizes only one job script. Job arrays are great at "automating" a repetetive job script that each time may only have input changes. Click [here](job_array.md) for the job array
 
