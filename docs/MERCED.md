@@ -110,7 +110,8 @@ User's can always obtain access to other free compute resources such as our new 
 
 >Q: How to include CIRT managed charged services into budget statement? 
 
-The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section.
+The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section. Here is the sample <a href="path_to_file" download="./files/Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf">Download</a>
+
 
 > I don’t want to pay for MERCED what are my options?
 
