@@ -1,13 +1,40 @@
-## Our UC Merced pilot JupyterHub infrastructure is online now ! <!-- {docsify-ignore} -->
-> Please go to the website at  https://ucmerced.2i2c.cloud. 
+## Table of Contents
+- [1. What are Jupyter Notebooks?](#1-what-are-jupyter-notebooks)
+  - [1.1 Features](#11-features)
+  - [1.2 Components](#12-components)
+- [2. What is JupyterHub?](#2-what-is-jupyterhub)
+- [3. Who can use this service?](#3-who-can-use-this-service)
+- [4. How to access JupyterHub?](#4-how-to-access-jupyterhub)
+  - [4.1 Staging JupyterHub](#41-staging-jupyterhub)
+  - [4.2 Production JupyterHub](#42-production-jupyterhub)
+- [5. Create New Notebook](#5-create-new-notebook)
+- [6. Rename the Notebook](#6-rename-the-notebook)
+- [7. How to run a notebook?](#7-how-to-run-a-notebook)
+- [8. How to add code block?](#8-how-to-add-code-block)
+- [9. How to add Markdown text cells in the notebook?](#9-how-to-add-markdown-text-cells-in-the-notebook)
+- [10. How to download the notebook?](#10-how-to-download-the-notebook)
+- [11. How to create a new folder?](#11-how-to-create-a-new-folder)
+- [12. Shared/Shared Read-Write Folder](#12-sharedshared-read-write-folder)
+  - [12.1 Shared](#121-shared)
+  - [12.2 Shared Read-Write](#122-shared-read-write)
+- [13. Installing packages on the Hub](#13-installing-packages-on-the-hub)
+  - [13.1 Is it possible to install custom packages?](#131-is-it-possible-to-install-custom-packages)
+  - [13.2 What packages & libraries are available?](#132-what-packages--libraries-are-available)
+- [14. nbgitpuller](#14-nbgitpuller)
+  - [14.1 Put your files in a public Github Repository](#141-put-your-files-in-a-public-github-repository)
+  - [14.2 Generate nbgitpuller Link](#142-generate-nbgitpuller-link)
+  - [14.3 Distribute your nbgitpuller link](#143-distribute-your-nbgitpuller-link)
 
-All active UC Merced students, staff and faculty should have access to the pilot hub.
+<!-- ## Our UC Merced pilot JupyterHub infrastructure is online now !--> <!-- {docsify-ignore} -->
+<!-- > Please go to the website at  https://ucmerced.2i2c.cloud. 
 
-If you have any questions, please free feel to contact Sai Chandhar Annapragada (sannapragada@ucmerced.edu).
+All active UC Merced students, staff and faculty should have access to the Jupyterhub.
 
-### What is JupyterHub <!-- {docsify-ignore} -->
+If you have any questions, please free feel to contact Sai Chandhar Annapragada (sannapragada@ucmerced.edu). -->
 
-JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python code in a web browser, without having to install software on their local machine.
+<!-- ### What is JupyterHub --> <!-- {docsify-ignore} -->
+
+<!-- JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python code in a web browser, without having to install software on their local machine.
 
 
 Working on JupyterHub provides a number of benefits, especially in an introductory course:
@@ -33,13 +60,13 @@ If you have admin access, please note that the shared folders have the same shar
 
 If you have any additional questions accessing hub, please open a general OIT research computing ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
-If you were not able to attend the workshop of JupyterHub, here is the recording [link](https://video.ucmerced.edu/media/JupyterHub+Workshop/1_ehe8hmux).
+If you were not able to attend the workshop of JupyterHub, here is the recording [link](https://video.ucmerced.edu/media/JupyterHub+Workshop/1_ehe8hmux). -->
 
 
 
 
-## Generate `nbgitpuller` link <!-- {docsify-ignore} -->
-> Ensure that the `nbgitpuller` is installed into your environment
+<!-- ## Generate `nbgitpuller` link --> <!-- {docsify-ignore} -->
+<!-- > Ensure that the `nbgitpuller` is installed into your environment
 
 The default environment for 2i2c JupyterHubs has `nbgitpuller` pre-installed. However, if you define a [custom environment](https://docs.2i2c.org/admin/howto/environment/#environment-image) for your hub’s users, you’ll need to ensure that nbgitpuller is installed in order for users to use it!
 
@@ -66,14 +93,84 @@ Generate an nbgitpuller link using the browser extension when you are in the Git
 * The default interface to open when users click this link. The default is the classic notebook, but many other apps are available
 * A file to open when the link is clicked. When left empty, a directory listing with the content of the repository will be shown
 
-!> Unfortunately, `RStudio` does not support opening a specific file, and will always show the home directory. Users will have to manually navigate to the appropriate file.
+!> Unfortunately, `RStudio` does not support opening a specific file, and will always show the home directory. Users will have to manually navigate to the appropriate file. -->
 
-### Local Jupyter versus JupyterHub <!-- {docsify-ignore} -->
-
+<!-- ### Local Jupyter versus JupyterHub --> <!-- {docsify-ignore} -->
+<!--
 | JupyterHub | Local Jupyter Install |
 |--------------| --------------------|
 | Needs an internet connection | Does not need internet connection |
 | Limited resources (disk and RAM) | Resources are only limited by individual computer |
 | System-wide installation done by admins| You can install anything you want |
 | You can only access files in your account | You can maybe access all files (if you are an admin) |
-| If things break, CIRT can assist in helping fix the item | CIRT can not assist in fixing issues on local install |
+| If things break, CIRT can assist in helping fix the item | CIRT can not assist in fixing issues on local install | -->
+
+## 1. What are Jupyter Notebooks?
+
+Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+### 1.1 Features
+
+- **Interactive Environment:** Jupyter Notebooks provide an interactive computing environment where users can write and execute code in a step-by-step manner.
+- **Support for Multiple Languages:** While originally designed for Python, Jupyter Notebooks support various programming languages like Julia, Python, and R.
+- **Rich Output:** Notebooks allow the incorporation of rich media outputs such as plots, images, videos, and interactive widgets alongside code and text cells.
+- **Markdown Support:** In addition to code cells, users can include Markdown cells to write formatted text, equations (using LaTeX syntax), and even HTML for documentation or explanations.
+- **Data Visualization:** Using libraries like Matplotlib, Seaborn, users can create interactive and static visualizations directly within the notebook environment.
+- **Integration with Libraries and Tools:** Jupyter Notebooks seamlessly integrate with various data science libraries and tools such as NumPy, Pandas, SciPy, TensorFlow, and scikit-learn.
+
+### 1.2 Components
+
+- **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
+  ![jupyter_Cells](./jupyter_cells.png)
+
+- **Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
+  ![kernel](./kernel.png)
+
+- **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
+  ![toolbar](./toolbar.png)
+- **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
+  ![menubar](./menu.png)
+- **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
+  ![output_area](./output_area.png)
+- **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
+### 1.3 Using Jupyter Notebooks for Data Analysis
+
+**Jupyter Notebooks** are incredibly versatile for **data analysis** projects. They allow data scientists to combine **executable code**, rich text, **visualizations**, and equations in a single document.
+
+- **Interactive Data Exploration:** Notebooks facilitate interactive exploration of datasets, enabling quick iterations over a data preprocessing or analysis pipeline.
+- **Visualization:** With support for libraries like **Matplotlib** and **Seaborn**, users can create and embed graphs directly within notebooks.
+- **Collaboration and Sharing:** Notebooks can be easily shared between users, promoting collaboration on data analysis projects.
+
+<!-- Add image syntax here for a data analysis visualization example -->
+
+## 2. What is JupyterHub?
+
+**JupyterHub** is a multi-user version of the notebook designed for classrooms, labs, and data science teams. It allows multiple users to access Jupyter Notebooks on a centralized server, thereby facilitating collaborative projects and learning environments.
+
+- **Accessibility:** JupyterHub can be accessed from any web browser, making computational resources available to users without the need for complex setup procedures.
+- **Resource Management:** It efficiently manages computational resources, allowing system administrators to allocate resources per user or project.
+
+## 3. Who Can Use This Service?
+
+The **JupyterHub** service is open to a wide range of users, from **students** to **researchers** and **data scientists**. It is particularly useful for:
+
+- **Educational Institutions:** Teachers can create a shared JupyterHub environment for their classes, enabling an interactive learning experience.
+- **Research Teams:** Collaborative projects that require data analysis, computation, and visualization can benefit significantly from JupyterHub’s shared resources.
+
+## 4. How to Access JupyterHub?
+
+Accessing **JupyterHub** requires a network connection and a web browser. The exact steps may vary depending on the specific JupyterHub setup, but generally involve the following:
+
+1. **Navigate to the JupyterHub URL:** This will be provided by your institution or the administrator of the JupyterHub instance.
+
+    <!-- Add image syntax here for the JupyterHub login page -->
+
+2. **Log in:** Use your designated credentials. This might be your institutional login or a specific account set up by your JupyterHub administrator.
+
+3. **Start a Notebook Server:** Once logged in, you may need to select computational resources or simply click a button to start your Jupyter Notebook server.
+
+4. **Open or Create a Notebook:** From the JupyterHub dashboard, you can access existing notebooks or create new ones.
+
+    <!-- Add image syntax here showing the JupyterHub dashboard -->
+
+**Note:** The exact interface and options available may vary based on the JupyterHub configuration and the resources provided by your institution or organization.
