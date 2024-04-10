@@ -121,17 +121,17 @@ Jupyter Notebook is an open-source web application that allows you to create and
 ### 1.2 Components
 
 - **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
-  ![jupyter_Cells](./jupyter_cells.png)
+  ![jupyter_Cells](./imgs/jupyter_cells.png)
 
 - **Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
-  ![kernel](./kernel.png)
+  ![kernel](./imgs/kernel.png)
 
 - **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
-  ![toolbar](./toolbar.png)
+  ![toolbar](./imgs/imtoolbar.png)
 - **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
-  ![menubar](./menu.png)
+  ![menubar](./imgs/menu.png)
 - **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
-  ![output_area](./output_area.png)
+  ![output_area](./imgs/output_area.png)
 - **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
 ### 1.3 Using Jupyter Notebooks for Data Analysis
 
