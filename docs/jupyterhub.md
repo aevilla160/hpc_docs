@@ -127,9 +127,9 @@ Jupyter Notebook is an open-source web application that allows you to create and
   ![kernel](./imgs/kernel.png)
 
 - **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
-  ![toolbar](./imgs/imtoolbar.png)
+  ![toolbar](./imgs/toolbar.png)
 - **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
-  ![menubar](./imgs/menu.png)
+  ![menubar](./imgs/menubar.png)
 - **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
   ![output_area](./imgs/output_area.png)
 - **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
