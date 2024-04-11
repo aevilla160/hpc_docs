@@ -1,8 +1,8 @@
-## 1. What are Jupyter Notebooks?
+## What are Jupyter Notebooks?
 
 Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
-### 1.1 Features
+### Features
 
 - **Interactive Environment:** Jupyter Notebooks provide an interactive computing environment where users can write and execute code in a step-by-step manner.
 - **Support for Multiple Languages:** While originally designed for Python, Jupyter Notebooks support various programming languages like Julia, Python, and R.
@@ -11,7 +11,7 @@ Jupyter Notebook is an open-source web application that allows you to create and
 - **Data Visualization:** Using libraries like Matplotlib, Seaborn, users can create interactive and static visualizations directly within the notebook environment.
 - **Integration with Libraries and Tools:** Jupyter Notebooks seamlessly integrate with various data science libraries and tools such as NumPy, Pandas, SciPy, TensorFlow, and scikit-learn.
 
-### 1.2 Components
+### Components
 
 - **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
   
@@ -34,7 +34,7 @@ Jupyter Notebook is an open-source web application that allows you to create and
 
 - **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
 
-### 1.3 Using Jupyter Notebooks for Data Analysis
+### Using Jupyter Notebooks for Data Analysis
 
 **Jupyter Notebooks** are incredibly versatile for **data analysis** projects. They allow data scientists to combine **executable code**, rich text, **visualizations**, and equations in a single document.
 
@@ -42,9 +42,8 @@ Jupyter Notebook is an open-source web application that allows you to create and
 - **Visualization:** With support for libraries like **Matplotlib** and **Seaborn**, users can create and embed graphs directly within notebooks.
 - **Collaboration and Sharing:** Notebooks can be easily shared between users, promoting collaboration on data analysis projects.
 
-<!-- Add image syntax here for a data analysis visualization example -->
 
-## 2. What is JupyterHub?
+## What is JupyterHub?
 
 [Jupyterhub](https://jupyter.org/hub) JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python,R code in a web browser, without having to install software on their local machine.
 
@@ -70,25 +69,25 @@ All students have access to the same compute power, regardless of the machine th
 
 
 
-## 3. How to access JupyterHub?
+## How to access JupyterHub?
 Access to the JupyterHub is available to everyone who has UCMerced credentials. To log in, please proceed to the following URL:
 
 **URL** → [https://ucmerced.2i2c.cloud/hub/login](https://ucmerced.2i2c.cloud/hub/login) (UCMerced SSO is required)
 
-#### 3.1. Login:
+#### Login:
 Go to the UCMerced **JupyterHub** login page and enter your credentials to log in.
 
 ![output_area](./imgs/login-page.png)
 
 Once the login is successfull,On the home page, you will see two options to choose from based on your preference or requirements. These options likely correspond to different programming environments or configurations.
 
-#### 3.2. Choose Server:
+#### Choose Server:
 
 Select the server that best suits your needs by clicking on the corresponding option. For example, you might choose between a Python server and an R server.
 
 ![output_area](./imgs/servers.png)
 
-#### 3.3. Start Server:
+#### Start Server:
 
 Once you've made your selection, click on the option to start the server. This will initiate the server and provide you with access to the chosen environment. 
 
@@ -98,7 +97,7 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 
 ![output_area](./imgs/home_env.png)
 
-### 3.4. How can I switch from a Python server to an R server in JupyterHub?
+### How can I switch from a Python server to an R server in JupyterHub?
 - **Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub session. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
 
   ![output_area](./imgs/R_file.png)
@@ -119,7 +118,7 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 
   ![output_area](./imgs/R_homepage.png)
 
-## 4. Create New Notebook
+## Create New Notebook
 
 From the Launcher, you can see different sections like:
 
@@ -131,21 +130,21 @@ Click the icon under the Notebook section to create a new notebook, which will b
 
 ![output_area](./imgs/newnotebook.png)
 
-## 5. Rename the Notebook
+## Rename the Notebook
 
 To rename a notebook, you can simply right-click on the notebook from the Menu bar and choose the "Rename" option.
 
 ![output_area](./imgs/rename.png)
 
-## 6. How to run a notebook?
+## How to run a notebook?
 
 To execute code within a notebook, users can click on individual code cells and then either press the "Run" button in the toolbar or press **Shift + Enter** on their keyboard.
 
-## 7. How to add a code block?
+## How to add a code block?
 
 Users can add new code cells to their notebook by clicking on the "+" button in the toolbar and selecting "Code" from the dropdown menu.
 
-## 8. How to add Markdown text cells in the notebook?
+## How to add Markdown text cells in the notebook?
 
 To add Markdown text cells to a notebook, users should click the toolbar and select "Markdown" from the dropdown menu. They can then enter Markdown-formatted text into the cell. Once the Markdown cell is created, you can start typing your text directly into the cell.
 
@@ -165,23 +164,23 @@ The following are the different options you can use in markdown:
 
 **Note:** After typing your text, run the cell by pressing Shift + Enter. The Markdown cell will render your text in formatted style.
 
-## 9. How to download the notebook?
+## How to download the notebook?
 
 To download a notebook document, users can go to the "File" menu and select "Download as". From the submenu that appears, they can choose the desired file format (e.g., `.ipynb`, `.pdf`, `.LaTeX`, `.html`, `.webpdf`, `.qtpdf`, etc.) to initiate the download.
 
 ![output_area](./imgs/download_notebook.png)
 
-## 10. How to create a new folder?
+## How to create a new folder?
 
 Users can create a new folder within their JupyterHub environment by navigating to the directory where they want the new folder to be located, clicking on the "New" button, which will create a folder just by clicking it.
 
-## 11. Installing packages on the Hub
+## Installing packages on the Hub
 
-### 11.1 Is it possible to install custom packages?
+### Is it possible to install custom packages?
 
 Absolutely! In Jupyter Notebook, you have the flexibility to install packages using either `!pip install package-name` or `!conda install package-name` for Python packages. For R, utilize `install.packages()`. **Just remember, the packages you install only stick around while you're using the server. So, it's recommended to put the installation commands at the start of your notebook or file, making sure they run when you need them.**
 
-### 11.2 What packages & libraries are available?
+### What packages & libraries are available?
 
 This JupyterHub comes with Python 3.11.4 and R 4.3.1 installed. Many commonly used packages are pre-installed. This **[requirements.txt](https://ucmerced.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02)** file lists the python packages installed, while this  **[install.R](https://ucmerced.box.com/s/65r1rda9atblpdsxdvtyaq6exlnns9z3)** file lists the R packages installed.
 
@@ -189,18 +188,18 @@ To inquire about packages, users should open the notebook from the launcher and 
 - For Python packages: Type `pip freeze` (users should be in the python server).
 - For R packages: Type `installed.packages()` (users should be in the R server).
 
-## 12. nbgitpuller
+## nbgitpuller
 
 You’ll often want to distribute content (such as notebooks, scripts, sample data, etc.) to your users so they can do exercises, follow along with a lecture, or use as a starting point for their own work. This content is often constantly updated as time goes on, and needs to not overwrite your student’s work if you make an adjustment to content that has already been touched by the student. That’s where nbgitpuller comes into the picture.
 
 nbgitpuller is already installed in the default environment for UCMerced JupyterHubs. To set up a nbgitpuller link, users must have a GitHub account. The following are the steps which will guide you to create an nbgitpuller link:
 
-### 12.1 Put your files in a public Github Repository
+### Put your files in a public Github Repository
 
 Create a repository on GitHub and start putting your content there. This repository serves as the source of the content that will be distributed to your users. You can update it as often as needed. While instructors must understand how [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git) works, your users will never have to directly interact with git.
 
 
-### 12.2 Generate nbgitpuller Link
+### Generate nbgitpuller Link
 
 Users can generate an nbgitpuller link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
 
@@ -215,7 +214,7 @@ The following steps will explain each and every field in the screenshot below.
 - D. File to Open
 - E. Application to Open
 
-### 12.3 Distribute your nbgitpuller link
+### Distribute your nbgitpuller link
 
 Distribute the link you have generated to your users. Upon clicking the link, they will be redirected to your hub and asked to log in if they have not already. 
 
