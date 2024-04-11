@@ -35,6 +35,7 @@
   - [Office hour Q/A](office_hour.md)
   - [Cloud resource](cloud.md)
   - [JupyterHub](jupyterhub.md)
+    - [Jupyterhub Office Hours](jupyterhub.md#Jupyterhub-Office-Hours)
     - [1. What are Jupyter Notebooks?](jupyterhub.md#1-what-are-jupyter-notebooks)
       - [1.1 Features](jupyterhub.md#11-features)
       - [1.2 Components](jupyterhub.md#12-components)
