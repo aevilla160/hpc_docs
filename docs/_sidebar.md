@@ -34,7 +34,7 @@
   - [Slurm](slurm.md)
   - [Office hour Q/A](office_hour.md)
   - [Cloud resource](cloud.md)
-  - [Pilot JupyterHub](jupyterhub.md)
+  - [JupyterHub](jupyterhub.md)
     - [1. What are Jupyter Notebooks?](jupyterhub.md#1-what-are-jupyter-notebooks)
       - [1.1 Features](jupyterhub.md#11-features)
       - [1.2 Components](jupyterhub.md#12-components)
