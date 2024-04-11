@@ -98,6 +98,17 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 
 ![output_area](./imgs/home_env.png)
 
+### 3.4. How can I switch from a Python server to an R server in JupyterHub?
+- **Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub session. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
+
+- **Stop the Current Running Server**: In the Hub Control Panel, you will see an option to "Stop My Server." Click this option to halt the currently running server. It's necessary to stop the current session before you can switch to a different server or kernel.
+
+- **Start a New Server**: After stopping your server, you'll be redirected to the JupyterHub home page or you might need to navigate back to it manually. Here, click on the "Start My Server" button to initiate the process of starting a new server.
+
+- **Select the R Server**: You will now be presented with a list of available servers or environments. Look for the option that corresponds to the R server (this might be labeled as "R," "IRkernel," or something similar depending on your JupyterHub's configuration). Select this option to proceed.
+
+- **Launch the Server**: After selecting the R server, click the "Start" button to launch a new JupyterHub session running on the R server. You're now ready to create and run notebooks using R.
+
 ## 4. Create New Notebook
 
 From the Launcher, you can see different sections like:
@@ -209,10 +220,10 @@ If you have picked a specific file to be displayed, the user will be redirected 
 ### How can I view all the attributes or methods available for an object in Python in the Jupyterhub?
 
 To explore all the available attributes or methods of an object in Python within a JupyterHub environment, follow these steps:
- a. **Import the Module**:Start by importing the module that contains the object you're interested in. For example, to work with the os module, you would import it with:
- b. **Use the Tab Key for Auto-completion**: Type the name of the module or object followed by a period (.) in a new cell or the same cell. Then, press the "Tab" key on your          keyboard.
+ - a. **Import the Module**:Start by importing the module that contains the object you're interested in. For example, to work with the math module, you would import it with:
+ - b. **Use the Tab Key for Auto-completion**: Type the name of the module or object followed by a period (.) in a new cell or the same cell. Then, press the "Tab" key on your          keyboard.
  
- ![output_area](./imgs/nbgitpuller.png)
+ ![output_area](./imgs/quick_hacks1.png)
  
 ### How do I ensure Plotly charts render correctly in Jupyterhub?
 
