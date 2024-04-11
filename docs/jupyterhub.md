@@ -1,14 +1,52 @@
-## Our UC Merced pilot JupyterHub infrastructure is online now ! <!-- {docsify-ignore} -->
-> Please go to the website at  https://ucmerced.2i2c.cloud. 
+## 1. What are Jupyter Notebooks?
 
-All active UC Merced students, staff and faculty should have access to the pilot hub.
+Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
-If you have any questions, please free feel to contact Sai Chandhar Annapragada (sannapragada@ucmerced.edu).
+### 1.1 Features
 
-### What is JupyterHub <!-- {docsify-ignore} -->
+- **Interactive Environment:** Jupyter Notebooks provide an interactive computing environment where users can write and execute code in a step-by-step manner.
+- **Support for Multiple Languages:** While originally designed for Python, Jupyter Notebooks support various programming languages like Julia, Python, and R.
+- **Rich Output:** Notebooks allow the incorporation of rich media outputs such as plots, images, videos, and interactive widgets alongside code and text cells.
+- **Markdown Support:** In addition to code cells, users can include Markdown cells to write formatted text, equations (using LaTeX syntax), and even HTML for documentation or explanations.
+- **Data Visualization:** Using libraries like Matplotlib, Seaborn, users can create interactive and static visualizations directly within the notebook environment.
+- **Integration with Libraries and Tools:** Jupyter Notebooks seamlessly integrate with various data science libraries and tools such as NumPy, Pandas, SciPy, TensorFlow, and scikit-learn.
 
-JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python code in a web browser, without having to install software on their local machine.
+### 1.2 Components
 
+- **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
+  
+  ![jupyter_Cells](./imgs/jupyter_cells.png)
+
+
+- **Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
+
+  ![kernel](./imgs/kernel.png)
+
+- **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
+
+  ![toolbar](./imgs/toolbar.png)
+- **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
+
+  ![menubar](./imgs/menubar.png)
+- **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
+
+   ![output_area](./imgs/output_area.png)
+
+- **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
+
+### 1.3 Using Jupyter Notebooks for Data Analysis
+
+**Jupyter Notebooks** are incredibly versatile for **data analysis** projects. They allow data scientists to combine **executable code**, rich text, **visualizations**, and equations in a single document.
+
+- **Interactive Data Exploration:** Notebooks facilitate interactive exploration of datasets, enabling quick iterations over a data preprocessing or analysis pipeline.
+- **Visualization:** With support for libraries like **Matplotlib** and **Seaborn**, users can create and embed graphs directly within notebooks.
+- **Collaboration and Sharing:** Notebooks can be easily shared between users, promoting collaboration on data analysis projects.
+
+<!-- Add image syntax here for a data analysis visualization example -->
+
+## 2. What is JupyterHub?
+
+[Jupyterhub](https://jupyter.org/hub) JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python,R code in a web browser, without having to install software on their local machine.
 
 Working on JupyterHub provides a number of benefits, especially in an introductory course:
 
@@ -20,60 +58,204 @@ Work stored in the cloud and can be accessed from any computer.
 
 All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use publicly shared computers(i.e. library computers) without being at a disadvantage in the course.
 
-We invite the UC Merced community to use the Hub for teaching (both now and future course planning) and exploring for research!
-
-!> This pilot hub will be online for 11 months and feedback and usage information will be used to plan for our permanent JupyterHub.
-
-> Instructions for Accessing the Pilot JupyterHub:
-1. You can login through [UC Merced SSO](https://www.cilogon.org/home)
-2. You can use the default jupyterhub image or you can change the image using the [configurator](https://github.com/2i2c-org/2i2c-hubs-image). You can also create your custom user image. There is a guide about this [here](https://docs.2i2c.org/en/latest/admin/howto/environment/index.html).
-3. General information about the user environment [here](https://docs.2i2c.org/en/latest/admin/howto/environment/index.html).
-
-If you have admin access, please note that the shared folders have the same shared path. One is configured for read-write, and the other is configured for read-only. For admins, they can see both folders but can only write to the one that is write-enabled. Standard users only see a single shared directory as read-only. From a content management standpoint, admins have full access to all content and act as a single user when interacting with content. If you want to limit the access of a folder to a specific group, you can use nbgitpuller to generate a special URL for a group of users to gain access to the folder. The usage of nbgitpuller is discussed below.
-
-If you have any additional questions accessing hub, please open a general OIT research computing ticket [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
-
-If you were not able to attend the workshop of JupyterHub, here is the recording [link](https://video.ucmerced.edu/media/JupyterHub+Workshop/1_ehe8hmux).
+### Feature Comparison Table
+| Feature         | Jupyter Notebook                                  | JupyterHub                                                     | JupyterLab                                   |
+|-----------------|---------------------------------------------------|----------------------------------------------------------------|----------------------------------------------|
+| **Type**        | Single-user application (locally needs to be set up) | Multi-user server (Setup will be installed on designated servers) | Web-based interface (locally needs to be set up) |
+| **Functionality** | Allows creation and sharing of documents with code | Allows creation and sharing of documents with code and manages access to Jupyter Notebook instances | Allows creation and sharing of documents with code and manages access to Jupyter Notebook instances |
+| **Collaboration** | Limited                                           | Enables collaboration among multiple users                      | Limited                                      |
+| **Authentication** | N/A                                               | Uses SSO                                                        | N/A                                          |
+| **Server Management** | N/A                                           | Spawns, manages, and user servers                               | N/A                                          |
+| **Interface**    | Web-based                                         | Web-based                                                       | Web-based                                    |
 
 
 
+## 3. How to access JupyterHub?
+Access to the JupyterHub is available to everyone who has UCMerced credentials. To log in, please proceed to the following URL:
 
-## Generate `nbgitpuller` link <!-- {docsify-ignore} -->
-> Ensure that the `nbgitpuller` is installed into your environment
+**URL** → [https://ucmerced.2i2c.cloud/hub/login](https://ucmerced.2i2c.cloud/hub/login) (UCMerced SSO is required)
 
-The default environment for 2i2c JupyterHubs has `nbgitpuller` pre-installed. However, if you define a [custom environment](https://docs.2i2c.org/admin/howto/environment/#environment-image) for your hub’s users, you’ll need to ensure that nbgitpuller is installed in order for users to use it!
+#### 3.1. Login:
+Go to the UCMerced **JupyterHub** login page and enter your credentials to log in.
 
-To install the `nbgitpull`, please follow the instruction [here](https://github.com/jupyterhub/nbgitpuller)
+![output_area](./imgs/login-page.png)
 
-> If you are using the Chrome or Firefox web browser you can directly download the browser extension to generate nbgitpuller [here](https://github.com/yuvipanda/nbgitpuller-link-generator-webextension)
+Once the login is successfull,On the home page, you will see two options to choose from based on your preference or requirements. These options likely correspond to different programming environments or configurations.
 
-Once the browser extenstion is installed, your browser should have a nbgitpuller button on top, below is an example of the chrome browser with nbgitpuller extension installed.
+#### 3.2. Choose Server:
 
-![nbgitpuller github](imgs/nbgitpuller_browser.png "github with nbgitpuller")
+Select the server that best suits your needs by clicking on the corresponding option. For example, you might choose between a Python server and an R server.
 
-> Put your content in a public GitHub repository
+![output_area](./imgs/servers.png)
 
-Create a repository on [GitHub](https://github.com/) and begin uploading your content. This repository serves as the source for the content distributed to your users. Feel free to update it as frequently as needed. While instructors should be familiar with how GitHub works, your users will never have to interact with Git directly.
+#### 3.3. Start Server:
 
-> Generate an nbgitpuller link
+Once you've made your selection, click on the option to start the server. This will initiate the server and provide you with access to the chosen environment. 
 
-Generate an nbgitpuller link using the browser extension when you are in the GitHub repository that you intend to share. Please refer to the figure below for guidance on how to generate the link:
+![output_area](./imgs/startserver.png)
 
-![nbgitpuller web gen](imgs/nbgitpuller_gen.png "webgen with nbgitpuller")
+By following these steps, you can start the server on the UCMerced **JupyterHub** and begin working within your preferred environment. The folder structure will vary depending on the user's access level, whether they are an administrator or a regular user.
 
-* The URL to the hub. Upon clicking the link, users will be redirected to the hub, and content will be pulled into their home directory there. 
-* The branch in the git repository where the content lives. The default specified there is `master`, although newer GitHub repositories use `main` as the default. You can find yours on the Github page of your content repository
-* The default interface to open when users click this link. The default is the classic notebook, but many other apps are available
-* A file to open when the link is clicked. When left empty, a directory listing with the content of the repository will be shown
+![output_area](./imgs/home_env.png)
 
-!> Unfortunately, `RStudio` does not support opening a specific file, and will always show the home directory. Users will have to manually navigate to the appropriate file.
+### 3.4. How can I switch from a Python server to an R server in JupyterHub?
+- **Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub session. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
 
-### Local Jupyter versus JupyterHub <!-- {docsify-ignore} -->
+  ![output_area](./imgs/R_file.png)
 
-| JupyterHub | Local Jupyter Install |
-|--------------| --------------------|
-| Needs an internet connection | Does not need internet connection |
-| Limited resources (disk and RAM) | Resources are only limited by individual computer |
-| System-wide installation done by admins| You can install anything you want |
-| You can only access files in your account | You can maybe access all files (if you are an admin) |
-| If things break, CIRT can assist in helping fix the item | CIRT can not assist in fixing issues on local install |
+- **Stop the Current Running Server**: In the Hub Control Panel, you will see an option to "Stop My Server." Click this option to halt the currently running server. It's necessary to stop the current session before you can switch to a different server or kernel.
+
+ ![output_area](./imgs/hubcontrol.png)
+
+- **Start a New Server**: After stopping your server, you'll be redirected to the JupyterHub home page or you might need to navigate back to it manually. Here, click on the "Start My Server" button to initiate the process of starting a new server.
+
+  ![output_area](./imgs/startMyServer.png)
+
+- **Select the R Server**: You will now be presented with a list of available servers or environments. Look for the option that corresponds to the R server (this might be labeled as "R," "IRkernel," or something similar depending on your JupyterHub's configuration). Select this option to proceed.
+
+ ![output_area](./imgs/choose_server.png)
+
+- **Launch the Server**: After selecting the R server, click the "Start" button to launch a new JupyterHub session running on the R server. You're now ready to create and run notebooks using R.
+
+  ![output_area](./imgs/R_homepage.png)
+
+## 4. Create New Notebook
+
+From the Launcher, you can see different sections like:
+
+- **Notebook**
+- **Console**
+- **Other**
+
+Click the icon under the Notebook section to create a new notebook, which will be created with the name “Untitled.ipynb”.
+
+![output_area](./imgs/newnotebook.png)
+
+## 5. Rename the Notebook
+
+To rename a notebook, you can simply right-click on the notebook from the Menu bar and choose the "Rename" option.
+
+![output_area](./imgs/rename.png)
+
+## 6. How to run a notebook?
+
+To execute code within a notebook, users can click on individual code cells and then either press the "Run" button in the toolbar or press **Shift + Enter** on their keyboard.
+
+## 7. How to add a code block?
+
+Users can add new code cells to their notebook by clicking on the "+" button in the toolbar and selecting "Code" from the dropdown menu.
+
+## 8. How to add Markdown text cells in the notebook?
+
+To add Markdown text cells to a notebook, users should click the toolbar and select "Markdown" from the dropdown menu. They can then enter Markdown-formatted text into the cell. Once the Markdown cell is created, you can start typing your text directly into the cell.
+
+![output_area](./imgs/markdown.png)
+
+The following are the different options you can use in markdown:
+
+- Use Markdown syntax to format your text.
+    - For example: 
+        - Use `#` for headings (e.g., `# Heading 1` for a top-level heading).
+        - Use `*` or `-` for bullet points.
+        - Use `**` for bold text and `_` or `*` for italic text.
+        - Use `[]()` for adding links (e.g., `[link text](url)`).
+        - Use `` ` `` for code snippets (e.g., `` `print("Hello world!")` ``).
+
+          ![output_area](./imgs/markdown_example.png)
+
+**Note:** After typing your text, run the cell by pressing Shift + Enter. The Markdown cell will render your text in formatted style.
+
+## 9. How to download the notebook?
+
+To download a notebook document, users can go to the "File" menu and select "Download as". From the submenu that appears, they can choose the desired file format (e.g., `.ipynb`, `.pdf`, `.LaTeX`, `.html`, `.webpdf`, `.qtpdf`, etc.) to initiate the download.
+
+![output_area](./imgs/download_notebook.png)
+
+## 10. How to create a new folder?
+
+Users can create a new folder within their JupyterHub environment by navigating to the directory where they want the new folder to be located, clicking on the "New" button, which will create a folder just by clicking it.
+
+## 11. Installing packages on the Hub
+
+### 11.1 Is it possible to install custom packages?
+
+Absolutely! In Jupyter Notebook, you have the flexibility to install packages using either `!pip install package-name` or `!conda install package-name` for Python packages. For R, utilize `install.packages()`. **Just remember, the packages you install only stick around while you're using the server. So, it's recommended to put the installation commands at the start of your notebook or file, making sure they run when you need them.**
+
+### 11.2 What packages & libraries are available?
+
+This JupyterHub comes with Python 3.11.4 and R 4.3.1 installed. Many commonly used packages are pre-installed. This **[requirements.txt](https://ucmerced.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02)** file lists the python packages installed, while this  **[install.R](https://ucmerced.box.com/s/65r1rda9atblpdsxdvtyaq6exlnns9z3)** file lists the R packages installed.
+
+To inquire about packages, users should open the notebook from the launcher and type the following command:
+- For Python packages: Type `pip freeze` (users should be in the python server).
+- For R packages: Type `installed.packages()` (users should be in the R server).
+
+## 12. nbgitpuller
+
+You’ll often want to distribute content (such as notebooks, scripts, sample data, etc.) to your users so they can do exercises, follow along with a lecture, or use as a starting point for their own work. This content is often constantly updated as time goes on, and needs to not overwrite your student’s work if you make an adjustment to content that has already been touched by the student. That’s where nbgitpuller comes into the picture.
+
+nbgitpuller is already installed in the default environment for UCMerced JupyterHubs. To set up a nbgitpuller link, users must have a GitHub account. The following are the steps which will guide you to create an nbgitpuller link:
+
+### 12.1 Put your files in a public Github Repository
+
+Create a repository on GitHub and start putting your content there. This repository serves as the source of the content that will be distributed to your users. You can update it as often as needed. While instructors must understand how [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git) works, your users will never have to directly interact with git.
+
+
+### 12.2 Generate nbgitpuller Link
+
+Users can generate an nbgitpuller link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
+
+![output_area](./imgs/nbgitpuller.png)
+
+
+The following steps will explain each and every field in the screenshot below.
+
+- A. Generated link appears here:
+- B. JupyterHub URL
+- C. Git Repository URL
+- D. File to Open
+- E. Application to Open
+
+### 12.3 Distribute your nbgitpuller link
+
+Distribute the link you have generated to your users. Upon clicking the link, they will be redirected to your hub and asked to log in if they have not already. 
+
+The first time the link is clicked, your content repository will be pulled into their home directory! If they had already clicked the link before, any new changes in your content repository will be pulled in. 
+
+Any changes the user has made will be automatically merged with changes in the content repository in such a way that the user’s changes are never overwritten. All merge conflicts will also be automatically resolved so users don’t have to interact with git. 
+
+If you have picked a specific file to be displayed, the user will be redirected to that file, open in the application you picked. If not, the directory listing of the local copy of the content repository will be shown in the application you selected.
+
+## Jupyterhub Office Hours
+
+Jupyterhub office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
+
+Zoom Details:
+- https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09
+- Meeting ID: 879 1535 3522
+- Passcode: 035925
+
+Please feel free to drop by if you need help with anything from setting up your environment, or if you're just curious to learn more about more on JupyterHub. If these times don't work for you but you still require support, I encourage you to open a ServiceNow ticket [ServiceNow Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) .
+
+
+
+## FAQs
+
+### How can I view all the attributes or methods available for an object in Python in the Jupyterhub?
+
+To explore all the available attributes or methods of an object in Python within a JupyterHub environment, follow these steps:
+ - a. **Import the Module**:Start by importing the module that contains the object you're interested in. For example, to work with the math module, you would import it with:
+ - b. **Use the Tab Key for Auto-completion**: Type the name of the module or object followed by a period (.) in a new cell or the same cell. Then, press the "Tab" key on your          keyboard.
+ 
+ ![output_area](./imgs/quick_hacks1.png)
+ 
+### How do I ensure Plotly charts render correctly in Jupyterhub?
+
+Ensure that you include this line in your notebook for Plotly to function properly. Referring to the documentation at 
+[Plotly Renderers](https://plotly.com/python/renderers/), there are two methods to achieve this:
+
+Import the `io` method from Plotly in your import statement: `import plotly.io as pio`, and specify the desired renderer using `pio.renderers.default = "iframe"`. 
+   
+   ```python
+   import plotly.io as pio
+   pio.renderers.default = "iframe" ```
+  Alternatively, directly specify the renderer in the fig.show() method by using fig.show(renderer='iframe').
