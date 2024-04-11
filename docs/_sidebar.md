@@ -43,6 +43,7 @@
       - [3.1 Login](jupyterhub.md#31-login)
       - [3.2 Choose Server](jupyterhub.md#32-choose-server)
       - [3.3 Start Server](jupyterhub.md#33-start-server)
+      - [3.4. How can I switch from a Python server to an R server in JupyterHub?](jupyterhub.md#34How-can-I-switch-from-a-Python-server-to-an-R-server-in-JupyterHub?)
     - [4. Create New Notebook](jupyterhub.md#4-create-new-notebook)
     - [5. Rename the Notebook](jupyterhub.md#5-rename-the-notebook)
     - [6. How to run a notebook?](jupyterhub.md#6-how-to-run-a-notebook)
