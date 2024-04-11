@@ -109,7 +109,7 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 
 - **Start a New Server**: After stopping your server, you'll be redirected to the JupyterHub home page or you might need to navigate back to it manually. Here, click on the "Start My Server" button to initiate the process of starting a new server.
 
-  ![output_area](./imgs/startMyServer.png)
+  ![output_area](./imgs/startMy Server.png)
 
 - **Select the R Server**: You will now be presented with a list of available servers or environments. Look for the option that corresponds to the R server (this might be labeled as "R," "IRkernel," or something similar depending on your JupyterHub's configuration). Select this option to proceed.
 
