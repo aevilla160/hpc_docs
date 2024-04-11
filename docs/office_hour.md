@@ -1,3 +1,19 @@
+## HPC Office Hour Q/A <!-- {docsify-ignore} -->
+Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
+HPC office hours - Every Friday, 11:30 am - 1pm, ACS Room 365  
+Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
+
+
+## JupyterHub Office Hour Q/A <!-- {docsify-ignore} -->
+
+Getting started with Jupyterhub as a student for a class? Thinking about integrating JupyterHub into  your class as a faculty or lecturer? Come join the Jupyter Office Hours to recieve expert technical support. 
+
+JupyterHub office hours - Every Friday, 11:30 am - 1pm, ACS Room 365 
+Zoom URL: https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09
+Meeting ID: 879 1535 3522
+Passcode: 035925
+
+
 ## First-time user log in to HPC tutorial <!-- {docsify-ignore} -->
 Below is a tutorial for first-time users on how to log in to HPC cluster. The tutorial used Pinnacles as an example. If users still cannot login after watching the tutorial, feel free to open a a general consultationt ticket - Follow the steps below. 
 
@@ -28,10 +44,6 @@ Watch the video below!
 <iframe width="560" height="560" src="https://www.youtube.com/embed/G6DNWqHFC7A?si=mUyddWUx9rXQuvl4&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </p>
 
-## HPC Office Hour Q/A <!-- {docsify-ignore} -->
-Got A Question? Feel Free to attend HPC Office Hours! Office Hours is held In-Person and via Zoom!
-HPC office hours - Every Friday, 11:30 am - 1pm, ACS Room 365  
-Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006 
 
 
 ## Commonly Asked Questions: 
