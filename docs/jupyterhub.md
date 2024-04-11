@@ -225,6 +225,19 @@ Any changes the user has made will be automatically merged with changes in the c
 
 If you have picked a specific file to be displayed, the user will be redirected to that file, open in the application you picked. If not, the directory listing of the local copy of the content repository will be shown in the application you selected.
 
+## Jupyterhub Office Hours
+
+Jupyterhub office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
+
+Zoom Details:
+https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09
+Meeting ID: 879 1535 3522
+Passcode: 035925
+
+Please feel free to drop by if you need help with anything from setting up your environment, or if you're just curious to learn more about more on JupyterHub. If these times don't work for you but you still require support, I encourage you to open a ServiceNow ticket [ServiceNow Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) .
+
+
+
 ## FAQs
 
 ### How can I view all the attributes or methods available for an object in Python in the Jupyterhub?
