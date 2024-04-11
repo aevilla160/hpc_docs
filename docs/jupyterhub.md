@@ -2,7 +2,7 @@
 
 Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
-### Features
+### Features <!-- {docsify-ignore} -->
 
 - **Interactive Environment:** Jupyter Notebooks provide an interactive computing environment where users can write and execute code in a step-by-step manner.
 - **Support for Multiple Languages:** While originally designed for Python, Jupyter Notebooks support various programming languages like Julia, Python, and R.
@@ -11,7 +11,7 @@ Jupyter Notebook is an open-source web application that allows you to create and
 - **Data Visualization:** Using libraries like Matplotlib, Seaborn, users can create interactive and static visualizations directly within the notebook environment.
 - **Integration with Libraries and Tools:** Jupyter Notebooks seamlessly integrate with various data science libraries and tools such as NumPy, Pandas, SciPy, TensorFlow, and scikit-learn.
 
-### Components
+### Components <!-- {docsify-ignore} -->
 
 - **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
   
@@ -34,7 +34,7 @@ Jupyter Notebook is an open-source web application that allows you to create and
 
 - **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
 
-### Using Jupyter Notebooks for Data Analysis
+### Using Jupyter Notebooks for Data Analysis <!-- {docsify-ignore} -->
 
 **Jupyter Notebooks** are incredibly versatile for **data analysis** projects. They allow data scientists to combine **executable code**, rich text, **visualizations**, and equations in a single document.
 
@@ -43,7 +43,7 @@ Jupyter Notebook is an open-source web application that allows you to create and
 - **Collaboration and Sharing:** Notebooks can be easily shared between users, promoting collaboration on data analysis projects.
 
 
-## What is JupyterHub?
+## What is JupyterHub? 
 
 [Jupyterhub](https://jupyter.org/hub) JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python,R code in a web browser, without having to install software on their local machine.
 
@@ -57,7 +57,7 @@ Work stored in the cloud and can be accessed from any computer.
 
 All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use publicly shared computers(i.e. library computers) without being at a disadvantage in the course.
 
-### Feature Comparison Table
+### Feature Comparison Table <!-- {docsify-ignore} -->
 | Feature         | Jupyter Notebook                                  | JupyterHub                                                     | JupyterLab                                   |
 |-----------------|---------------------------------------------------|----------------------------------------------------------------|----------------------------------------------|
 | **Type**        | Single-user application (locally needs to be set up) | Multi-user server (Setup will be installed on designated servers) | Web-based interface (locally needs to be set up) |
@@ -74,20 +74,20 @@ Access to the JupyterHub is available to everyone who has UCMerced credentials. 
 
 **URL** → [https://ucmerced.2i2c.cloud/hub/login](https://ucmerced.2i2c.cloud/hub/login) (UCMerced SSO is required)
 
-#### Login:
+#### Login: <!-- {docsify-ignore} -->
 Go to the UCMerced **JupyterHub** login page and enter your credentials to log in.
 
 ![output_area](./imgs/login-page.png)
 
 Once the login is successfull,On the home page, you will see two options to choose from based on your preference or requirements. These options likely correspond to different programming environments or configurations.
 
-#### Choose Server:
+#### Choose Server: <!-- {docsify-ignore} -->
 
 Select the server that best suits your needs by clicking on the corresponding option. For example, you might choose between a Python server and an R server.
 
 ![output_area](./imgs/servers.png)
 
-#### Start Server:
+#### Start Server: <!-- {docsify-ignore} -->
 
 Once you've made your selection, click on the option to start the server. This will initiate the server and provide you with access to the chosen environment. 
 
@@ -97,7 +97,7 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 
 ![output_area](./imgs/home_env.png)
 
-### How can I switch from a Python server to an R server in JupyterHub?
+### How can I switch from a Python server to an R server in JupyterHub? <!-- {docsify-ignore} -->
 - **Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub session. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
 
   ![output_area](./imgs/R_file.png)
@@ -130,7 +130,7 @@ Click the icon under the Notebook section to create a new notebook, which will b
 
 ![output_area](./imgs/newnotebook.png)
 
-## Rename the Notebook
+## Rename the Notebook 
 
 To rename a notebook, you can simply right-click on the notebook from the Menu bar and choose the "Rename" option.
 
@@ -176,11 +176,11 @@ Users can create a new folder within their JupyterHub environment by navigating 
 
 ## Installing packages on the Hub
 
-### Is it possible to install custom packages?
+### Is it possible to install custom packages?<!-- {docsify-ignore} -->
 
 Absolutely! In Jupyter Notebook, you have the flexibility to install packages using either `!pip install package-name` or `!conda install package-name` for Python packages. For R, utilize `install.packages()`. **Just remember, the packages you install only stick around while you're using the server. So, it's recommended to put the installation commands at the start of your notebook or file, making sure they run when you need them.**
 
-### What packages & libraries are available?
+### What packages & libraries are available?<!-- {docsify-ignore} -->
 
 This JupyterHub comes with Python 3.11.4 and R 4.3.1 installed. Many commonly used packages are pre-installed. This **[requirements.txt](https://ucmerced.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02)** file lists the python packages installed, while this  **[install.R](https://ucmerced.box.com/s/65r1rda9atblpdsxdvtyaq6exlnns9z3)** file lists the R packages installed.
 
@@ -194,12 +194,12 @@ You’ll often want to distribute content (such as notebooks, scripts, sample da
 
 nbgitpuller is already installed in the default environment for UCMerced JupyterHubs. To set up a nbgitpuller link, users must have a GitHub account. The following are the steps which will guide you to create an nbgitpuller link:
 
-### Put your files in a public Github Repository
+### Put your files in a public Github Repository <!-- {docsify-ignore} -->
 
 Create a repository on GitHub and start putting your content there. This repository serves as the source of the content that will be distributed to your users. You can update it as often as needed. While instructors must understand how [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git) works, your users will never have to directly interact with git.
 
 
-### Generate nbgitpuller Link
+### Generate nbgitpuller Link <!-- {docsify-ignore} -->
 
 Users can generate an nbgitpuller link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
 
@@ -214,7 +214,7 @@ The following steps will explain each and every field in the screenshot below.
 - D. File to Open
 - E. Application to Open
 
-### Distribute your nbgitpuller link
+### Distribute your nbgitpuller link <!-- {docsify-ignore} -->
 
 Distribute the link you have generated to your users. Upon clicking the link, they will be redirected to your hub and asked to log in if they have not already. 
 
@@ -239,7 +239,7 @@ Please feel free to drop by if you need help with anything from setting up your 
 
 ## FAQs
 
-### How can I view all the attributes or methods available for an object in Python in the Jupyterhub?
+### How can I view all the attributes or methods available for an object in Python in the Jupyterhub? <!-- {docsify-ignore} -->
 
 To explore all the available attributes or methods of an object in Python within a JupyterHub environment, follow these steps:
  - a. **Import the Module**:Start by importing the module that contains the object you're interested in. For example, to work with the math module, you would import it with:
@@ -247,7 +247,7 @@ To explore all the available attributes or methods of an object in Python within
  
  ![output_area](./imgs/quick_hacks1.png)
  
-### How do I ensure Plotly charts render correctly in Jupyterhub?
+### How do I ensure Plotly charts render correctly in Jupyterhub? <!-- {docsify-ignore} -->
 
 Ensure that you include this line in your notebook for Plotly to function properly. Referring to the documentation at 
 [Plotly Renderers](https://plotly.com/python/renderers/), there are two methods to achieve this:
