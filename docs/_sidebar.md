@@ -25,7 +25,6 @@
     - [Running Interactive Jobs](interact_job.md)
 - Off-Campus Cluster
     - [External Computation resources](additional.md)
-    - [HPC@UC](hpc_uc.md)
 - JupyterHub
     - [Jupyterhub Office Hours](jupyterhub.md#jupyterhub-office-hours)
     - [What are Jupyter Notebooks?](jupyterhub.md#what-are-jupyter-notebooks)
