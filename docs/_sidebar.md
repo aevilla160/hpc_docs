@@ -26,9 +26,9 @@
 - Off-Campus Cluster
     - [External Computation resources](additional.md)
     - [HPC@UC](hpc_uc.md)
-- [JupyterHub](jupyterhub.md)
+- JupyterHub
     - [Jupyterhub Office Hours](jupyterhub.md#jupyterhub-office-hours)
-    - [1. What are Jupyter Notebooks?](jupyterhub.md#1-what-are-jupyter-notebooks)
+    - [What are Jupyter Notebooks?](jupyterhub.md#what-are-jupyter-notebooks)
       - [Features](jupyterhub.md#features)
       - [Components](jupyterhub.md#components)
     - [What is JupyterHub?](jupyterhub.md#what-is-jupyterhub)
