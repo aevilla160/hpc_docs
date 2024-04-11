@@ -1,28 +1,3 @@
-## Table of Contents
-- [1. What are Jupyter Notebooks?](#1-what-are-jupyter-notebooks)
-  - [1.1 Features](#11-features)
-  - [1.2 Components](#12-components)
-- [2. What is JupyterHub?](#2-what-is-jupyterhub)
-- [3. How to access JupyterHub?](#3-how-to-access-jupyterhub)
-  - [3.1 Login](#31-login)
-  - [3.2 Choose Server](#32-choose-server)
-  - [3.3 Start Server](#33-start-server)
-- [4. Create New Notebook](#4-create-new-notebook)
-- [5. Rename the Notebook](#5-rename-the-notebook)
-- [6. How to run a notebook?](#6-how-to-run-a-notebook)
-- [7. How to add code block?](#7-how-to-add-code-block)
-- [8. How to add Markdown text cells in the notebook?](#8-how-to-add-markdown-text-cells-in-the-notebook)
-- [9. How to download the notebook?](#9-how-to-download-the-notebook)
-- [10. How to create a new folder?](#10-how-to-create-a-new-folder)
-- [11. Installing packages on the Hub](#11-installing-packages-on-the-hub)
-  - [11.1 Is it possible to install custom packages?](#111-is-it-possible-to-install-custom-packages)
-  - [11.2 What packages & libraries are available?](#112-what-packages--libraries-are-available)
-- [12. nbgitpuller](#12-nbgitpuller)
-  - [12.1 Put your files in a public Github Repository](#121-put-your-files-in-a-public-github-repository)
-  - [12.2 Generate nbgitpuller Link](#122-generate-nbgitpuller-link)
-  - [12.3 Distribute your nbgitpuller link](#123-distribute-your-nbgitpuller-link)
-
-
 ## 1. What are Jupyter Notebooks?
 
 Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
