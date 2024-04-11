@@ -101,13 +101,23 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 ### 3.4. How can I switch from a Python server to an R server in JupyterHub?
 - **Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub session. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
 
+  ![output_area](./imgs/R_file.png)
+
 - **Stop the Current Running Server**: In the Hub Control Panel, you will see an option to "Stop My Server." Click this option to halt the currently running server. It's necessary to stop the current session before you can switch to a different server or kernel.
+
+ ![output_area](./imgs/hubcontrol.png)
 
 - **Start a New Server**: After stopping your server, you'll be redirected to the JupyterHub home page or you might need to navigate back to it manually. Here, click on the "Start My Server" button to initiate the process of starting a new server.
 
+  ![output_area](./imgs/startMyServer.png)
+
 - **Select the R Server**: You will now be presented with a list of available servers or environments. Look for the option that corresponds to the R server (this might be labeled as "R," "IRkernel," or something similar depending on your JupyterHub's configuration). Select this option to proceed.
 
+ ![output_area](./imgs/choose_server.png)
+
 - **Launch the Server**: After selecting the R server, click the "Start" button to launch a new JupyterHub session running on the R server. You're now ready to create and run notebooks using R.
+
+  ![output_area](./imgs/R_homepage.png)
 
 ## 4. Create New Notebook
 
