@@ -14,18 +14,26 @@ Jupyter Notebook is an open-source web application that allows you to create and
 ### 1.2 Components
 
 - **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
+  
   ![jupyter_Cells](./imgs/jupyter_cells.png)
 
+
 - **Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
+
   ![kernel](./imgs/kernel.png)
 
 - **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
+
   ![toolbar](./imgs/toolbar.png)
 - **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
+
   ![menubar](./imgs/menubar.png)
 - **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
-  ![output_area](./imgs/output_area.png)
+
+   ![output_area](./imgs/output_area.png)
+
 - **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
+
 ### 1.3 Using Jupyter Notebooks for Data Analysis
 
 **Jupyter Notebooks** are incredibly versatile for **data analysis** projects. They allow data scientists to combine **executable code**, rich text, **visualizations**, and equations in a single document.
@@ -49,6 +57,7 @@ All students and instructors use the same computing environment.
 Work stored in the cloud and can be accessed from any computer.
 
 All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use publicly shared computers(i.e. library computers) without being at a disadvantage in the course.
+
 ### Feature Comparison Table
 | Feature         | Jupyter Notebook                                  | JupyterHub                                                     | JupyterLab                                   |
 |-----------------|---------------------------------------------------|----------------------------------------------------------------|----------------------------------------------|
@@ -68,6 +77,7 @@ Access to the JupyterHub is available to everyone who has UCMerced credentials. 
 
 #### 3.1. Login:
 Go to the UCMerced **JupyterHub** login page and enter your credentials to log in.
+
 ![output_area](./imgs/login-page.png)
 
 Once the login is successfull,On the home page, you will see two options to choose from based on your preference or requirements. These options likely correspond to different programming environments or configurations.
@@ -81,8 +91,11 @@ Select the server that best suits your needs by clicking on the corresponding op
 #### 3.3. Start Server:
 
 Once you've made your selection, click on the option to start the server. This will initiate the server and provide you with access to the chosen environment. 
+
 ![output_area](./imgs/startserver.png)
+
 By following these steps, you can start the server on the UCMerced **JupyterHub** and begin working within your preferred environment. The folder structure will vary depending on the user's access level, whether they are an administrator or a regular user.
+
 ![output_area](./imgs/home_env.png)
 
 ## 4. Create New Notebook
@@ -94,11 +107,13 @@ From the Launcher, you can see different sections like:
 - **Other**
 
 Click the icon under the Notebook section to create a new notebook, which will be created with the name “Untitled.ipynb”.
+
 ![output_area](./imgs/newnotebook.png)
 
 ## 5. Rename the Notebook
 
 To rename a notebook, you can simply right-click on the notebook from the Menu bar and choose the "Rename" option.
+
 ![output_area](./imgs/rename.png)
 
 ## 6. How to run a notebook?
@@ -112,6 +127,7 @@ Users can add new code cells to their notebook by clicking on the "+" button in 
 ## 8. How to add Markdown text cells in the notebook?
 
 To add Markdown text cells to a notebook, users should click the toolbar and select "Markdown" from the dropdown menu. They can then enter Markdown-formatted text into the cell. Once the Markdown cell is created, you can start typing your text directly into the cell.
+
 ![output_area](./imgs/markdown.png)
 
 The following are the different options you can use in markdown:
@@ -131,11 +147,13 @@ The following are the different options you can use in markdown:
 ## 9. How to download the notebook?
 
 To download a notebook document, users can go to the "File" menu and select "Download as". From the submenu that appears, they can choose the desired file format (e.g., `.ipynb`, `.pdf`, `.LaTeX`, `.html`, `.webpdf`, `.qtpdf`, etc.) to initiate the download.
+
 ![output_area](./imgs/download_notebook.png)
 
 ## 10. How to create a new folder?
 
 Users can create a new folder within their JupyterHub environment by navigating to the directory where they want the new folder to be located, clicking on the "New" button, which will create a folder just by clicking it.
+
 ## 11. Installing packages on the Hub
 
 ### 11.1 Is it possible to install custom packages?
@@ -185,3 +203,25 @@ The first time the link is clicked, your content repository will be pulled into 
 Any changes the user has made will be automatically merged with changes in the content repository in such a way that the user’s changes are never overwritten. All merge conflicts will also be automatically resolved so users don’t have to interact with git. 
 
 If you have picked a specific file to be displayed, the user will be redirected to that file, open in the application you picked. If not, the directory listing of the local copy of the content repository will be shown in the application you selected.
+
+## FAQs
+
+### How can I view all the attributes or methods available for an object in Python in the Jupyterhub?
+
+To explore all the available attributes or methods of an object in Python within a JupyterHub environment, follow these steps:
+ a. **Import the Module**:Start by importing the module that contains the object you're interested in. For example, to work with the os module, you would import it with:
+ b. **Use the Tab Key for Auto-completion**: Type the name of the module or object followed by a period (.) in a new cell or the same cell. Then, press the "Tab" key on your          keyboard.
+ 
+ ![output_area](./imgs/nbgitpuller.png)
+ 
+### How do I ensure Plotly charts render correctly in Jupyterhub?
+
+Ensure that you include this line in your notebook for Plotly to function properly. Referring to the documentation at 
+[Plotly Renderers](https://plotly.com/python/renderers/), there are two methods to achieve this:
+
+Import the `io` method from Plotly in your import statement: `import plotly.io as pio`, and specify the desired renderer using `pio.renderers.default = "iframe"`. 
+   
+   ```python
+   import plotly.io as pio
+   pio.renderers.default = "iframe" ```
+  Alternatively, directly specify the renderer in the fig.show() method by using fig.show(renderer='iframe').
