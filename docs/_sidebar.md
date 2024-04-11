@@ -32,7 +32,7 @@
   - [Workshops](software_carpentry.md)
   - [HPC training material](hpc_training.md)
   - [Slurm](slurm.md)
-  - [Office hour Q/A](office-hour.md)
+  - [Office hour Q/A](office_hour.md)
   - [Cloud resource](cloud.md)
   - [JupyterHub](jupyterhub.md)
     - [Jupyterhub Office Hours](jupyterhub.md#jupyterhub-office-hours)
