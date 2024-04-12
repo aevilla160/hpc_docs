@@ -6,7 +6,7 @@ Zoom URL:https://ucmerced.zoom.us/j/89487493900; password:895006
 
 ## JupyterHub Office Hour Q/A <!-- {docsify-ignore} -->
 
-Getting started with Jupyterhub as a student for a class? Thinking about integrating JupyterHub into  your class as a faculty or lecturer? Come join the Jupyter Office Hours to recieve expert technical support. 
+Getting started with Jupyterhub as a student for a class? Thinking about integrating JupyterHub into  your class as a faculty or lecturer? Come join the Jupyter Office Hours to receive expert technical support. 
 
 JupyterHub office hours - Every Friday, 11:30 am - 1pm, ACS Room 365 
 Zoom URL: https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09
@@ -26,7 +26,7 @@ Steps on requesting support with resetting password if users still having issues
 
 4. You will be promted with a new page that will require you to put in information including a description of the assistance you are requesting. In this case it will be resetting of password, so in the description state that you are requesting help with resetting of Remote Cluster password. 
 
-5. When all the required fields are completed you can submit the ServiceNow Request to recieve assistance on resetting password!
+5. When all the required fields are completed you can submit the ServiceNow Request to receive assistance on resetting password!
 
 Request Services & Contact Us - [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
