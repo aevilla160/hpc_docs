@@ -1,8 +1,17 @@
 <!-- _navbar.md -->
 
-* Quick Guide
+* Clusters
     * [MERCED cluster](MERCED.md)
-    * [Pinnacles cluster](pinnacles.md)
-    * [JupyterHub](jupyterhub.md)
+    * [Pinnacles cluster](Pinnacles.md)
+
+* JupyterHub
+    * [UCMerced JupyterHub](jupyterhub.md)
+
+* Office hour
+    * [HPC office hour](office_hour.md)
+    * [JupyterHub office hour](jupyterhub.md#jupyterhub-office-hours)
+
+
+
 
 
