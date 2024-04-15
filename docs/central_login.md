@@ -35,7 +35,7 @@ Once user log in,there are 2 folders (`data` and `scratch`) locate in `HOME` tha
 |`/home/<UCMID>/scratch`|500G|512G|
 |`/home/<UCMID>/`|70G|75G|
 
-### Checking Disk Quota and Usage  
+### Checking Disk Quota and Usage  <!-- {docsify-ignore} -->
 
 To look at your current usage amounts of `/home`, `/data` or `/scratch` use the following command 
 
@@ -91,5 +91,5 @@ There are also secondary file systems attached to MERCED that are associated wit
 __Do not write files directly to `/tmp` on the head node__, as this may fill up disk space on the head node and cause trouble for everyone. Instead, use your own scratch directory for temporary files. Some codes may use `/tmp` by default and need to have the appropriate scratch directory configured.
 
 ## Borgstore (BeeGFS)
-Borgstore is now accessible on all nodes (MERCED and Pinnacles) with Infiniband (IB), all of the partitions contain a mixture of nodes of InfiniBand and non-InfiniBand nodes. If users want to submit jobs while at the Borgstore folder, the slurm option of `#SBATCH --constraint=ib` should be added to the job script. Example job script can be found [here](running_jobs.md). 
+Borgstore is now accessible on all nodes (MERCED and Pinnacles) with Infiniband (IB), all of the partitions contain a mixture of nodes of InfiniBand and non-InfiniBand nodes. If users want to submit jobs while at the Borgstore folder, the slurm option of `#SBATCH --constraint=ib` should be added to the job script. Example job script can be found [here](running_jobs.md). More information pertaining to Borgstore can be found [here](borgstore.md)
 

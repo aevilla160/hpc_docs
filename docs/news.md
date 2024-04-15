@@ -1,12 +1,12 @@
 <!-- {docsify-ignore-all} -->
 
-## COMPLETED: HPC cluster maintenance - 1/16/24
+## COMPLETED: HPC cluster maintenance - 1/16/24  <!-- {docsify-ignore} -->
 
 The MERCED and Pinnacles clusters are back online. The CIRT team has completed several updates, including security advisories, bug fixes, and product enhancements. Upgrades encompassed storage server firmware, storage chassis firmware, IB and Data network expansion, and nodes' BIO and BMC firmware. Currently, the default CUDA version for GPU nodes (gnode) is 12.3.
 
   Please feel free to resum
 
-## CIRT Winter Break Availbility
+## CIRT Winter Break Availbility  <!-- {docsify-ignore} -->
 UC Merced campus closes for winter break from December 23 - January 2. Please be aware that CIRT staff will not be available during that period for cluster support or research computing issues. Our services and support will resume as normal when the campus reopens on January 3, 2024. During the closure, you can find current information about outages and service disruptions at status.ucmerced.edu.  If you have an emergency related to OIT services at UC Merced, you can call 228-HELP (4357).
 The CIRT staff would like to take this opportunity to wish our campus partners the happiest of holiday seasons.
 
@@ -15,7 +15,7 @@ We look forward to working with you in 2024.
 
 Happy Computing.
 
-## Network Maintenance Alert 
+## Network Maintenance Alert  <!-- {docsify-ignore} -->
 
 **Downtime Planned for Campus 12/29**
 
@@ -27,7 +27,7 @@ If you are not on campus during this period: please be aware that access to UC M
 
 Please spread the word to make sure any faculty, students or staff in your areas are aware of this maintenance window! If you have questions or concerns about this planned effort, feel free to reach out to Christy Snyder at csnyder4@ucmerced.edu.
 
-## Annual HPC cluster maintenance
+## Annual HPC cluster maintenance  <!-- {docsify-ignore} -->
 Please be aware of the following important information on upcoming downtime for MERCED and Pinnacles HPC clusters.
 
 When: January 8, 2024 to Jan 16, 2024.
@@ -43,7 +43,7 @@ During this maintenance window, CIRT might be slow to respond to service tickets
 If you have additional questions, please do not hesitate to reach out to us via CIRT general request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 
-## Introduction to Overleaf Webinar
+## Introduction to Overleaf Webinar  <!-- {docsify-ignore} -->
 Dear Research Computing Users –
 
 Sign up for Introduction to Overleaf training here: https://ucm.edu/Intro_to_Overleaf
@@ -76,7 +76,7 @@ Event Details: Nov 2, 2023, 11:00 AM PT, Zoom Meeting
 Register here: https://ucm.edu/Intro_to_Overleaf
 
 
-## Upcoming research computing workshops at the Library
+## Upcoming research computing workshops at the Library  <!-- {docsify-ignore} -->
 
   The Library offers regular workshops on research computing (a.k.a. "Software Carpentry") and data management for graduate students and early-career researchers. I'd like to briefly tell you about our upcoming workshops so that you can share them with people in your graduate group who might be interested.
 
@@ -86,7 +86,7 @@ Register here: https://ucm.edu/Intro_to_Overleaf
   The UC libraries will jointly offer a Software Carpentry workshop series on September 11-21. This will include introductions to Python, R, Unix Shell, Version Control with Git, and SQL. The workshops are open to all members of the UC system. You can register for the workshops here: https://ti.to/ucsd-carpentries/uc-carpentries-fall-workshop-2023
   We hold in-person workshops on a variety of research computing topics. You can always find the current workshop schedule here: https://libcal.ucmerced.edu/calendar/data_management
 
-## Overleaf licenses to campus
+## Overleaf licenses to campus  <!-- {docsify-ignore} -->
   
   In an effort to reduce costs on research technology, the Cyberinfrastructure and Research Technologies (CIRT) team, in partnership with the Graduate Division, has brought Overleaf licenses to campus. These licenses are available to everyone at no cost, whether you have an existing Overleaf account or not.
   
@@ -100,7 +100,7 @@ Register here: https://ucm.edu/Intro_to_Overleaf
   
   Contact [CIRT](cirt@ucmerced.edu)
 
-## Jupyterhub workshop March 6th 9am - 11am PT
+## Jupyterhub workshop March 6th 9am - 11am PT  <!-- {docsify-ignore} -->
   Join OIT’s Cyberinfrastructure and Research Technologies team as they dive into UC Merced’s pilot JupyterHub - an open source, browser based, computational environment that assists professors and students in developing coursework in computational/data-science.
   
   In this workshop event, the team will cover:
@@ -116,7 +116,7 @@ Sign up now - https://ucm.edu/JHWorkshop
 Add this event to your calendar: https://events.ucmerced.edu/event/jupyterhub_workshop
 
 
-## Upcoming MERCED cluster maintenance and changes to CIRT services 11/15/2022
+## Upcoming MERCED cluster maintenance and changes to CIRT services 11/15/2022  <!-- {docsify-ignore} -->
 MERCED Cluster Downtime
 
 <ins>When</ins>: November 30, 2022
@@ -151,14 +151,14 @@ Other important changes starting **1 February 2023**
 </ul>
 
 <!-- {docsify-ignore-all} -->
-## CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 <!-- {docsify-ignore-all} -->
+## CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 <!-- {docsify-ignore} -->
 
 The CIRT team will be out of office attending the PEARC conference in Boston, MA from July 10-14 and our level of campus support during that time will be extremely limited.
 The best way to request support is always to open an appropriate ServiceHub request here. On these dates, we will only be available to address high impact issues impacting multiple research groups. Other requests will be addressed starting July 18.
 Please plan ahead for any support you might need from CIRT!
 
 
-## Pinnacles maintenance (06/06/2022-06/07/2022)<!-- {docsify-ignore-all} -->
+## Pinnacles maintenance (06/06/2022-06/07/2022) <!-- {docsify-ignore} -->
 
 CIRT will be performing regular OS and security patch upgrades on Pinnacles cluster.
 
@@ -174,7 +174,7 @@ Please plan your jobs ahead to avoid any disruptions. We encourage you to build 
 
 CIRT will send an ALL CLEAR email after successful maintenance.
 
-## CIRT Recharge Center Hiatus Continues 4/25/2022
+## CIRT Recharge Center Hiatus Continues 4/25/2022   <!-- {docsify-ignore} -->
 
 
 OIT-CIRT recharge hiatus is still in effect.
@@ -193,7 +193,7 @@ Please note that during the recharge hiatus, CIRT will continue to monitor and r
 However, faculty PIs will NOT be charged for core-hour usage on MERCED until recharge begins again.
 
 
-## do_IRQ messages on MERCED Cluster 02/11/2021 <!-- {docsify-ignore-all} -->
+## do_IRQ messages on MERCED Cluster 02/11/2021  <!-- {docsify-ignore} -->
 
 Hope you're doing well and are keeping safe.
 
@@ -205,7 +205,7 @@ Until we can reboot the head node during the next maintenance cycle, the "do_IRQ
 
 Sorry for the inconvenience and thank you for your cooperation.
 
-## MERCED CLUSTER RECHARGE SERVICES STARTING 1/1/2022
+## MERCED CLUSTER RECHARGE SERVICES STARTING 1/1/2022  <!-- {docsify-ignore} -->
 
 With the new NSF-MRI Cluster Pinnacles coming online, we are transitioning the MERCED cluster to a recharge service (effective January 1, 2022). Users will receive a monthly baseline allocation of 100 cycles and Faculty PIs will be responsible for covering costs that exceed this baseline.
  
@@ -231,18 +231,18 @@ However, you can obtain access to other free compute resources such as our new N
 
 **CLICK [HERE](rechargeFAQs.md) FOR RECHARGE CENTER FAQ **
 
-## UNEXPECTED CRASHES ON MERCED CLUSTER (03/26/2021): FIX
+## UNEXPECTED CRASHES ON MERCED CLUSTER (03/26/2021): FIX  <!-- {docsify-ignore} -->
 
 The MERCED cluster is back online. JupyterHub is accessible and users can submit jobs again. We apologize for the disruption and will continue to closely monitor the MERCED cluster this weekend.
 If you experience any issues, we encourage you to open a ticket to the CIRT team [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). 
 
-## UNEXPECTED CRASHES ON MERCED CLUSTER (03/25/2021): WORKAROUND
+## UNEXPECTED CRASHES ON MERCED CLUSTER (03/25/2021): WORKAROUND  <!-- {docsify-ignore} -->
 CIRT is determining a workaround for the MERCED cluster users while we fully restore services on the head node. JupyterHub access is disabled during this time. We encourage you monitor [GitHub Docs News page](news.md) for updates and if you experience any issues, open a ticket to the CIRT team [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). 
 
 
 CIRT is investigating unexpected crashes on MERCED cluster. Users will not be able to submit jobs until the root cause is diagnosed and resolved. We apologize for any inconvenience. We encourage you monitor [GitHub Docs News page](news.md) for updates and if you experience any issues, open a ticket to the CIRT team [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). 
 
-## MERCED CLUSTER UNEXPECTED REBOOT (03/25/2021)
+## MERCED CLUSTER UNEXPECTED REBOOT (03/25/2021)  <!-- {docsify-ignore} -->
 
 The MERCED cluster head node rebooted unexpectedly last night. Jobs submitted to the cluster might have been impacted because of this reboot. At this time Cluster is stable and jobs can be submitted. OIT CIRT team is investigating the root cause of this reboot and impact. We apologize for any inconvenience this has caused in your work.
 
@@ -251,7 +251,7 @@ We encourage you monitor GitHub Docs News page for updates and if you experience
 -CIRT Team
 
 
-## MERCED Cluster maintenance 03/02/2021 - 03/04/2021
+## MERCED Cluster maintenance 03/02/2021 - 03/04/2021  <!-- {docsify-ignore} -->
 Dear Campus Research Computing Community,
 
 Your Cyberinfrastructure and Research Technologies (CIRT) team wants you to be ready for the upcoming maintenance on the MERCED cluster in **3 Weeks**.
