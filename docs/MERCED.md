@@ -1,15 +1,16 @@
 ## MERCED cluster <!-- {docsify-ignore} -->
 
 MERCED (Multi-Environment Research Computer for Exploration and
-Discovery) Cluster is a 1,872 core Linux based high performance computing
-cluster. The MERCED cluster runs with the [RedHat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) operating system,
-and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs. a standard flavor of Linux, and employs the Slurm job scheduler and queueing system to manage job runs.
+Discovery) Cluster is a 1,872 core Linux based high performance computing cluster. The MERCED cluster runs with the [RedHat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) operating system, and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs.
 
 
-## MERCED recharge service (starting Feb. 2023) <!-- {docsify-ignore} -->
-!>__OIT-CIRT recharge services, including MERCED cluster core-hours will be renewed starting Feb. 2023.__
+## MERCED recharge service <!-- {docsify-ignore} -->
+Beggining in Febuary 2023, MERCED has transitioned to a recharge service model. 
 
 In order to minimize disruptions to computational research on MERCED cluster, the Provost’s office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024
+
+!>__OIT-CIRT will begin to charge the PIs the core-hours used beginning July 1st, 2024. More information can be found [here](commun.md#4524)
+
 
 
 __Faculty PIs__: Please ensure that the user accounts are active and provide the COA# [here](https://merced-my.sharepoint.com/personal/yyu49_ucmerced_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyyu49%5Fucmerced%5Fedu%2FDocuments%2FMERCED%5Frecharge&ct=1639436999554&or=OWA%2DNT&cid=61ce730a%2D0df2%2Dd438%2D7bdf%2Dbe138cf58c23). Email cirt@ucmerced.edu for more assistance.
@@ -26,7 +27,7 @@ Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-
 
 
 ## System overview
-MERCED hosts 82 CPU compute nodes including 28 high memory nodes. Please be aware that
+MERCED hosts 66 CPU compute nodes including 25 high memory nodes. Please be aware that
 the nodes among MERCED cluster are multigenerational, meaning that the CPU
 processors from different nodes are having different features, the table shows below
 listed detailed node information. Users may experience relative big
@@ -96,35 +97,8 @@ either a PI Group or a user.
   Priorities of jobs are assigned on a dynamic basis. Not all jobs
   submitted will begin immediately.
 
-?> Questions?
+## Questions? <!-- {docsify-ignore} -->
 If you still have questions, we have put together a MERCED [FAQ page](merced_FAQ.md) that has the most common questions received and will be keeping it up to date.
-
-
-
-## MERCED Questions: <!-- {docsify-ignore} -->
-
->Q:I have a lot of work on MERCED, but do not want to pay the Recharge rate, what are my options?
-
-All work that was stored on MERCED can be accessed and be used on Pinnacles cluster for **Free**.
-User's can always obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and [ACCESS](https://access-ci.org/) resources. CIRT can provide consultation for how to access these resources. Schedule a consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
-
->Q: How to include CIRT managed charged services into budget statement? 
-
-The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section. Here is the sample <a href="./files/Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf" download="Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf">NIH data management documentations</a> and <a href="./files/Budget Justification Detailed.pdf" download="Budget Justification Detailed.pdf">budget justification</a>.
-
-
-> I don’t want to pay for MERCED what are my options?
-
-Remember, you can always obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and [ACCESS](https://access-ci.org/) resources – and my team can provide consultation for how to access these resources. Schedule a consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
-
-> I have other questions!
-
-We have put together a [FAQ page](rechargeFAQs.md) that has more commonly asked questions about MERCED. 
-
-There is also a page about more general FAQs relating to [HPC](hpc_FAQ.md)
-
-Once again, if you have any questions or concerns regarding MERCED
-cluster policies. Feel free to reach out to us via submitting a [general request ticket](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 
 ## How to cite  
