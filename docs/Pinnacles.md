@@ -1,6 +1,5 @@
-## Pinnacles cluster <!-- {docsify-ignore} -->
-The NSF-MRI funded Pinnacles cluster is available for all faculty projects __at no cost!__ Pinnacles cluster features newer generation of Intel Xeon Gold 6330 CPU processors and NVIDIA Tesla A100 v4 40GB HBM2 GPUs. 
-
+## Pinnacles Cluster <!-- {docsify-ignore} -->
+The NSF-MRI funded Pinnacles cluster is available for all faculty projects __at no cost!__ Pinnacles cluster features newer generation of Intel Xeon Gold 6330 CPU processors and NVIDIA Tesla A100 v4 40GB HBM2 GPUs. The Pinnacles cluster runs with the [RedHat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) operating system, and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs.
 
 ## System overview
 Compute nodes: Compute nodes are where actual jobs run. There are three types of compute nodes on Pinnacles.
@@ -89,13 +88,11 @@ either a PI Group or a user.
   submitted will begin immediately.
 
 
-?> Questions?
+## Questions?  <!-- {docsify-ignore} -->
 
 If you still have questions, we have put together a Pinnacles [FAQ page](pinnacles_FAQ.md) that has the most common questions received and will be keeping it up to date.
 
 
-
-Pinnacles cluster has RedHat Operating System.
 
 ## How to cite  
 All Pinnacles users must agree to acknowledge the Pinnacles Cluster and the

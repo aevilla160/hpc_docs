@@ -1,3 +1,23 @@
+## MERCED Questions: <!-- {docsify-ignore} -->
+
+If you have any questions or concerns not covered here regarding MERCED
+cluster policies, please feel free to reach out to us via submitting a [general request ticket](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+> __Q:I have a lot of work on MERCED, but do not want to pay the Recharge rate, what are my options?__
+
+All work that was stored on MERCED can be accessed and be used on Pinnacles cluster for **Free**.
+User's can always obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and [ACCESS](https://access-ci.org/) resources. CIRT can provide consultation for how to access these resources. Schedule a consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+>Q: __How to include CIRT managed charged services into budget statement?__
+
+The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section. Here is the sample <a href="./files/Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf" download="Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf">NIH data management documentations</a> and <a href="./files/Budget Justification Detailed.pdf" download="Budget Justification Detailed.pdf">budget justification</a>.
+
+
+> __I don’t want to pay for MERCED what are my options?__
+
+Remember, you can always obtain access to other free compute resources such as our new NSF-MRI Pinnacles cluster, and [ACCESS](https://access-ci.org/) resources – and my team can provide consultation for how to access these resources. Schedule a consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+
+
 > __How do I make a General Request/Consultation?🤔__
 
 OIT provides general request services or for assessments for individuals and research groups who wish to deploy research computing and advanced cyberinfrastructure techniques (e.g. high-performance computing, visualization, advanced networking and data collaboration, and advanced technology-enhanced workflow development).
