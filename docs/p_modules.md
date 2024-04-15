@@ -1,7 +1,7 @@
 
 
 ## Modules on Pinnacles & MERCED
->Many software and library packages require specific user environment settings for successful execution or use. The Modules Environment package provides a straightforward mechanism for users to dynamically load and manage such environment settings on Pinnacles or MERCED. For example, to load the environmental variables and other settings necessary for using the Intel compiler one executes the command `module load intel`. A complete guide to the use of Modules can be found by using the command `man module` at the command line.   Here, we outlined five basic uses of Modules, we expect users find most useful information. Most commonly, users will make use of options `avail`, `load`, `list`, `unload`, and `swap`. A table describing each of these Modules options is given below.
+>Many software and library packages require specific user environment settings for successful execution or use. The Modules Environment package provides a straightforward mechanism for users to dynamically load and manage such environment settings on Pinnacles or MERCED. For example, to load the environmental variables and other settings necessary for using the Intel compiler one executes the command `module load intel`. A complete guide to the use of Modules can be found by using the command `man module` at the command line.   Here, are outlined five basic uses of Modules, we expect users find most useful information. Most commonly, users will make use of options `avail`, `load`, `list`, `unload`, and `swap`. A table describing each of these Modules options is given below.
 
 
 The table below shows some most commonly used `module` commands.
@@ -28,8 +28,9 @@ To access a list of software packages and libraries for MERCED, use the commmand
 !> Pinnacles is the default and free cluster that all users have access to and all jobs and applications run on. MERCED is the recharge-model cluster that only users that are associated with a COA nunber have access to use.
 
 
-## Pinnacles Module list
+## Global Module list
 
+These softwares are avaible for use on both **Pinnacles** and **MERCED** cluster. 
 
 | Modules   | Version | website                              |
 |:----------|:--------|:-------------------------------------|
@@ -136,7 +137,7 @@ To access a list of software packages and libraries for MERCED, use the commmand
 | wannier90 | 3.1.0 | [website](http://www.wannier.org/) |
 | XCrySDen|1.5.60, 1.6.2|[website](http://www.xcrysden.org/)|
 
-## MERCED ONLY Module list
+## MERCED ONLY Module list <!-- {docsify-ignore} -->
 
 | Name                  | Version| Website                                                |
 |:-------------------------|:----------------------------------------------------------------|:------------|
@@ -148,7 +149,7 @@ To access a list of software packages and libraries for MERCED, use the commmand
 
 
 
-## Clusters Queue Information
+## Clusters Queue Information <!-- {docsify-ignore} -->
 
  **The available queues are designed to balance use and accessibility to the clusters for all users. If a submitted job does not complete before reaching the maximum wall time limit, the queue system will terminate the calculation. In an effort to provide a balanced access to compute cycles on Pinnacles & MERCED, the course queue resource limitations and user-level queue resource limitations become increasingly restrictive. Therefore, users are advised to use the most limiting queue that satisfies their computational needs. In other words, users __should not__ default their work to `compute` for MERCED or `short` for Pinnacles. It is essential for the best use of the clusters that users develop an awareness of their resource needs.**:
 

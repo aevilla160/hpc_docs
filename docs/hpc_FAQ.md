@@ -52,7 +52,7 @@ Remember, if you stay below or at your baseline allocation, you will not incur a
 
 
 
-## Pinnacles - Specific Questions
+## Pinnacles - Questions
 
 
 > __I am in the process of purchasing a condo-model nodes for Pinnacles, do I have to go through the access process?__
@@ -64,7 +64,7 @@ No
 All accounts on Pinnacles cluster need to be associated with that of a UC Merced faculty PI. If your collaborator is a non-UC Merced collaborator, then, they would need a UC Merced NetID to access VPN and login to Pinnacles cluster. Usually, department MSOs provide UC Merced NetIDs for collaborators.
 
 
-## MERCED - Specific Questions
+## MERCED - Questions
 
 >__Are the costs the same regardless of whether we purchased our own nodes or not?__
 
@@ -83,7 +83,7 @@ Grant funds have restrictions on how the funding can be spent, and every grant i
 The initial recharge center implementation will provide bi-weekly usage reports of their groups to faculty PIs. If at any point, faculty would like for CIRT to stop MERCED cluster access to their group, please send an email to cirt@ucmerced.edu and CIRT can stop access. 
 
 
-## Job/Software - Specific Questions
+## Job/Software - Questions
 
 > __How do I install software on a CIRT Managed cluster?__
 

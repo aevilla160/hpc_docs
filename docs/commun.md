@@ -1,5 +1,20 @@
 # Communications
 
+## 4/5/24
+
+Dear Research Computing Users –
+
+This is a friendly reminder that as of July 1, 2024, Provost bridge funding for supporting recharge services will expire.  
+
+**Consequently, CIRT will begin charging users for CIRT recharge services starting July 1, 2024, for core-hours on the MERCED cluster and enhanced user support for CIRT services.**
+
+**Faculty PIs, please ensure that user accounts are active and that the COA# is up to date in order to utilize the MERCED cluster recharge service. For more detailed information about CIRT recharge services and associated costs, please see here.**
+
+ If you have any further questions, please don't hesitate to schedule a research computing consultation or attend one of the HPC office hours every Friday from 11:30 am to 1:00 pm in ACS-365 or via Zoom https://ucmerced.zoom.us/j/89487493900. 
+
+ Thank you for your attention to this matter.
+
+
 ## 4/2/24
 
 Dear HPC users,
@@ -15,8 +30,8 @@ If you're interested in any of the programs, please keep in mind that the deadli
 
 If you have any questions, please reach out to **events@sdsc.edu**
 
-## 1/24/23
-### COMPLETED: HPC cluster maintenance 1/16/24
+## 1/24/23  <!-- {docsify-ignore} -->
+### COMPLETED: HPC cluster maintenance 1/16/24 <!-- {docsify-ignore} -->
 The MERCED and Pinnacles clusters are back online. The CIRT team has completed several updates, including security advisories, bug fixes, and product enhancements. Upgrades encompassed storage server firmware, storage chassis firmware, IB and Data network expansion, and nodes' BIO and BMC firmware. Currently, the default CUDA version for GPU nodes (gnode) is 12.3.
 
   Please feel free to resume submitting your jobs to the cluster.

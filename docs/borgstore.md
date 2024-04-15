@@ -1,4 +1,4 @@
-## Borgstore(BeeGFS)
+# Borgstore(BeeGFS) 
 Borgstore is UC Merced's on campus data-storage center. Borgstore is used for active,research-related data and has the use capacity of 480 **terrabytes**. 
 
 
@@ -6,11 +6,11 @@ Borgstore is also made up of a metadata server with a `1U dual Xeon Skylake SP`,
 
 ?> Borgstore does not do data backups. Users are responsible for ensuring they have backups of thier data and work.
 
-### Requesting Borgstore
+## Requesting Borgstore <!-- {docsify-ignore} -->
 Borgstore is a purchasable service that can be requested [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4). Cost for active data storage is $0.05/GB/year (startup funds) and $0.06/GB/year (non-startup funds). More information can be found [here](https://it.ucmerced.edu/Research-Computing-Services).
 
 
-### Accessing Data from Borgstore for a job
+## Accessing Data from Borgstore for a job <!-- {docsify-ignore} -->
 
 To access data that is located in Borgstore the user must be in the Borgstore folder/directory and must the submit job to the scheduler from this location.  If users want to submit jobs while at the Borgstore folder, the slurm option of `#SBATCH --constraint=ib` should be added to the job script. A sample job that uses this slurm option can be found [here](running_jobs.md).
 
@@ -18,7 +18,7 @@ To run an interactive job, the job must also be ran from the borgstore directory
 
 
 
-### Common Questions about Borgstore
+## Common Questions about Borgstore <!-- {docsify-ignore} -->
 
 
 >Q:How to check my current occupied space on Borgstore?
