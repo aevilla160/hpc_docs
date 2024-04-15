@@ -102,7 +102,7 @@ Filezilla is a computer application with a GUI interface that allows for easy tr
 
 For users who use VSCode to edit and manipulate files, there is a helpful extension that can be downloaded from the VSCode store: ```Remote - SSH```. [Link](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) that can be accessed via web
 
-###  Walkthrough on connecting to ```rc.login.ucmerced.edu``` via VSCode
+###  Walkthrough on connecting to ```rc.login.ucmerced.edu``` via VSCode <!-- {docsify-ignore} -->
 
 Once downloaded the extension mentioned above, you will see a new icon on the left sidebar of VSCode. 
 
