@@ -1,5 +1,16 @@
 # Communications
 
+
+## 4/24/24 
+
+Dear Research Computing Users –
+CIRT has applied a fix to a problem with home directory storage server that has affected HPC clusters' accessibility earlier today.
+
+Users should be able to access HPC clusters again. We will continue to monitor the status of the clusters.
+
+Should you encounter any difficulties with the cluster, please submit a report via [ServiceNow](servicehub.ucmerced.edu) or call 228-HELP (4357).
+
+
 ## 4/5/24
 
 Dear Research Computing Users –
@@ -15,7 +26,7 @@ This is a friendly reminder that as of July 1, 2024, Provost bridge funding for 
  Thank you for your attention to this matter.
 
 
-## 4/2/24
+## 4/2/24 <!-- {docsify-ignore} -->
 
 Dear HPC users,
 
