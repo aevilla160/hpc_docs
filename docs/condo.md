@@ -1,6 +1,6 @@
 # Adding PI-Owned Nodes to Pinnacles Cluster
 
-Faculty(Primary Investigators) can seek placement of their nodes onto the Pinnacles Cluster. 
+Faculty(Primary Investigators) can seek purchasing their own nodes onto the Pinnacles Cluster. 
 
 PI-owned nodes will be added to the Pinnacles Cluster unless a newer cluster is anticipated to be in production within a reasonable time frame determined by CIRT. 
 
