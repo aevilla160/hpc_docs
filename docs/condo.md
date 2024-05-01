@@ -1,18 +1,61 @@
-# Adding PI-Owned Nodes to Pinnacles Cluster
+# Condo Model - Pinnacles Cluster
 
-Faculty(Primary Investigators) can seek purchasing their own nodes onto the Pinnacles Cluster. 
+## Condo Model Description
+Condo computing is a shared ownership model. PIs(i.e. faculty) use equipment purchase funds from grants or other sources to purchase and contribute compute resources (i.e., nodes) to the cluster. The result is a shared researcher-owned computing resource of medium to large proportions that provides access to much larger configurations than each participant purchased individually.
 
-PI-owned nodes will be added to the Pinnacles Cluster unless a newer cluster is anticipated to be in production within a reasonable time frame determined by CIRT. 
+Under the condo model, PIs use equipment purchase funds to buy compute (CPU or GPU) nodes that will be operated as part of the cluster. Participating groups may then have dedicated use of their purchased nodes via private partitions, or they may run larger computing jobs by sharing idle nodes owned that are on the Pinnacles cluster. This allows for immediete and integrated access to a larer cluster that would typically not be available. 
 
-When contributing nodes to the public cluster, it is expected that CIRT will house and maintain these nodes in the cluster for as long as they are under warranty.
 
+Participation in the program runs the duration of the node's warranty coverage(~ 3 years).
+
+## Contributing to Pinnacles Cluster via Condo Model
+
+PIs can seek purchasing computing resources that are compatible with the Pinnacles Cluster. PIs can seek a [consultation](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) with CIRT to discuss which computing resources(nodes) are compatible to be added to the Pinnacles cluster. 
+
+When contributing to the Pinnacles cluster, PIs can expect their group to have the highest priority to the node(s) with the use of a private partition. PIs should expect to also have thier nodes be publicly accessed for up to one hour via `test` partition.  It is expected that CIRT will house and maintain these nodes in the cluster for as long as they are under warranty.
+
+The following tables summarize the CPU and GPU computing resources that are available for purchase in the Pinnacles condo program. 
+
+## Compute Resources compatible with Pinnacles Cluster
+
+
+### CPU 
+| CPU Model	| CPU Quantity | RAM Capacity | Cost| 
+| -------- | ---- | ----------- | ----------| 
+| Intel 28 core Xeon Gold 6330 | 2 | 256GB | <Fill In > | 
+| Intel 28 core Xeon Gold 6330 | 2 | 1TB | <Fill In > | 
+
+
+
+### GPU
+| GPU Model	| GPU Card Quantity | RAM Capacity | Cost| 
+| -------- | ---- | ----------- | ----------| 
+| Nvidia GPU | 2 | 256GB | <Fill In > | 
+
+!> These are estimate prices, and final price will be determined after consultation. 
 
 ## Other Associated Costs
 
-Other associated costs will be determined upon consultations with CIRT team. Costs  < ASK CIRT later>
+Other associated costs(i.e. switches, ethernet cables, etc.) will be determined upon or after consultation with CIRT. 
+
+Below is a table with associated tasks/items and their costs. 
+
+| Service | Unit | UC Rate | Non-UC Rate | 
+| --------------------- | ---------------- | -------------- | ----------- | 
+| System Setup Fee | Installation | <COST> | N/A | 
+| Switch | Installation | <COST> |N/A| 
+| Other Cables(i.e. ethernet) | Installation | <COST> | N/A | 
+|Condo CPU Operations Fee (per purchased node) for UCM Affiliates | Node/year | <COST> | N/A | 
+| Condo CPU Operations Fee (per purchased node) for Non-UCM Affiliates | Node/year | N/A | N/A |
+| Condo GPU Operations Fee (per purchased node) for UCM Affiliates | Node/year | <COST> | N/A | 
+| Condo GPU Operations Fee (per purchased node) for Non-UCM Affiliates | Node/year | N/A | N/A | 	
 
 
-## Condo Model for Pinnacles process
+
+
+!> Costs from the table are estimates. Final costs will be shared after consultation
+
+## Process - Condo Model for Pinnacles Cluster
 
 1. Providing consultation, determining the appropriate hardware
 2. Work with CIRT and our primary vendor ACT to obtain the associated quotes
@@ -22,30 +65,59 @@ Other associated costs will be determined upon consultations with CIRT team. Cos
 
 1. Users in the associated group(s) will be given the highest priority on the associated partition to run jobs on the node(s). 
 2. Users in the associated group(s) will have access to the specific partition to access the node(s) dependent on SLURMS queuing reource parameters. 
-3. CIRT will allow all users to be placed on the PI-Owned node for up to one hour via the test partition.
+3. CIRT will allow all users to be placed on the PI-Owned node for up to one hour via the `test` partition.
 
 ## Warranty
 
-The PI-owned node once it is out of warranty, CIRT will give the PI two options: 
+PIs who contribute to Pinnacles with purchasing their own nodes will recieve information about their nodes' warranty length. Typically the computing resources have a warranty of 3 years but it may vary. 
+
+
+Below are options that CIRT offers to PIs when the nodes become out-of-warranty. 
+
+CIRT will give the PI two options: 
 
 1. CIRT Keeps the node(s) and merge to public partition - 
 
-    ``` 
-    CIRT compensates PI group usage on Pinnacles for up to one year. 
+     
     PI-owned queues will cease to exist and and the nodes will be merged into general, public partition(s).
-    CIRT will set up a condo-QOS for PI groups to have a higher priority on queues for one year after the node is removed. 
+    CIRT will set up a condo-QOS for PI groups to have a higher priority on public partitions for <DURATION - ask CIRT> after the node(s) are merged. 
 
-    CIRT will take responsibility for the maintance and housing of the node post-warranty. CIRT will also reserve the right to retire the node(s) that are out of warranty and has associated costs(staff time, power, cooling, and machine room space)
-    ```
-2. CIRT returns the node to the PI?? 
+    CIRT will take the ownership of the nodes and take responsibility for the maintance and housing of the node post-warranty. CIRT will also reserve the right to retire the node(s).
+   
+2. CIRT returns the node to the PI
 
-    ```
-    CIRT will facilitate removing the PI nodes from the cluster
-    PIs might incur costs for CIRT's time and effort on this
-    PI will be soley responslbe for the node's maintance once returned. 
+    CIRT will facilitate removing the PI node from the cluster, and
+    PIs might incur costs for CIRT's time and effort on the proceess of removing the node.
+    PI will be soley responslbe for the node once returned. 
 
 
-    ```
 
 ## Other Policies 
 
+## Condo PI-Contributor Highlight
+Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles.
+
+| PI | Department | 
+| -------------- | ----------------------- |
+| Bercem Dutagaci | QSB | 
+| Changho Kim | Applied Math | 
+| Henrik Larsson | Chemistry & Biochemistry | 
+| Ashlie Martini | Mechanical Engineering | 
+| Anna Nierenberg | Physics | 
+| Aurora Pribram-Jones | Chemistry & Biochemistry | 
+| David Strubbe | Physics | 
+
+
+
+## Condo Department-level Contributor Highlight 
+Below is a table of departments who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles.
+
+| Department | 
+| ----------------- | 
+| Life & Enviromental Science | 
+| Applied Math | 
+| Cognitive Science | 
+| Center for Cellular and Biomolecular Machines | 
+
+## Joining the condo program
+Please reach out to CIRT to schedule a consultation via [ServiceNow](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)
