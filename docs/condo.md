@@ -1,4 +1,5 @@
 # Condo Model - Pinnacles Cluster
+<schedule a consulation add a link>
 
 ## Condo Model Description
 Condo computing is a shared ownership model. PIs(i.e. faculty) use equipment purchase funds from grants or other sources to purchase and contribute compute resources (i.e., nodes) to the cluster. The result is a shared researcher-owned computing resource of medium to large proportions that provides access to much larger configurations than each participant purchased individually.
@@ -53,7 +54,7 @@ Below is a table with associated tasks/items and their costs.
 
 
 
-!> Costs from the table are estimates. Final costs will be shared after consultation
+!> Costs from the table are estimates. Final costs and configurations will be shared after consultation. Annual fees covers labor to maintain the system, utilities, software licenses and other maintenance costs.
 
 ## Process - Condo Model for Pinnacles Cluster
 
@@ -65,11 +66,11 @@ Below is a table with associated tasks/items and their costs.
 
 1. Users in the associated group(s) will be given the highest priority on the associated partition to run jobs on the node(s). 
 2. Users in the associated group(s) will have access to the specific partition to access the node(s) dependent on SLURMS queuing reource parameters. 
-3. CIRT will allow all users to be placed on the PI-Owned node for up to one hour via the `test` partition.
+3. CIRT will allow all users to be placed on the condo node for up to one hour via the `test` partition.
 
 ## Warranty
 
-PIs who contribute to Pinnacles with purchasing their own nodes will recieve information about their nodes' warranty length. Typically the computing resources have a warranty of 3 years but it may vary. 
+Principal Investigators (PIs) who contribute to Pinnacles by purchasing their own nodes will receive details about their nodes' warranty. A HPC cluster node will be considered beyond its lifetime of maintainability when the compute node warranty from the HPC cluster vendor has expired. Typically, computing resources come with a warranty of 3 years, though this duration may vary.
 
 
 Below are options that CIRT offers to PIs when the nodes become out-of-warranty. 
@@ -95,7 +96,7 @@ CIRT will give the PI two options:
 ## Other Policies 
 
 ## Condo PI-Contributor Highlight
-Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles.
+Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. (queue names!)
 
 | PI | Department | 
 | -------------- | ----------------------- |
@@ -110,7 +111,7 @@ Below is a table of PIs who have contributed nodes to the Pinnacles cluster, ass
 
 
 ## Condo Department-level Contributor Highlight 
-Below is a table of departments who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles.
+Below is a table of departments who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. (queue names)
 
 | Department | 
 | ----------------- | 
