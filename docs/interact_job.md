@@ -42,12 +42,16 @@ This final  example requests 1 node with 1 core and bigmem node access for a tot
 To enter the interacive session: the `srun` command will initiate the job step under the allocated job with the provided job id.
 
 `srun` command template: 
-> srun --jobid=<jobid> --pty /bin/bash
+
+    run --jobid=<jobid> --pty /bin/bash
 
 `srun` command example 
-> srun --jobid=100234 --pty /bin/bash
 
-In the above example of `srun` we ask to placed on the resources allocated to us earlier. To access the requested resources ensure to replace the jobid with the jobid that will be outputted by the `salloc` command. Refer to the visual example below. 
+    srun --jobid=100234 --pty /bin/bash
+
+!> Ensure to replace the <jobid> with the jobid that will be outputted by the `salloc` command.
+
+In the above example of `srun` we ask to placed on the resources allocated to us earlier. Refer to the visual example below. 
 
 Once, succesffuly entered the interactive compute node, you will notice that your current ssh login wil change from rclogin to a compute node as seen in the figure below. 
 
@@ -57,7 +61,7 @@ Once, succesffuly entered the interactive compute node, you will notice that you
 
 
 Ex. 
-    [user123@rclogin02 ~] will change to [user123@gnode001 ~] reflecting that I am not directly on the compute node and now able to run my experiments. 
+    [guest027@rclogin02 ~] will change to [guest027@node008 ~] reflecting that I am not directly on the compute node and now able to run my experiments. 
 
 
 !> Always ensure you are on the compute node before running experiments! You may cause disruptions if you are not careful and still on the login node. 
@@ -71,11 +75,11 @@ To properly exit use one of the following methods:
 
 - If you're logged into the node directly, simply type exit or press Ctrl+c to log out. *
 
-- If you used srun to run commands, you can exit the shell spawned by srun to return to your original session, and then use exit or Ctrl+D. *
+- If you used srun to run commands, you can exit the shell spawned by srun to return to your original session, and then use exit or Ctrl+D. 
 
 - To explicitly release the resources, you can use the scancel command with your job ID, which can be found using squeue.
 
-!> * - Using one of these methods, you must still use `scancel <jobid>` to release the resources after you exited the node. 
+!>  Using one of these methods, you must still use `scancel <jobid>` to release the resources after you exited the node. 
 
 ## Useful Tips and Tricks for Interactive Session <!-- {docsify-ignore} -->
 
