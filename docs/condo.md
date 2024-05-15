@@ -35,7 +35,7 @@ The following tables summarize the CPU and GPU computing resources that are avai
 
 !> These are estimate prices, and final price will be determined after consultation. 
 
-## Other Associated Costs
+## Other Associated Costs 
 
 Other associated costs(i.e. switches, ethernet cables, etc.) will be determined upon or after consultation with CIRT. 
 
@@ -93,32 +93,32 @@ CIRT will give the PI two options:
 
 
 
-## Other Policies 
 
 ## Condo PI-Contributor Highlight
-Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. (queue names!)
+Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. 
 
-| PI | Department | 
-| -------------- | ----------------------- |
-| Bercem Dutagaci | QSB | 
-| Changho Kim | Applied Math | 
-| Henrik Larsson | Chemistry & Biochemistry | 
-| Ashlie Martini | Mechanical Engineering | 
-| Anna Nierenberg | Physics | 
-| Aurora Pribram-Jones | Chemistry & Biochemistry | 
-| David Strubbe | Physics | 
+| PI | Department |  Queue | 
+| -------------- | ----------------------- | --------------- |
+| Bercem Dutagaci | QSB | pi.bdutagaci |
+| Changho Kim | Applied Math | pi.ckim103 |
+| Henrik Larsson | Chemistry & Biochemistry | pi.larsson |
+| Ashlie Martini | Mechanical Engineering | pi.amartini |
+| Anna Nierenberg | Physics | pi.anierenberg |
+| Aurora Pribram-Jones | Chemistry & Biochemistry | pi.apribram-jones |
+| David Strubbe | Physics | pi.dstrubbe |
 
 
 
 ## Condo Department-level Contributor Highlight 
-Below is a table of departments who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. (queue names)
+Below is a table of departments who have contributed nodes to the Pinnacles cluster, assisting in the growth and computing power of Pinnacles. 
 
-| Department | 
-| ----------------- | 
-| Life & Enviromental Science | 
-| Applied Math | 
-| Cognitive Science | 
-| Center for Cellular and Biomolecular Machines | 
+| Department | Queue |
+| ----------------- | --------------- |
+| Life & Enviromental Science | dept.les |
+| Applied Math | dept.appliedmath |
+| Cognitive Science | dept.cogsci |
+| Center for Cellular and Biomolecular Machines | grp.ccbm |
 
 ## Joining the condo program
 Please reach out to CIRT to schedule a consultation via [ServiceNow](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)
+## Other Policies 
