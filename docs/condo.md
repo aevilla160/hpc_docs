@@ -11,9 +11,9 @@ Participation in the program runs the duration of the node's warranty coverage(~
 
 ## Contributing to Pinnacles Cluster via Condo Model
 
-PIs can seek purchasing computing resources that are compatible with the Pinnacles Cluster. PIs can seek a [consultation](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) with CIRT to discuss which computing resources(nodes) are compatible to be added to the Pinnacles cluster. 
+PIs can seek purchasing computing resources that are compatible with the Pinnacles Cluster. PIs can schedule a [consultation](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) with CIRT to discuss which computing resources(nodes) are compatible to be added to the Pinnacles cluster. 
 
-When contributing to the Pinnacles cluster, PIs can expect their group to have the highest priority to the node(s) with the use of a private partition. PIs should expect to also have thier nodes be publicly accessed for up to one hour via `test` partition.  It is expected that CIRT will house and maintain these nodes in the cluster for as long as they are under warranty.
+When contributing to the Pinnacles cluster, PIs can expect their group to have the highest priority to their node(s) with the use of a private partition. PIs should expect to also have their nodes be publicly accessed for up to one hour via `test` partition.  It is expected that CIRT will house and maintain these nodes in the cluster for as long as they are under warranty.
 
 The following tables summarize the CPU and GPU computing resources that are available for purchase in the Pinnacles condo program. 
 
@@ -58,7 +58,7 @@ Below is a table with associated tasks/items and their costs.
 
 ## Process - Condo Model for Pinnacles Cluster
 
-1. Providing consultation, determining the appropriate hardware
+1. Consultation between CIRT and PI(s), determining the appropriate hardware
 2. Work with CIRT and our primary vendor ACT to obtain the associated quotes
 3. Once the quotes have been obtained and given to the PI, PI will have to work with their respective departments to purchase the hardware. CIRT asks that the PI keeps us in the loop for any questions regarding shipping and recieving and other associated tasks. 
 

@@ -3,7 +3,6 @@
 - [HPC resources](README.md)
   - [User policy](policy.md)
   - [Get help](get_help.md)
-  - [Node purchasing](condo.md)
 
 - On-campus cluster
   - [How to connect](central_login.md)
