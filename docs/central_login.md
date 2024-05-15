@@ -16,6 +16,32 @@ ssh <username>@login.rc.ucmerced.edu
 
 Currently, we have 3 login nodes, users are expecting to see they are placed to either `rclogin01`, `rclogin02`, or `rclogin03`. __Do not run computationally intensive processes on the login node__. File preparation/editing, compiling, simple analyses, and other low computational cost activities are appropriate on the login node, but, again, other types of work should be submitted to the cluster via the available queue system. Users may also connect to remote machine using an x-terminal (XQuarz or X11) to spawn graphics based programs such as gnuplot, gimp, _etc_. 
 
+
+## X11 Forwarding
+X11 is a graphics protocol that allows user to interact with the GUI from remote servers on their local resources.
+
+Here are some examples of the different requirements that X11 needs to be enabled by the client connecting to the cluster to use X11.
+### Mac Configuration <!-- {docsify-ignore} -->
+Prerequisite: 
+Successfully install XQuartz 
+
+Then open XQuartz through `open -a XQuartz` in the terminal or other CLI.
+
+Finally ssh into the cluster with using the `-X` flag added. Ex
+`ssh -X <username>@login.rc.ucmerced.edu`
+
+### Windows Configuration <!-- {docsify-ignore} -->
+If using PuTTY as the SSH client, enable X11 forwarding through the PuTTY configuration settings.
+1. Open PuTTY.
+2. In the configuration window, navigate to the "Connection" category.
+3. Expand the "SSH" category within "Connection".
+4. Click on "X11".
+5. Check the box labeled "Enable X11 forwarding".
+6. Optionally, you can adjust other settings related to X11 forwarding as needed.
+7. Save your session settings.
+Connect to your remote system as usual!
+
+
 ## File systems
 In the following, we will assume you have some familiarity with linux; if you do not, feel free to book a consultation with the IT team, but a lot of resources are available on the internet.
 
