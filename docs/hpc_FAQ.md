@@ -6,6 +6,10 @@ OIT provides general request services or for assessments for individuals and res
 You can make a General Request/Consultation [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 
+> __How to include CIRT managed charged services into budget statement?__
+
+The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section. Here is the sample <a href="./files/Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf" download="Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf">NIH data management documentations</a> and <a href="./files/Budget Justification Detailed.pdf" download="Budget Justification Detailed.pdf">budget justification</a>
+
 > __When/where are the HPC Walk-in Clinic hours?__
 
 Bring your laptop, your code and your questions to the clinic and get expert help, right on the spot. Experienced graduate students are encouraged to come help your peers by mentoring them in HPC tips and tricks. Faculty are also welcome to join. Among others, Yue Yu (Sr. Research Computing Facilitator) will be available to meet with and help members of the campus research computing community at these sessions.
