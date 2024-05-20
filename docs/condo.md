@@ -4,7 +4,7 @@
 ## Condo Model Description
 Condo computing is a shared ownership model. PIs(i.e. faculty) use equipment purchase funds from grants or other sources to purchase and contribute compute resources (i.e., nodes) to the cluster. The result is a shared researcher-owned computing resource of medium to large proportions that provides access to much larger configurations than each participant purchased individually.
 
-Under the condo model, PIs use equipment purchase funds to buy compute (CPU or GPU) nodes that will be operated as part of the cluster. Participating groups may then have dedicated use of their purchased nodes via private partitions, or they may run larger computing jobs by sharing idle nodes owned that are on the Pinnacles cluster. This allows for immediete and integrated access to a larer cluster that would typically not be available. 
+Under the condo model, PIs use equipment purchase funds to buy compute (CPU or GPU) nodes that will be operated as part of the cluster. Participating groups may then have dedicated use of their purchased nodes via private partitions, or they may run larger computing jobs by sharing idle nodes owned that are on the Pinnacles cluster. This allows for immediate and integrated access to a larger cluster that would typically not be available. 
 
 
 Participation in the program runs the duration of the node's warranty coverage(~ 3 years).
@@ -13,7 +13,7 @@ Participation in the program runs the duration of the node's warranty coverage(~
 
 PIs can seek purchasing computing resources that are compatible with the Pinnacles Cluster. PIs can schedule a [consultation](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) with CIRT to discuss which computing resources(nodes) are compatible to be added to the Pinnacles cluster. 
 
-When contributing to the Pinnacles cluster, PIs can expect their group to have the highest priority to their node(s) with the use of a private partition. PIs should expect to also have their nodes be publicly accessed for up to one hour via `test` partition.  It is expected that CIRT will house and maintain these nodes in the cluster for as long as they are under warranty.
+When contributing to the Pinnacles cluster, PIs can expect their group to have the highest priority to their node(s) with the use of a private partition. PIs should expect to also have their nodes be publicly accessed via `test` partition.  It is expected that CIRT will house and maintain these nodes in the cluster for as long as they are under warranty.
 
 The following tables summarize the CPU and GPU computing resources that are available for purchase in the Pinnacles condo program. 
 
@@ -21,17 +21,17 @@ The following tables summarize the CPU and GPU computing resources that are avai
 
 
 ### CPU 
-| CPU Model	| CPU Quantity | RAM Capacity | Cost| 
-| -------- | ---- | ----------- | ----------| 
-| Intel 28 core Xeon Gold 6330 | 2 | 256GB | <Fill In > | 
-| Intel 28 core Xeon Gold 6330 | 2 | 1TB | <Fill In > | 
+| CPU Model	| CPU Quantity Per Node| Core Count Per Node | RAM Capacity |
+| -------- | ---- | ----------- |---------- |
+| Intel 28 core Xeon Gold 6330 | 2 |56(28*2) cores | 256GB | 
+| Intel 28 core Xeon Gold 6330 | 2 | 56(28*2) cores | 1TB |
 
 
 
 ### GPU
-| GPU Model	| GPU Card Quantity | RAM Capacity | Cost| 
-| -------- | ---- | ----------- | ----------| 
-| Nvidia GPU | 2 | 256GB | <Fill In > | 
+| GPU Model	| GPU Card Quantity Per Node | RAM Capacity | 
+| -------- | ---- | ----------- |
+| Nvidia GPU | 1 - 4 cards | Varies |
 
 !> These are estimate prices, and final price will be determined after consultation. 
 
@@ -41,18 +41,11 @@ Other associated costs(i.e. switches, ethernet cables, etc.) will be determined 
 
 Below is a table with associated tasks/items and their costs. 
 
-| Service | Unit | UC Rate | Non-UC Rate | 
-| --------------------- | ---------------- | -------------- | ----------- | 
-| System Setup Fee | Installation | <COST> | N/A | 
-| Switch | Installation | <COST> |N/A| 
-| Other Cables(i.e. ethernet) | Installation | <COST> | N/A | 
-|Condo CPU Operations Fee (per purchased node) for UCM Affiliates | Node/year | <COST> | N/A | 
-| Condo CPU Operations Fee (per purchased node) for Non-UCM Affiliates | Node/year | N/A | N/A |
-| Condo GPU Operations Fee (per purchased node) for UCM Affiliates | Node/year | <COST> | N/A | 
-| Condo GPU Operations Fee (per purchased node) for Non-UCM Affiliates | Node/year | N/A | N/A | 	
-
-
-
+| Service | Unit | UC Rate |
+| --------------------- | ---------------- | -------------- |  
+| Infrastructure Fee (covers racks, switches, cables, etc.) | Installation | $250 | 
+|EDR Infiniband (covers IB cable and IB switches). | Installation | <COST> |
+|Condo CPU/GPU Operations Fee (per purchased node)  | Node/year | $500 | 
 
 !> Costs from the table are estimates. Final costs and configurations will be shared after consultation. Annual fees covers labor to maintain the system, utilities, software licenses and other maintenance costs.
 
@@ -64,9 +57,8 @@ Below is a table with associated tasks/items and their costs.
 
 ## Queue Priority
 
-1. Users in the associated group(s) will be given the highest priority on the associated partition to run jobs on the node(s). 
-2. Users in the associated group(s) will have access to the specific partition to access the node(s) dependent on SLURMS queuing reource parameters. 
-3. CIRT will allow all users to be placed on the condo node for up to one hour via the `test` partition.
+1. Users in the associated group(s) will be given the highest priority on the node via a privat partition. 
+2. CIRT will allow all users to be placed on the condo node for up to one hour via the `test` partition.
 
 ## Warranty
 
@@ -81,7 +73,7 @@ CIRT will give the PI two options:
 
      
     PI-owned queues will cease to exist and and the nodes will be merged into general, public partition(s).
-    CIRT will set up a condo-QOS for PI groups to have a higher priority on public partitions for <DURATION - ask CIRT> after the node(s) are merged. 
+
 
     CIRT will take the ownership of the nodes and take responsibility for the maintance and housing of the node post-warranty. CIRT will also reserve the right to retire the node(s).
    
