@@ -21,12 +21,14 @@ The following tables summarize the CPU and GPU computing resources that are avai
 
 
 ### CPU 
-| CPU Model	| CPU Quantity Per Node| Core Count Per Node | RAM Capacity |
+| CPU Model	| CPU Quantity Per Node| Core Count Per Node | RAM Capacity | 
 | -------- | ---- | ----------- |---------- |
 | Intel 28 core Xeon Gold 6330 | 2 |56(28*2) cores | 256GB | 
 | Intel 28 core Xeon Gold 6330 | 2 | 56(28*2) cores | 1TB |
 
+Ram Capacity can be scaled up for sizes greater than 1TB. 
 
+!> All nodes are configured with HDR100 slots. 
 
 ### GPU
 | GPU Model	| GPU Card Quantity Per Node | RAM Capacity | 
@@ -49,20 +51,31 @@ Below is a table with associated tasks/items and their costs.
 
 !> Costs from the table are estimates. Final costs and configurations will be shared after consultation. Annual fees covers labor to maintain the system, utilities, software licenses and other maintenance costs.
 
+
+## OS, CV software license fee $??/node for `Associated Costs Section`
+
+## Clustervisor - Cluster Management Software Licensing Cost?
+
+
+
 ## Process - Condo Model for Pinnacles Cluster
 
 1. Consultation between CIRT and PI(s), determining the appropriate hardware
 2. Work with CIRT and our primary vendor ACT to obtain the associated quotes
 3. Once the quotes have been obtained and given to the PI, PI will have to work with their respective departments to purchase the hardware. CIRT asks that the PI keeps us in the loop for any questions regarding shipping and recieving and other associated tasks. 
 
+
+
 ## Queue Priority
 
 1. Users in the associated group(s) will be given the highest priority on the node via a privat partition. 
-2. CIRT will allow all users to be placed on the condo node for up to one hour via the `test` partition.
+2. CIRT will allow all users to be placed on the condo node via the `test` partition.
 
 ## Warranty
 
-Principal Investigators (PIs) who contribute to Pinnacles by purchasing their own nodes will receive details about their nodes' warranty. A HPC cluster node will be considered beyond its lifetime of maintainability when the compute node warranty from the HPC cluster vendor has expired. Typically, computing resources come with a warranty of 3 years, though this duration may vary.
+Principal Investigators (PIs) who contribute to Pinnacles by purchasing their own nodes will receive details about their nodes' warranty.
+
+ A HPC cluster node will be considered beyond its lifetime of maintainability when the compute node warranty from the HPC cluster vendor has expired. Typically, computing resources come with a warranty of 3 years, though this duration may vary.
 
 
 Below are options that CIRT offers to PIs when the nodes become out-of-warranty. 
@@ -84,7 +97,23 @@ CIRT will give the PI two options:
     PI will be soley responslbe for the node once returned. 
 
 
+## End of Maintainability 
 
+When a node or computing resource comes to the end of it's maintabiliity where it becomes ineffective to continue to purchase parts for it, or parts are no longer produced or the QoS becomes poor, requiring lots of attention and staff oversight. We will proceed with taking it down from the cluster and offer options to the PI. 
+
+1. CIRT Keeps the node(s) and merge to public partition - 
+
+     
+    PI-owned queues will cease to exist and and the nodes will be merged into general, public partition(s).
+
+
+    CIRT will take the ownership of the nodes and take responsibility for the maintance and housing of the node post-warranty. CIRT will also reserve the right to retire the node(s).
+   
+2. CIRT returns the node to the PI
+
+    CIRT will facilitate removing the PI node from the cluster, and
+    PIs might incur costs for CIRT's time and effort on the proceess of removing the node.
+    PI will be soley responslbe for the node once returned. 
 
 ## Condo PI-Contributor Highlight
 Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. 
