@@ -42,8 +42,9 @@ max(number of nodes,6)) within the duration of the SLA
 ### CIRT provides the following one-time services in a CIRT managed colocation service.
 
 
-CIRT managed colocation services include all the services in PI-managed colocation
-services and the following services –
+#### CIRT managed colocation services include all the services in PI-managed colocation services and the following services –
+
+
  - OS upgrades during OIT-CIRT scheduled maintenance windows
   - OIT-CIRT schedules regular maintenance windows to upgrade OS on CIRT
 managed machines. Faculty stakeholder(s) determine if/not their machines
@@ -98,17 +99,26 @@ within the duration of SLA
 within the duration of SLA.
 
 
+### Post-Initial Installation from CIRT
+Oversight and management of all occupant-owned hardware and software in the facility is the responsibility of the occupant. CIRT does not support, maintain, or administer systems owned by occupants. CIRT is available to assist and support in troubleshooting of problems related to the equipment upon request. 
+
 ### Colocation Duration
 
 Colocation Service Level Agrrements Must be reviewed by the PI and CIRT together atleast once a year. 
 
-## Colocation Facilities 
 
+## Colocation Facilities 
+### Security and acceptable use of the facility and equipment
+
+Access to the facility is not transferable from one Occupant to another, however guests may accompany an authorized occupant following CIRT security guidelines. Because it is a shared space, the facility, it is the responsibility of each occupant to ensure that their personnel do not interfere with the operation of other equipment. Occupants are not permitted to use or interact with network, power and cooling infrastructure outside of their own racks. Access under the raised floor and over the drop ceiling is prohibited.
 
 **Science and Engineering 1** and **Science and Engineering 2** server rooms are the two colocations offered to faculty and other UC Merced affiliates. 
 
 ## Service Level Agreement and Costs
 
+| Service | Cost Per Hour | 
+| ----------------------------- | ----------- |
+| PI Managed Research Server Colocation | $52 |
 
 ## Faculty Colocation Highlights 
 
@@ -116,4 +126,4 @@ Colocation Service Level Agrrements Must be reviewed by the PI and CIRT together
 ## Liability Section 
 
 
-Do you have 
+# CIRT about liability section/policies and Service Costs
