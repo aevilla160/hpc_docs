@@ -2,7 +2,7 @@
 This page presents ways to share data with other users on the HPC clusters. Note that the word "group" on this page always refers to Unix groups and not research groups.
 
 ## Unix Permissions
-Every file and directory has read, write and execute permissions associated with it. These permissons dictate what and who has access to the file or directory and what level of access it has. The owner is you, the group is the group of people asscociated with the PI that you are apart of, and other is every other user outside the unix group. Many times others refers to every other user on the HPC clusters that are not apart of the group the current user is associated with nor other group members 
+Every file and directory has read, write and execute permissions associated with it. These permissions dictate what and who has access to the file or directory and what level of access it has. The owner is you, the group is the group of people associated with the PI that you are a part of, and `other` is every other user outside the unix group. Many times others refers to every other user on the HPC clusters that are not a part of the group the current user is associated with nor other group members 
 
 | Permission | Meaning | Meaning for directories | 
 | -------------------- | ---------------- | ----------------- |
@@ -10,7 +10,7 @@ Every file and directory has read, write and execute permissions associated with
 | write (w) | File can be modified or deleted | Files can be created in or deleted from directory | 
 | execute (x) | File can be run like a program | Directory can be entered (i.e., the cd command works) |
 
-There are also octal or numerical counterparts to the above permissions. The numbers are added together to achieve the same effect as using any cobination of the letters. 
+There are also octal or numerical counterparts to the above permissions. The numbers are added together to achieve the same effect as using any combination of the letters. 
 
 | Permission | Meaning | Meaning for directories | 
 | -------------------- | ---------------- | ----------------- |
@@ -35,7 +35,7 @@ This special permission has a couple of functions to change how directories and/
 
 2. If set on a directory, any files created in the directory will have their group ownership set to that of the directory owner
 
-The use of special permissions at the group level are immensely helpful for groups who are constantly collaborating and sharing directoires and files with eachother. The use of this level of special permissions also ensures that all following-created files and sub-directories are shared with the group as well without having to redo and edit sharing permissions. 
+The use of special permissions at the group level are immensely helpful for groups who are constantly collaborating and sharing directories and files with each other. The use of this level of special permissions also ensures that all following-created files and sub-directories are shared with the group as well without having to redo and edit sharing permissions. 
 
 
 To locate the setgid bit, look for an ‘s’ in the group section of the file permissions, as shown in the example below.
@@ -74,13 +74,13 @@ Where `2` is representing that special permissions are being set for the group
 
 Example Template: `chmod -R $### directory/`. 
 
-`$` - Represents the numerical number that sets the special permission. `#` - Represents the permission being inputted(r,w,x). `-R` is used here as we want to apply the changes recursivly, meaning that the changes should impact the sub-directories and files inside the directory.
+`$` - Represents the numerical number that sets the special permission. `#` - Represents the permission being inputted(r,w,x). `-R` is used here as we want to apply the changes recursively, meaning that the changes should impact the sub-directories and files inside the directory.
 
 
 
 
 ## The `chmod` Command
-The `chmod` command allows user to change the access mode of a file or directory.
+The `chmod` command allows the user to change the access mode of a file or directory.
 The syntax follows 
 `chmod <usertype>=<permission> file`
 
@@ -93,32 +93,32 @@ Where `usertype` is a variable that represents different inputs:
 | -------------- | --------------|
 | u | represents the user |
 | g | represents the group | 
-| o | represnets other | 
+| o | represents other | 
 
 Example of changing the permission of a directory: 
 
-To view the current permisions of a given file or directory use:
+To view the current permissions of a given file or directory use:
 `ls -ld <file/directory>`
 
 The output should look similar to this: 
 
     drwxr-xr-x 2 <owner> <group> 10 Jul 28 14:47 permissions/
 
-The permissions will be shown in an order of user, then group and then other(everyone else) or global. In the output above the user has read, write and excutable access. The group has read and executable access. Everyonelse on the cluster has read and executable access. 
+The permissions will be shown in an order of user, then group and then other(everyone else) or global. In the output above the user has read, write and executable access. The group has read and executable access. Everyon else on the cluster has read and executable access. 
 
 
-Now the command `chmod -R  u=rwx,g=---, o=--- permissions/` will be executed and will update the permssions of the group the user is asscoiated with and everyone to not have read, write or execute access of the directory, `permissions/`. 
+Now the command `chmod -R  u=rwx,g=---, o=--- permissions/` will be executed and will update the permissions of the group that the user is associated with so everyone will not have read, write or execute access of the directory, `permissions/`. 
 
-To view the changes and ensure they are accurate run the comamnd ls -ld 
+To view the changes and ensure they are accurate run the command ls -ld 
 
 The output should look similar to this:
 
     drwx------ 2 <user> <group> 10 Jul 28 14:47 permissions/ 
 
-From this we can see that the first `rwx` correlate to the user and the empty dashes represents that the group and everyone else has lost access to the directory. 
+From this we can see that the first `rwx` correlates to the user and the empty dashes represent that the group and everyone else has lost access to the directory. 
 
 ## Public and Group-Readable Directories
-It is common adjust the permissions that the group has on the file or directory.
+It is common to adjust the permissions that the group has on the file or directory.
 
 To see what group you are apart of run the command: `groups`
 
@@ -131,14 +131,14 @@ To edit the permissions to your group run the command:
     `chmod [options] g=<permissions> <file>`
 Or
     `chmod [options] <123> file `
-Where 123 represent: 1 = user permissions written in octal format, 2 = group permissions written in octal format and 3 = others' permissions written in octal format. 
+Where 123 represents: 1 = user permissions written in octal format, 2 = group permissions written in octal format and 3 = others' permissions written in octal format. 
 Ex. of changing group permissions of a directory called `permissions` 
 Syntax: 
 ` chmod -R g=--- permissions/`
 Or through using number format: 
 `chmod -R 700 permissions/`
 
-NOTE: Here there is a 7 in the user permission column as the user needs atleast read access to change group permissions. The middle 0 represents that the all permissions to the group will be removed. The last 0 represents that all permissions will be removed from every other user not in the group
+NOTE: Here there is a 7 in the user permission column as the user needs at least read access to change group permissions. The middle 0 represents that  all permissions to the group will be removed. The last 0 represents that all permissions will be removed from every other user not in the group
 
 Sample output of before changing permissions: 
 
@@ -184,7 +184,7 @@ Below is a list of a couple of options for `getfacl`
 | --access | Display the file access control list. |
 |-d, --default	| Display the default access control list. |
 | -R, --recursive | Apply operations to all files and directories recursively. This option is needed if viewing the permissions of a directory. |
-| --help | Print help explaining the command line options.| 
+| --help | Print help, explaining the command line options.| 
 
 
 
@@ -192,9 +192,9 @@ Generic syntax for the use of `getfacl` to list the access list control of a fil
 
 `getfacl <filename>`
 
-Generic syntax for the use of `getfacl` to list the access of a direcotry and it's contents the syntax is as follows: 
+Generic syntax for the use of `getfacl` to list the access of a directory and it's contents the syntax is as follows: 
 
-`getfacl -R <direcotryname/`
+`getfacl -R <directoryname/`
 
 Sample output of using `getfacl` is shown below: 
 
@@ -236,7 +236,7 @@ Sample output of using `getfacl` is shown below:
     mask::rw-
     other::r--
 
-It can be seen in the sample output above that there is no explicit notation for when a directory is listed as all files and directories start with the output: `file: .....`. To denote a file versus a directory is a direcotry will have a trailing `/` after it's name. Furthermore the directory will be the first output listed at the top. 
+It can be seen in the sample output above that there is no explicit notation for when a directory is listed as all files and directories start with the output: `file: .....`. To denote a file versus a directory is a directory that will have a trailing `/` after it name. Furthermore the directory will be the first output listed at the top. 
 
 Files and Directories will have lots of their permission and ownership listed, such as: 
 
@@ -250,7 +250,7 @@ Files and Directories will have lots of their permission and ownership listed, s
 8. other or global user permissions
 
  
-Here is an example of using `setfacl` for an indivdual user: 
+Here is an example of using `setfacl` for an individual user: 
 
 1. First list out the current permissions for the owner, group and everyone else using `getfacl <filename>`. 
 Here is a sample output: 

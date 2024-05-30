@@ -1,7 +1,7 @@
 # Introduction <!-- {docsify-ignore} -->
-Conda is a package management enviroment and package manager that is primarily used for open-source software packages. Conda is associatated with Python and R programmnig languages but also supports C++ and Fortran. 
+Conda is a package management environment and package manager that is primarily used for open-source software packages. Conda is associated with Python and R programming languages but also supports C++ and Fortran. 
 
-Below is documentation on installing and maintaining a Conda enviroment on the HPC clusters. 
+Below is documentation on installing and maintaining a Conda environment on the HPC clusters. 
 
 ## Build your own conda environment <!-- {docsify-ignore} -->
 ### Load and initializing conda <!-- {docsify-ignore} -->
@@ -51,11 +51,11 @@ Here are some sample `YAML` files:
 
 ###  Using Anaconda in SLURM job scripts <!-- {docsify-ignore} -->
 
-Conda does not know the source when it is called in a SLURM job script. To ensure conda knows the source of the enviroment that it will be activating during the execution of the SLURM job script,`source activate <env name>`. This will ensure SLURM to look for the called enviroment in the correct PATH. 
+Conda does not know the source when it is called in a SLURM job script. To ensure conda knows the source of the environment that it will be activating during the execution of the SLURM job script,`source activate <env name>`. This will ensure SLURM to look for the called environment in the correct PATH. 
 
-An example job script utilizing a conda enviroment can be found [here!](running_R_mpi.md)
+An example job script utilizing a conda environment can be found [here!](running_R_mpi.md)
 
-!> Note using `conda activate <env name>` may result in error as `conda activate `makes the assumption that the enviroment is being called in the same PATH it exists, which is not the case for SLURM jobs. 
+!> Note using `conda activate <env name>` may result in error as `conda activate `makes the assumption that the environment is being called in the same PATH it exists, which is not the case for SLURM jobs. 
 
 ### Common Issues with Conda<!-- {docsify-ignore} -->
 Without running `conda init` the commands `conda activate` and `conda deactivate` will present the following warning.
