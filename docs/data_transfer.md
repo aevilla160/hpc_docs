@@ -6,8 +6,8 @@ Most casual and regular amounts of data transferring can be done through the `rc
 However, for transferring large amounts of data, FIONAs with dedicated bandwidths can be used for scheduled, unattended data transfers. If you are looking to complete a Big Data transfer, please submit a general research request [here](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
 ## `scp` Command
-The `scp` command is useful as it is an easy and versatile command that allows for two-way transferinig of data. It does not require any setup to use and is great for constantly transfering different and seperate files or directories. `scp` is a linear and basic copy and transfer of data; therefore, it does not have any failsafes to prevent data loss or data corruption. `scp` is great for simple files/directories and small, compressed files.
-Below are two examples using `scp`, one example of transfering data from remote machine to local machine, one example of transfering data from local to remote machine. 
+The `scp` command is useful as it is an easy and versatile command that allows for two-way transfering of data. It does not require any setup to use and is great for constantly transferring different and separate files or directories. `scp` is a linear and basic copy and transfer of data; therefore, it does not have any failsafes to prevent data loss or data corruption. `scp` is great for simple files/directories and small, compressed files.
+Below are two examples using `scp`, one example of transferring data from remote machine to local machine, one example of transferring data from local to remote machine.
 
 List of relevant options that can be used with SCP: 
 
@@ -42,16 +42,16 @@ The following syntax can be used to transfer a file from the remote machine to a
 
 
 ## `rsync` Command 
-The `rsync` command is similar to `scp` as it also copies files or directories locally or over a network. However, it employs a special transfer algorithm and a few optimizations tools to make the operation a lot faster. If the `rync` command is given the `-a` option it will copy the exact same access privledges, this is called mirroring. Usage of the `rsync` command is great when transferring larger files and directories. There are cases where the use of `rysnc` over `scp` can result in quicker transfer times as `rsync`uses an algorithm to minimize the amount of data transferred by only transferring the portions of files that have been modified.
+The `rsync` command is similar to `scp` as it also copies files or directories locally or over a network. However, it employs a special transfer algorithm and a few optimizations tools to make the operation a lot faster. If the `rync` command is given the `-a` option it will copy the exact same access privileges, this is called mirroring. Usage of the `rsync` command is great when transferring larger files and directories. There are cases where the use of `rysnc` over `scp` can result in quicker transfer times as `rsync`uses an algorithm to minimize the amount of data transferred by only transferring the portions of files that have been modified.
 
 List of options that can be used with `rsync`:
 
 | Option | Use |
 |---------------|--------------------------|
-| -a | Copy same access privledges |
+| -a | Copy same access privileges |
 | -v, --verbose	| Verbose, display the operation’s execution step by step| 
 | -r |  Copy recursively; used to copy and transfer directories.|
-| -u | skip updating files that are newer on the recieving end |
+| -u | skip updating files that are newer on the receiving end |
 | -n | perform a trial run with no changes made |
 | -W | copy and paste whole files, rather than only updating the changes of the file|
  
@@ -78,7 +78,7 @@ Filezilla is a computer application with a GUI interface that allows for easy tr
 
 
 1. Download FileZilla from the following site: [click here](https://filezilla-project.org/download.php )
-2. Once downloaded, open the application and accept all neccesary options for FileZilla to properly function. 
+2. Once downloaded, open the application and accept all necessary options for FileZilla to properly function. 
 
 3. Fill in the according information in the respective boxes as noted by the numbers they are listed by
 ![Image of Filezilla](imgs/Filezilla_start_annotated.png "Filezilla Blank Start")
@@ -87,7 +87,7 @@ Filezilla is a computer application with a GUI interface that allows for easy tr
                 
                 Ex. If username is guest123@login.rc.ucmerced.edu, enter guest123
    3. Enter password to log into cluster
-   4. This is the area where you will see your **local** files and folders, you can edit the scope by changing the direcotory in the `Local site:` box.
+   4. This is the area where you will see your **local** files and folders, you can edit the scope by changing the directory in the `Local site:` box.
  4. Now you can click `Quickconnect` in the upper left side of the menu 
 
  Once you have the correct files selected on  the local or remote machine, simply drag and drop the files to the other side.
@@ -121,6 +121,6 @@ Once downloaded the extension mentioned above, you will see a new icon on the le
 
 3. Once the credential is typed in, there will be a prompt to where to store the host information, select the second option. 
 
-4. Now there will be a prompt to enter password, this is the password used to sign into the cluster. 
+4. Now there will be a prompt to enter a password, this is the password used to sign into the cluster. 
 
-5. Finally, you will have access to open and manipulate any folder and file on the cluster via VSCode. There is also a built in terminal which allows for submission of jobs and other manipulations to be done in the VSCode application. 
+5. Finally, you will have access to open and manipulate any folder and file on the cluster via VSCode. There is also a built-in terminal which allows for submission of jobs and other manipulations to be done in the VSCode application. 

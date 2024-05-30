@@ -1,8 +1,8 @@
 ## HPC Vocabulary & Terminology <!-- {docsify-ignore-all} -->
 
-In this section users can find important and technical vocabulary or "jargon" related to High-Performance Computing. This page will contain the term and it's definition. 
+In this section users can find important and technical vocabulary or "jargon" related to High-Performance Computing. This page will contain the term and its definition.
 
-__Note:__ It is highly recommended that new HPC users familarize themselves with the terminology as it will be vital for properly understanding computing resources. 
+__Note:__ It is highly recommended that new HPC users familiarize themselves with the terminology as it will be vital for properly understanding computing resources.
 
 
 
@@ -24,19 +24,19 @@ __Note:__ It is highly recommended that new HPC users familarize themselves with
 ### Job submission Terminology  <!-- {docsify-ignore-all} -->
 | Term | Definition | 
 |-------------------------|-------------------------------------------|
-| Partition | Partitions is a group of nodes that typically have common hardware specs and are designed to excel at a certain of my performance. Users specify which partition they want their computations to run. As each partition hold differet purposes.  I.E. `gpu` partition has GPU processers for computations that requiere gpu access. Each Partition has it's own proper queue in the scheduler.  |
+| Partition | Partitions is a group of nodes that typically have common hardware specs and are designed to excel at a certain of my performance. Users specify which partition they want their computations to run. As each partition holds different purposes. I.E. the `gpu` partition has GPU processors for computations that require gpu access. Each Partition has it's own proper queue in the scheduler. |
 | Serial | Serial processing is a type of process that runs solely on __one__ node( or cpu processor) and can only run one task at a time | 
 | Parallel | Parallel processing is a type of process that multiple tasks run at the same time across __many__ nodes( or cpu processors).|
-| MPI | MPI ( Message Passing Interface) a standard that describes how information should be passed between nodes and tasks. MPI is a standard, not an implementation. MPI is best used on HPC archetecture that is optimized for parrallel computing such as having multi-threaded CPUs. Currently the CPUs on Merced and Pinnacles do not have multithreading activated. |
+| MPI | MPI ( Message Passing Interface) a standard that describes how information should be passed between nodes and tasks. MPI is a standard, not an implementation. MPI is best used on HPC architecture that is optimized for parallel computing such as having multi-threaded CPUs. Currently the CPUs on Merced and Pinnacles do not have multithreading activated. |
 
 ### Understanding a Serial vs Parallel Job <!-- {docsify-ignore-all} -->
-The choice between serial and parallel job design and implementation is critical to the speed and effeciancy of the job. Below is a table that covers each job type and it's respective use cases and advantages. 
+The choice between serial and parallel job design and implementation is critical to the speed and efficiency of the job. Below is a table that covers each job type and it's respective use cases and advantages.
 
 
 | Type | Use Cases | Advantages | 
 | -------- | ---------- | ----------------------------- |
-|Serial| Simple data processing and calculations.  | Simplicity, Executes Linearly, Resouce Efficiency | 
-| Parallel | Big Data Processing. Intense scientific simulations | Parallel jobs make efficient use of available hardware resources. One big task can be divided up and conquered by smaller, yet indepently running sub-tasks.
+|Serial| Simple data processing and calculations.  | Simplicity, Executes Linearly, Resource Efficiency | 
+| Parallel | Big Data Processing. Intense scientific simulations | Parallel jobs make efficient use of available hardware resources. One big task can be divided up and conquered by smaller, yet independently running sub-tasks. |
 
 
 
