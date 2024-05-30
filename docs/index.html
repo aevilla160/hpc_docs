@@ -27,7 +27,13 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-    repo: 'ucm-it/hpc_docs',
+    repo: 'true',
+    corner: {
+        // the icon link url to another site  
+        url: "https://github.com/ucm-it/hpc_docs", 
+        // the default preset icon in docsify-corner  
+        icon: "github", 
+      },
     name:"CIRT logo",
     logo: '/imgs/CIRT-logo.png',
     ga: 'G-M0GKBQ1W0J',
@@ -83,6 +89,8 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/class-change@1"></script>
+  <!-- Add a docsify corner -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-corner/dist/docsify-corner.js"></script>
   <!-- PDFObject.js is a required dependency of this plugin -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script> 
 <!-- This is the source code of the pdf embed plugin -->
