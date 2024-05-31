@@ -7,7 +7,7 @@ The showcase will utilize the application, Kokkos, as our example application.
 
 Allocating a GPU node is the first step: 
 
-GPU nodes can be allocated via test partition (1 Hour Max TimeLimit) or via the `gpu` Queue
+GPU nodes can be allocated via test partition (1 Hour Max TimeLimit) or via the `gpu` partition.
 
 For shorter build times, `test` partition is a good starting point, however for longer GPU utilization allocate a node via `gpu` Queue.
 
