@@ -6,7 +6,7 @@
 
      If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.Please find the screenshot below for reference.
 
-     ![](landingpage.001.png)
+     ![](./imgs/./imgs/landingpage.001.png)
    - **Datascience office hours**
    - Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
 
@@ -141,7 +141,7 @@ We have outlined two methods below that you should try for each error type. For 
 
 If your notebook becomes unresponsive, you can try to restart the kernel. (better highlight the restart kernel in the figure below)
 
-![](Kernel_list.002.png)
+![](./imgs/Kernel_list.002.png)
 
 **Restarting Servers**
 
@@ -149,15 +149,15 @@ If your notebook becomes unresponsive, you can try to restart the kernel. (bette
 
 All users can restart their own servers. To do so, start by going to the **Hub** **Control Panel** from the dropdown menu from File menu (highlight the hub control in the figure below)
 
-![](status.003.png)
+![](./imgs/status.003.png)
 
 Once you click on Hub Control Panel.It will navigate to the page and Click the **Stop My Server** button.
 
-![](start_server.004.png)
+![](./imgs/start_server.004.png)
 
 Once the server has stopped and the Stop My Server button is no longer visible, click the **My Serverbutton (should be Start My Server)** to restart the server.
 
-![](startserver.005.png)
+![](./imgs/startserver.005.png)
 
 **Troubleshoot issues with Hub/Server/Code running slow**
 
@@ -199,7 +199,7 @@ There are three different types of cell formats in Jupyter Notebooks which are
 - c. Code -→ When u change the cell type into code block, where we can write the Python or R code
 
 You can find this option in the toolbar menu.
-![](cells.006.png)
+![](./imgs/cells.006.png)
 - Each of these(Code,Markdown,Raw) will have different purpose while creating assignments using otter-grader.Like 
 
 - **Assignment Config**
@@ -315,7 +315,7 @@ test_higher_primes(sieve)  # IGNORE
 
 The following Screenshot will give a clear understading of above syntax for creating questions,solutions and test cases
 
-![](otterq&a.007.png)
+![](./imgs/otterq&a.007.png)
 
 **Assignment examples**
 
@@ -374,7 +374,7 @@ nbgitpuller is already installed in the default environment for UCMerced Jupyter
 Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
 
 
-![](nbgitpuller.008.png)
+![](./imgs/nbgitpuller.008.png)
 
 **Creating a course in Canvas and Gradescope**
 
@@ -396,7 +396,7 @@ This documentation from [GradeScope](https://help.gradescope.com/article/y10z94
 
 UCMerced is using Latest version of Gradecope. So Gradescope is listed in the dotted drop-down menu on the Assignments pag**e.**
 
-![](gradescope_dropdown.009.png)
+![](./imgs/gradescope_dropdown.009.png)
 
 Once you click on Gradescope option from the dropdown, You will be give two options to choose as shown below.
 
@@ -404,7 +404,7 @@ Once you click on Gradescope option from the dropdown, You will be give two opt
 
 To begin crafting a new assignment, simply click on the 'A new Gradescope Assignment' option. This will guide you to the next step, where you'll select your assignment type. Since our aim is to grade Jupyter notebooks, opt for the 'Programming Assignment' choice.
 
-![](assignment_settings.010.png)
+![](./imgs/assignment_settings.010.png)
 
 then follow the **LTI 1.3** tab instructions on [GradeScope](https://help.gradescope.com/article/y10z941fqs-instructor-canvas#assignment_setup) documentation.
 
@@ -412,11 +412,11 @@ then follow the **LTI 1.3** tab instructions on [GradeScope](https://help.gra
 
 Once after creating an assignment, it will be redirected to a page where faculty/instructors needs to upload the zip file which was created using otter-grader package using **otter assign command.**Please refer the otter-assign section (add a link to the previous session).
 
-![](autograder.011.png)
+![](./imgs/autograder.011.png)
 
 Once after uploading a zip file which was created by instructor,Gradescope will process that which will roughly take 5-10 mins.So this is the process basically for instructors in terms of like (broken sentence),once they have generated the ZIP file they just upload it and the GRADESCOPE will build the image and then it will run the test cases for the notebook.
 
-![](build.012.png)
+![](./imgs/build.012.png)
 
 Congratualtions,You have successfully created an autograder assignment using gradescope and canvas.
 
@@ -426,7 +426,7 @@ Now the assignment will be available on canvas and will be available to studen
 
 Open Assignments,In Course Navigation, click the **Assignments** link.Please find the screenshot for to (broken sentence) understand in a easy way.
 
-![](status.013.png)
+![](./imgs/status.013.png)
 
 **Please take a look on how to[ publish assignments](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-publish-or-unpublish-an-assignment-as-an-instructor/ta-p/585) from canvas documentation. Now once the assignment is published, it will be available to students and the students can complete the assignment.**
 
@@ -448,7 +448,7 @@ Once students submitted their assignments, instructors can publish their grades
 
 A course is automatically added into the students account based on their selection while registering for courses.Students can login into canvas using UCMerced SSO.Once login the can view all their register courses in the canvas dashaboard.
 
-![](canvas_dashboard.014.png)
+![](./imgs/canvas_dashboard.014.png)
 
 Please follow this link for more information on [courses](https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Course-Home-Page-as-a-student/ta-p/504) in canvas.
 
@@ -456,21 +456,21 @@ Please follow this link for more information on [courses](https://community.can
 
 Students are able to access their specific course and then proceed to the assignments section. Typically, a Gradescope assignment appears similar to a standard assignment. However, students must adhere to the following steps to submit their JupyterHub assignment on Canvas.
 
-![](creating_assignment.015.png)
+![](./imgs/creating_assignment.015.png)
 
 
 In the screenshot, students can spot the upload submission button nestled in the lower right corner. Clicking on it triggers a pop-up window where students are prompted to upload their assignment as a zip file.
 
-![](submit_assign.016.png)
+![](./imgs/submit_assign.016.png)
 
 After uploading the zip file, Gradescope will validate and grade the student's assignment according to the instructor's solutions.It looks something like this.
 
-![](submit_assign1.017.png)
+![](./imgs/submit_assign1.017.png)
 
 
 Upon successful submission, an email notification will be sent.
 
-![](assign_success.018.png)
+![](./imgs/assign_success.018.png)
 
 **How can I complete an assignment? (generating zip file, what does the zip file consist of)**
 
