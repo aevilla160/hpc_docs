@@ -33,6 +33,7 @@
 
 - JupyterHub
   - [UCMerced JupyterHub](jupyterhub.md)
+  - [Instructor Facing Documentation](instructor_facing_Jupyterhub.md)
 
 - Additional resources
   - [HPC Vocabulary](hpc_vocab.md)
