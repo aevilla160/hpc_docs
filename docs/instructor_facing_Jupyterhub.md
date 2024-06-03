@@ -1,4 +1,4 @@
-### 1. Getting Started
+### Getting Started
     HPC Docs
       **To Access Jupyterhub**, Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub)
    - **Where to get help** (screenshot of the 2i2c launch webpage)
