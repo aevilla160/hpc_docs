@@ -1,7 +1,7 @@
 ### Getting Started
 **To Access Jupyterhub**, Please navigate to the section 
-      [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub)
-**Where to get help** 
+      [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub) .
+- **Where to get help** 
   
    ![](./imgs/landingpage.001.png)
 
