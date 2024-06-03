@@ -1,8 +1,10 @@
 ### Getting Started
 **To Access Jupyterhub**, Please navigate to the section 
       [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub)
-   - **Where to get help** 
+**Where to get help** 
+  
    ![](./imgs/landingpage.001.png)
+
    - Support for JyupterHub is provided during standard operating hours: 8:00 a.m. – 5:00 p.m., Monday through Friday. Please submit a general ticket through the [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 
      If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.Please find the screenshot below for reference.
