@@ -6,7 +6,7 @@
 
      If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.Please find the screenshot below for reference.
 
-     ![](./imgs/./imgs/landingpage.001.png)
+     ![](./imgs/landingpage.001.png)
    - **Datascience office hours**
    - Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
 
