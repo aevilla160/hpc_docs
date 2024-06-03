@@ -25,9 +25,9 @@
 Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)(Service Now) request for scheduling consultations 
 
 ### Instructor-facing workflow
-## a.To Access Jupyterhub**, Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub). (extra perios) It also contains a section about how to start the Server(Python or R) and a few other information on how to download, save, rename, and export notebooks.
+## a.To Access Jupyterhub, Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub). (extra perios) It also contains a section about how to start the Server(Python or R) and a few other information on how to download, save, rename, and export notebooks.
 
-## b. What is covered in Notebook Zero?**
+## b. What is covered in Notebook Zero?
 
 Notebook zero typically includes a variety of subjects and is often customized for the specific course it supports. However, there are a few consistent elements found in every notebook zero.
 
