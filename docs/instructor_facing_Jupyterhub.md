@@ -10,7 +10,7 @@
      If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.Please find the screenshot below for reference.
 
      
-## Datascience office hours**
+## Datascience office hours
    - Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
 
      Zoom Details:
@@ -26,10 +26,10 @@ Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/
 
 ### Instructor-facing workflow
 
-## a.To Access Jupyterhub
-Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub). (extra perios) It also contains a section about how to start the Server(Python or R) and a few other information on how to download, save, rename, and export notebooks.
+## To Access Jupyterhub
+Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub).It also contains a section about how to start the Server(Python or R) and a few other information on how to download, save, rename, and export notebooks.
 
-## b.What is covered in Notebook Zero?
+## What is covered in Notebook Zero?
 
 Notebook zero typically includes a variety of subjects and is often customized for the specific course it supports. However, there are a few consistent elements found in every notebook zero.
 
@@ -43,7 +43,7 @@ Notebook zero typically includes a variety of subjects and is often customized f
 
 Depending on the course or module, more topics may be covered (e.g. importing libraries, iteration). While these notebooks tend to be very homogeneous.
 
-Please find the [Zero Notebook](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook%20Zero.ipynb) which covers the above mentioned topics and ~~also~~ it also explains how to plot the graphs using Matplotlib and Plotly libraries.
+Please find the [Notebook Zero](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook%20Zero.ipynb) which covers the above mentioned topics and ~~also~~ it also explains how to plot the graphs using Matplotlib and Plotly libraries.
 
 ### Package Installation in Python and R
 
