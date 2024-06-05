@@ -22,7 +22,7 @@
 
 ### ServiceHub requests for scheduling consultations
 
-Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)(Service Now) request for scheduling consultations 
+Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) request for scheduling consultations 
 
 ### Instructor-facing workflow
 
@@ -43,7 +43,7 @@ Notebook zero typically includes a variety of subjects and is often customized f
 
 Depending on the course or module, more topics may be covered (e.g. importing libraries, iteration). While these notebooks tend to be very homogeneous.
 
-Please find the [Notebook Zero](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook%20Zero.ipynb) which covers the above mentioned topics and ~~also~~ it also explains how to plot the graphs using Matplotlib and Plotly libraries.
+Please find the [Notebook Zero](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook%20Zero.ipynb) which covers the above mentioned topics and it also explains how to plot the graphs using Matplotlib and Plotly libraries.
 
 ## Package Installation in Python and R
 
@@ -89,7 +89,6 @@ Eg: install.packages("ggplot2")
 
 ```
 
-
 ### Pre-installed Packages
 
 Many Python packages have been pre-installed on JupyterHub and are available by default. To use a pre-installed package such as numpy, you can simply type the line below into a code cell.
@@ -105,8 +104,7 @@ You can also install other packages that are not on this list. There are two met
 
 ### Temporary Installation
 
-Notebooks provide support for bash commands in code cells. The line below, when run in a notebook code cell, will temporarily install numpy into a user’s personal account. numpy will then be available for use while the server is running. This cell must be run every time the user’s server is restarted. Note, this is not a system-wide installation. Running the below cells will only install numpy and ggplot2 temporarily into a user’s personal account. (better highlight this)
-
+Notebooks provide support for bash commands in code cells. The line below, when run in a notebook code cell, will temporarily install numpy into a user’s personal account. numpy will then be available for use while the server is running. This cell must be run every time the user’s server is restarted. Note, this is not a system-wide installation. Running the below cells will only install numpy and ggplot2 temporarily into a user’s personal account.
 - For python use the below code snippet
 ```
 !pip install numpy
@@ -145,7 +143,7 @@ We have outlined two methods below that you should try for each error type. For 
 
 ### Restarting the Kernel
 
-If your notebook becomes unresponsive, you can try to restart the kernel. (better highlight the restart kernel in the figure below)
+If your notebook becomes unresponsive, you can try to restart the kernel
 
 ![](./imgs/Kernel_list.002.png)
 
@@ -153,7 +151,7 @@ If your notebook becomes unresponsive, you can try to restart the kernel. (bette
 
 ### Restarting Your Own Server
 
-All users can restart their own servers. To do so, start by going to the **Hub** **Control Panel** from the dropdown menu from File menu (highlight the hub control in the figure below)
+All users can restart their own servers. To do so, start by going to the **Hub** **Control Panel** from the dropdown menu from File menu.
 
 ![](./imgs/status.003.png)
 
@@ -186,7 +184,6 @@ In general, this issue could be attributed to the varied programming practices a
 
 If they are relevant, try fixing these issues by improving the programming practices or by reducing the size of the dataset. 
 
-If none of these above work, please <help section> (Need to insert a figure ? What is the <help section>)
 
 ## Creating assignments - Ottergrader information
 
@@ -200,9 +197,9 @@ Before Creating assignments using otter-grader let’s understand the important 
 
 There are three different types of cell formats in Jupyter Notebooks which are
 
-- a. Raw -→ This option will be used as plain text
-- b. Markdown -→ It will be used to create the Markdown format text ex.Headers,Links,Images,text in a md format
-- c. Code -→ When u change the cell type into code block, where we can write the Python or R code
+- Raw -→ This option will be used as plain text
+- Markdown -→ It will be used to create the Markdown format text ex.Headers,Links,Images,text in a md format
+- Code -→ When u change the cell type into code block, where we can write the Python or R code
 
 You can find this option in the toolbar menu.
 ![](./imgs/cells.006.png)
@@ -233,7 +230,7 @@ In addition to various command line arguments discussed below, Otter Assign also
   zips: false
  ```
 
-For more information about **# ASSIGNMENT CONFIG** please refer the [documentation](https://otter-grader.readthedocs.io/en/v4.4.1/otter_assign/v1/notebook_format.html). <Specific>
+For more information about **# ASSIGNMENT CONFIG** please refer the [documentation](https://otter-grader.readthedocs.io/en/v4.4.1/otter_assign/v1/notebook_format.html).
 
 ### Creating Questions
 
@@ -288,7 +285,7 @@ def sieve(n):
 
 
 
-- Using specially-formatted Python comments, otter-grader can parse the solution cell and replace lines with ellipsis or other user-defined prompts (this behavior is described in more detail in the otter-grader docs, linked below).
+- Using specially-formatted Python comments, otter-grader can parse the solution cell and replace lines with ellipsis or other user-defined prompts.
 
 ### Test Cases Format
 
@@ -384,7 +381,7 @@ Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgit
 
 ### Step 1: Institutional License, GradeScope and Canvas**
 
-GradeScope is a **paid** service that allows instructors to tie assignments back to Canvas. Once an assignment is created in Canvas and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the LMS (need explaination, you mentioned Canvas before but now LMS, which is explained in the following context, better explain LMS when it first being mentioned).
+GradeScope is a **paid** service that allows instructors to tie assignments back to Canvas. Once an assignment is created in Canvas and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the LMS.
 
 ### Step 2: Documentation: Canvas and GradeScope Assigment Configuration**
 
@@ -396,10 +393,9 @@ To create a new course on canvas, Please follow this [documentation](https://co
 
 This documentation from [GradeScope](https://help.gradescope.com/article/y10z941fqs-instructor-canvas#assignment_setup) details how to configure a GradeScope course and assignments with Canvas.
 
-1. Navigate to assignments section on the canvas and click on the new gradescope assignment
+1. Navigate to assignments section on the canvas and click on the new gradescope assignment.
 
-UCMerced is using Latest version of Gradecope. So Gradescope is listed in the dotted drop-down menu on the Assignments pag**e.**
-
+UCMerced is using Latest version of Gradecope. So Gradescope is listed in the dotted drop-down menu on the Assignments page.
 ![](./imgs/gradescope_dropdown.009.png)
 
 Once you click on Gradescope option from the dropdown, You will be give two options to choose as shown below.
@@ -414,11 +410,10 @@ then follow the **LTI 1.3** tab instructions on [GradeScope](https://help.gra
 
 ### Configure Autograder.
 
-Once after creating an assignment, it will be redirected to a page where faculty/instructors needs to upload the zip file which was created using otter-grader package using **otter assign command.**Please refer the otter-assign section (add a link to the previous session).
-
+Once after creating an assignment, it will be redirected to a page where faculty/instructors needs to upload the zip file which was created using otter-grader package using **otter assign command.**Please refer the otter-assign section.
 ![](./imgs/autograder.011.png)
 
-Once after uploading a zip file which was created by instructor,Gradescope will process that which will roughly take 5-10 mins.So this is the process basically for instructors in terms of like (broken sentence),once they have generated the ZIP file they just upload it and the GRADESCOPE will build the image and then it will run the test cases for the notebook.
+Once after uploading a zip file which was created by instructor,Gradescope will process that which will roughly take 5-10 mins,Once they have generated the ZIP file they just upload it and the GRADESCOPE will build the image and then it will run the test cases for the notebook.
 
 ![](./imgs/build.012.png)
 
@@ -428,7 +423,7 @@ Congratualtions,You have successfully created an autograder assignment using gra
 
 Now the assignment will be available on canvas and will be available to students once you publish the assignment.
 
-Open Assignments,In Course Navigation, click the **Assignments** link.Please find the screenshot for to (broken sentence) understand in a easy way.
+Open Assignments,In Course Navigation, click the **Assignments** link.
 
 ![](./imgs/status.013.png)
 
@@ -444,7 +439,7 @@ Note here, that we have all the autograder.zip files needed for the programming 
 
 ### Grading and publishing grades
 
-Once students submitted their assignments, instructors can publish their grades from Gradescope which will then be directly reflecte in Catcourses (canvas). More information here:
+Once students submitted their assignments, instructors can publish their grades from Gradescope which will then be directly reflecte in Catcourses. More information here:
 
 <https://help.gradescope.com/article/y10z941fqs-instructor-canvas#posting_grades>
 
@@ -478,15 +473,5 @@ Upon successful submission, an email notification will be sent.
 
 ![](./imgs/assign_success.018.png)
 
-**How can I complete an assignment? (generating zip file, what does the zip file consist of)**
-
-**How students can start-and finish their assignment?**
-
-**How and where to submit it?**
-
-**How to check their grades?**
-
-1. What happens if I get errors in an assignment?
-1. I am unable to submit my assignment - who should I reach out to? (same as where to get help section)
 
 
