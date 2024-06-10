@@ -9,7 +9,7 @@ Below will be a demonstration about running an interactive job
 ## Requesting an Interactive Job <!-- {docsify-ignore} -->
 
 
-To start an interactive session: the `salloc` command allocates resources for the interactive job. Once the resources are allocated the `srun` command will be used to enter the compute node configured for the interactive node (Please make sure you are not on the `rclogin03` node when you try to run the interactive job session).
+To start an interactive session: the `salloc` command allocates resources for the interactive job. Once the resources are allocated the `srun` command will be used to enter the compute node configured for the interactive node.
 
 
 `salloc` comamnd template:

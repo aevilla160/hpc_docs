@@ -19,7 +19,7 @@ To exit an interactive Matlab session, enter `quit` or its equivalent `exit`, wh
 
 ### Running interacive session on a compute node<!-- {docsify-ignore} -->
 
-User can also request compute node resource for running interactive jobs, the example command below is asking for 1 core from 1 node using `test` partition for 15 mins (Please make sure you are not on the `rclogin03` node when you try to run the interactive job session). 
+User can also request compute node resource for running interactive jobs, the example command below is asking for 1 core from 1 node using `test` partition for 15 mins. 
 ```
 salloc --partition=test --nodes=1 --ntasks-per-node=1 --time=00:15:00
 ```

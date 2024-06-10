@@ -1,5 +1,5 @@
 ## Interactive jobs on cluster <!-- {docsify-ignore} -->
-If you want to test out something but do not want to write an submission script. Interactive job will directly put you onto a compute node where you can use the compute node resources to test out the program. Here are some example commands where you can allocate different type of resources from compute node (Please make sure you are not on the `rclogin03` node when you try to run the interactive job session). 
+If you want to test out something but do not want to write an submission script. Interactive job will directly put you onto a compute node where you can use the compute node resources to test out the program. Here are some example commands where you can allocate different type of resources from compute node. 
 1. Allocate appropriate CPU resources using the `salloc` command from the designated partitions on cluster.  
    ```bash
    salloc --partition=test --nodes=1 --ntasks-per-node=1 --time=00:15:00 
