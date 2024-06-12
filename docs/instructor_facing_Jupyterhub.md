@@ -165,19 +165,13 @@ The following steps explain how to create assignments/homework using [otter-gra
 
 [Otter-Grader](https://otter-grader.readthedocs.io/en/latest/) parses a parent notebook containing questions, solutions, and tests to create two distribution directories: one with solutions and all tests for automatic grading and a second with no solutions and only public tests for students.
 
-Before Creating assignments using otter-grader let’s understand the important concepts that will be helpful.
-
-There are three different types of cell formats in Jupyter Notebooks which are
-
+Before Creating assignments using otter-grader let’s understand the important concepts that will be helpful.There are three different types of cell formats in Jupyter Notebooks which are.
 - Raw -→ This option will be used as plain text
 - Markdown -→ It will be used to create the Markdown format text ex.Headers,Links,Images,text in a md format
 - Code -→ When u change the cell type into code block, where we can write the Python or R code
 
-You can find this option in the toolbar menu.
-
 ![](./imgs/cells.006.png)
 
-- Each of these(Code,Markdown,Raw) will have different purpose while creating assignments using otter-grader.Like 
 
 ### Assignment Config
 
