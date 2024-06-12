@@ -355,7 +355,7 @@ Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgit
 
 ### Step 1: Institutional License, GradeScope and Catcourses
 
-GradeScope is a **paid** service that allows instructors to tie assignments back to Catcourses. Once an assignment is created in Catcourses and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the Catcourse.
+GradeScope is a service that allows instructors to tie assignments back to Catcourses. Once an assignment is created in Catcourses and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the Catcourse.
 
 ### Step 2: Documentation: Catcourses and GradeScope Assigment Configuration
 
