@@ -1,35 +1,36 @@
 ## Getting Started
-**To Access Jupyterhub**, Please navigate to the section 
-      [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub) .
+To Access Jupyterhub, Please navigate to the section 
+      [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub)
+      
 ### Where to get help
   
    ![](./imgs/landingpage.001.png)
 
-   - Support for JyupterHub is provided during standard operating hours: 8:00 a.m. – 5:00 p.m., Monday through Friday. Please submit a general ticket through the [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
-
-     If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.Please find the screenshot below for reference.
+Support for JyupterHub is provided during standard operating hours: 8:00 a.m. – 5:00 p.m., Monday through Friday. Please submit a general ticket through the [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
+If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.Please find the screenshot below for reference.
 
      
-### Datascience office hours
-   - Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
+### Jupyterhub office hours
+Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
 
-     Zoom Details:
+    Zoom Details:
 
-     - <https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09>
-     - Meeting ID: 879 1535 3522
-     - Passcode: 035925
-   - Please feel free to drop by if you need help with anything from setting up your environment, or if you're just curious to learn more about more on JupyterHub. If these times don't work for you but you still require support, I encourage you to open a ServiceNow ticket [ServiceNow Request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) .
+    https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09
+    Meeting ID: 879 1535 3522
+    Passcode: 035925
+
+Please feel free to drop by if you need help with anything from setting up your environment, or if you're just curious to learn more about more on JupyterHub. If these times don't work for you but you still require support, I encourage you to open a ServiceNow ticket [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) .
 
 ### ServiceHub requests for scheduling consultations
 
 Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) request for scheduling consultations 
 
-### Instructor-facing workflow
+## Workflow Basics
 
-## To Access Jupyterhub
+### To Access Jupyterhub
 Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub).It also contains a section about how to start the Server(Python or R) and a few other information on how to download, save, rename, and export notebooks.
 
-## What is covered in Notebook Zero?
+### Notebook Zero?
 
 Notebook zero typically includes a variety of subjects and is often customized for the specific course it supports. However, there are a few consistent elements found in every notebook zero.
 
@@ -45,20 +46,18 @@ Depending on the course or module, more topics may be covered (e.g. importing li
 
 Please find the [Notebook Zero](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook%20Zero.ipynb) which covers the above mentioned topics and it also explains how to plot the graphs using Matplotlib and Plotly libraries.
 
-## Package Installation in Python and R
 
-### What are the packages pre-installed for every hub?
+### What are the packages pre-installed in the Jupyterhub?
 
 The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. 
 
-- You can use the below command for Python,
-
+You can use the following command in Python to see the list of available packages in JupyterHub.
 ```
 !pip list
 
 ```
 
-- You can use the below command for R,
+You can use the following command in R to see the list of available packages in JupyterHub.
 
 ```
 installed.packages()
@@ -69,18 +68,18 @@ Here is the list of  [Python Packages](https://github.com/berkeley-dsep-infra/d
 
 ### What should I do if I want to install more packages?
 
-- Use your Jupyterhub instance to install the required version of the package. Self installation of packages in your instance of hub is a temporary measure to identify dependencies. If you require a permanent solution then you need submit a [Service Now request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in your hub.
-- If you want to install packages for Python in your instance, then use the following syntax,
+Use your Jupyterhub instance to install the required version of the package. Self installation of packages in your instance of hub is a temporary measure to identify dependencies. If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in your hub.
+
+If you want to install packages for Python in your instance, then use the following syntax,
 
 ```
-pip install <package-name>
+!pip install <package-name>
 
-Eg: pip install numpy
+Eg: !pip install numpy
 
 ```
 
-
-- If you want to install packages for R in your instance, then use the following syntax,
+If you want to install packages for R in your instance, then use the following syntax,
 
 ```
 install.packages("<package-name>")
@@ -98,42 +97,16 @@ import numpy
 
 ```
 
-### Installing New Packages
-
-You can also install other packages that are not on this list. There are two methods for installation. If you will be using a package regularly in your course, we recommend using the long-term installation method.
-
-### Temporary Installation
-
-Notebooks provide support for bash commands in code cells. The line below, when run in a notebook code cell, will temporarily install numpy into a user’s personal account. numpy will then be available for use while the server is running. This cell must be run every time the user’s server is restarted. Note, this is not a system-wide installation. Running the below cells will only install numpy and ggplot2 temporarily into a user’s personal account.
-- For python use the below code snippet
-```
-!pip install numpy
-```
-
-```
-import numpy
-```
-- For R  use the below code snippet
-
-```
-install.packages("ggplot2")
-```
-```
-library("ggplot2")
-```
 ### Long-term installation
 
-*This is the recommended method for packages that will be used frequently.* If you require a permanent solution then you need to [Service Now request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) us to install the required package(s) in your hub.
+*This is the recommended method for packages that will be used frequently.* If you require a permanent solution then you need to [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) us to install the required package(s) in your hub.
 
-Our Jupyterhub has two instances 1. Staging Hub(for testing the new features/updates <https://staging.ucmerced.2i2c.cloud/hub/login>) 2. Production Hub(<https://ucmerced.2i2c.cloud/hub/login>)
-
-As in best practice, the installation will be done on staging hub first, and once validated, will be installed in the production hub.
+As in best practice, the installation will be done on staging hub first, and once validated, will be installed in the production hub.
 
 
 > Before sending a request to CIRT team for installing new packages on Jupyterhub Kindly mention its Version as well
 
 ## Troubleshooting issues in the Hub
-
 
 Facing issues with your hub and want to do some basic troubleshooting before escalating issues to us? If yes, read below!
 
@@ -147,11 +120,10 @@ If your notebook becomes unresponsive, you can try to restart the kernel
 
 ![](./imgs/Kernel_list.002.png)
 
-### Restarting Servers
 
 ### Restarting Your Own Server
 
-All users can restart their own servers. To do so, start by going to the **Hub** **Control Panel** from the dropdown menu from File menu.
+All users can restart their own servers. To do this, begin by going to the **Hub** **Control Panel** from the dropdown menu from File menu.
 
 ![](./imgs/status.003.png)
 
@@ -185,7 +157,7 @@ In general, this issue could be attributed to the varied programming practices a
 If they are relevant, try fixing these issues by improving the programming practices or by reducing the size of the dataset. 
 
 
-## Creating assignments - Ottergrader information
+## Creating assignments - Using ottergrader
 
 [Otter Grader](https://otter-grader.readthedocs.io/en/latest/) is a light-weight, modular open-source autograder developed by the Data Science Education Program at UC Berkeley. It is designed to grade Python and R assignments for classes at any scale by abstracting away the autograding internals in a way that is compatible with any instructor’s assignment distribution and collection pipeline.
 
@@ -377,23 +349,23 @@ Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgit
 
 ![](./imgs/nbgitpuller.008.png)
 
-## Creating a course in Canvas and Gradescope
+## Creating a course in Catcourses and Gradescope
 
-### Step 1: Institutional License, GradeScope and Canvas**
+### Step 1: Institutional License, GradeScope and Catcourses
 
-GradeScope is a **paid** service that allows instructors to tie assignments back to Canvas. Once an assignment is created in Canvas and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the LMS.
+GradeScope is a **paid** service that allows instructors to tie assignments back to Catcourses. Once an assignment is created in Catcourses and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the Catcourse.
 
-### Step 2: Documentation: Canvas and GradeScope Assigment Configuration**
+### Step 2: Documentation: Catcourses and GradeScope Assigment Configuration
 
 [**CatCourses**](https://it.ucmerced.edu/catcourses) is UC Merced's Canvas Learning Management System (LMS). It provides a central repository for all academic course sites in which instructors can interact with and provide educational materials to their students.
 
 To create a new course on canvas, Please follow this [documentation](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-create-a-new-course-from-the-Dashboard-as-an-instructor/ta-p/794) from canvas.
 
-### How to create an Gradescope assignment on canvas.**
+### How to create an Gradescope assignment on Catcourses.
 
 This documentation from [GradeScope](https://help.gradescope.com/article/y10z941fqs-instructor-canvas#assignment_setup) details how to configure a GradeScope course and assignments with Canvas.
 
-1. Navigate to assignments section on the canvas and click on the new gradescope assignment.
+Navigate to assignments section on the canvas and click on the new gradescope assignment.
 
 UCMerced is using Latest version of Gradecope. So Gradescope is listed in the dotted drop-down menu on the Assignments page.
 ![](./imgs/gradescope_dropdown.009.png)
