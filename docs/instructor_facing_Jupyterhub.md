@@ -291,8 +291,8 @@ The following Screenshot will give a clear understading of above syntax for crea
 ### Assignment examples
 
 - To see the full-fledged, Please refer to this Jupyternotebooks
-- 1. [Sample Notebook1](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook1.ipynb),
-- 2.[Sample Notebook2](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook2.ipynb)
+- [Sample Notebook1](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook1.ipynb),
+- [Sample Notebook2](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook2.ipynb)
 - To understand more about creating questions, Please refer to this section in the document [Autograded Questions](https://otter-grader.readthedocs.io/en/latest/otter_assign/notebook_format.html#autograded-questions).
 
 ## otter-assign
@@ -379,6 +379,7 @@ then follow the **LTI 1.3** tab instructions on [GradeScope](https://help.gra
 ### Configure Autograder.
 
 Once after creating an assignment, it will be redirected to a page where faculty/instructors needs to upload the zip file which was created using otter-grader package using **otter assign command.**Please refer the otter-assign section.
+
 ![](./imgs/autograder.011.png)
 
 Once after uploading a zip file which was created by instructor,Gradescope will process that which will roughly take 5-10 mins,Once they have generated the ZIP file they just upload it and the GRADESCOPE will build the image and then it will run the test cases for the notebook.
