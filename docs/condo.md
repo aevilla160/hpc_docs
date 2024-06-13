@@ -1,13 +1,15 @@
+<!-- {docsify-ignore-all} -->
+
 # Condo Model - Pinnacles Cluster
 <schedule a consulation add a link>
 
 ## Condo Model Description
-Condo computing is a shared ownership model. PIs(i.e. faculty) use equipment purchase funds from grants or other sources to purchase and contribute compute resources (i.e., nodes) to the cluster. The result is a shared researcher-owned computing resource of medium to large proportions that provides access to much larger configurations than each participant purchased individually.
+Condo computing is a shared ownership model where Principal Investigators (PIs), such as faculty members, use funds from grants or other sources to purchase and contribute compute resources, such as nodes, to a cluster. This creates a collective, researcher-owned computing resource of medium to large scale, offering access to configurations much larger than what each participant could individually afford.
 
-Under the condo model, PIs use equipment purchase funds to buy compute (CPU or GPU) nodes that will be operated as part of the cluster. Participating groups may then have dedicated use of their purchased nodes via private partitions, or they may run larger computing jobs by sharing idle nodes owned that are on the Pinnacles cluster. This allows for immediate and integrated access to a larger cluster that would typically not be available. 
+Under the condo model, PIs use equipment purchase funds to buy compute nodes (CPU or GPU), which are then integrated into a shared cluster. Participating groups can either have dedicated use of their purchased nodes through private partitions or run larger computing jobs by utilizing idle nodes within the Pinnacles cluster. This setup provides immediate, integrated access to a larger cluster that would typically be beyond their individual means.
 
 
-Participation in the program runs the duration of the node's warranty coverage(~ 3 years).
+Participation in the program runs the duration of the node's warranty coverage (~ 3 years).
 
 ## Contributing to Pinnacles Cluster via Condo Model
 
@@ -19,23 +21,21 @@ The following tables summarize the CPU and GPU computing resources that are avai
 
 ## Compute Resources compatible with Pinnacles Cluster
 
-
 ### CPU 
 | CPU Model	| CPU Quantity Per Node| Core Count Per Node | RAM Capacity | 
 | -------- | ---- | ----------- |---------- |
-| Intel 28 core Xeon Gold 6330 | 2 |56(28*2) cores | 256GB | 
-| Intel 28 core Xeon Gold 6330 | 2 | 56(28*2) cores | 1TB |
+| Intel 28 core Xeon Gold 6330 | 2 |28 * 2 cores | 256GB | 
+| Intel 28 core Xeon Gold 6330 | 2 | 28 * 2 cores | 1TB |
 
-Ram Capacity can be scaled up for sizes greater than 1TB. 
+!> RAM capacity can be scaled beyond 1TB, and similar configurations for CPU nodes are also supported.
 
-!> All nodes are configured with HDR100 slots. 
 
 ### GPU
 | GPU Model	| GPU Card Quantity Per Node | RAM Capacity | 
 | -------- | ---- | ----------- |
 | Nvidia GPU | 1 - 4 cards | Varies |
 
-!> These are estimate prices, and final price will be determined after consultation. 
+!> The final price will be determined after the consultation.
 
 ## Other Associated Costs 
 
@@ -45,14 +45,11 @@ Below is a table with associated tasks/items and their costs.
 
 | Service | Unit | UC Rate |
 | --------------------- | ---------------- | -------------- |  
-| Infrastructure Fee (covers racks, switches, cables, etc.) | Installation | $250 | 
-|EDR Infiniband (covers IB cable and IB switches). | Installation | <COST> |
-|Condo CPU/GPU Operations Fee (per purchased node)  | Node/year | $500 | 
+| Infrastructure Fee (Racks, cables, switches, initial racking and stacking) | One-time | $250 | 
+| Annual operations fee (RHEL $185/year/node Clustervisor $150/node Personnel time = $150/node (~2hours)) | Annual| $495| 
 
 !> Costs from the table are estimates. Final costs and configurations will be shared after consultation. Annual fees covers labor to maintain the system, utilities, software licenses and other maintenance costs.
 
-
-## OS, CV software license fee $??/node for `Associated Costs Section`
 
 ## Clustervisor - Cluster Management Software Licensing Cost?
 
@@ -68,17 +65,18 @@ Below is a table with associated tasks/items and their costs.
 
 ## Queue Priority
 
-1. Users in the associated group(s) will be given the highest priority on the node via a privat partition. 
+1. Users in the associated group(s) will receive the highest priority on the node through a private partition.
 2. CIRT will allow all users to be placed on the condo node via the `test` partition.
 
 ## Warranty
 
-Principal Investigators (PIs) who contribute to Pinnacles by purchasing their own nodes will receive details about their nodes' warranty.
+PIs who contribute to Pinnacles by purchasing their own nodes will receive details about their nodes' warranty.
 
- A HPC cluster node will be considered beyond its lifetime of maintainability when the compute node warranty from the HPC cluster vendor has expired. Typically, computing resources come with a warranty of 3 years, though this duration may vary.
+ An HPC cluster node will be considered  beyond its lifetime of maintainability when: 1. the compute node warranty from the HPC cluster vendor has expired, 2. the OS no longer supports the hardware, 3. security updates can no longer be installed on the hardware, or 4. hardware replacements become reasonably difficult to procure. Typically, computing resources come with a warranty of 3 years, though this duration may vary.
 
 
-Below are options that CIRT offers to PIs when the nodes become out-of-warranty. 
+
+Below are options that CIRT offers to PIs when the nodes beyond its lifetime of maintainability . 
 
 CIRT will give the PI two options: 
 
@@ -92,31 +90,11 @@ CIRT will give the PI two options:
    
 2. CIRT returns the node to the PI
 
-    CIRT will facilitate removing the PI node from the cluster, and
-    PIs might incur costs for CIRT's time and effort on the proceess of removing the node.
-    PI will be soley responslbe for the node once returned. 
+    CIRT will facilitate the removal of the PI node from the cluster. PIs may incur costs for CIRT's time and effort involved in this process. Once the node is returned, the PI will be solely responsible for it.
 
-
-## End of Maintainability 
-
-When a node or computing resource comes to the end of it's maintabiliity where it becomes ineffective to continue to purchase parts for it, or parts are no longer produced or the QoS becomes poor, requiring lots of attention and staff oversight. We will proceed with taking it down from the cluster and offer options to the PI. 
-
-1. CIRT Keeps the node(s) and merge to public partition - 
-
-     
-    PI-owned queues will cease to exist and and the nodes will be merged into general, public partition(s).
-
-
-    CIRT will take the ownership of the nodes and take responsibility for the maintance and housing of the node post-warranty. CIRT will also reserve the right to retire the node(s).
-   
-2. CIRT returns the node to the PI
-
-    CIRT will facilitate removing the PI node from the cluster, and
-    PIs might incur costs for CIRT's time and effort on the proceess of removing the node.
-    PI will be soley responslbe for the node once returned. 
 
 ## Condo PI-Contributor Highlight
-Below is a table of PIs who have contributed nodes to the Pinnacles cluster, assisting in the growth and power of Pinnacles. 
+The table below lists the PIs who have contributed nodes to the Pinnacles cluster, helping to enhance its growth and capabilities.
 
 | PI | Department |  Queue | 
 | -------------- | ----------------------- | --------------- |
@@ -131,7 +109,7 @@ Below is a table of PIs who have contributed nodes to the Pinnacles cluster, ass
 
 
 ## Condo Department-level Contributor Highlight 
-Below is a table of departments who have contributed nodes to the Pinnacles cluster, assisting in the growth and computing power of Pinnacles. 
+Here is a table of departments that have contributed nodes to the Pinnacles cluster, contributing to its growth and computing power.
 
 | Department | Queue |
 | ----------------- | --------------- |

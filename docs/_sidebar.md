@@ -3,7 +3,7 @@
 - [HPC resources](README.md)
   - [User policy](policy.md)
   - [Get help](get_help.md)
-
+  - [Condo model](condo.md)
 - On-campus cluster
   - [How to connect](central_login.md)
   - [Modules](p_modules.md)
