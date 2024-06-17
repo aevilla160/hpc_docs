@@ -1,6 +1,96 @@
-## Getting Started
-To Access Jupyterhub, Please navigate to the section 
-      [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub)
+## Getting started about the Campus Jupyterhub
+
+## Pedagogy and Technology
+To ensure our courses are accessible to students of all majors, we aimed to use technology that is both simple and powerful. We wanted to eliminate the frustrations commonly associated with setting up and maintaining a development environment, often encountered in introductory computing courses.Students can start writing and running code immediately, without wasting time on installation or setup.
+
+### JupyterNotebooks? <!-- {docsify-ignore} -->
+
+Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+### The `datascience` Package <!-- {docsify-ignore} -->
+
+In addition to the computing infrastructure, another piece of the technology is the [`datascience` package](http://data8.org/datascience/). While traditional libraries such as `pandas` and `matplotlib` are powerful, they are also quite complicated, and the verbose code and documentation can intimidate those who are new to programming. The `datascience` Python package was written for use in Berkeley’s Data Science courses and aims to provide a simple but powerful set of tools for introductory students. Students that are in or have taken Data 8 will be familiar with this package as it is used throughout the course.
+
+The package contains useful functionality for investigating and graphically displaying data. One key component of the `datascience` package is the `Tables` abstraction, which is similar to a `pandas` dataframe. The package also contains useful functionality for drawing maps and plotting.
+
+### Introduction to Jupyter
+
+## What are Jupyter Notebooks? <!-- {docsify-ignore} -->
+## JupyterNotebooks?
+Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+### Features <!-- {docsify-ignore} -->
+
+  - **Interactive Environment:** Jupyter Notebooks provide an interactive computing environment where users can write and execute code in a step-by-step manner.
+  - **Support for Multiple Languages:** While originally designed for Python, Jupyter Notebooks support various programming languages like Julia, Python, and R.
+  - **Rich Output:** Notebooks allow the incorporation of rich media outputs such as plots, images, videos, and interactive widgets alongside code and text cells.
+  - **Markdown Support:** In addition to code cells, users can include Markdown cells to write formatted text, equations (using LaTeX syntax), and even HTML for documentation or explanations.
+  - **Data Visualization:** Using libraries like Matplotlib, Seaborn, users can create interactive and static visualizations directly within the notebook environment.
+  - **Integration with Libraries and Tools:** Jupyter Notebooks seamlessly integrate with various data science libraries and tools such as NumPy, Pandas, SciPy, TensorFlow, and scikit-learn.
+
+### Components <!-- {docsify-ignore} -->
+
+- **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
+  
+  ![jupyter_Cells](./imgs/jupyter_cells.png)
+
+
+- **Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
+
+  ![kernel](./imgs/kernel.png)
+
+- **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
+
+  ![toolbar](./imgs/toolbar.png)
+- **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
+
+  ![menubar](./imgs/menubar.png)
+- **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
+
+   ![output_area](./imgs/output_area.png)
+
+- **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
+
+### Using Jupyter Notebooks for Data Analysis <!-- {docsify-ignore} -->
+
+**Jupyter Notebooks** are incredibly versatile for **data analysis** projects. They allow data scientists to combine **executable code**, rich text, **visualizations**, and equations in a single document.
+
+- **Interactive Data Exploration:** Notebooks facilitate interactive exploration of datasets, enabling quick iterations over a data preprocessing or analysis pipeline.
+- **Visualization:** With support for libraries like **Matplotlib** and **Seaborn**, users can create and embed graphs directly within notebooks.
+- **Collaboration and Sharing:** Notebooks can be easily shared between users, promoting collaboration on data analysis projects.
+
+
+### Why does JupyterHub Exist? <!-- {docsify-ignore} -->
+
+[Jupyterhub](https://jupyter.org/hub) JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment. With JupyterHub, users can log in to the server, and write Python,R code in a web browser, without having to install software on their local machine.
+
+Working on JupyterHub provides a number of benefits, especially in an introductory course:
+
+Students never have to do any setup or installation. JupyterHub removes the burden of setting up and maintaining a development environment.
+
+All students and instructors use the same computing environment.
+
+Work stored in the cloud and can be accessed from any computer.
+
+All students have access to the same compute power, regardless of the machine they are using. For example, students without personal computers can use publicly shared computers(i.e. library computers) without being at a disadvantage in the course.
+
+### Differences from local installation <!-- {docsify-ignore} -->
+
+| **JupyterHub** | **Local Setup** |
+| :--- | :--- |
+| Needs an internet connection | Does not need an internet connection |
+| Limited resources \(disk and RAM\) | Unlimited resources \(limited only by your computer\) |
+| System-wide installation done by admins | You can install anything you want |
+| You can only access files in your account | You can maybe access all files \(if you are an admin\) |
+| If things break, we fix them :\) | If things break, you have to fix them :\( |
+
+### Overview of the Internals <!-- {docsify-ignore} -->
+
+The first time you logs in to JupyterHub, a personal account is created for you. You will get your own filesystem so you only have access to the files in your personal account. **Modifications to files in your personal account do not affect anyone else's files.** Unless you are an admin, you cannot access another account's files. This applies to everyone working on JupyterHub, which means a given student cannot access another student's work.
+
+### Getting Access
+
+Anyone with UCMerced credentials has access to the JupyterHub at [ucmerced.2i2c.cloud]([https:///ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)). If you are having difficulties with logging in, please make sure that you are using the correct JupyterHub URL and a ucmerced.edu email to login. 
       
 ### Where to get help
   
@@ -23,14 +113,9 @@ Please feel free to drop by if you need help with anything from setting up your 
 
 ### ServiceHub requests for scheduling consultations
 
-Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) request for scheduling consultations 
+Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) request for scheduling consultations.
 
-## Workflow Basics
-
-### To Access Jupyterhub
-Please navigate to the section [How to access JupyterHub?](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=how-to-access-jupyterhub).It also contains a section about how to start the Server(Python or R) and a few other information on how to download, save, rename, and export notebooks.
-
-### Notebook Zero?
+### Notebook Zero
 
 Notebook zero typically includes a variety of subjects and is often customized for the specific course it supports. However, there are a few consistent elements found in every notebook zero.
 
@@ -45,6 +130,84 @@ Notebook zero typically includes a variety of subjects and is often customized f
 Depending on the course or module, more topics may be covered (e.g. importing libraries, iteration). While these notebooks tend to be very homogeneous.
 
 Please find the [Notebook Zero](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook%20Zero.ipynb) which covers the above mentioned topics and it also explains how to plot the graphs using Matplotlib and Plotly libraries.
+
+### Onboarding new users to the Hub
+
+```{note}
+New to Datahub? Interested to learn more about the services offered by the hub? If yes, refer below!
+```
+**I am instructor planning to teach using Jupyterhub. How do I onboard myself?**
+
+Dear Instructor, Sharing few logistical information which would make onboarding easy for you.Please follow this documentation to onboard a User to Jupyterhub.
+
+- Documentation: You can also refer to the FAQ section of this support documentation (Curriculum Guide), where we regularly update solutions to some of the reported issues.
+ 
+- Packages: Check whether all the needed Python/R packages and their required versions are installed in Jupyterhub.The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. Here is the list of  [Python Packages](https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/requirements.txt) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3) of R packages installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
+
+If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in Jupyterhub.
+
+
+**How can I learn more about Datahub to onboard myself?**
+
+- If you are new to Jupyterhub and want to know more, refer [here](https://ucmerced.2i2c.cloud/hub/login). 
+
+
+**What languages are supported by the hub?**
+
+Jupyterhub primarily supports three languages - **Python, R**.
+
+
+**What is the default Memory/CPU requirement for every hub?**
+
+Jupyterhub has a memory limit of 1 GB of RAM, which should meet the teaching/research needs of most of our users. If you are interested to know more about the memory consumption in your instance, Please use the following steps,
+
+- Look at the top right corner of your Python/R notebook for the term memory. It will highlight the amount of memory you had consumed by the amount of memory provided to your instance. 
+
+
+```{figure} ../images/memory.png
+:width: 500px
+:align: center
+:name: Available Memory
+
+**As an instructor what do I need to do to set up the hub for my course?**
+
+Honestly, nothing! You are free to use the Datahub starting today. 
+
+```{note}
+We expect that all course members log in using their UC Merced email id. We also expect that you are using [nbgitpuller service](https://jupyterhub.github.io/nbgitpuller/link) to distribute materials to your class. We can help you set up the links so that you can distribute through your course website. 
+```
+
+**What instructions should I share with students at the start of the semester**
+Please ask your students,
+
+- To download and backup their files at the end of semester.
+- To refrain from installing python packages via `pip install --user`. Incase, if they install packages this way it may cause issues with launching their Jupyterhub. Best way to avoid this scenario is by installing packages by requesting them via [UCMerced Service Hub request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)
+
+
+
+**How do my students download their submissions as a PDF?**
+We recommend that you use the following options,
+ 
+- **For Jupyter Notebooks:** Select File -> Save and Export Notebook as -> PDF via HTML(.pdf) to get the PDF version of your notebook. 
+```{figure} ../imgs/downloadhtml.PNG
+:width: 500px
+:align: center
+:name: Downloading notebook as a PDF 
+Here is where you can find the option to download the Python notebook as a PDF!
+```
+- **For R files:** Select File -> Knit Document -> Select the target folder -> Select the Output Format as PDF to save the PDF version of the file
+ ```{figure} ../imgs/knitting.PNG
+:width: 500px
+:align: center
+:name: Downloading R notebook as a PDF
+Here is where you can find the option to download the R file!
+```
+```{figure} ../imgs/knittingpdf.PNG
+:width: 500px
+:align: center
+:name: Downloading notebook as a PDF
+Here is where you can find the option to specify the download format as PDF!
+```
 
 
 ### What are the packages pre-installed in the Jupyterhub?
