@@ -13,10 +13,10 @@ In addition to the computing infrastructure, another piece of the technology is 
 
 The package contains useful functionality for investigating and graphically displaying data. One key component of the `datascience` package is the `Tables` abstraction, which is similar to a `pandas` dataframe. The package also contains useful functionality for drawing maps and plotting.
 
-### Introduction to Jupyter
+## Introduction to Jupyter
 
-## What are Jupyter Notebooks? <!-- {docsify-ignore} -->
-## JupyterNotebooks?
+### What are Jupyter Notebooks? <!-- {docsify-ignore} -->
+### JupyterNotebooks?
 Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
 ### Features <!-- {docsify-ignore} -->
