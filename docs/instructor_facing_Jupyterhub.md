@@ -168,7 +168,7 @@ Look at the top right corner of your Python/R notebook for the term memory. It w
 :width: 500px
 :align: center
 :name: Available Memory
-
+```
 **As an instructor what do I need to do to set up the hub for my course?**
 
 Honestly, nothing! You are free to use the Datahub starting today. 
@@ -189,27 +189,12 @@ Please ask your students,
 We recommend that you use the following options,
  
 - **For Jupyter Notebooks:** Select File -> Save and Export Notebook as -> PDF via HTML(.pdf) to get the PDF version of your notebook. 
-```{figure} ../imgs/downloadhtml.PNG
+```{figure} ../imgs/download_pdf.PNG
 :width: 500px
 :align: center
 :name: Downloading notebook as a PDF 
 Here is where you can find the option to download the Python notebook as a PDF!
 ```
-- **For R files:** Select File -> Knit Document -> Select the target folder -> Select the Output Format as PDF to save the PDF version of the file
- ```{figure} ../imgs/knitting.PNG
-:width: 500px
-:align: center
-:name: Downloading R notebook as a PDF
-Here is where you can find the option to download the R file!
-```
-```{figure} ../imgs/knittingpdf.PNG
-:width: 500px
-:align: center
-:name: Downloading notebook as a PDF
-Here is where you can find the option to specify the download format as PDF!
-```
-
-
 ### What are the packages pre-installed in the Jupyterhub?
 
 The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. 
