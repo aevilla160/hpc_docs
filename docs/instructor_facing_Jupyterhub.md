@@ -115,7 +115,8 @@ If you're having issues accessing JupterHub, please Report a Problem at [servic
      
 ### Jupyterhub office hours
 Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
-## Zoom Details
+
+**Zoom Details**
 [Join Zoom Meeting](https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09)
 
 **Meeting ID:** 879 1535 3522  
@@ -155,7 +156,7 @@ Dear Instructor, Sharing few logistical information which would make onboarding 
 
 - Documentation: You can also refer to the FAQ section of this support documentation (Curriculum Guide), where we regularly update solutions to some of the reported issues.
  
-- Packages: Check whether all the needed Python/R packages and their required versions are installed in Jupyterhub.The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. Here is the list of  [Python Packages](https://ucmerced.app.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3) of R packages installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
+- Packages: Check whether all the needed Python/R packages and their required versions are installed in Jupyterhub.The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the Jupyterhub.It also supports R packages such as shiny, dplyr, tidyR, RSQLlite, etc. Here is the list of  [Python Packages](https://ucmerced.app.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3)  installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
 
 If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in Jupyterhub.
 
@@ -204,7 +205,8 @@ We recommend that you use the following options,
   <img src="./imgs/download_pdf.png" alt="download_pdf.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
-### What are the packages pre-installed in the Jupyterhub?
+## Using Packages in Jupyterhub
+### What are the packages pre-installed in the Jupyterhub? <!-- {docsify-ignore} -->
 
 The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. 
 
@@ -223,7 +225,7 @@ installed.packages()
 
 Here is the list of  [Python Packages](https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/requirements.txt) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3) of R packages installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
 
-### What should I do if I want to install more packages?
+### What should I do if I want to install more packages? <!-- {docsify-ignore} -->
 
 Use your Jupyterhub instance to install the required version of the package. Self installation of packages in your instance of hub is a temporary measure to identify dependencies. If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in your hub.
 
@@ -245,7 +247,7 @@ Eg: install.packages("ggplot2")
 
 ```
 
-### Pre-installed Packages
+### Pre-installed Packages <!-- {docsify-ignore} -->
 
 Many Python packages have been pre-installed on JupyterHub and are available by default. To use a pre-installed package such as numpy, you can simply type the line below into a code cell.
 
@@ -254,7 +256,7 @@ import numpy
 
 ```
 
-### Long-term installation
+### Long-term installation <!-- {docsify-ignore} -->
 
 *This is the recommended method for packages that will be used frequently.* If you require a permanent solution then you need to [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) us to install the required package(s) in your hub.
 
@@ -271,14 +273,14 @@ One common error is a Jupyter notebook becoming unresponsive. You will know that
 
 We have outlined two methods below that you should try for each error type. For errors related to the execution of code, such as the notebook not running properly, you should try restarting the kernel. For errors related to access, you should try restarting the server.
 
-### Restarting the Kernel
+### Restarting the Kernel <!-- {docsify-ignore} -->
 
 If your notebook becomes unresponsive, you can try to restart the kernel
 
 ![](./imgs/Kernel_list.002.png)
 
 
-### Restarting Your Own Server
+### Restarting Your Own Server <!-- {docsify-ignore} -->
 
 All users can restart their own servers. To do this, begin by going to the **Hub** **Control Panel** from the dropdown menu from File menu.
 
@@ -292,16 +294,16 @@ Once the server has stopped and the Stop My Server button is no longer visible
 
 ![](./imgs/startserver.005.png)
 
-## Troubleshoot issues with Hub/Server/Code running slow
+## Troubleshoot issues with Hub/Server/Code running slow <!-- {docsify-ignore} -->
 
-### What should I do if my hub is running slow?
+### What should I do if my hub is running slow? <!-- {docsify-ignore} -->
 
 Try these recommended options,
 
 - Restart your kernel.
 - Check whether there are a lot of open tabs. If yes, close the tabs that are not required.
 
-### What should I do if my code is running slow?
+### What should I do if my code is running slow? <!-- {docsify-ignore} -->
 
 In general, this issue could be attributed to the varied programming practices adopted that might have slowed the operation of the hub. Check whether your code does any of the following,
 
