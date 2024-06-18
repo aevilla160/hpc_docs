@@ -99,11 +99,11 @@ All students have access to the same compute power, regardless of the machine th
 
 The first time you logs in to JupyterHub, a personal account is created for you. You will get your own filesystem so you only have access to the files in your personal account. **Modifications to files in your personal account do not affect anyone else's files.** Unless you are an admin, you cannot access another account's files. This applies to everyone working on JupyterHub, which means a given student cannot access another student's work.
 
-### Getting Access
+### Getting Access <!-- {docsify-ignore} -->
 
 Anyone with UCMerced credentials has access to the JupyterHub at [ucmerced.2i2c.cloud]([https:///ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)). If you are having difficulties with logging in, please make sure that you are using the correct JupyterHub URL and a ucmerced.edu email to login. 
       
-### Where to get help
+### Where to get help <!-- {docsify-ignore} -->
   
 <div align="center" style="width: 100%;">
   <img src="./imgs/landingpage.001.png" alt="landingpage.001.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
@@ -113,7 +113,7 @@ Support for JyupterHub is provided during standard operating hours: 8:00 a.m. �
 If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.
 
      
-### Jupyterhub office hours
+### Jupyterhub office hours <!-- {docsify-ignore} -->
 Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
 
 **Zoom Details**
@@ -125,7 +125,7 @@ Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in 
 
 Please feel free to drop by if you need help with anything from setting up your environment, or if you're just curious to learn more about more on JupyterHub. If these times don't work for you but you still require support, I encourage you to open a ServiceNow ticket [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) .
 
-### ServiceHub requests for scheduling consultations
+### ServiceHub requests for scheduling consultations <!-- {docsify-ignore} -->
 
 Please raise a general [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) request for scheduling consultations.
 
@@ -314,6 +314,8 @@ In general, this issue could be attributed to the varied programming practices a
 - You are trying to show a table which is too large and as a result are crashing the browser
 
 If they are relevant, try fixing these issues by improving the programming practices or by reducing the size of the dataset. 
+
+## Workflow Basics
 
 
 ## Creating assignments - Using ottergrader
