@@ -117,6 +117,7 @@ If you're having issues accessing JupterHub, please Report a Problem at [servic
 Jupyterhub/Datascience office hours every **Friday from 11:30 AM to 1:00 PM in ACS Room 365**
 ## Zoom Details
 [Join Zoom Meeting](https://ucmerced.zoom.us/j/87915353522?pwd=bW5zV3NCNWk5d2dvVkZwaXlObHJ3dz09)
+
 **Meeting ID:** 879 1535 3522  
 **Passcode:** 035925
 
