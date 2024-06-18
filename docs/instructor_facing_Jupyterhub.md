@@ -105,7 +105,7 @@ The first time you logs in to JupyterHub, a personal account is created for you.
 
 ### Getting Access <!-- {docsify-ignore} -->
 
-Anyone with UCMerced credentials has access to the JupyterHub at [ucmerced.2i2c.cloud]([https:///ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)). If you are having difficulties with logging in, please make sure that you are using the correct JupyterHub URL and a ucmerced.edu email to login. 
+Anyone with UCMerced credentials has access to the JupyterHub at [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login). If you are having difficulties with logging in, please make sure that you are using the correct JupyterHub URL and a ucmerced.edu email to login. 
       
 ### Where to get help <!-- {docsify-ignore} -->
   
