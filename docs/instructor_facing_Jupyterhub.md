@@ -30,24 +30,35 @@ Jupyter Notebook is an open-source web application that allows you to create and
 
 ### Components <!-- {docsify-ignore} -->
 
-- **Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
+**Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
   
-  ![jupyter_Cells](./imgs/jupyter_cells.png)
+<div align="center" style="width: 100%;">
+  <img src="./imgs/jupyter_cells.png" alt="jupyter_cells" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
+**Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
 
-- **Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
+<div align="center" style="width: 100%;">
+  <img src="./imgs/kernel.png" alt="jupyter_cells.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
-  ![kernel](./imgs/kernel.png)
+**Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
 
-- **Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
+<div align="center" style="width: 100%;">
+  <img src="./imgs/toolbar.png" alt="toolbar.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
-  ![toolbar](./imgs/toolbar.png)
-- **Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
+**Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
 
-  ![menubar](./imgs/menubar.png)
-- **Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
+<div align="center" style="width: 100%;">
+  <img src="./imgs/menubar.png" alt="menubar.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
-   ![output_area](./imgs/output_area.png)
+**Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
+
+<div align="center" style="width: 100%;">
+  <img src="./imgs/output_area.png" alt="output_area.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 - **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
 
@@ -94,7 +105,9 @@ Anyone with UCMerced credentials has access to the JupyterHub at [ucmerced.2i2c.
       
 ### Where to get help
   
-   ![](./imgs/landingpage.001.png)
+<div align="center" style="width: 100%;">
+  <img src="./imgs/landingpage.001.png" alt="landingpage.001.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 Support for JyupterHub is provided during standard operating hours: 8:00 a.m. – 5:00 p.m., Monday through Friday. Please submit a general ticket through the [UC Merced ServiceHub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4).
 If you're having issues accessing JupterHub, please Report a Problem at [servicehub.ucmerced.edu](https://ucmerced.service-now.com/servicehub) or call 228-HELP (4357).The same information can be found on the landing page of the JupyterHub.
@@ -163,12 +176,10 @@ Jupyterhub has a memory limit of 1 GB of RAM, which should meet the teaching/res
 
 Look at the top right corner of your Python/R notebook for the term memory. It will highlight the amount of memory you had consumed by the amount of memory provided to your instance. 
 
+<div align="center" style="width: 100%;">
+  <img src="./imgs/memory.png" alt="memory.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
-```{figure} ../imgs/memory.png
-:width: 500px
-:align: center
-:name: Available Memory
-```
 **As an instructor what do I need to do to set up the hub for my course?**
 
 Honestly, nothing! You are free to use the Datahub starting today. 
@@ -188,13 +199,11 @@ Please ask your students,
 **How do my students download their submissions as a PDF?**
 We recommend that you use the following options,
  
-- **For Jupyter Notebooks:** Select File -> Save and Export Notebook as -> PDF via HTML(.pdf) to get the PDF version of your notebook. 
-```{figure} ../imgs/download_pdf.PNG
-:width: 500px
-:align: center
-:name: Downloading notebook as a PDF 
-Here is where you can find the option to download the Python notebook as a PDF!
-```
+**For Jupyter Notebooks:** Select File -> Save and Export Notebook as -> PDF via HTML(.pdf) to get the PDF version of your notebook. 
+<div align="center" style="width: 100%;">
+  <img src="./imgs/download_pdf.png" alt="download_pdf.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
+
 ### What are the packages pre-installed in the Jupyterhub?
 
 The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. 
