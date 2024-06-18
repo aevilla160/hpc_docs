@@ -30,37 +30,41 @@ Jupyter Notebook is an open-source web application that allows you to create and
 
 ### Components <!-- {docsify-ignore} -->
 
-**Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.
+**Cells:** Notebooks are composed of individual cells that can contain either code, Markdown-formatted text, or raw content. Users can execute code cells and render Markdown cells to produce outputs.<br />
   
 <div align="center" style="width: 100%;">
   <img src="./imgs/jupyter_cells.png" alt="jupyter_cells" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
+<br />
 
-**Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.
+**Kernel:** Each notebook is associated with a computational kernel, which is responsible for executing code within the notebook. Different kernels support different programming languages.<br />
 
 <div align="center" style="width: 100%;">
   <img src="./imgs/kernel.png" alt="jupyter_cells.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
+<br />
 
-**Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.
+**Toolbar:** The toolbar provides quick access to common actions such as running cells, saving the notebook, adding new cells, and changing cell types.<br />
 
 <div align="center" style="width: 100%;">
   <img src="./imgs/toolbar.png" alt="toolbar.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
+<br />
 
-**Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.
+**Menu Bar:** The menu bar contains various options for manipulating the notebook, managing kernels, and configuring the notebook environment.<br />
 
 <div align="center" style="width: 100%;">
   <img src="./imgs/menubar.png" alt="menubar.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
+<br />
 
-**Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.
+**Output Area:** Code cells display their output, including text output, error messages, and visualizations, in the output area directly below the cell.<br />
 
 <div align="center" style="width: 100%;">
   <img src="./imgs/output_area.png" alt="output_area.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
-- **File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
+**File Format:** Notebooks are saved in a JSON file format with the `.ipynb`
 
 ### Using Jupyter Notebooks for Data Analysis <!-- {docsify-ignore} -->
 
@@ -148,7 +152,7 @@ Please find the [Notebook Zero](https://github.com/SaiUCM/Jupyterhub_Docs_Instr
 ### Onboarding new users to the Hub
 
 ```{note}
-New to Datahub? Interested to learn more about the services offered by the hub? If yes, refer below!
+New to Jupyterhub? Interested to learn more about the services offered by the hub? If yes, refer below!
 ```
 **I am instructor planning to teach using Jupyterhub. How do I onboard myself?**
 
@@ -156,12 +160,12 @@ Dear Instructor, Sharing few logistical information which would make onboarding 
 
 - Documentation: You can also refer to the FAQ section of this support documentation (Curriculum Guide), where we regularly update solutions to some of the reported issues.
  
-- Packages: Check whether all the needed Python/R packages and their required versions are installed in Jupyterhub.The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the Jupyterhub.It also supports R packages such as shiny, dplyr, tidyR, RSQLlite, etc. Here is the list of  [Python Packages](https://ucmerced.app.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3)  installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
+- Packages: Check whether all the needed Python/R packages and their required versions are installed in Jupyterhub.The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the Jupyterhub.It also supports R packages such as shiny, dplyr, tidyR, RSQLlite, etc. Here is the list of  [Python Packages](https://ucmerced.app.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
 
 If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in Jupyterhub.
 
 
-**How can I learn more about Datahub to onboard myself?**
+**How can I learn more about Jupyterhub to onboard myself?**
 
 If you are new to Jupyterhub and want to know more, refer [here](https://ucmerced.2i2c.cloud/hub/login). 
 
@@ -183,7 +187,7 @@ Look at the top right corner of your Python/R notebook for the term memory. It w
 
 **As an instructor what do I need to do to set up the hub for my course?**
 
-Honestly, nothing! You are free to use the Datahub starting today. 
+Honestly, nothing! You are free to use the Jupyterhub starting today. 
 
 ```{note}
 We expect that all course members log in using their UC Merced email id. We also expect that you are using [nbgitpuller service](https://jupyterhub.github.io/nbgitpuller/link) to distribute materials to your class. We can help you set up the links so that you can distribute through your course website. 
@@ -208,7 +212,7 @@ We recommend that you use the following options,
 ## Using Packages in Jupyterhub
 ### What are the packages pre-installed in the Jupyterhub? <!-- {docsify-ignore} -->
 
-The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Datahub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. 
+The Procedure for package installation varies across different programming languages. Basic python packages such as numPy, pandas, scikit-learn, matplotlib, etc., are installed across the main Jupyterhub. R hubs supports packages such as shiny, dplyr, tidyR, RSQLlite, etc. 
 
 You can use the following command in Python to see the list of available packages in JupyterHub.
 ```
@@ -223,7 +227,7 @@ installed.packages()
 
 ```
 
-Here is the list of  [Python Packages](https://github.com/berkeley-dsep-infra/datahub/blob/staging/deployments/datahub/images/default/requirements.txt) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3) of R packages installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
+Here is the list of  [Python Packages](https://ucmerced.app.box.com/s/x2eigcssqyeca9mrid3m19glfcs73j02) installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login) . Here is the list of [R packages](https://ucmerced.app.box.com/file/1481528927192?s=65r1rda9atblpdsxdvtyaq6exlnns9z3) of R packages installed in [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login)
 
 ### What should I do if I want to install more packages? <!-- {docsify-ignore} -->
 
