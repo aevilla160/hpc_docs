@@ -200,7 +200,6 @@ Please ask your students,
 - To refrain from installing python packages via `pip install --user`. Incase, if they install packages this way it may cause issues with launching their Jupyterhub. Best way to avoid this scenario is by installing packages by requesting them via [UCMerced Service Hub request](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)
 
 
-
 **How do my students download their submissions as a PDF?**
 We recommend that you use the following options,
  
@@ -328,21 +327,9 @@ In general, this issue could be attributed to the varied programming practices a
 If they are relevant, try fixing these issues by improving the programming practices or by reducing the size of the dataset. 
 
 ## Workflow Basics
+
 ## Creating assignments
 
-### How to access JupyterHub? <!-- {docsify-ignore} -->
-Access to the JupyterHub is available to everyone who has UCMerced credentials. To log in, please proceed to the following URL:
-
-**URL** → [https://ucmerced.2i2c.cloud/hub/login](https://ucmerced.2i2c.cloud/hub/login) (UCMerced SSO is required)
-
-#### Login: <!-- {docsify-ignore} -->
-Go to the UCMerced **JupyterHub** login page and enter your credentials to log in.
-
-<div align="center" style="width: 100%;">
-  <img src="./imgs/login-page.png" alt="login-page.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-</div>
-
-Once the login is successfull,On the home page, you will see two options to choose from based on your preference or requirements. These options likely correspond to different programming environments or configurations.
 
 #### Choose Server: <!-- {docsify-ignore} -->
 
@@ -367,10 +354,10 @@ By following these steps, you can start the server on the UCMerced **JupyterHub*
 </div>
 
 ### How can I switch from a Python server to an R server in JupyterHub? <!-- {docsify-ignore} -->
-**Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub session. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
+**Navigate to the Hub Control Panel**: First, locate and click on the "File" menu at the top of your JupyterHub. From the dropdown options, select "Hub Control Panel" to access the control panel for your JupyterHub environment.
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/R_file.png" alt="R_file.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/Hub_Control.png" alt="Hub_Control.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 **Stop the Current Running Server**: In the Hub Control Panel, you will see an option to "Stop My Server." Click this option to halt the currently running server. It's necessary to stop the current session before you can switch to a different server or kernel.
