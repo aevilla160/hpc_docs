@@ -291,19 +291,19 @@ If your notebook becomes unresponsive, you can try to restart the kernel
 All users can restart their own servers. To do this, begin by going to the **Hub** **Control Panel** from the dropdown menu from File menu.
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/status.003.png" alt="status.003.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/status.013.png" alt="status.013.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 Once you click on Hub Control Panel.It will navigate to the page and Click the **Stop My Server** button.
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/start_server.004." alt="start_server.004.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/start_server.004.png" alt="start_server.004.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 Once the server has stopped and the Stop My Server button is no longer visible, click the **My Serverbutton (should be Start My Server)** to restart the server.
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/start_server.005." alt="start_server.004.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/start_server.005.png" alt="start_server.005.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 ## Troubleshoot issues with Hub/Server/Code running slow <!-- {docsify-ignore} -->
