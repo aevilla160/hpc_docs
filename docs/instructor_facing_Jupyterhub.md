@@ -290,7 +290,7 @@ If your notebook becomes unresponsive, you can try to restart the kernel
 All users can restart their own servers. To do this, begin by going to the **Hub** **Control Panel** from the dropdown menu from File menu.
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/status.013.png" alt="status.013.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/Hub_Control.png" alt="Hub_Control.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 Once you click on Hub Control Panel.It will navigate to the page and Click the **Stop My Server** button.
