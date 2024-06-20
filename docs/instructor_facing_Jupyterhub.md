@@ -477,8 +477,6 @@ You will then see an option to select the branch for your changes. The default f
 
 Once you've gone through the above steps, you can save your changes. A set of changes in Git is called a commit.
 
-## ![](https://cloud.githubusercontent.com/assets/8205702/23319717/9f1fb81e-fa8c-11e6-86ae-074f2c11e9f5.png) <!-- {docsify-ignore} -->
-
 ### Using the Command Line <!-- {docsify-ignore} -->
 
 GitHub can also be used via the command line. We will not go into the details of how to use Git in this guide as there are many online resources on this topic. One resource for using Git over the command line is linked at the bottom of this page.
