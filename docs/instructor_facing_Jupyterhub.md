@@ -465,17 +465,22 @@ You can perform many actions such as uploads and downloads directly through GitH
 
 You can drag and drop your desired files onto the page. Then, write a short sentence describing the files you're adding. This short sentence is called a commit message.
 
+
 <div align="center" style="width: 100%;">
   <img src="./imgs/commit_changes.png" alt="commit_changes.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
+
 You will then see an option to select the branch for your changes. The default for most repositories will be the `master` branch. If you are a Git beginner, you can stick to the default and add your changes to the `master` branch. If you are a more advanced Git user and want to use different branches, you may want to select the option to create a new branch. Please see the additional GitHub resources on this page to learn more about branching.
+
 
 <div align="center" style="width: 100%;">
   <img src="./imgs/commit_changes_1.png" alt="commit_changes_1.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
+
 Once you've gone through the above steps, you can save your changes. A set of changes in Git is called a commit.
+
 
 ### Using the Command Line <!-- {docsify-ignore} -->
 
