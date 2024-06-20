@@ -302,7 +302,7 @@ Once you click on Hub Control Panel.It will navigate to the page and Click the 
 Once the server has stopped and the Stop My Server button is no longer visible, click the **My Serverbutton (should be Start My Server)** to restart the server.
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/start_server.005.png" alt="start_server.005.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/startserver.005.png" alt="startserver.005.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 ## Troubleshoot issues with Hub/Server/Code running slow <!-- {docsify-ignore} -->
