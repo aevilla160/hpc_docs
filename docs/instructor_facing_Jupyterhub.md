@@ -459,15 +459,21 @@ Storing materials on the GitHub allows you to use interact links for assignment 
 
 You can perform many actions such as uploads and downloads directly through GitHub's web interface directly, without having to use the command line interface. Here are some directions on how to upload assignments to GitHub. If you did your development on JupyterHub, download the notebook onto your computer. Then, go to your connector's GitHub repository and click `Upload Files` on the right side.
 
-![](https://cloud.githubusercontent.com/assets/8205702/23319695/89fa6484-fa8c-11e6-9d36-6b6782e2c383.png)
+<div align="center" style="width: 100%;">
+  <img src="./imgs/upload_files.png" alt="upload_files.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 You can drag and drop your desired files onto the page. Then, write a short sentence describing the files you're adding. This short sentence is called a commit message.
 
-![](https://cloud.githubusercontent.com/assets/8205702/23319707/9a4d26b4-fa8c-11e6-91e7-72eeef8bce86.png)
+<div align="center" style="width: 100%;">
+  <img src="./imgs/commit_changes.png" alt="commit_changes.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 You will then see an option to select the branch for your changes. The default for most repositories will be the `master` branch. If you are a Git beginner, you can stick to the default and add your changes to the `master` branch. If you are a more advanced Git user and want to use different branches, you may want to select the option to create a new branch. Please see the additional GitHub resources on this page to learn more about branching.
 
-![](https://cloud.githubusercontent.com/assets/8205702/23319711/9cf7b2da-fa8c-11e6-818e-c231b29a5040.png)
+<div align="center" style="width: 100%;">
+  <img src="./imgs/commit_changes_1.png" alt="commit_changes_1.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 Once you've gone through the above steps, you can save your changes. A set of changes in Git is called a commit.
 
@@ -479,11 +485,14 @@ GitHub can also be used via the command line. We will not go into the details of
 
 You can store your connector's Git repository locally and use a local terminal application to access the command line. You can also store the repository on datahub.berkeley.edu and use the terminal that is present on the JupyterHub. You can access the terminal on JupyterHub by clicking on the `New` dropdown, and then clicking on `Terminal`.
 
-![](https://cloud.githubusercontent.com/assets/8205702/23319236/9ca1a018-fa8a-11e6-8c3d-e5d084317ccc.png) 
-
+<div align="center" style="width: 100%;">
+  <img src="./imgs/terminal.png" alt="terminal.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 You will then see a terminal page in the browser.
 
-![](https://cloud.githubusercontent.com/assets/8205702/23321085/a981a654-fa92-11e6-98e2-f64bf92600bc.png)
+<div align="center" style="width: 100%;">
+  <img src="./imgs/terminal1.png" alt="terminal1.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+</div>
 
 ### Additional Resources <!-- {docsify-ignore} -->
 
