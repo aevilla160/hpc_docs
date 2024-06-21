@@ -344,7 +344,7 @@ Select the server that best suits your needs by clicking on the corresponding op
 Once you've made your selection, click on the option to start the server. This will initiate the server and provide you with access to the chosen environment. 
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/stratserver.png" alt="startserver.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/startserver.png" alt="startserver.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 By following these steps, you can start the server on the UCMerced **JupyterHub** and begin working within your preferred environment. The folder structure will vary depending on the user's access level, whether they are an administrator or a regular user.
