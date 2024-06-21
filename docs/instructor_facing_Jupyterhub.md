@@ -328,7 +328,7 @@ If they are relevant, try fixing these issues by improving the programming pract
 
 ## Workflow Basics
 
-## Creating assignments
+## Creating assignments <!-- {docsify-ignore} -->
 
 
 #### Choose Server: <!-- {docsify-ignore} -->
@@ -445,7 +445,7 @@ To download a notebook document, users can go to the "File" menu and select "Dow
   <img src="./imgs/download_notebook.png" alt="download_notebook.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
-## Uploading Files to GitHub <!-- {docsify-ignore} -->
+## Uploading Files to GitHub
 
 ### What are Git and GitHub? <!-- {docsify-ignore} -->
 
