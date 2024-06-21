@@ -513,6 +513,21 @@ You will then see a terminal page in the browser.
 
 * [Desktop GUI site](https://desktop.github.com/\) - information on using a GitHub desktop GUI.
 
+## Distributing Assignments
+
+### nbgitpull <!-- {docsify-ignore} -->
+
+You’ll often want to distribute content (such as notebooks, scripts, sample data, etc.) to your users so they can do exercises, follow along with a lecture, or use as a starting point for their own work. This content is often constantly updated as time goes on, and needs to not overwrite your student’s work if you make an adjustment to content that has already been touched by the student. That’s where nbgitpuller comes into the picture.
+
+nbgitpuller is already installed in the default environment for UCMerced JupyterHubs. To set up a nbgitpuller link, users must have a GitHub account. The following are the steps which will guide you to create an nbgitpuller link
+
+[Generate nbgitpuller Link](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=generate-nbgitpuller-link)
+
+Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
+
+
+![](./imgs/nbgitpuller.008.png)
+
 ## Creating assignments - Using ottergrader
 
 [Otter Grader](https://otter-grader.readthedocs.io/en/latest/) is a light-weight, modular open-source autograder developed by the Data Science Education Program at UC Berkeley. It is designed to grade Python and R assignments for classes at any scale by abstracting away the autograding internals in a way that is compatible with any instructor’s assignment distribution and collection pipeline.
@@ -529,7 +544,7 @@ Before Creating assignments using otter-grader let’s understand the important 
 ![](./imgs/cells.006.png)
 
 
-### Assignment Config
+### Assignment Config <!-- {docsify-ignore} -->
 
 In addition to various command line arguments discussed below, Otter Assign also allows you to specify various assignment generation arguments in an assignment config cell. These are very similar to the question config cells described in the next section. Assignment config, included by convention as the first cell of the notebook, places YAML-formatted configurations in a **raw cell** that begins with the comment **# ASSIGNMENT CONFIG.**
 
@@ -556,11 +571,11 @@ In addition to various command line arguments discussed below, Otter Assign also
 
 For more information about **# ASSIGNMENT CONFIG** please refer the [documentation](https://otter-grader.readthedocs.io/en/v4.4.1/otter_assign/v1/notebook_format.html).
 
-### Creating Questions
+### Creating Questions <!-- {docsify-ignore} -->
 
 - The questions always starts with #BEGIN QUESTION and ends with #END QUESTION in between those we can create solution and test cases for that question.The following syntax will explain the question,solution and test cases format
 
-### Question Format
+### Question Format <!-- {docsify-ignore} -->
 
 ```
 #BEGIN QUESTION (**raw cell**)
@@ -608,10 +623,9 @@ def sieve(n):
 ```
 
 
-
 - Using specially-formatted Python comments, otter-grader can parse the solution cell and replace lines with ellipsis or other user-defined prompts.
 
-### Test Cases Format
+### Test Cases Format <!-- {docsify-ignore} -->
 
 After the solution cell comes zero or more test cells, denoted by a beginning # BEGIN TESTS annotation, finishing with an ending # END TESTS annotation, and between these two lines functions that test the code. These functions’ names begin with test\_ and are marked as # HIDDEN if appropriate. The # IGNORE lines provide funcationality for the grader to call the test funcions appropriately.
 ```
@@ -644,14 +658,14 @@ The following Screenshot will give a clear understading of above syntax for crea
 
 ![](./imgs/otterq&a.007.png)
 
-### Assignment examples
+### Assignment examples <!-- {docsify-ignore} -->
 
 - To see the full-fledged, Please refer to this Jupyternotebooks
 - [Sample Notebook1](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook1.ipynb),
 - [Sample Notebook2](https://github.com/SaiUCM/Jupyterhub_Docs_Instructor/blob/main/Notebook2.ipynb)
 - To understand more about creating questions, Please refer to this section in the document [Autograded Questions](https://otter-grader.readthedocs.io/en/latest/otter_assign/notebook_format.html#autograded-questions).
 
-## otter-assign
+## otter-assign 
 
 Once after creating the Source Notebook using otter-grader we need to generate a Student facing notebook where students can complete the assignment. To generate Student facing notebook use the command “**otter assign**“ 
 
@@ -667,53 +681,19 @@ Now let’s break down the command. It has 3 sections as highlighted above in t
 
 For more information about otter-assign,Please refer this [section](https://otter-grader.readthedocs.io/en/latest/tutorial.html#otter-assign) in otter-grader documentation
 
-## Delivering assignments - Github, nbgitpull
-
-### What is Git and GitHub?
-
-Git is a version control software that tracks changes in files and allows multiple users to work on the same files in parallel smoothly. Git is often used in conjunction with [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git), a website that hosts code and files. A repository (aka repo) on [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git) holds the files for a specific project.  [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git)'s web interface also displays the information that Git tracks, such as which users are working on a file and what changes have been made to the file.
-
-### Why should I store materials on GitHub?
-
-Storing materials on the  [GitHub](https://docs.github.com/en/get-started/start-your-journey/about-github-and-git) allows you to use interact links for assignment distribution. It also allows you to use the version control features that Git provides. In general, like best practice, create two repositories 1.Private Repository and 2. Public Repository
-
-### Private Repository:
-
-In this repository, instructors need to upload the source notebooks so that they remain private and inaccessible to others.
-
-### Public Repository:
-
-In this repository, instructors should upload the student-facing notebooks generated using the **otter-assign** command. These notebooks can then be shared with students.
-
-> **Note**
-> Any confidential Jupyter notebooks should be uploaded to the Private Repository. Jupyter notebooks meant to be shared with students should be uploaded to the Public Repository.
-
-### nbgitpull
-
-You’ll often want to distribute content (such as notebooks, scripts, sample data, etc.) to your users so they can do exercises, follow along with a lecture, or use as a starting point for their own work. This content is often constantly updated as time goes on, and needs to not overwrite your student’s work if you make an adjustment to content that has already been touched by the student. That’s where nbgitpuller comes into the picture.
-
-nbgitpuller is already installed in the default environment for UCMerced JupyterHubs. To set up a nbgitpuller link, users must have a GitHub account. The following are the steps which will guide you to create an nbgitpuller link
-
-[Generate nbgitpuller Link](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=generate-nbgitpuller-link)
-
-Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
-
-
-![](./imgs/nbgitpuller.008.png)
-
 ## Creating a course in Catcourses and Gradescope
 
-### Step 1: Institutional License, GradeScope and Catcourses
+### Step 1: Institutional License, GradeScope and Catcourses <!-- {docsify-ignore} -->
 
 GradeScope is a service that allows instructors to tie assignments back to Catcourses. Once an assignment is created in Catcourses and in GradeScope, a student uploads their completed notebook to GradeScope, GradeScope grades the notebook and pushes the scores back to the Catcourse.
 
-### Step 2: Documentation: Catcourses and GradeScope Assigment Configuration
+### Step 2: Documentation: Catcourses and GradeScope Assigment Configuration <!-- {docsify-ignore} -->
 
 [**CatCourses**](https://it.ucmerced.edu/catcourses) is UC Merced's Canvas Learning Management System (LMS). It provides a central repository for all academic course sites in which instructors can interact with and provide educational materials to their students.
 
 To create a new course on canvas, Please follow this [documentation](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-create-a-new-course-from-the-Dashboard-as-an-instructor/ta-p/794) from canvas.
 
-### How to create an Gradescope assignment on Catcourses.
+### How to create an Gradescope assignment on Catcourses <!-- {docsify-ignore} -->
 
 This documentation from [GradeScope](https://help.gradescope.com/article/y10z941fqs-instructor-canvas#assignment_setup) details how to configure a GradeScope course and assignments with Canvas.
 
@@ -724,7 +704,7 @@ UCMerced is using Latest version of Gradecope. So Gradescope is listed in the do
 
 Once you click on Gradescope option from the dropdown, You will be give two options to choose as shown below.
 
-### Assignment Type
+### Assignment Type <!-- {docsify-ignore} -->
 
 To begin crafting a new assignment, simply click on the 'A new Gradescope Assignment' option. This will guide you to the next step, where you'll select your assignment type. Since our aim is to grade Jupyter notebooks, opt for the 'Programming Assignment' choice.
 
@@ -732,7 +712,7 @@ To begin crafting a new assignment, simply click on the 'A new Gradescope Assign
 
 then follow the **LTI 1.3** tab instructions on [GradeScope](https://help.gradescope.com/article/y10z941fqs-instructor-canvas#assignment_setup) documentation.
 
-### Configure Autograder.
+### Configure Autograder <!-- {docsify-ignore} -->
 
 Once after creating an assignment, it will be redirected to a page where faculty/instructors needs to upload the zip file which was created using otter-grader package using **otter assign command.**Please refer the otter-assign section.
 
@@ -744,7 +724,7 @@ Once after uploading a zip file which was created by instructor,Gradescope will 
 
 Congratualtions,You have successfully created an autograder assignment using gradescope and canvas.
 
-### Publish an Assignment
+### Publish an Assignment <!-- {docsify-ignore} -->
 
 Now the assignment will be available on canvas and will be available to students once you publish the assignment.
 
@@ -762,15 +742,13 @@ Open Assignments,In Course Navigation, click the **Assignments** link.
 
 Note here, that we have all the autograder.zip files needed for the programming assignments, the configuration of these assignments is explained in the student facing workflow section.
 
-### Grading and publishing grades
+### Grading and publishing grades <!-- {docsify-ignore} -->
 
 Once students submitted their assignments, instructors can publish their grades from Gradescope which will then be directly reflecte in Catcourses. More information here:
 
 <https://help.gradescope.com/article/y10z941fqs-instructor-canvas#posting_grades>
 
-## Student facing workflow
-
-### How does a course look like?
+### How does a course look like? <!-- {docsify-ignore} -->
 
 A course is automatically added into the students account based on their selection while registering for courses.Students can login into canvas using UCMerced SSO.Once login the can view all their register courses in the canvas dashaboard.
 
@@ -778,7 +756,7 @@ A course is automatically added into the students account based on their selecti
 
 Please follow this link for more information on [courses](https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Course-Home-Page-as-a-student/ta-p/504) in canvas.
 
-### How does an assignment look like?
+### How does an assignment look like? <!-- {docsify-ignore} -->
 
 Students are able to access their specific course and then proceed to the assignments section. Typically, a Gradescope assignment appears similar to a standard assignment. However, students must adhere to the following steps to submit their JupyterHub assignment on Canvas.
 
