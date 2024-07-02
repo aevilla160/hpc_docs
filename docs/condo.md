@@ -19,6 +19,7 @@ The following tables summarize the CPU and GPU computing resources that are avai
 ## Compute Resources compatible with Pinnacles Cluster <!-- {docsify-ignore} -->
 
 ### CPU <!-- {docsify-ignore} -->
+
 | CPU Model	| CPU Quantity Per Node| Core Count Per Node | RAM Capacity | 
 | -------- | ---- | ----------- |---------- |
 | Intel 28 core Xeon Gold 6330 | 2 |28 * 2 cores | 256GB | 
@@ -28,6 +29,7 @@ The following tables summarize the CPU and GPU computing resources that are avai
 
 
 ### GPU <!-- {docsify-ignore} -->
+
 | GPU Model	| GPU Card Quantity Per Node | RAM Capacity | 
 | -------- | ---- | ----------- |
 | Nvidia GPU | 1 - 4 cards | Varies |
