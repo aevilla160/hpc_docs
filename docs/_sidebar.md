@@ -32,7 +32,7 @@
   - [External Computation resources](additional.md)
 
 - JupyterHub
-  - [UCMerced JupyterHub](instructor_facing_Jupyterhub.md)
+  - [UCMerced JupyterHub](instructor_facing_Jupyterhub.md) 
 
 - Additional resources
   - [HPC Vocabulary](hpc_vocab.md)
