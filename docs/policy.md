@@ -29,8 +29,10 @@
 
 ## Quotas and storage
 1. Data quotas for [MERCED](accessMerced.md) and [Pinnacles](accessPinnacles.md) are managed by CIRT. Users should note that storage provided by CIRT is for research data only.  P3/P4-level sensitive research data hosting is __not__ supported on the campus-wide clusters(i.e. MERCED & Pinnacles). More information about the different data classification levels & usage can be found [here](https://it.ucmerced.edu/uc-merced-data-usage-guide). __Users are responsible for ensuring and completing backups of their data.__
-2. While CIRT makes great effort to maintain the availability and integrity of storage product, but users should keep in mind that no data storage on our managed servers have historical backups. Some data servers provide "snapshot" where data changed/delted within the snapshot window can be retrieved, but this is not guaranteed. Data in `beegfs` based file system do not have the capability for snapshots. 
-3. Scratch folders on both clusters are valid only when `clusterstorage` is less than 80% full, and files will be automatically deleted when `clusterstorage` reaches the 80% space usage. It is recommended that when a batch job has completed, user should transfer the output files to somewhere safe from `scratch`. 
+
+2. While CIRT makes great efforts to maintain the availability and integrity of our storage products, users should keep in mind that no data stored on our managed servers has historical backups. Some data servers offer "snapshots" that allow retrieval of changed or deleted data within the snapshot window, but this is not guaranteed. Data on the beegfs based file system does **not** have the capability for snapshots.
+
+3. Scratch folders on both clusters are valid only when `clusterstorage` is less than 80% full, and files will be automatically deleted when `clusterstorage` reaches the 80% space usage. It is recommended that when a batch job has completed, user should transfer the output files to somewhere safe from the `scratch` folder. 
 
 
 ## Software and services
