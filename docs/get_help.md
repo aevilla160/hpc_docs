@@ -1,7 +1,7 @@
 ## How To Request Support and Assitance <!-- {docsify-ignore} -->
 
 When requesting support or seeking assistance there are two main forms of request, attending office hours or submitting a ticket. 
-Information about office hours location, schedule and Q/A can be found [here](office_hours.md)!
+Information about office hours location, schedule and Q/A can be found [here](https://ucm-it.github.io/hpc_docs/#/office_hour)!
 
 Note: Please do not try to directly contact CIRT Staff for Assistance. Requests through this manner will not be assitanted immediately. 
 
