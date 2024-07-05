@@ -42,7 +42,7 @@ If using PuTTY as the SSH client, enable X11 forwarding through the PuTTY config
 Connect to your remote system as usual!
 
 
-## File systems
+## File systems and storage
 In the following, we will assume you have some familiarity with linux; if you do not, feel free to book a consultation with the IT team, but a lot of resources are available on the internet.
 
 After connecting to the cluster you can run `ls` command

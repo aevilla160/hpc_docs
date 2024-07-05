@@ -8,7 +8,7 @@ You can make a General Request/Consultation [here](https://ucmerced.service-now.
 
 > __How to include CIRT managed charged services into budget statement?__
 
-The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section. Here is the sample <a href="./files/Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf" download="Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf">NIH data management documentations</a> and <a href="./files/Budget Justification Detailed.pdf" download="Budget Justification Detailed.pdf">budget justification</a>
+The faculties plan to include the budget for CIRT-managed charged services in the budget statement. Please list it under the category of 'Other Direct Costs.' For example, purchased HPC storage services can be allocated to the 'Materials/Supplies: MERCED HPC storage and maintenance' category within the 'Other Direct Costs' section. Here is the sample <a href="./files/Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf" download="Budget_Justification_NIH Data_Management_And_Sharing_Justification.pdf">NIH data management documentations</a> and <a href="./files/Budget Justification Detailed.pdf" download="Budget Justification Detailed.pdf">budget justification</a>.
 
 > __When/where are the HPC Walk-in Clinic hours?__
 
@@ -72,7 +72,23 @@ All accounts on Pinnacles cluster need to be associated with that of a UC Merced
 
 >__Are the costs the same regardless of whether we purchased our own nodes or not?__
 
-The costs and the charges are for general Slurm partitions and not for PI-owned partitions (example: amartini.q, dstrubbe.q, qsb.q, skhatri3.q). That is, if users/groups purchased nodes for MERCED and are submitting jobs on PI/Group owned queues, users will not be charged for core-hours.
+The costs and the charges are for general Slurm partitions on MERCED cluster. 
+
+> __What is the approval process for any work that would be run on the machine? Given that money is involved, I hope you have a way for PIs to approve charges it is made and consequently before the run is made.__
+
+The MERCED recharge system operates on a pay-per-use basis. Currently, we do not have the technical controls in place to require PI approval for research user jobs.
+ 
+The MERCED computational cycle accounting system is based on core-hours, where one core-hour represents a single compute core used for one hour along with 2GB of RAM. The total cost in core-hours for a computation is calculated as follows:
+ 
+__Total Cost ($) = Number of cores × Job duration in wall clock hours × Billing rate per core-hour__
+ 
+The UC rate per core-hour is $0.01.
+ 
+Faculty can request usage information per user whenever they need additional details on an invoice. Additionally, we are happy to provide training to your researchers on how to utilize the FREE Pinnacles resources and estimate the usage costs for jobs running on MERCED cluster.
+
+> __What if I have multiple grant with multiple COAs, can I use all of my COA numbers?__
+
+Yes, we can set up multiple Slurm accounts so that when users submit jobs to the MERCED cluster, they are required to select a specific account. This ensures that the usage for the project is charged to the designated COA number.
 
 >__Can I purchase core-hours in advance?__
 
@@ -80,12 +96,11 @@ Since recharge services are pay-per-use services, users cannot purchase core-hou
 
 >__Can faculty charge recharge services directly to a grant?__
 
-Grant funds have restrictions on how the funding can be spent, and every grant is unique. So, as long as recharge service is allowable expense under the grant, then faculty can charge recharge services directly to the grant. Each grant has a unique COA#. Please ensure that your COA information is accurate in the MERCED recharge spreadsheet that was sent to faculty to fill out in the year 2021.
+Grant funds have restrictions on how the funding can be spent, and every grant is unique. So, as long as recharge service is allowable expense under the grant, then faculty can charge recharge services directly to the grant. Each grant has a unique COA#. Please ensure that you inform CIRT team your updated COA number information.
 
->__I do not want my research group to exceed free core-hour limit on MERCED__
+>__I want to ensure that my research group does not exceed a certain amount of Core Hour usage on MERCED.__
 
-The initial recharge center implementation will provide bi-weekly usage reports of their groups to faculty PIs. If at any point, faculty would like for CIRT to stop MERCED cluster access to their group, please send an email to cirt@ucmerced.edu and CIRT can stop access. 
-
+You can send a request to the CIRT team at cirt@ucmerced.edu to gather information on monthly usage at any time.
 
 ## Job/Software - Questions
 

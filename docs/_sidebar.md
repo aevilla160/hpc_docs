@@ -1,9 +1,9 @@
 <!-- docs/_sidebar.md -->
 
 - [HPC resources](README.md)
-  - [User Policy](policy.md)
-  - [Get Help](get_help.md)
-
+  - [User policy](policy.md)
+  - [Get help](get_help.md)
+  - [Condo model](condo.md)
 - On-campus cluster
   - [How to connect](central_login.md)
   - [Modules](p_modules.md)
@@ -33,7 +33,7 @@
   - [External Computation Resources](additional.md)
 
 - JupyterHub
-  - [UCMerced JupyterHub](jupyterhub.md)
+  - [UCMerced JupyterHub](instructor_facing_Jupyterhub.md) 
 
 - Additional resources
   - [HPC Vocabulary](hpc_vocab.md)

@@ -175,7 +175,14 @@ In order to test job on bigmem node:
 * Short queue is the default queue. If user does not specify the partition or the queue type in the job script, the job will be submitted to the short queue
 * Default time means that If users do not specify the wall-clock time, the default time will be used. If job does not finish by the wall time then it will be terminated by the scheduling system.
 * Max node means maximum number of nodes per job, if exceed this limit, user will see `PartitionNodeLimit` on the queue for the job, and the specific job will not be picked up.
-* Job limits: for each type of queues, only a limited number of jobs per user is allowed to submit, if exceed the limit, user will not be able to submit more and a message of `sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)` will appear.
+* Job limits: for each type of queues, only a limited number of jobs per user is allowed to submit, if exceed the limit, user will not be able to submit more and a message of following will appear.
+
+```bash
+
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+
+```
+
 
 
 There are 3 types of queues on MERCED, and each type of queue has its own configurations and policy. The details is shown in the table below.

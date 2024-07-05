@@ -1,5 +1,17 @@
 <!-- {docsify-ignore-all} -->
 
+## Emergency Maintenance Notification for MERCED and Pinnacles HPC Clusters  - 06/17/2024 <!-- {docsify-ignore} -->
+
+We are writing to inform you of emergency fire management system maintenance scheduled by Facilities on Monday, June 17th, from 1:00 PM through 1:30 PM that will impact the MERCED and Pinnacles HPC clusters.
+ 
+During the maintenance window, the clusters will be offline to ensure the safety and integrity of our systems. Any jobs running or scheduled to run during this period will be lost.
+Please plan accordingly if you have any critical tasks requiring cluster access during this time.
+ 
+For up-to-date information on the status of the clusters during this maintenance, please visit status.ucmerced.edu. We anticipate that the clusters will be back online before the end of the business day.
+ 
+Thank you for your understanding and cooperation
+
+
 ## COMPLETED: HPC cluster maintenance - 1/16/24  <!-- {docsify-ignore} -->
 
 The MERCED and Pinnacles clusters are back online. The CIRT team has completed several updates, including security advisories, bug fixes, and product enhancements. Upgrades encompassed storage server firmware, storage chassis firmware, IB and Data network expansion, and nodes' BIO and BMC firmware. Currently, the default CUDA version for GPU nodes (gnode) is 12.3.

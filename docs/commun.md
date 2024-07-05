@@ -1,5 +1,34 @@
 # Communications
 
+## 6/13/2024
+
+Dear Research Computing Users –
+ 
+This is a friendly reminder that as of July 1, 2024, Provost bridge funding for supporting recharge services will expire.
+ 
+Consequently, CIRT will begin charging users for CIRT recharge services starting July 1, 2024, for core-hours on the MERCED cluster and enhanced user support for CIRT services.
+ 
+Faculty PIs, please ensure that user accounts are active and that the COA# is up to date in order to utilize the MERCED cluster recharge service. For more detailed information about CIRT recharge services and associated costs, please see [here](https://it.ucmerced.edu/Research-Computing-Services).
+ 
+If you have any further questions, please don't hesitate to schedule a research computing consultation or attend one of the HPC office hours every Friday from 11:30 am to 1:00 pm in ACS-365 or via Zoom https://ucmerced.zoom.us/j/89487493900.
+ 
+Thank you for your attention to this matter.
+
+
+## 6/13/2024
+
+Dear Research Computing Users -
+
+We are writing to inform you of emergency fire management system maintenance scheduled by Facilities on Monday, June 17th, from 1:00 PM through 1:30 PM that will impact the MERCED and Pinnacles HPC clusters.
+ 
+During the maintenance window, the clusters will be offline to ensure the safety and integrity of our systems. Any jobs running or scheduled to run during this period will be lost.
+Please plan accordingly if you have any critical tasks requiring cluster access during this time.
+ 
+For up-to-date information on the status of the clusters during this maintenance, please visit status.ucmerced.edu. We anticipate that the clusters will be back online before the end of the business day.
+ 
+Thank you for your understanding and cooperation.
+ 
+Should you have any questions or concerns, please reach out to do not hesitate to reach out to us here.
 
 ## 4/24/24 
 

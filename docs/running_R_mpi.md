@@ -1,10 +1,10 @@
 ## Create a virtual environment and install R<!-- {docsify-ignore} -->
 ```R
 module load anaconda3
-conda create -n my-R -c r r-essentials   #creates a virtual environment named my-R and installs R with some common packages
+conda create -n my-R -c r    #creates a virtual environment named my-R and installs R with some common packages
 source activate my-R                     #activates the previously created virtual environment with R installed
-R                                        #Start interactive R shell
-install.packages(“readr”)                #This is the command to use within the interactive R shell to install new packages
+conda install r-<your_package> #use the conda to install packages is the recommended way, but look up any packages to see if there is any specific channel that they must use. please see https://anaconda.org/search
+
 ```
 
 - The binary version of R in anaconda is just an already compiled version for linux. It should be identical to the version you would compile from source.
