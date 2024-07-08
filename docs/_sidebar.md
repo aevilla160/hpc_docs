@@ -33,7 +33,15 @@
   - [External Computation Resources](additional.md)
 
 - JupyterHub
-  - [UCMerced JupyterHub](instructor_facing_Jupyterhub.md) 
+  - [Getting Started](pedagogy.md)
+  - [Getting Access](getting_access.md)
+  - [Onboarding New Users](onboarding.md)
+  - [Packages in JupyterHub](packages.md)
+  - [Troubleshooting in JupyterHub](troubleshoot.md)
+  - [Workflow Basics](workflow_basics.md)
+  - [GitHub & nbgitpuller](github_nbgitpuller.md)
+  - [otter-grader](ottergrader.md)
+  - [Canvas and Gradescope](canvas.md)
 
 - Additional resources
   - [HPC Vocabulary](hpc_vocab.md)
