@@ -1,4 +1,4 @@
-## Getting started about the Campus Jupyterhub
+## Getting started about the Campus Jupyterhub <!-- {docsify-ignore} -->
 
 ## Pedagogy and Technology
 To ensure our courses are accessible to students of all majors, we aimed to use technology that is both simple and powerful. We wanted to eliminate the frustrations commonly associated with setting up and maintaining a development environment, often encountered in introductory computing courses.Students can start writing and running code immediately, without wasting time on installation or setup.
@@ -16,7 +16,7 @@ The package contains useful functionality for investigating and graphically disp
 ## Introduction to Jupyter
 
 ### What are Jupyter Notebooks? <!-- {docsify-ignore} -->
-### JupyterNotebooks?
+
 Jupyter Notebook is an open-source web application that allows you to create and share documents that contain **live code**, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
 ### Features <!-- {docsify-ignore} -->
@@ -103,11 +103,11 @@ All students have access to the same compute power, regardless of the machine th
 
 The first time you logs in to JupyterHub, a personal account is created for you. You will get your own filesystem so you only have access to the files in your personal account. **Modifications to files in your personal account do not affect anyone else's files.** Unless you are an admin, you cannot access another account's files. This applies to everyone working on JupyterHub, which means a given student cannot access another student's work.
 
-### Getting Access <!-- {docsify-ignore} -->
+### Getting Access
 
 Anyone with UCMerced credentials has access to the JupyterHub at [ucmerced.2i2c.cloud](https://ucmerced.2i2c.cloud/hub/login). If you are having difficulties with logging in, please make sure that you are using the correct JupyterHub URL and a ucmerced.edu email to login. 
       
-### Where to get help <!-- {docsify-ignore} -->
+### Where to get help
   
 <div align="center" style="width: 100%;">
   <img src="./imgs/landingpage.001.png" alt="landingpage.001.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
@@ -328,7 +328,7 @@ If they are relevant, try fixing these issues by improving the programming pract
 
 ## Workflow Basics
 
-## Creating assignments
+## Creating assignments <!-- {docsify-ignore} -->
 
 
 #### Choose Server: <!-- {docsify-ignore} -->
@@ -344,7 +344,7 @@ Select the server that best suits your needs by clicking on the corresponding op
 Once you've made your selection, click on the option to start the server. This will initiate the server and provide you with access to the chosen environment. 
 
 <div align="center" style="width: 100%;">
-  <img src="./imgs/stratserver.png" alt="startserver.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="./imgs/startserver.png" alt="startserver.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 By following these steps, you can start the server on the UCMerced **JupyterHub** and begin working within your preferred environment. The folder structure will vary depending on the user's access level, whether they are an administrator or a regular user.
@@ -445,7 +445,7 @@ To download a notebook document, users can go to the "File" menu and select "Dow
   <img src="./imgs/download_notebook.png" alt="download_notebook.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
-## Uploading Files to GitHub <!-- {docsify-ignore} -->
+## Uploading Files to GitHub
 
 ### What are Git and GitHub? <!-- {docsify-ignore} -->
 
