@@ -65,3 +65,18 @@ You will then see a terminal page in the browser.
 ##### Desktop GUI <!-- {docsify-ignore} -->
 
 * [Desktop GUI site](https://desktop.github.com/\) - information on using a GitHub desktop GUI.
+
+## Distributing Assignments
+
+### nbgitpull <!-- {docsify-ignore} -->
+
+You’ll often want to distribute content (such as notebooks, scripts, sample data, etc.) to your users so they can do exercises, follow along with a lecture, or use as a starting point for their own work. This content is often constantly updated as time goes on, and needs to not overwrite your student’s work if you make an adjustment to content that has already been touched by the student. That’s where nbgitpuller comes into the picture.
+
+nbgitpuller is already installed in the default environment for UCMerced JupyterHubs. To set up a nbgitpuller link, users must have a GitHub account. The following are the steps which will guide you to create an nbgitpuller link
+
+[Generate nbgitpuller Link](https://ucm-it.github.io/hpc_docs/#/jupyterhub?id=generate-nbgitpuller-link)
+
+Users can generate an nbgitpull link using the tool [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) link, which will look like in the following screenshot:
+
+
+![](./imgs/nbgitpuller.008.png)
