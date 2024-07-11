@@ -4,7 +4,9 @@
 UC Merced's [Cyberinfrastructure
 and Research Technologies (CIRT)](https://it.ucmerced.edu/CIRT) team strives to bring research
 computing, high-speed networking, and advanced visualization to campus
-researchers across all disciplines. CIRT's mission is to foster a research environment where scholars effortlessly navigate across computational tiers, supported by cutting-edge technological solutions and educational resources. Serving as a reliable and strategic ally to the university's research cohort, we construct resilient cyberinfrastructure to enhance the institution's research endeavors. Explore our mission vision and values and operational principles below.
+researchers across all disciplines. CIRT's mission is to foster a research environment where scholars effortlessly navigate across computational tiers, supported by cutting-edge technological solutions and educational resources. Serving as a reliable and strategic ally to the university's research cohort, we construct resilient cyberinfrastructure to enhance the institution's research endeavors. 
+
+Explore our mission vision and values and operational principles below.
 
 ```pdf
 files/CIRT_Mission-Vision_SOP.pdf
