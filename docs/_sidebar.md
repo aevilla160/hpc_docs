@@ -42,6 +42,7 @@
   - [GitHub & nbgitpuller](github_nbgitpuller.md)
   - [otter-grader](ottergrader.md)
   - [Canvas and Gradescope](canvas.md)
+  - [JupyterHub FAQ](Jupyterhub_FAQ.md)
 
 - Additional resources
   - [HPC Vocabulary](hpc_vocab.md)
