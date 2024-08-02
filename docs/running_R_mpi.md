@@ -45,7 +45,7 @@ When running R over multiple nodes we recommend using doMPI instead of doParalle
 ##
 #SBATCH --partition=test  ## queue based on wall-clock time limitation.
 #SBATCH --nodes=2 ## or "-N". Min noumber of nodes.
-#SBATCH --ntasks-per-node=20 ## Max. tasks per node (number of cores).
+#SBATCH --ntasks-per-node=56 ## Max. tasks per node (number of cores).
 ##
 #SBATCH --job-name=myjob ## Name of Job in queue (Replace 'myjob')
 #SBATCH --mail-user=<myemail@example.com> ## (Replace <email address>)
