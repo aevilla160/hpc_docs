@@ -44,18 +44,18 @@ When running R over multiple nodes we recommend using doMPI instead of doParalle
 #!/bin/bash
 ##
 #SBATCH --partition=test  ## queue based on wall-clock time limitation.
-#SBATCH --nodes=2 ## or "-N". Min noumber of nodes.
+#SBATCH --nodes=1 ## or "-N". Min noumber of nodes.
 #SBATCH --ntasks-per-node=56 ## Max. tasks per node (number of cores).
 ##
 #SBATCH --job-name=myjob ## Name of Job in queue (Replace 'myjob')
 #SBATCH --mail-user=<myemail@example.com> ## (Replace <email address>)
 #SBATCH --mail-type=ALL
-module load openmpi-2.0/intel
+module load openmpi #the default one is the openmpi/4.1.4-gcc-12.2.0
 module load anaconda3
 source activate my-R
 
 ## cores x nodes = 48 (update manually)
 ## Repace 'my_example_code.R' file
-mpirun -np 48 --bind-to none Rscript my_example_code.R
+mpiexec -np 56 --bind-to none Rscript my_example_code.R
 ```
 
