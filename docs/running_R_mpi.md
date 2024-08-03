@@ -10,6 +10,7 @@ conda install r-<your_package> #use the conda to install packages is the recomme
 - The binary version of R in anaconda is just an already compiled version for linux. It should be identical to the version you would compile from source.
 
 - Here is an example job script
+
 ```bash
 #!/bin/bash
 #SBATCH --partition test
@@ -21,6 +22,7 @@ module load anaconda3
 source activate my-R
 Rscript Some_R_script.R
 ```
+
 **Line 1**: Indicates which shell is used to execute the job script. You will likely never need to change this line
 
 **Line 2**: This option indicates which job queue to submit your job to. There are currently three queues available that vary by how many cores you can request and how long the job will run.
