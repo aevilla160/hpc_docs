@@ -52,9 +52,7 @@ When running R over multiple nodes we recommend using doMPI instead of doParalle
 module load openmpi #the default one is the openmpi/4.1.4-gcc-12.2.0
 module load anaconda3
 source activate my-R
-
-## cores x nodes = 48 (update manually)
-## Repace 'my_example_code.R' file
+## Replace 'my_example_code.R' file
 mpiexec -np 56 Rscript my_example_code.R
 ```
 
