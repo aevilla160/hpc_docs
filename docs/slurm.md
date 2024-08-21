@@ -84,7 +84,7 @@ Example:
 
 This line will tell Slurm to export the current working enviroment to be used on the computing nodes to process the requested instructions. This line is important as it helps ensure consistancy across user's working enviroment and the resources' working enviroment. 
 
-### 4) Begin to include list of commands/instructions to execute your script.
+### 4) Begin to include list of commands/instructions to execute your script. <!-- {docsify-ignore} -->
 
 Here is where you can write the commands or instructions to execute the computations or calculations desired. Below is a small example of what instructions can look like:
 

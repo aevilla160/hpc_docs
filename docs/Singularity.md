@@ -1,14 +1,12 @@
 # Using Singularity with the Clusters
-
-Singularity can be a useful software when you need to have multiple software packages and configurations made and distributed for other users to use and collaborate on. 
+Singularity can be a useful software when you need to have multiple software packages and configurations made and distributed for other users to use and collaborate on.
 
 Singularity acts as a software that puts all the specs(softwares, environment configuration, etc.) into a `container` that reduces the need for configuration and other distribution issues. This enhances convenience in sharing and ensures portability, enabling the immediate execution of software "out of the box" within the container.
 
 ## Building a Container for use on the Clusters
+Prerequisite: Create an account with [Sylabs Cloud](cloud.sylabs.io). This will allow us to create singularity images remotely. Furthermore users can also build definition files of images for other collaborators to access via the cloud. 
 
-Prerequisite: Create an account with [Sylabs Cloud](cloud.sylabs.io). This will allow to create singularity images remotely. Furthermore users can also build definition files of images for other collaborators to access via the cloud.  
-
-1. Create a definition file that contains the instructions to build a configure with the proper packages, softwares and other specs. This `.def` file ending denotes a definition file that singularity interprets as a instruction file. 
+1. Create a definition file that contains the instructions to build a configure with the proper packages, softwares and other specs. This `.def` file ending denotes a definition file that singularity interprets as an instruction file.
 
 Below is an example definition script that builds a container with python and some other python packages
 
@@ -69,7 +67,7 @@ It will now begin the process of building the container and it may take a few mi
 
 ## Interacting with Singularity Container
 
-!> All of these commands should still be ran on a compute node!
+!> All of these commands should still be run on a compute node!
 
 ### Running a container <!-- {docsify-ignore} -->
 
