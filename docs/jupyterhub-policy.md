@@ -15,7 +15,7 @@
 3. Users are not permitted to try and bypass login or gain access to information or usage that is not granted to them. 
 4. Never infringe upon someone else's copyright or plagerize someone else's intellectual property. 
 
-   
+
 ## Software and services
 1. Users are generally permitted to download and install software within their own user environment (e.g., within a virtual environment or Jupyter notebook). This flexibility allows users to tailor their environment for specific instructional needs. 
 2. Users may request the Cyberinfrastructure and Research Team (CIRT) to install software package for broader use within the JupyterHub environment. This can be done through a [service hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=b83ee9ff1b67a0543a003112cd4bcbde&form_id=0cb3dca04f7d4300b52ba1618110c7ff) ticket submission process. 
