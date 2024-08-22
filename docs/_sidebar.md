@@ -33,7 +33,7 @@
   - [External Computation Resources](additional.md)
 
 - JupyterHub
-  - [JupyterHub User policy](jupyterhub_policy.md)
+  - [JupyterHub User policy](jupyterhub-policy.md)
   - [Getting Started](pedagogy.md)
   - [Getting Access](getting_access.md)
   - [Onboarding New Users](onboarding.md)
