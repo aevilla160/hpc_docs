@@ -24,13 +24,15 @@ ls
     - Review `python_test1.py` with a text editor of your choice vim, nano, or Emacs. 
     ```
     ls 
-    # open the 'python_test1.py' file with text editor of your choice.
+    # open the `python_test1.py` file with text editor of your choice.
     # close when finished looking over. 
 
     ```
 
 - Review the information and structure of `test_1task.sh` 
 > Important to take a note of all the different aspects of the script and all the comments in the bash script. Slurm Batch scripting starts with `#SBATCH`. Comments just start with `#` 
+
+?> Remove `#SBATCH --reservation=......` line, when running sample script outside of workshops. 
 
 - Now submit `test_1task.sh` script from the serial folder
 
@@ -72,7 +74,7 @@ cd parallel
 Toward the bottom of the shell script we now begin the for-loop to run through the files. This is the code that is desired to be executed for this job submission.
 ```
 
-?> Remove **#SBATCH --reservation=......** line, when running sample script outside of workshops. 
+?> Remove `#SBATCH --reservation=......` line, when running sample script outside of workshops. 
 
 >Now submit this job script.
 ``` 
@@ -267,13 +269,17 @@ java App    #This line will execute the java program. Note: Replace 'App' with t
 ```
 The name of the sample job script shown above is `javajob.bat`. This file is of Batch script file type. Users can also use `.sub` files to submit jobs.
 
-### submit a Java job <!-- {docsify-ignore} -->
-you can submit the Job using 'Sbatch [Name of Job submission file]'
+### Submit a Java Job <!-- {docsify-ignore} -->
+You can submit a job using `sbatch [Name of Job submission file]`
 >Use 'squeue --me' to find key information about the job's state currently. If there is no information being presented then the job is finished.
 
-Let's take a look at the results of the job. If the job was successful you will get two new files under your current directory. There will now be a `Filename.class` & `Filename.qlog`.
-> The `.class` file is created automatically when we run the job if there is no pre-existing class file being used to run the Java script. In the automatically created `.class` file there is only computer-readable information so we can leave this file alone. 
-The more important file is the `.qlog` file which will be holding the produced output of the Java script. For example, the `.qlog` file will be holding "Hello World!" which was being produced by our sample Java script. It is important to note that if the anticipated output is NOT produced the `.qlog` file will also hold the java errors, if any, that were produced.
+Let's take a look at the results of the job. If the job was successful you will get two new files under your current directory:
+1.  `Filename.class` 
+
+	The `.class` file is created automatically by Java if it detects no pre-existing class file. This file contains content that is computer only readable. 
+2.  `Filename.qlog`
+
+	The produced output of the Java script will be in the `.qlog` file.  For example, the `.qlog` file will store "Hello World!" which was produced by our sample Java program. Errors produced by the program or SLURM will also be stored in our `.qlog` file.
 
 This concludes the Java Practice Section!
 
