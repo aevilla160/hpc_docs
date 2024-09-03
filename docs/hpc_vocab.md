@@ -10,7 +10,7 @@ __Note:__ It is highly recommended that new HPC users familiarize themselves wit
 
 | Term | Definition| 
 |-------------------------|-------------------------------------------|
-| High-Performance Computing(HPC) | A term that refers to a branch of computing that uses multiple computers or supercomputers to complete computations. HPC is much more powerful than regular computers(desktops & laptops), typically 100x more powerful. High-performance computing utilizes many computers in the form of  nodes to perform and process complex calculations at much higher speeds. HPC typically is used for solving advanced and/or lengthy computational problems.|
+| High-Performance Computing (HPC) | A term that refers to a branch of computing that uses multiple computing resources or groups of computing resources to complete computations. HPC is much more powerful than regular computers (desktops & laptops), typically 100x more powerful. High-performance computing utilizes many computers acting as primary computing resource in the form of nodes to perform and process complex calculations at much higher speeds and scales. HPC typically is used for solving advanced and/or lengthy computational problems.|
 | Cluster | A Cluster, a key part of a high-performance computer, is a collection of many inter-connected computers, known as a `node`. Typically an HPC system may have one or multiple clusters. |
 | Node | Nodes are the processing power in a cluster. Many nodes make up a cluster. Nodes can either hold the CPU and GPU cores and one node can have many cores.| 
 | Core | A core holds the CPU component. Multiple cores make up a node. | 
