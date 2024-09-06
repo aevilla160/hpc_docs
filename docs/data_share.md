@@ -1,10 +1,10 @@
 # Sharing Data with Other Users
-This page presents ways to share data with other users on the HPC clusters. Note that the word "group" on this page always refers to UNIX groups .
+This page presents ways to share data with other users on the HPC clusters. Note that the word "group" on this page always refers to Unix groups.
 
 ## Unix Permissions
 Every file and directory has read, write and execute permissions associated with it. 
 These permissions dictate what and who has access to the file or directory and what level of access it has. 
-The owner is you, the group is the group(UNIX) you are associated with, and `other` is every other user outside the unix group. 
+The owner is you, the group is the group(Unix) you are associated with, and `other` is every other user outside the Unix group. 
 
 | Permission | Meaning | Meaning for directories | 
 | -------------------- | ---------------- | ----------------- |
