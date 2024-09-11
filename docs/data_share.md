@@ -1,8 +1,10 @@
 # Sharing Data with Other Users
-This page presents ways to share data with other users on the HPC clusters. Note that the word "group" on this page always refers to Unix groups and not research groups.
+This page presents ways to share data with other users on the HPC clusters. Note that the word "group" on this page always refers to Unix groups.
 
 ## Unix Permissions
-Every file and directory has read, write and execute permissions associated with it. These permissions dictate what and who has access to the file or directory and what level of access it has. The owner is you, the group is the group of people associated with the PI that you are a part of, and `other` is every other user outside the unix group. Many times others refers to every other user on the HPC clusters that are not a part of the group the current user is associated with nor other group members 
+Every file and directory has read, write and execute permissions associated with it. 
+These permissions dictate what and who has access to the file or directory and what level of access it has. 
+The owner is you, the group is the group(Unix) you are associated with, and `other` is every other user outside the Unix group. 
 
 | Permission | Meaning | Meaning for directories | 
 | -------------------- | ---------------- | ----------------- |
@@ -30,64 +32,24 @@ The special permission for the user access level has a single function: A file w
 To locate the state of this special permission, look for an ‘s’ instead of an ‘x’ in the executable bit of the file permissions.
 
 ### Set Group User ID(SGID) <!-- {docsify-ignore} -->
-This special permission has a couple of functions to change how directories and/or files are accessed from a group level. 
+This special permission has functions to change how directories and/or files are accessed from a group level. 
 1. If set on a file, it allows the file to be executed as the group that owns the file.
 
 2. If set on a directory, any files created in the directory will have their group ownership set to that of the directory owner
 
-The use of special permissions at the group level are immensely helpful for groups who are constantly collaborating and sharing directories and files with each other. The use of this level of special permissions also ensures that all following-created files and sub-directories are shared with the group as well without having to redo and edit sharing permissions. 
-
-
-To locate the setgid bit, look for an ‘s’ in the group section of the file permissions, as shown in the example below.
-
-    -rwxrwsr-x 1427 August 14 2023 sample_file
-
-To set the setgid bit, use the following command:
-
-    chmod g+s 
-
-To remove the setgid bit, use the following command.
-
-    chmod g-s
-
-### Sticky Bit <!-- {docsify-ignore} -->
-Sticky Bit does not affect individual files. However, at the directory level, it restricts file deletion. Only the owner (and root) of a file can remove the file within that directory. If the sticky bit is being edited in symbolic mode then simply add `+t` preceding to the permissions.
-
-
-
-## Setting Special Permissions
-To set special permissions on a file or directory we will use one of the two methods shared below(octal or numerical) with use of the `chmod` command. 
-
-Using the numerical method, we pass a fourth, preceding digit in our chmod command. The digit used is calculated similarly to the standard permission digits:
-
-    Start at 0
-    SUID = 4
-    SGID = 2
-    Sticky = 1
-
-Example Below
-
-1. Navigate to the directory that will have special permissions. 
-2.  Next execute the following command to edit group permissions `chmod 2### directory/` or for a file `chmod 2### file.txt`
-
-Where `2` is representing that special permissions are being set for the group
-
-Example Template: `chmod -R $### directory/`. 
-
-`$` - Represents the numerical number that sets the special permission. `#` - Represents the permission being inputted(r,w,x). `-R` is used here as we want to apply the changes recursively, meaning that the changes should impact the sub-directories and files inside the directory.
-
-
+The use of special permissions at the group level are  helpful for groups who constantly collaborate and share directories and files among each other. The use of this level of special permissions also ensures that all following-created files and sub-directories are shared with the group as well without having to redo and edit sharing permissions. 
 
 
 ## The `chmod` Command
 The `chmod` command allows the user to change the access mode of a file or directory.
-The syntax follows 
+To change the access of a file: 
+
 `chmod <usertype>=<permission> file`
 
-To change the access of directory use the following syntax: 
+To change the access of a directory: 
 `chmod -R <usertype>=<permission> directory`
 
-Where `usertype` is a variable that represents different inputs:
+`usertype` is a variable that represents different inputs:
 
 | usertype | meaning | 
 | -------------- | --------------|
@@ -95,27 +57,39 @@ Where `usertype` is a variable that represents different inputs:
 | g | represents the group | 
 | o | represents other | 
 
-Example of changing the permission of a directory: 
+### Example of changing the permission of a directory:  <!-- {docsify-ignore} -->
 
 To view the current permissions of a given file or directory use:
-`ls -ld <file/directory>`
+`ls -ld filename` or `ls -ld directory` 
 
-The output should look similar to this: 
+Example output with a directory: 
 
-    drwxr-xr-x 2 <owner> <group> 10 Jul 28 14:47 permissions/
+    ddrwxr-xr-x 20 guest015 ucm_test 8192 Sep  6 09:47 test_dir/
 
-The permissions will be shown in an order of user, then group and then other(everyone else) or global. In the output above the user has read, write and executable access. The group has read and executable access. Everyon else on the cluster has read and executable access. 
+!> The `20` in the above example denotes how many hard-links there are in the directory. `8192` Denotes the size of the directory in bytes
 
+!> The permissions will be shown in an order of user, then group and then other(everyone else).
+> In the output above the user has read, write and executable access. The group has read and executable access. Everyon else on the cluster has read and executable access. 
 
-Now the command `chmod -R  u=rwx,g=---, o=--- permissions/` will be executed and will update the permissions of the group that the user is associated with so everyone will not have read, write or execute access of the directory, `permissions/`. 
+Now the command `chmod -R  u=rwx,g=---, o=--- permissions/` will be executed and will update the permissions of the group and everyone else so they will not have read, write or execute access of the directory, `permissions/`. 
 
-To view the changes and ensure they are accurate run the command ls -ld 
+To view the changes and ensure they are accurate run the command `ls -ld` 
 
 The output should look similar to this:
 
     drwx------ 2 <user> <group> 10 Jul 28 14:47 permissions/ 
 
 From this we can see that the first `rwx` correlates to the user and the empty dashes represent that the group and everyone else has lost access to the directory. 
+
+
+
+### Sticky Bit 
+Sticky Bit does not affect individual files. However, at the directory level, it restricts file deletion. Only the owner (and root) of a file can remove the file within that directory. If the sticky bit is being edited in symbolic mode then simply add `+t` preceding to the permissions.
+
+Example Below:
+
+        chmod +t 751 myfile
+
 
 ## Public and Group-Readable Directories
 It is common to adjust the permissions that the group has on the file or directory.
@@ -128,10 +102,12 @@ Ex. output
     ucm_test
 
 To edit the permissions to your group run the command: 
-    `chmod [options] g=<permissions> <file>`
+    `chmod g=<permissions> <file>`
 Or
-    `chmod [options] <123> file `
-Where 123 represents: 1 = user permissions written in octal format, 2 = group permissions written in octal format and 3 = others' permissions written in octal format. 
+    `chmod <123> file `
+>Where 123 represents: 1 = user permissions written in octal format, 2 = group permissions written in octal format and 3 = others' permissions written in octal format. 
+
+
 Ex. of changing group permissions of a directory called `permissions` 
 Syntax: 
 ` chmod -R g=--- permissions/`
@@ -150,17 +126,15 @@ Sample Output after changing permissions:
 
 
 
-
-
 ## Access Control Lists and `setfacl` Command
 Access control list(ACL) allows users to go beyond what is possible with group-readable directories and the `chmod` command. This is essential when not all members of your group should have access to the file/directory or when a user outside the user group needs access to the file/directory.
 
 The `setfacl` command is used to change access of files or directories to individual users, multiple user groups or everyone on the cluster. The `setfacl` stands for "set file acl", where acl represents access control list. The `setfacl` command is great for modifying and removing users and groups from the access control list or users who can view and modify files or directories. It also updates and deletes ACL entries for each file and directory that was specified by path.
 
 
-The -m (--modify) and -M (--modify-file) options modify the ACL of a file or directory. ACL entries for this operation must include permissions.
+The `-m (--modify)` options modify the ACL of a file or directory. ACL entries for this operation must include permissions.
 
-The -x (--remove) and -X (--remove-file) options remove ACL entries. It is not an error to remove an entry which does not exist. Only ACL entries without the perms field are accepted as parameters.
+The `-x (--remove)` option remove ACL entries.
 
 Options available for setfacl: 
 
@@ -172,11 +146,22 @@ Options available for setfacl:
 
 Generic `setfacl` syntax format: 
 
-`setfacl [-options] [-x/-X OR -m/-M] [file/directory]`
+`setfacl [-options] [-x or -m] [file or directory]`
 
+### `setfacl Example` <!-- {docsify-ignore} -->
+
+To give a specific user read access to a file:
+``` bash
+setfacl -m u:username:r filename
+```
+
+To remove all ACL entries for a file:
+``` bash
+setfacl -b filename
+```
 ### `getfacl` Command <!-- {docsify-ignore} -->
-Another useful command, `getfacl`, is used often to simplify and display all users and groups that have access to a file or directory.
-This command is paired great when using the `setfacl` command to access groups and users on the ACL of a file or directory.
+`getfacl`, is used often to simplify and display all users and groups that have access to a file or directory.
+This command is paired when using the `setfacl` command to access groups and users on the ACL of a file or directory.
 
 Below is a list of a couple of options for `getfacl`
 
@@ -212,33 +197,11 @@ Sample output of using `getfacl` is shown below:
     group::r-x
     other::r-x
 
-    # file: temppar//serial/python_test1.py
-    # owner: user49
-    # group: group49
-    user::rwx
-    group::r-x
-    other::r-x
 
-    # file: temppar//serial/test_1task.sh
-    # owner: user49
-    # group: group49
-    user::rwx
-    group::r-x
-    other::r-x
-
-
-    # file: temppar//testmod.txt
-    # owner: user49
-    # group: user49
-    user::rw-
-    user:guest001:rw-
-    group::r--
-    mask::rw-
-    other::r--
 
 It can be seen in the sample output above that there is no explicit notation for when a directory is listed as all files and directories start with the output: `file: .....`. To denote a file versus a directory is a directory that will have a trailing `/` after it name. Furthermore the directory will be the first output listed at the top. 
 
-Files and Directories will have lots of their permission and ownership listed, such as: 
+Files and Directories will have their permission and ownership listed, such as: 
 
 1. The file or directory name
 2. owner username
@@ -252,7 +215,7 @@ Files and Directories will have lots of their permission and ownership listed, s
  
 Here is an example of using `setfacl` for an individual user: 
 
-1. First list out the current permissions for the owner, group and everyone else using `getfacl <filename>`. 
+1. Using getfacl to list out current permissions `getfacl <filename>`. 
 Here is a sample output: 
 
 
@@ -263,7 +226,7 @@ Here is a sample output:
         group::r--
         other::r--
 
-It is shown here that the file has the owner with read and write access, the group has read access and everyone else has read access.
+>It is shown here that the file has the owner with read and write access, the group has read access and everyone else has read access.
 
 2. Now let's say we want to share this file with one other person outside of our group. This is done through writing `setfacl -m u:test001:rw <file.txt>`.
 
