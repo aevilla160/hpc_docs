@@ -1,5 +1,22 @@
 <!-- {docsify-ignore-all} -->
 
+## HPC clusters maintenance (Sep. 23 - 27th, 2024)<!-- {docsify-ignore} -->
+ 
+HPC clusters MERCED and Pinnacles will be under a maintenance for critical maintenance and for installing hardware from 6am Sep. 23 - 5pm Sep. 27, 2024.
+ 
+During this time, users will not be able to:
+- Login to the clusters and access their data
+- Run jobs on the cluster
+ 
+
+Note that the Slurm reservations will be set in place to make sure jobs do not run after 6am on Sep 23. Please make sure that you are submitting your jobs with a wall-clock time does not exceed 6m on Sep. 23.
+ 
+During this maintenance, CIRT team along with cluster vendors will perform the following tasks:
+- Physical installation of CENVAL-ARC compute nodes
+- Upgrading Slurm version
+- Regular maintenance
+ 
+
 ## Emergency Maintenance Notification for MERCED and Pinnacles HPC Clusters  - 06/17/2024 <!-- {docsify-ignore} -->
 
 We are writing to inform you of emergency fire management system maintenance scheduled by Facilities on Monday, June 17th, from 1:00 PM through 1:30 PM that will impact the MERCED and Pinnacles HPC clusters.

@@ -9,7 +9,7 @@ Beggining in Febuary 2023, MERCED has transitioned to a recharge service model.
 
 In order to minimize disruptions to computational research on MERCED cluster, the Provost’s office has provided bridge funding for all MERCED cluster PIs for core-hour usage on MERCED through June 30, 2024
 
-!>__OIT-CIRT will begin to charge the PIs the core-hours used beginning July 1st, 2024. More information can be found [here](commun.md#4524)__
+?>__OIT-CIRT will begin to charge the PIs the core-hours used beginning July 1st, 2024. More information can be found [here](commun.md#4524)__
 
 
 
