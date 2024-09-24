@@ -19,7 +19,7 @@ What is the unit of cost service? MERCED cluster cycles will be charged by **cor
 
 (1)  A core-hour is a single compute core<sup>(2)</sup> used for one hour (a core-hour) and 2G of RAM. The total cost in core-hours for a complete computation is:
 ```text
-Total Cost ($) = # of core-hours x Duration (wall clock hours) x (cost per core-hour)
+Total Cost ($) = # of core x Duration (wall clock hours) x (cost per core-hour)
 ```
 !> **For UC users, the cost per core-hour is $0.01, and the cost for non-UC external users is $0.02.**
 
