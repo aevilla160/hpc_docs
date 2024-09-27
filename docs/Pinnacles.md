@@ -3,20 +3,38 @@ The NSF-MRI funded Pinnacles cluster is available for all faculty projects __at 
 
 ## System overview
 Compute nodes: Compute nodes are where actual jobs run. There are three types of compute nodes on Pinnacles.
-* 40 Regular memory (RM) CPU nodes with 256GB RAM
-* 4 Big memory CPU nodes (bigmem) with 1TB RAM
+* 48 Regular memory (RM) CPU nodes with 256GB RAM
+* 8 Big memory CPU nodes (bigmem) with 1TB RAM
 * 8 GPU nodes with NVIDIA A100 GPUs
-All nodes are interconnected via HDR InfiniBand w/ RDMA for fast (100Gbits/s) and low latency (sub ms) data transfer.
+* 8 GPU nodes with NVIDIA L40S GPUs
 
-|     CPU node            | RM node                        | bigmem node                    |
-|:----------------|:-------------------------------|:-------------------------------|
-| Number of nodes | 40                             | 4                              |
-| CPU             | 2 Intel 28 core Xeon Gold 6330 | 2 Intel 28 core Xeon Gold 6330 |
-| RAM             | 256GB | 1TB|
+>All nodes are interconnected via HDR InfiniBand w/ RDMA for fast (100Gbits/s) and low latency (sub ms) data transfer.
+
+## CPU Nodes <!-- {docsify-ignore} -->
+
+|     CPU node            | RM node                        | bigmem node            |
+|:----------------|:-------------------------------|:-------------------------------| 
+| Number of nodes | 40                             | 4                              | 
+| CPU             | 2 Intel 28 core Xeon Gold 6330 | 2 Intel 28 core Xeon Gold 6330 | 
+| RAM             | 256GB | 1TB| 
 | Node-local storage             | 1TB NVMe Data Center Solid State Drive (SSD) | 1TB NVMe Data Center Solid State Drive (SSD)|
 | Network             | ConnectX-6 VPI adapter card, HDR 100 InfiniBand (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot| ConnectX-6 VPI adapter card, HDR 100 InfiniBand (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
 
-GPU nodes: Pinnacles GPU nodes provide exceptional performance and scalability for deep learning and accelerated computing.
+
+## `cenvalarc` CPU Nodes <!-- {docsify-ignore} -->
+|     CPU node           | `cenvalarc.compute` - CPU Node| `cenvalarc.bigmem` - bigmem node | 
+|:----------------| :---------------- |:----------------- |
+| Number of nodes | 8 | 4 |
+| CPU             |  2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W | 2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W |
+| RAM             |  256GB | 1TB | 
+| Node-local storage | 1TB NVMe Data Center Solid State Drive (SSD) | 1TB NVMe Data Center Solid State Drive (SSD)|
+| Network             | ConnectX-6 VPI adapter card, HDR 100 InfiniBand (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot| ConnectX-6 VPI adapter card, HDR 100 InfiniBand (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
+
+
+
+>GPU nodes: Pinnacles GPU nodes provide exceptional performance and scalability for deep learning and accelerated computing.
+
+## `gpu` Partition GPU Nodes <!-- {docsify-ignore} -->
 
 | GPU node     |                                                           |
 |:-------------|:----------------------------------------------------------|
@@ -26,6 +44,19 @@ GPU nodes: Pinnacles GPU nodes provide exceptional performance and scalability f
 | RAM          | 256GB                                                     |
 | Node-local storage|1TB M.2 NVMe Data Center Solid State Drive (110mm)|
 |Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
+
+## `cenvalarc.gpu` Partition GPU Nodes <!-- {docsify-ignore} -->
+
+| GPU node     |                                                           |
+|:-------------|:----------------------------------------------------------|
+| Number       | 8                                                         |
+| GPU per node | 2x NVIDIA L40S GPUs per node (48GB GDDR6 Passive Dual Slot GPU) |
+| CPU          | 2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W             |
+| RAM          | 256GB                                                     |
+| Node-local storage|1TB M.2 NVMe Data Center Solid State Drive (110mm)|
+|Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
+
+
 
 ## Pinnacles Queue Information:
 Pinnacles Cluster is the default cluster that is free and accessible to all users and has 6 public queues. 
