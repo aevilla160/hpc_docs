@@ -27,8 +27,7 @@ Compute nodes: Compute nodes are where actual jobs run. There are three types of
 | Number of nodes | 8 | 4 |
 | CPU             |  2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W | 2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W |
 | RAM             |  256GB | 1TB | 
-| Node-local storage | 1TB NVMe Data Center Solid State Drive (SSD) | 1TB NVMe Data Center Solid State Drive (SSD)|
-| Network             | ConnectX-6 VPI adapter card, HDR 100 InfiniBand (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot| ConnectX-6 VPI adapter card, HDR 100 InfiniBand (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
+
 
 
 
@@ -53,10 +52,8 @@ Compute nodes: Compute nodes are where actual jobs run. There are three types of
 | GPU per node | 2x NVIDIA L40S GPUs per node (48GB GDDR6 Passive Dual Slot GPU) |
 | CPU          | 2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W             |
 | RAM          | 256GB                                                     |
-| Node-local storage|1TB M.2 NVMe Data Center Solid State Drive (110mm)|
-|Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
 
-
+?> CENVAL-ARC grant is in funded through NSF  CC* program (CC* stands for campus cyberinfrastructure. more info on NSF CC* program [here](https://new.nsf.gov/funding/opportunities/cc-campus-cyberinfrastructure)). The award number is #2346744. 
 
 ## Pinnacles Queue Information:
 Pinnacles Cluster is the default cluster that is free and accessible to all users and has 6 public queues. 
