@@ -27,13 +27,12 @@ Compute nodes: Compute nodes are where actual jobs run. There are three types of
 | Number of nodes | 8 | 4 |
 | CPU             |  2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W | 2x Intel 32-Core Xeon Gold 6530 2.1GHz - 270W |
 | RAM             |  256GB | 1TB | 
-| Node-local storage|1TB M.2 NVMe Data Center Solid State Drive (110mm)|
-|Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
+| Node-local storage|1TB M.2 NVMe Data Center Solid State Drive (110mm)|1TB M.2 NVMe Data Center Solid State Drive (110mm)|
+|Network|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|ConnectX-6 VPI adapter card, HDR-100 IB (100Gb/s) and 100GbE, single-port QSFP56, PCIe3/4 x16 Slot|
 
 
 
 
->GPU nodes: Pinnacles GPU nodes provide exceptional performance and scalability for deep learning and accelerated computing.
 
 ## `gpu` Partition GPU Nodes <!-- {docsify-ignore} -->
 
@@ -70,6 +69,10 @@ Pinnacles Cluster is the default cluster that is free and accessible to all user
 | *short | 6 hours | 1 hrs | 4 nodes | 12 |
 | medium | 1 day | 6 hrs | 4 nodes | 6 |
 | long | 3 days | 1 day |  4 nodes | 3 | 
+|cenvalarc.compute|3 day| 1 day| 4 nodes| 3|
+|cenvalarc.bigmem|3 day| 1 day| 2 nodes| 2|
+|cenvalarc.gpu|3 day| 1 day| 2 nodes| 2|
+
 
 * <span style="color: red;">\*short queue is the default queue for all jobs submitted without specifiying which queue job must run on </span>
 * <span style="color: red;">^test queue has access to all node types use constraints to test on specific types. e.g. `#SBATCH --constraint=gpu,bigmem` </span>
