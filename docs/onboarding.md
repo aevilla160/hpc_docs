@@ -23,7 +23,7 @@ Jupyterhub primarily supports three languages - **Python, R**.
 
 **What is the default Memory/CPU requirement for every hub?**
 
-Jupyterhub has a memory limit of 1 GB of RAM, which should meet the teaching/research needs of most of our users. If you are interested to know more about the memory consumption in your instance, Please use the following steps,
+Jupyterhub has a memory limit of 2 GB of RAM, which should meet the teaching needs of most of our users. If you are interested to know more about the memory consumption in your instance, Please use the following steps,
 
 Look at the top right corner of your Python/R notebook for the term memory. It will highlight the amount of memory you had consumed by the amount of memory provided to your instance. 
 
