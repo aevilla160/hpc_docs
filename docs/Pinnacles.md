@@ -71,7 +71,7 @@ Pinnacles Cluster is the default cluster that is free and accessible to all user
 | long | 3 days | 1 day |  4 nodes | 3 | 
 |cenvalarc.compute|3 day| 1 day| 4 nodes| 3|
 |cenvalarc.bigmem|3 day| 1 day| 2 nodes| 2|
-|cenvalarc.gpu|3 day| 1 day| 2 nodes| 2|
+|cenvalarc.gpu|3 day| 1 day| 2 nodes| 4|
 
 
 * <span style="color: red;">\*short queue is the default queue for all jobs submitted without specifiying which queue job must run on </span>
