@@ -52,7 +52,7 @@ To enter the interactive session: the `srun` command will initiate the job step 
 `srun` command template:
 
 
-      run --jobid=<jobid> --pty /bin/bash
+      srun --jobid=<jobid> --pty /bin/bash
 
 
 `srun` command example
