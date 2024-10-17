@@ -1,7 +1,7 @@
 ## MERCED cluster <!-- {docsify-ignore} -->
 
 MERCED (Multi-Environment Research Computer for Exploration and
-Discovery) Cluster is a 1,872 core Linux based high performance computing cluster. The MERCED cluster runs with the [RedHat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) operating system, and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs.
+Discovery) Cluster is a 1,872 core Linux based high performance computing cluster. The MERCED cluster runs with the [Rocky8.10](https://rockylinux.org/) operating system, and employs the [Slurm](https://slurm.schedmd.com/) job scheduler and queueing system to manage job runs.
 
 
 ## MERCED recharge service <!-- {docsify-ignore} -->
