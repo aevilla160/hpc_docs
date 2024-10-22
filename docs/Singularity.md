@@ -4,31 +4,29 @@ Singularity can be a useful software when you need to have multiple software pac
 Singularity acts as a software that puts all the specs(softwares, environment configuration, etc.) into a `container` that reduces the need for configuration and other distribution issues. This enhances convenience in sharing and ensures portability, enabling the immediate execution of software "out of the box" within the container.
 
 ## Building a Container for use on the Clusters
-Prerequisite: Create an account with [Sylabs Cloud](cloud.sylabs.io). This will allow us to create singularity images remotely. Furthermore users can also build definition files of images for other collaborators to access via the cloud. 
+Prerequisite: Create an account with [Sylabs Cloud](https://cloud.sylabs.io/). This will allow us to create singularity images remotely. Furthermore users can also build definition files of images for other collaborators to access via the cloud. 
 
 1. Create a definition file that contains the instructions to build a configure with the proper packages, softwares and other specs. This `.def` file ending denotes a definition file that singularity interprets as an instruction file.
 
 Below is an example definition script that builds a container with python and some other python packages
 
 ``` shell 
-Bootstrap: docker # Specifies the base for the container; it will use Docker to bootstrap (create) the container. 
-From: python:3.8-slim # The base image is 'python:3.8-slim', a slimmed-down version of a Python 3.8 Docker image, ideal for Python applications with minimal external dependencies.
+Bootstrap: docker
+From: python:3.8-slim
 
 %post
     apt-get update && apt-get install -y \
-        build-essential \ # Installs a package that includes an informational list of packages which are considered essential for building Debian packages      
-        
-        libffi-dev \ # Developer files for libffi, a library that provides a portable, high level programming interface 
+            build-essential \
 
-    pip install --upgrade pip #Upgrades pip to the latest version
-    pip install numpy pandas matplotlib scipy #pip installs the followed packages
+    pip install --upgrade pip
+        pip install numpy pandas matplotlib scipy
 
 %environment
-    export PATH=/usr/local/bin:$PATH #Ensuring commands in this directory can be executed without specifying the full path.
+    export PATH=/usr/local/bin:$PATH
 
 
 %runscript
-    exec python "$@" #This line here allows for arguments to be passed in and be ran with Python
+    exec python "$@"
 ``` 
 
 2. Start an interactive session and log into the allocated compute node. For more information on running a interactive session view [here](running_jupyter.d)
