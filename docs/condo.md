@@ -101,6 +101,7 @@ The table below lists the PIs who have contributed nodes to the Pinnacles cluste
 
 
 
+
 ## Condo Department-level Contributor Highlight <!-- {docsify-ignore} -->
 Here is a table of departments that have contributed nodes to the Pinnacles cluster, contributing to its growth and computing power.
 
@@ -110,6 +111,7 @@ Here is a table of departments that have contributed nodes to the Pinnacles clus
 | Applied Math | dept.appliedmath |
 | Cognitive Science | dept.cogsci |
 | Center for Cellular and Biomolecular Machines | grp.ccbm |
+| Physics | dept.physics |
 
 ## Joining the condo program <!-- {docsify-ignore} -->
 Please reach out to CIRT to schedule a consultation via [ServiceNow](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4)
