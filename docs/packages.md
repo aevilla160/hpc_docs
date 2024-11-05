@@ -20,7 +20,7 @@ Here is the list of  [Python Packages](https://ucmerced.app.box.com/s/x2eigcssq
 
 ### What should I do if I want to install more packages? <!-- {docsify-ignore} -->
 
-Use your Jupyterhub instance to install the required version of the package. Self installation of packages in your instance of hub is a temporary measure to identify dependencies. If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) to us to install the required package(s) in your hub.
+Use your Jupyterhub instance to install the required version of the package. Self installation of packages in your instance of hub is a temporary measure to identify dependencies. If you require a permanent solution then you need submit a [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=9d79262483011a1066ac93647daad3e6&form_id=69d58f061b6bc6905f3aed74bd4bcb2a) to us to install the required package(s) in your hub.
 
 If you want to install packages for Python in your instance, then use the following syntax,
 
@@ -51,9 +51,9 @@ import numpy
 
 ### Long-term installation <!-- {docsify-ignore} -->
 
-*This is the recommended method for packages that will be used frequently.* If you require a permanent solution then you need to [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=3c3ee9ff1b67a0543a003112cd4bcb13&form_id=06da3f8edbfc08103c4d56f3ce9619f4) us to install the required package(s) in your hub.
+*This is the recommended method for packages that will be used frequently.* If you require a permanent solution then you need to [UCMerced Service Hub](https://ucmerced.service-now.com/servicehub?id=public_kb_article&sys_id=9d79262483011a1066ac93647daad3e6&form_id=69d58f061b6bc6905f3aed74bd4bcb2a) us to install the required package(s) in your hub.
 
 As in best practice, the installation will be done on staging hub first, and once validated, will be installed in the production hub.
 
 
-> Before sending a request to CIRT team for installing new packages on Jupyterhub Kindly mention its Version as well
+> Before sending a request to CIRT team for installing new packages on Jupyterhub,Kindly mention its Version as well
